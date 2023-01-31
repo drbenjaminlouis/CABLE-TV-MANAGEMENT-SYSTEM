@@ -1,16 +1,7 @@
-﻿Imports System.Configuration
-Imports System.Data.OleDb
-Imports System.DirectoryServices
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
-
+﻿Imports System.Data.OleDb
 Public Class Admin_Login
     Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Admin_Login_db.accdb")
     Dim dr As OleDbDataReader
-    Private Sub Admin_login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-    End Sub
     Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
         If textbox1.Text = "" Or textbox2.Text = "" Then
             MessageBox1.Show("", "Please Enter The Credentials")
@@ -38,13 +29,6 @@ Public Class Admin_Login
                 dr.Close()
             End Try
         End If
-    End Sub
-    Private Sub textbox2_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles textbox2.KeyPress
-        If Not Char.IsNumber(e.KeyChar) And Not e.KeyChar = Chr(Keys.Space) Then
-            e.Handled = True
-            MessageBox1.Show("", "This Field Accept Integer Values Only")
-        End If
-
     End Sub
     Private Sub Guna2ControlBox2_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox2.Click
         Application.Exit()

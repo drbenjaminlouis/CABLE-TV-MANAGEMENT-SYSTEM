@@ -77,7 +77,7 @@ Partial Class Form1
         Me.MyProgress.Size = New System.Drawing.Size(67, 67)
         Me.MyProgress.TabIndex = 3
         Me.MyProgress.Text = "Guna2CircleProgressBar1"
-        Me.MyProgress.Value = 45
+        Me.MyProgress.Value = 88
         '
         'Form1
         '
