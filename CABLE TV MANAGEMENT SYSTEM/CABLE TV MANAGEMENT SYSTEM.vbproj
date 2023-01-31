@@ -17,11 +17,21 @@
 
   <ItemGroup>
     <PackageReference Include="CircularProgressBar" Version="2.8.0.16" />
-    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.2" />
     <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Add_Customer_admin.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Add_Customer_admin.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DataSet1.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Update="LoginForAdmin.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -53,6 +63,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Add_Customer_admin.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Add_Customer_admin.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
     <None Update="LoginForAdmin.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>LoginForAdmin.Designer.vb</LastGenOutput>
