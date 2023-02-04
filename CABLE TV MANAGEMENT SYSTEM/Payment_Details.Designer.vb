@@ -54,6 +54,10 @@ Partial Class Payment_Details
         Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges51 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -72,10 +76,6 @@ Partial Class Payment_Details
         Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
@@ -106,6 +106,8 @@ Partial Class Payment_Details
         Me.CRF_LABEL = New System.Windows.Forms.Label()
         Me.CUST_CRF_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.CUST_STATE_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.CUST_COUNTRY_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.DOB_PICKER = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.CUST_DOB_LABEL = New System.Windows.Forms.Label()
         Me.CUST_EMAIL_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
@@ -126,8 +128,6 @@ Partial Class Payment_Details
         Me.CUST_NAME_LABEL = New System.Windows.Forms.Label()
         Me.YEAR_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.CUST_STATE_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CUST_COUNTRY_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GroupBox5.SuspendLayout()
         Me.Guna2GroupBox4.SuspendLayout()
         Me.SuspendLayout()
@@ -804,6 +804,64 @@ Partial Class Payment_Details
         Me.Guna2GroupBox4.TabIndex = 82
         Me.Guna2GroupBox4.Text = "Customer Details"
         '
+        'CUST_STATE_TEXTBOX
+        '
+        Me.CUST_STATE_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CUST_STATE_TEXTBOX.Animated = True
+        Me.CUST_STATE_TEXTBOX.AutoSize = True
+        Me.CUST_STATE_TEXTBOX.BorderRadius = 3
+        Me.CUST_STATE_TEXTBOX.BorderThickness = 0
+        Me.CUST_STATE_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_STATE_TEXTBOX.CustomizableEdges = CustomizableEdges31
+        Me.CUST_STATE_TEXTBOX.DefaultText = ""
+        Me.CUST_STATE_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_STATE_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_STATE_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_STATE_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_STATE_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_STATE_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_STATE_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_STATE_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_STATE_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_STATE_TEXTBOX.Location = New System.Drawing.Point(203, 311)
+        Me.CUST_STATE_TEXTBOX.Name = "CUST_STATE_TEXTBOX"
+        Me.CUST_STATE_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_STATE_TEXTBOX.PlaceholderText = ""
+        Me.CUST_STATE_TEXTBOX.ReadOnly = True
+        Me.CUST_STATE_TEXTBOX.SelectedText = ""
+        Me.CUST_STATE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        Me.CUST_STATE_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_STATE_TEXTBOX.TabIndex = 88
+        '
+        'CUST_COUNTRY_TEXTBOX
+        '
+        Me.CUST_COUNTRY_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CUST_COUNTRY_TEXTBOX.Animated = True
+        Me.CUST_COUNTRY_TEXTBOX.AutoSize = True
+        Me.CUST_COUNTRY_TEXTBOX.BorderRadius = 3
+        Me.CUST_COUNTRY_TEXTBOX.BorderThickness = 0
+        Me.CUST_COUNTRY_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_COUNTRY_TEXTBOX.CustomizableEdges = CustomizableEdges33
+        Me.CUST_COUNTRY_TEXTBOX.DefaultText = ""
+        Me.CUST_COUNTRY_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_COUNTRY_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_COUNTRY_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_COUNTRY_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_COUNTRY_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_COUNTRY_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_COUNTRY_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_COUNTRY_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_COUNTRY_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_COUNTRY_TEXTBOX.Location = New System.Drawing.Point(203, 356)
+        Me.CUST_COUNTRY_TEXTBOX.Name = "CUST_COUNTRY_TEXTBOX"
+        Me.CUST_COUNTRY_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_COUNTRY_TEXTBOX.PlaceholderText = ""
+        Me.CUST_COUNTRY_TEXTBOX.ReadOnly = True
+        Me.CUST_COUNTRY_TEXTBOX.SelectedText = ""
+        Me.CUST_COUNTRY_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Me.CUST_COUNTRY_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_COUNTRY_TEXTBOX.TabIndex = 89
+        '
         'DOB_PICKER
         '
         Me.DOB_PICKER.Anchor = System.Windows.Forms.AnchorStyles.Left
@@ -1185,64 +1243,6 @@ Partial Class Payment_Details
         Me.Label1.TabIndex = 86
         Me.Label1.Text = "YEAR"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'CUST_STATE_TEXTBOX
-        '
-        Me.CUST_STATE_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_STATE_TEXTBOX.Animated = True
-        Me.CUST_STATE_TEXTBOX.AutoSize = True
-        Me.CUST_STATE_TEXTBOX.BorderRadius = 3
-        Me.CUST_STATE_TEXTBOX.BorderThickness = 0
-        Me.CUST_STATE_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_STATE_TEXTBOX.CustomizableEdges = CustomizableEdges31
-        Me.CUST_STATE_TEXTBOX.DefaultText = ""
-        Me.CUST_STATE_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_STATE_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_STATE_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_STATE_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_STATE_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_STATE_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_STATE_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_STATE_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_STATE_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_STATE_TEXTBOX.Location = New System.Drawing.Point(203, 311)
-        Me.CUST_STATE_TEXTBOX.Name = "CUST_STATE_TEXTBOX"
-        Me.CUST_STATE_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_STATE_TEXTBOX.PlaceholderText = ""
-        Me.CUST_STATE_TEXTBOX.ReadOnly = True
-        Me.CUST_STATE_TEXTBOX.SelectedText = ""
-        Me.CUST_STATE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        Me.CUST_STATE_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_STATE_TEXTBOX.TabIndex = 88
-        '
-        'CUST_COUNTRY_TEXTBOX
-        '
-        Me.CUST_COUNTRY_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_COUNTRY_TEXTBOX.Animated = True
-        Me.CUST_COUNTRY_TEXTBOX.AutoSize = True
-        Me.CUST_COUNTRY_TEXTBOX.BorderRadius = 3
-        Me.CUST_COUNTRY_TEXTBOX.BorderThickness = 0
-        Me.CUST_COUNTRY_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_COUNTRY_TEXTBOX.CustomizableEdges = CustomizableEdges33
-        Me.CUST_COUNTRY_TEXTBOX.DefaultText = ""
-        Me.CUST_COUNTRY_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_COUNTRY_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_COUNTRY_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_COUNTRY_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_COUNTRY_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_COUNTRY_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_COUNTRY_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_COUNTRY_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_COUNTRY_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_COUNTRY_TEXTBOX.Location = New System.Drawing.Point(203, 356)
-        Me.CUST_COUNTRY_TEXTBOX.Name = "CUST_COUNTRY_TEXTBOX"
-        Me.CUST_COUNTRY_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_COUNTRY_TEXTBOX.PlaceholderText = ""
-        Me.CUST_COUNTRY_TEXTBOX.ReadOnly = True
-        Me.CUST_COUNTRY_TEXTBOX.SelectedText = ""
-        Me.CUST_COUNTRY_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges34
-        Me.CUST_COUNTRY_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_COUNTRY_TEXTBOX.TabIndex = 89
         '
         'Payment_Details
         '

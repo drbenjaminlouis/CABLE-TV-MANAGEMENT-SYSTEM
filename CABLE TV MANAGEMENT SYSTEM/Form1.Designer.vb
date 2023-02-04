@@ -24,9 +24,11 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Guna2ProgressIndicator1 = New Guna.UI2.WinForms.Guna2ProgressIndicator()
         Me.MyProgress = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.SuspendLayout()
         '
@@ -49,15 +51,26 @@ Partial Class Form1
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(595, 394)
+        Me.Label2.Location = New System.Drawing.Point(590, 394)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 25)
+        Me.Label2.Size = New System.Drawing.Size(123, 25)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Loading....."
+        Me.Label2.Text = "LOADING....."
         '
         'Timer1
         '
         Me.Timer1.Enabled = True
+        '
+        'Guna2ProgressIndicator1
+        '
+        Me.Guna2ProgressIndicator1.AutoStart = True
+        Me.Guna2ProgressIndicator1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ProgressIndicator1.Location = New System.Drawing.Point(719, 371)
+        Me.Guna2ProgressIndicator1.Name = "Guna2ProgressIndicator1"
+        Me.Guna2ProgressIndicator1.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Guna2ProgressIndicator1.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        Me.Guna2ProgressIndicator1.Size = New System.Drawing.Size(69, 67)
+        Me.Guna2ProgressIndicator1.TabIndex = 89
         '
         'MyProgress
         '
@@ -67,17 +80,18 @@ Partial Class Form1
         Me.MyProgress.FillThickness = 15
         Me.MyProgress.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MyProgress.ForeColor = System.Drawing.Color.Transparent
-        Me.MyProgress.Location = New System.Drawing.Point(711, 371)
+        Me.MyProgress.Location = New System.Drawing.Point(12, 371)
         Me.MyProgress.Minimum = 0
         Me.MyProgress.Name = "MyProgress"
-        Me.MyProgress.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MyProgress.ProgressColor = System.Drawing.Color.Empty
         Me.MyProgress.ProgressThickness = 15
-        Me.MyProgress.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        Me.MyProgress.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         Me.MyProgress.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.MyProgress.Size = New System.Drawing.Size(67, 67)
-        Me.MyProgress.TabIndex = 3
+        Me.MyProgress.TabIndex = 90
         Me.MyProgress.Text = "Guna2CircleProgressBar1"
-        Me.MyProgress.Value = 88
+        Me.MyProgress.Value = 75
+        Me.MyProgress.Visible = False
         '
         'Form1
         '
@@ -86,9 +100,10 @@ Partial Class Form1
         Me.BackgroundImage = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources._360_F_222074985_CwcuLMkQ0NBU2Qv1lqHD5XpHYtkY8mAB3
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.MyProgress)
+        Me.Controls.Add(Me.Guna2ProgressIndicator1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.MyProgress)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(800, 450)
@@ -103,5 +118,6 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Guna2ProgressIndicator1 As Guna.UI2.WinForms.Guna2ProgressIndicator
     Friend WithEvents MyProgress As Guna.UI2.WinForms.Guna2CircleProgressBar
 End Class

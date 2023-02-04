@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CircularProgressBar" Version="2.8.0.16" />
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.2" />
     <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
   </ItemGroup>

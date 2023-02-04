@@ -801,7 +801,7 @@ Partial Class Admin_Dashboard
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(97, -3)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(222, 80)
+        Me.Label2.Size = New System.Drawing.Size(222, 83)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "CABLE TV MANAGEMENT SYSTEM"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
