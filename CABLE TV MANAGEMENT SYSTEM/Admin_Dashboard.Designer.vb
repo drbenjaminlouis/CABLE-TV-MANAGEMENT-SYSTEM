@@ -119,10 +119,10 @@ Partial Class Admin_Dashboard
         Me.Guna2Panel1.CustomizableEdges = CustomizableEdges5
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel1.FillColor = System.Drawing.Color.Black
-        Me.Guna2Panel1.Location = New System.Drawing.Point(323, 0)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(322, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1377, 51)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1378, 51)
         Me.Guna2Panel1.TabIndex = 0
         '
         'Guna2ControlBox2
@@ -136,7 +136,7 @@ Partial Class Admin_Dashboard
         Me.Guna2ControlBox2.FillColor = System.Drawing.Color.Black
         Me.Guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2ControlBox2.IconColor = System.Drawing.Color.White
-        Me.Guna2ControlBox2.Location = New System.Drawing.Point(1247, 0)
+        Me.Guna2ControlBox2.Location = New System.Drawing.Point(1248, 0)
         Me.Guna2ControlBox2.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2ControlBox2.Name = "Guna2ControlBox2"
         Me.Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges2
@@ -155,7 +155,7 @@ Partial Class Admin_Dashboard
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red
         Me.Guna2ControlBox1.IconColor = System.Drawing.Color.White
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(1312, 0)
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(1313, 0)
         Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
         Me.Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
@@ -164,6 +164,8 @@ Partial Class Admin_Dashboard
         '
         'Guna2Panel2
         '
+        Me.Guna2Panel2.AutoSize = True
+        Me.Guna2Panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Guna2Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2Panel2.Controls.Add(Me.Guna2GradientButton15)
         Me.Guna2Panel2.Controls.Add(Me.Guna2GradientButton14)
@@ -196,7 +198,7 @@ Partial Class Admin_Dashboard
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges40
-        Me.Guna2Panel2.Size = New System.Drawing.Size(323, 1063)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(322, 1063)
         Me.Guna2Panel2.TabIndex = 1
         '
         'Guna2GradientButton15
@@ -770,16 +772,16 @@ Partial Class Admin_Dashboard
         '
         Me.Guna2PictureBox2.AutoRoundedCorners = True
         Me.Guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Guna2PictureBox2.BorderRadius = 39
+        Me.Guna2PictureBox2.BorderRadius = 46
         Me.Guna2PictureBox2.CustomizableEdges = CustomizableEdges37
         Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.a9176696b8740c402d84b55374ea0107_w200
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(4, 0)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges38
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(108, 80)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(98, 94)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Guna2PictureBox2.TabIndex = 4
         Me.Guna2PictureBox2.TabStop = False
         '
@@ -837,15 +839,17 @@ Partial Class Admin_Dashboard
         '
         Me.PanelDesktop.BackColor = System.Drawing.Color.Black
         Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelDesktop.Location = New System.Drawing.Point(323, 51)
+        Me.PanelDesktop.Location = New System.Drawing.Point(322, 51)
         Me.PanelDesktop.Name = "PanelDesktop"
-        Me.PanelDesktop.Size = New System.Drawing.Size(1377, 1012)
+        Me.PanelDesktop.Size = New System.Drawing.Size(1378, 1012)
         Me.PanelDesktop.TabIndex = 3
         '
         'Admin_Dashboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1700, 1063)
         Me.Controls.Add(Me.PanelDesktop)

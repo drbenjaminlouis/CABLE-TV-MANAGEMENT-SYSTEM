@@ -353,6 +353,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property a9176696b8740c402d84b55374ea0107_w200() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("a9176696b8740c402d84b55374ea0107_w200", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property abstract_black_green_x_wallpaper() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("abstract-black-green-x-wallpaper", resourceCulture)
@@ -1457,6 +1467,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property icons8_search_more_501() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8-search-more-501", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property icons8_transaction_40() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icons8-transaction-40", resourceCulture)
@@ -1720,6 +1740,26 @@ Namespace My.Resources
         Friend ReadOnly Property pngtree_dark_abstract_background_with_overlap_layers_image_305024() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pngtree-dark-abstract-background-with-overlap-layers-image_305024", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property QR_PAYMENT() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("QR_PAYMENT", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property QR_PAYMENT1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("QR_PAYMENT1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

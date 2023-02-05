@@ -3,14 +3,18 @@ Imports System.Data.Common
 Imports System.Data.OleDb
 Public Class Admin_Dashboard_Panel
 
-    Dim cust_count As Integer
-    Dim cust_broadband_count As Integer
+    Dim active_tv_count As Integer
     Dim inactive_tv_count As Integer
     Dim suspended_tv_count As Integer
     Dim currentDate As Date = DateTime.Now.Date
     Dim count As Integer
     Dim inactive_broadband As Integer
     Dim suspended_broadband As Integer
+    Dim tv_renewal_count As Integer
+    Dim active_broadband_count As Integer
+    Dim inactive_broadband_count As Integer
+    Dim suspended_broadband_count As Integer
+    Dim broadband_renewal_count As Integer
     Private Sub Guna2GradientTileButton1_MouseLeave(sender As Object, e As EventArgs) Handles Active_Customers.MouseLeave
         Active_Customers.Image = My.Resources.icons8_checkmark_50
         Active_Customers.ImageAlign = HorizontalAlignment.Center
@@ -23,7 +27,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         Active_Customers.Font = myFont
-        Active_Customers.Text = cust_count
+        Active_Customers.Text = active_tv_count
     End Sub
     Private Sub Guna2GradientTileButton2_MouseLeave(sender As Object, e As EventArgs) Handles Inactive_Customers.MouseLeave
         Inactive_Customers.Image = My.Resources.icons8_multiply_50
@@ -59,7 +63,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         BroadBand_Customers.Font = myFont
-        BroadBand_Customers.Text = cust_broadband_count
+        BroadBand_Customers.Text = active_broadband_count
     End Sub
     Private Sub Guna2GradientTileButton4_MouseLeave(sender As Object, e As EventArgs) Handles BroadBand_Customers.MouseLeave
         BroadBand_Customers.Image = My.Resources.icons8_broadband_50
@@ -73,7 +77,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         BroadBand_Renewals.Font = myFont
-        BroadBand_Renewals.Text = count
+        BroadBand_Renewals.Text = broadband_renewal_count
     End Sub
     Private Sub Guna2GradientTileButton5_MouseLeave(sender As Object, e As EventArgs) Handles BroadBand_Renewals.MouseLeave
         BroadBand_Renewals.Image = My.Resources.icons8_pay_date_50__1_
@@ -87,7 +91,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         Cable_TV_Renewals.Font = myFont
-        Cable_TV_Renewals.Text = 0
+        Cable_TV_Renewals.Text = tv_renewal_count
     End Sub
     Private Sub Guna2GradientTileButton6_MouseLeave(sender As Object, e As EventArgs) Handles Cable_TV_Renewals.MouseLeave
         Cable_TV_Renewals.Image = My.Resources.icons8_renew_50
@@ -158,7 +162,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         BroadBand_Suspended.Font = myFont
-        BroadBand_Suspended.Text = suspended_broadband
+        BroadBand_Suspended.Text = suspended_broadband_count
     End Sub
     Private Sub Guna2GradientTileButton11_MouseLeave(sender As Object, e As EventArgs) Handles BroadBand_Suspended.MouseLeave
         BroadBand_Suspended.Image = My.Resources.icons8_wi_fi_off_50
@@ -172,7 +176,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         BroadBand_Inactive.Font = myFont
-        BroadBand_Inactive.Text = inactive_broadband
+        BroadBand_Inactive.Text = inactive_broadband_count
     End Sub
     Private Sub Guna2GradientTileButton12_MouseLeave(sender As Object, e As EventArgs) Handles BroadBand_Inactive.MouseLeave
         BroadBand_Inactive.Image = My.Resources.icons8_wi_fi_disconnected_50
@@ -185,28 +189,33 @@ Public Class Admin_Dashboard_Panel
         Try
             Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
                 connection.Open()
-                Dim sql_command1 = "SELECT COUNT(*) FROM CUSTOMER_DETAILS WHERE TV_CONNECTION_STATUS = 'ACTIVE'"
-                Dim sql_command2 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE STATUS = 'ACTIVE'"
-                Dim sql_command3 = "SELECT COUNT(*) FROM CUSTOMER_DETAILS WHERE TV_CONNECTION_STATUS = 'INACTIVE'"
-                Dim sql_command4 = "SELECT COUNT(*) FROM CUSTOMER_DETAILS WHERE TV_CONNECTION_STATUS = 'SUSPENDED'"
+                Dim sql_command1 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE TV_CONNECTION_STATUS = 'ACTIVE'"
+                Dim sql_command2 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE TV_CONNECTION_STATUS = 'INACTIVE'"
+                Dim sql_command3 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE TV_CONNECTION_STATUS = 'SUSPENDED'"
+                Dim sql_command4 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE EXPIRY_DATE = @EXPIRY_DATE"
                 Dim sql_command5 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE STATUS = 'ACTIVE'"
                 Dim sql_command6 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE STATUS = 'INACTIVE'"
                 Dim sql_command7 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE STATUS = 'SUSPENDED'"
+                Dim sql_command8 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE EXPIRY_DATE = @EXPIRY_DATE"
+
                 Dim command1 As New OleDbCommand(sql_command1, connection)
                 Dim command2 As New OleDbCommand(sql_command2, connection)
                 Dim command3 As New OleDbCommand(sql_command3, connection)
                 Dim command4 As New OleDbCommand(sql_command4, connection)
-                Dim command As New OleDbCommand("SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE EXPIRY_DATE = @date", connection)
+                Dim command5 As New OleDbCommand(sql_command5, connection)
                 Dim command6 As New OleDbCommand(sql_command6, connection)
                 Dim command7 As New OleDbCommand(sql_command7, connection)
-                cust_count = command1.ExecuteScalar()
-                cust_broadband_count = command2.ExecuteScalar()
-                inactive_tv_count = command3.ExecuteScalar()
-                suspended_tv_count = command4.ExecuteScalar()
-                command.Parameters.AddWithValue("@date", currentDate)
-                count = Convert.ToInt32(command.ExecuteScalar())
-                inactive_broadband = command6.ExecuteScalar()
-                suspended_broadband = command6.ExecuteScalar()
+                Dim command8 As New OleDbCommand(sql_command8, connection)
+                active_tv_count = command1.ExecuteScalar()
+                inactive_tv_count = command2.ExecuteScalar()
+                suspended_tv_count = command3.ExecuteScalar()
+                command4.Parameters.AddWithValue("@EXPIRY_DATE", currentDate)
+                tv_renewal_count = command4.ExecuteScalar()
+                active_broadband_count = command5.ExecuteScalar()
+                inactive_broadband_count = command6.ExecuteScalar()
+                suspended_broadband_count = command7.ExecuteScalar()
+                command8.Parameters.AddWithValue("@EXPIRY_DATE", currentDate)
+                broadband_renewal_count = command8.ExecuteScalar()
                 connection.Close()
             End Using
         Catch ex_cust_broadband As Exception
