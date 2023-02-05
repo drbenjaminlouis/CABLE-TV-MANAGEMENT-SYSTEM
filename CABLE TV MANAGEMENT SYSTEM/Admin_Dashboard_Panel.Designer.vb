@@ -68,6 +68,7 @@ Partial Class Admin_Dashboard_Panel
         '
         'Guna2Panel1
         '
+        Me.Guna2Panel1.AutoSize = True
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Black
         Me.Guna2Panel1.Controls.Add(Me.BroadBand_Customers)
         Me.Guna2Panel1.Controls.Add(Me.Label7)
@@ -88,7 +89,7 @@ Partial Class Admin_Dashboard_Panel
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1359, 671)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1377, 671)
         Me.Guna2Panel1.TabIndex = 0
         '
         'BroadBand_Customers
@@ -116,10 +117,10 @@ Partial Class Admin_Dashboard_Panel
         Me.BroadBand_Customers.HoverState.ForeColor = System.Drawing.Color.White
         Me.BroadBand_Customers.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_broadband_50
         Me.BroadBand_Customers.ImageSize = New System.Drawing.Size(50, 50)
-        Me.BroadBand_Customers.Location = New System.Drawing.Point(12, 245)
+        Me.BroadBand_Customers.Location = New System.Drawing.Point(21, 251)
         Me.BroadBand_Customers.Name = "BroadBand_Customers"
         Me.BroadBand_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Me.BroadBand_Customers.Size = New System.Drawing.Size(322, 148)
+        Me.BroadBand_Customers.Size = New System.Drawing.Size(330, 153)
         Me.BroadBand_Customers.TabIndex = 27
         Me.BroadBand_Customers.Text = "BROADBAND CUSTOMERS"
         '
@@ -159,10 +160,10 @@ Partial Class Admin_Dashboard_Panel
         Me.Complaints.HoverState.ForeColor = System.Drawing.Color.White
         Me.Complaints.Image = CType(resources.GetObject("Complaints.Image"), System.Drawing.Image)
         Me.Complaints.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Complaints.Location = New System.Drawing.Point(1017, 404)
+        Me.Complaints.Location = New System.Drawing.Point(1029, 410)
         Me.Complaints.Name = "Complaints"
         Me.Complaints.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Me.Complaints.Size = New System.Drawing.Size(322, 148)
+        Me.Complaints.Size = New System.Drawing.Size(330, 153)
         Me.Complaints.TabIndex = 35
         Me.Complaints.Text = "COMPLAINTS"
         '
@@ -191,10 +192,10 @@ Partial Class Admin_Dashboard_Panel
         Me.FeedBacks.HoverState.ForeColor = System.Drawing.Color.White
         Me.FeedBacks.Image = CType(resources.GetObject("FeedBacks.Image"), System.Drawing.Image)
         Me.FeedBacks.ImageSize = New System.Drawing.Size(50, 50)
-        Me.FeedBacks.Location = New System.Drawing.Point(682, 404)
+        Me.FeedBacks.Location = New System.Drawing.Point(693, 410)
         Me.FeedBacks.Name = "FeedBacks"
         Me.FeedBacks.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Me.FeedBacks.Size = New System.Drawing.Size(322, 148)
+        Me.FeedBacks.Size = New System.Drawing.Size(330, 153)
         Me.FeedBacks.TabIndex = 34
         Me.FeedBacks.Text = "FEEDBACKS"
         '
@@ -223,10 +224,10 @@ Partial Class Admin_Dashboard_Panel
         Me.BroadBand_Suspended.HoverState.ForeColor = System.Drawing.Color.White
         Me.BroadBand_Suspended.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_wi_fi_off_50
         Me.BroadBand_Suspended.ImageSize = New System.Drawing.Size(50, 50)
-        Me.BroadBand_Suspended.Location = New System.Drawing.Point(682, 245)
+        Me.BroadBand_Suspended.Location = New System.Drawing.Point(693, 251)
         Me.BroadBand_Suspended.Name = "BroadBand_Suspended"
         Me.BroadBand_Suspended.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Me.BroadBand_Suspended.Size = New System.Drawing.Size(322, 148)
+        Me.BroadBand_Suspended.Size = New System.Drawing.Size(330, 153)
         Me.BroadBand_Suspended.TabIndex = 32
         Me.BroadBand_Suspended.Text = "BROADBAND SUSPENDED"
         '
@@ -255,10 +256,10 @@ Partial Class Admin_Dashboard_Panel
         Me.BroadBand_Inactive.HoverState.ForeColor = System.Drawing.Color.White
         Me.BroadBand_Inactive.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_wi_fi_disconnected_501
         Me.BroadBand_Inactive.ImageSize = New System.Drawing.Size(50, 50)
-        Me.BroadBand_Inactive.Location = New System.Drawing.Point(347, 245)
+        Me.BroadBand_Inactive.Location = New System.Drawing.Point(357, 251)
         Me.BroadBand_Inactive.Name = "BroadBand_Inactive"
         Me.BroadBand_Inactive.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Me.BroadBand_Inactive.Size = New System.Drawing.Size(322, 148)
+        Me.BroadBand_Inactive.Size = New System.Drawing.Size(330, 153)
         Me.BroadBand_Inactive.TabIndex = 33
         Me.BroadBand_Inactive.Text = "BROADBAND INACTIVE"
         '
@@ -287,10 +288,10 @@ Partial Class Admin_Dashboard_Panel
         Me.BroadBand_Renewals.HoverState.ForeColor = System.Drawing.Color.White
         Me.BroadBand_Renewals.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_pay_date_50__1_
         Me.BroadBand_Renewals.ImageSize = New System.Drawing.Size(50, 50)
-        Me.BroadBand_Renewals.Location = New System.Drawing.Point(1017, 245)
+        Me.BroadBand_Renewals.Location = New System.Drawing.Point(1029, 251)
         Me.BroadBand_Renewals.Name = "BroadBand_Renewals"
         Me.BroadBand_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Me.BroadBand_Renewals.Size = New System.Drawing.Size(322, 148)
+        Me.BroadBand_Renewals.Size = New System.Drawing.Size(330, 153)
         Me.BroadBand_Renewals.TabIndex = 31
         Me.BroadBand_Renewals.Text = "BROADBAND RENEWALS"
         '
@@ -319,12 +320,12 @@ Partial Class Admin_Dashboard_Panel
         Me.Cable_TV_Renewals.HoverState.ForeColor = System.Drawing.Color.White
         Me.Cable_TV_Renewals.Image = CType(resources.GetObject("Cable_TV_Renewals.Image"), System.Drawing.Image)
         Me.Cable_TV_Renewals.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Cable_TV_Renewals.Location = New System.Drawing.Point(1017, 86)
+        Me.Cable_TV_Renewals.Location = New System.Drawing.Point(1029, 92)
         Me.Cable_TV_Renewals.Name = "Cable_TV_Renewals"
         Me.Cable_TV_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        Me.Cable_TV_Renewals.Size = New System.Drawing.Size(322, 148)
+        Me.Cable_TV_Renewals.Size = New System.Drawing.Size(330, 153)
         Me.Cable_TV_Renewals.TabIndex = 30
-        Me.Cable_TV_Renewals.Text = "CABLE TV RENEWALS"
+        Me.Cable_TV_Renewals.Text = "CABLE RENEWALS"
         '
         'Pending_Payments
         '
@@ -351,10 +352,10 @@ Partial Class Admin_Dashboard_Panel
         Me.Pending_Payments.HoverState.ForeColor = System.Drawing.Color.White
         Me.Pending_Payments.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_hourglass_50
         Me.Pending_Payments.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Pending_Payments.Location = New System.Drawing.Point(12, 404)
+        Me.Pending_Payments.Location = New System.Drawing.Point(21, 410)
         Me.Pending_Payments.Name = "Pending_Payments"
         Me.Pending_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        Me.Pending_Payments.Size = New System.Drawing.Size(322, 148)
+        Me.Pending_Payments.Size = New System.Drawing.Size(330, 153)
         Me.Pending_Payments.TabIndex = 28
         Me.Pending_Payments.Text = "PENDING PAYMENTS"
         '
@@ -383,10 +384,10 @@ Partial Class Admin_Dashboard_Panel
         Me.Received_Payments.HoverState.ForeColor = System.Drawing.Color.White
         Me.Received_Payments.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_get_cash_50
         Me.Received_Payments.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Received_Payments.Location = New System.Drawing.Point(347, 404)
+        Me.Received_Payments.Location = New System.Drawing.Point(357, 410)
         Me.Received_Payments.Name = "Received_Payments"
         Me.Received_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        Me.Received_Payments.Size = New System.Drawing.Size(322, 148)
+        Me.Received_Payments.Size = New System.Drawing.Size(330, 153)
         Me.Received_Payments.TabIndex = 29
         Me.Received_Payments.Text = "RECEIVED PAYMENTS"
         '
@@ -415,10 +416,10 @@ Partial Class Admin_Dashboard_Panel
         Me.Suspended_Customers.HoverState.ForeColor = System.Drawing.Color.White
         Me.Suspended_Customers.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_high_importance_50
         Me.Suspended_Customers.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Suspended_Customers.Location = New System.Drawing.Point(683, 86)
+        Me.Suspended_Customers.Location = New System.Drawing.Point(693, 92)
         Me.Suspended_Customers.Name = "Suspended_Customers"
         Me.Suspended_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        Me.Suspended_Customers.Size = New System.Drawing.Size(322, 148)
+        Me.Suspended_Customers.Size = New System.Drawing.Size(330, 153)
         Me.Suspended_Customers.TabIndex = 26
         Me.Suspended_Customers.Text = "SUSPENDED CUSTOMERS"
         '
@@ -447,10 +448,10 @@ Partial Class Admin_Dashboard_Panel
         Me.Inactive_Customers.HoverState.ForeColor = System.Drawing.Color.White
         Me.Inactive_Customers.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_multiply_50
         Me.Inactive_Customers.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Inactive_Customers.Location = New System.Drawing.Point(347, 86)
+        Me.Inactive_Customers.Location = New System.Drawing.Point(357, 92)
         Me.Inactive_Customers.Name = "Inactive_Customers"
         Me.Inactive_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        Me.Inactive_Customers.Size = New System.Drawing.Size(322, 148)
+        Me.Inactive_Customers.Size = New System.Drawing.Size(330, 153)
         Me.Inactive_Customers.TabIndex = 24
         Me.Inactive_Customers.Text = "INACTIVE CUSTOMERS"
         '
@@ -479,19 +480,19 @@ Partial Class Admin_Dashboard_Panel
         Me.Active_Customers.HoverState.ForeColor = System.Drawing.Color.White
         Me.Active_Customers.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_checkmark_50
         Me.Active_Customers.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Active_Customers.Location = New System.Drawing.Point(12, 86)
+        Me.Active_Customers.Location = New System.Drawing.Point(21, 92)
         Me.Active_Customers.Name = "Active_Customers"
         Me.Active_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        Me.Active_Customers.Size = New System.Drawing.Size(322, 148)
+        Me.Active_Customers.Size = New System.Drawing.Size(330, 153)
         Me.Active_Customers.TabIndex = 25
-        Me.Active_Customers.Text = "ACTIVE CUSTOMERS"
+        Me.Active_Customers.Text = "TOTAL CUSTOMERS"
         '
         'Admin_Dashboard_Panel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1359, 671)
+        Me.ClientSize = New System.Drawing.Size(1377, 671)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Admin_Dashboard_Panel"
@@ -500,6 +501,7 @@ Partial Class Admin_Dashboard_Panel
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 

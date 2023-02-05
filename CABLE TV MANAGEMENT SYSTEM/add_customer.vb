@@ -4,6 +4,7 @@ Imports System.Data.OleDb
 Imports System.Text.RegularExpressions
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports CABLE_TV_MANAGEMENT_SYSTEM.LogModule
+Imports CABLE_TV_MANAGEMENT_SYSTEM.Payment_Sync
 Public Class add_customer
     'Function for clearing all inputs'
     Public Function ClearAll()
@@ -32,6 +33,8 @@ Public Class add_customer
         CUST_PASSWORD_TEXTBOX.Clear()
         BROADBAND_REG_DATE.ResetText()
         BROADBAND_RENEWAL_DATE.ResetText()
+        TV_Reg_Picker.ResetText()
+        TV_Renewal_Picker.ResetText()
         Return 0
     End Function
     'For Storing Current Year'
@@ -116,6 +119,10 @@ Public Class add_customer
             MessageBox2.Show("Please Enter All Broadband Connection Details", "ALERT")
         ElseIf CUST_TV_CONNECTION_COMBOBOX.SelectedItem = "YES" And CUST_CABLE_PLAN_COMBOBOX.Text = "" And CUST_CHIP_ID_TEXTBOX.Text = "" Then
             MessageBox2.Show("Please Enter All TV Connection Details", "ALERT")
+        ElseIf TV_Reg_Picker.Value > TV_Renewal_Picker.Value Then
+            MessageBox2.Show("Select Correct TV Registration And Renewal Date", "ALERT")
+        ElseIf BROADBAND_REG_DATE.Value > BROADBAND_RENEWAL_DATE.Value Then
+            MessageBox2.Show("Select Correct Broadband Registration And Renewal Date", "ALERT")
         Else
             Try
                 'For Inserting Data To Database'
@@ -128,7 +135,7 @@ Public Class add_customer
                     Try
                         Dim cmd As New OleDbCommand("INSERT INTO CUSTOMER_DETAILS (CRF,CUST_NAME,CUST_DOB,CUST_HOUSE_NAME,CUST_AREA,CUST_DISTRICT,CUST_STATE,CUST_COUNTRY,CUST_PINCODE,CUST_IDTYPE,CUST_ID_NUMBER,CUST_MOBILE,CUST_EMAIL) VALUES (@CRF,@NAME,@DOB,@HOUSE_NAME,@AREA,@DISTRICT,@STATE,@COUNTRY,@PINCODE,@IDTYPE,@ID_NUMBER,@MOBILE,@EMAIL)", con)
                         Dim cmd2 As New OleDbCommand("INSERT INTO CUSTOMER_LOGIN_DETAILS (CRF,CUST_USERNAME,CUST_PASSWORD) VALUES (@CRF,@CUST_USERNAME,@CUST_PASSWORD)", con)
-                        Dim cmd3 As New OleDbCommand("INSERT INTO TV_CONNECTION_DETAILS (CRF,TV_CONNECTION_ID,CUST_TV_CONNECTION,CUST_TV_PLAN,CHIP_ID,TV_CONNECTION_STATUS) VALUES (@CRF,@TV_CONNECTION_ID,@CUST_TV_CONNECTION,@CUST_TV_PLAN,@CHIP_ID,@TV_CONNECTION_STATUS)", con)
+                        Dim cmd3 As New OleDbCommand("INSERT INTO TV_CONNECTION_DETAILS (CRF,TV_CONNECTION_ID,CUST_TV_CONNECTION,CUST_TV_PLAN,CHIP_ID,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,TV_CONNECTION_STATUS) VALUES (@CRF,@TV_CONNECTION_ID,@CUST_TV_CONNECTION,@CUST_TV_PLAN,@CHIP_ID,@TV_REGISTRATION_DATE,@TV_LAST_RENEWAL_DATE,@EXPIRY_DATE,@TV_CONNECTION_STATUS)", con)
                         Dim cmd4 As New OleDbCommand("INSERT INTO TV_PAYMENT_DETAILS (CRF,CABLE_ID,CURRENT_YEAR) VALUES (@CRF,@CABLE_ID,@YEAR)", con)
                         Dim cmd5 As New OleDbCommand("INSERT INTO BROADBAND_CONNECTION_DETAILS (CRF,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,STATUS,RECHARGED_BY,CURRENT_PLAN) VALUES (@CRF,@REGISTRATION_DATE,@LAST_RENEWAL_DATE,@EXPIRY_DATE,@STATUS,@RECHARGED_BY,@CURRENT_PLAN)", con)
                         Dim cmd6 As New OleDbCommand("INSERT INTO BROADBAND_LOGIN (CRF,CUST_BROADBAND_USERNAME,CUST_BROADBAND_PASSWORD) VALUES (@CRF,@CUST_BROADBAND_USERNAME,@CUST_BROADBAND_PASSWORD)", con)
@@ -160,7 +167,22 @@ Public Class add_customer
                         cmd3.Parameters.AddWithValue("@CUST_TV_CONNECTION", CUST_TV_CONNECTION_COMBOBOX.SelectedItem)
                         cmd3.Parameters.AddWithValue("@CUST_TV_PLAN", CUST_CABLE_PLAN_COMBOBOX.SelectedItem)
                         cmd3.Parameters.AddWithValue("@CHIP_ID", CUST_CHIP_ID_TEXTBOX.Text)
-                        cmd3.Parameters.AddWithValue("@TV_CONNECTION_STATUS", "ACTIVE")
+                        cmd3.Parameters.AddWithValue("@TV_REGISTRATION_DATE", TV_Reg_Picker.Value)
+                        cmd3.Parameters.AddWithValue("@TV_LAST_RENEWAL_DATE", TV_Renewal_Picker.Value)
+                        Dim tv_lastRenewalDate As Date = TV_Renewal_Picker.Value
+                        Dim tv_thirtyDaysLater As Date = tv_lastRenewalDate.AddDays(30)
+                        'To store date without time'
+                        Dim tv_expiryDateWithoutTime As Date = New Date(tv_thirtyDaysLater.Year, tv_thirtyDaysLater.Month, tv_thirtyDaysLater.Day)
+                        cmd3.Parameters.AddWithValue("@EXPIRY_DATE", tv_expiryDateWithoutTime)
+                        Dim tv_today As Date = Date.Today
+                        'To store date without time'
+                        Dim tv_todayWithoutTime As Date = New Date(tv_today.Year, tv_today.Month, tv_today.Day)
+                        'To Update Status Comparing Current Date and Expiry Date
+                        If tv_todayWithoutTime >= tv_expiryDateWithoutTime Then
+                            cmd3.Parameters.AddWithValue("@TV_CONNECTION_STATUS", "INACTIVE")
+                        Else
+                            cmd3.Parameters.AddWithValue("@TV_CONNECTION_STATUS", "ACTIVE")
+                        End If
                         cmd4.Parameters.Clear()
                         cmd4.Transaction = transaction
                         cmd4.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -215,6 +237,7 @@ Public Class add_customer
                         End If
                         transaction.Commit()
                         MessageBox2.Show("Registration Sucessfull", "ALERT")
+                        Payment_Sync.Payment_Sync()
                         ADD_CUSTOMER_PROGRESS.Stop()
                         ADD_CUSTOMER_PROGRESS.Visible = False
                         ClearAll()
@@ -290,47 +313,66 @@ Public Class add_customer
     End Sub
     'For Checking If Username is Already Seleccted'
     Private Sub CUST_USERNAME_TEXTBOX_Leave(sender As Object, e As EventArgs) Handles CUST_USERNAME_TEXTBOX.Leave
-        Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
-            connection.Open()
-            Dim found As Boolean = False
-            Dim cmd As New OleDbCommand("SELECT * FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@CUST_USERNAME", connection)
-            cmd.Parameters.AddWithValue("@CUST_USERNAME", CUST_USERNAME_TEXTBOX.Text)
-            Dim count As Integer = CType(cmd.ExecuteScalar(), Integer)
-            connection.Close()
-            If count > 0 Then
-                MessageBox2.Show("This username is already taken. Please choose a different username.", "ALERT")
-                CUST_USERNAME_TEXTBOX.Focus()
-            End If
-        End Using
+        Try
+            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                connection.Open()
+                Dim found As Boolean = False
+                Dim cmd As New OleDbCommand("SELECT * FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@CUST_USERNAME", connection)
+                cmd.Parameters.AddWithValue("@CUST_USERNAME", CUST_USERNAME_TEXTBOX.Text)
+                Dim count As Integer = CType(cmd.ExecuteScalar(), Integer)
+                connection.Close()
+                If count > 0 Then
+                    MessageBox2.Show("This username is already taken. Please choose a different username.", "ALERT")
+                    CUST_USERNAME_TEXTBOX.Clear()
+                    CUST_USERNAME_TEXTBOX.Focus()
+                End If
+            End Using
+        Catch ex As Exception
+            LogError("ADD CUSTOMER - CUST_USERNAME_TEXTBOX_LEAVE")
+            LogError("An error occurred: " & ex.Message)
+        End Try
+
     End Sub
     'For Checking If Broadband Username Already Taken'
     Private Sub CUST_BROADBAND_USERNAME_TEXTBOX_Leave(sender As Object, e As EventArgs) Handles CUST_BROADBAND_USERNAME_TEXTBOX.Leave
-        Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
-            connection.Open()
-            Dim found As Boolean = False
-            Dim cmd As New OleDbCommand("SELECT * FROM BROADBAND_LOGIN WHERE @CUST_BROADBAND_USERNAME=@CUST_USERNAME", connection)
-            cmd.Parameters.AddWithValue("@CUST_USERNAME", CUST_BROADBAND_USERNAME_TEXTBOX.Text)
-            Dim count As Integer = CType(cmd.ExecuteScalar(), Integer)
-            connection.Close()
-            If count > 0 Then
-                MessageBox2.Show("This username is already taken. Please choose a different username.", "ALERT")
-                CUST_BROADBAND_USERNAME_TEXTBOX.Focus()
-            End If
-        End Using
+        Try
+            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                connection.Open()
+                Dim found As Boolean = False
+                Dim cmd As New OleDbCommand("SELECT * FROM BROADBAND_LOGIN WHERE CUST_BROADBAND_USERNAME=@CUST_USERNAME", connection)
+                cmd.Parameters.AddWithValue("@CUST_USERNAME", CUST_BROADBAND_USERNAME_TEXTBOX.Text)
+                Dim count As Integer = CType(cmd.ExecuteScalar(), Integer)
+                connection.Close()
+                If count > 0 Then
+                    MessageBox2.Show("This username is already taken. Please choose a different username.", "ALERT")
+                    CUST_BROADBAND_USERNAME_TEXTBOX.Clear()
+                    CUST_BROADBAND_USERNAME_TEXTBOX.Focus()
+                End If
+            End Using
+        Catch ex As Exception
+            LogError("ADD CUSTOMER - CUST_BROADBAND_USERNAME_TEXTBOX_LEAVE")
+            LogError("An error occurred: " & ex.Message)
+        End Try
     End Sub
     'For Checking If CHIP ID Already Added'
     Private Sub CUST_CHIP_ID_TEXTBOX_Leave(sender As Object, e As EventArgs) Handles CUST_CHIP_ID_TEXTBOX.Leave
-        Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
-            connection.Open()
-            Dim found As Boolean = False
-            Dim cmd As New OleDbCommand("SELECT * FROM TV_CONNECTION_DETAILS WHERE @CHIP_ID=@CHIP_ID", connection)
-            cmd.Parameters.AddWithValue("@CHIP_ID", CUST_CHIP_ID_TEXTBOX.Text)
-            Dim count As Integer = CType(cmd.ExecuteScalar(), Integer)
-            connection.Close()
-            If count > 0 Then
-                MessageBox2.Show("CHIP ID Already Added", "ALERT")
-                CUST_CHIP_ID_TEXTBOX.Focus()
-            End If
-        End Using
+        Try
+            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                connection.Open()
+                Dim found As Boolean = False
+                Dim cmd As New OleDbCommand("SELECT * FROM TV_CONNECTION_DETAILS WHERE CHIP_ID=@CHIP_ID", connection)
+                cmd.Parameters.AddWithValue("@CHIP_ID", CUST_CHIP_ID_TEXTBOX.Text)
+                Dim count As Integer = CType(cmd.ExecuteScalar(), Integer)
+                connection.Close()
+                If count > 0 Then
+                    MessageBox2.Show("CHIP ID Already Exist", "ALERT")
+                    CUST_CHIP_ID_TEXTBOX.Clear()
+                    CUST_CHIP_ID_TEXTBOX.Focus()
+                End If
+            End Using
+        Catch ex As Exception
+            LogError("ADD CUSTOMER - CUST_CHIP_ID_TEXTBOX_LEAVE")
+            LogError("An error occurred: " & ex.Message)
+        End Try
     End Sub
 End Class

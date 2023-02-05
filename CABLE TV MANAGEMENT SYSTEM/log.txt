@@ -10,3 +10,25 @@
 [2023-02-03 10:46:17] An error occurred: Data type mismatch in criteria expression.
 [2023-02-03 11:13:59] An error occurred: ExecuteScalar requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
 [2023-02-03 11:14:07] An error occurred: ExecuteScalar requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+[2023-02-04 21:37:49] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 22:14:57] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 22:15:00] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 22:15:18] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 22:21:23] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 22:24:26] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 22:32:26] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 22:41:18] ADD CUSTOMER - CUST_CHIP_ID_TEXTBOX_LEAVE
+[2023-02-04 22:41:18] An error occurred: The table 'TV_CONNECTION_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+[2023-02-04 22:41:25] An error occurred: The table 'TV_CONNECTION_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+[2023-02-04 22:44:09] ADD CUSTOMER - CUST_CHIP_ID_TEXTBOX_LEAVE
+[2023-02-04 22:44:09] An error occurred: The table 'TV_CONNECTION_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+[2023-02-04 22:44:09] An error occurred: No value given for one or more required parameters.
+[2023-02-04 22:45:46] An error occurred: No value given for one or more required parameters.
+[2023-02-04 22:46:53] An error occurred: No value given for one or more required parameters.
+[2023-02-04 22:48:44] An error occurred: Syntax error in INSERT INTO statement.
+[2023-02-04 22:56:02] An error occurred: No value given for one or more required parameters.
+[2023-02-04 23:12:05] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 23:18:52] An error occurred: Overflow
+[2023-02-04 23:19:13] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 23:19:46] An error occurred: Data type mismatch in criteria expression.
+[2023-02-04 23:24:15] An error occurred: No value given for one or more required parameters.
