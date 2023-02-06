@@ -290,7 +290,7 @@ Partial Class Collect_Payment_Admin
         Me.Guna2GroupBox2.CustomizableEdges = CustomizableEdges17
         Me.Guna2GroupBox2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.Green
+        Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.SpringGreen
         Me.Guna2GroupBox2.Location = New System.Drawing.Point(699, 172)
         Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
         Me.Guna2GroupBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges18
@@ -407,6 +407,7 @@ Partial Class Collect_Payment_Admin
         '
         Me.CASH_LABEL.AutoSize = True
         Me.CASH_LABEL.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CASH_LABEL.ForeColor = System.Drawing.Color.White
         Me.CASH_LABEL.Location = New System.Drawing.Point(411, 62)
         Me.CASH_LABEL.Name = "CASH_LABEL"
         Me.CASH_LABEL.Size = New System.Drawing.Size(52, 21)
@@ -417,6 +418,7 @@ Partial Class Collect_Payment_Admin
         '
         Me.QR_LABEL.AutoSize = True
         Me.QR_LABEL.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.QR_LABEL.ForeColor = System.Drawing.Color.White
         Me.QR_LABEL.Location = New System.Drawing.Point(274, 62)
         Me.QR_LABEL.Name = "QR_LABEL"
         Me.QR_LABEL.Size = New System.Drawing.Size(79, 21)
@@ -456,7 +458,7 @@ Partial Class Collect_Payment_Admin
         Me.Guna2GroupBox1.CustomizableEdges = CustomizableEdges27
         Me.Guna2GroupBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Green
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.SpringGreen
         Me.Guna2GroupBox1.Location = New System.Drawing.Point(35, 567)
         Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
         Me.Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
@@ -678,7 +680,7 @@ Partial Class Collect_Payment_Admin
         Me.Guna2GroupBox7.CustomizableEdges = CustomizableEdges41
         Me.Guna2GroupBox7.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox7.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GroupBox7.ForeColor = System.Drawing.Color.Green
+        Me.Guna2GroupBox7.ForeColor = System.Drawing.Color.SpringGreen
         Me.Guna2GroupBox7.Location = New System.Drawing.Point(35, 172)
         Me.Guna2GroupBox7.Name = "Guna2GroupBox7"
         Me.Guna2GroupBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges42
