@@ -110,6 +110,7 @@ Partial Class Collect_Payment_Admin
         Me.HEADER_LABEL = New System.Windows.Forms.Label()
         Me.MessageBox = New Guna.UI2.WinForms.Guna2MessageDialog()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2GroupBox2.SuspendLayout()
         CType(Me.QR_CODE, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -238,10 +239,10 @@ Partial Class Collect_Payment_Admin
         Me.RESET_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.RESET_BTN.HoverState.FillColor2 = System.Drawing.Color.Green
         Me.RESET_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.RESET_BTN.Location = New System.Drawing.Point(1041, 567)
+        Me.RESET_BTN.Location = New System.Drawing.Point(1058, 567)
         Me.RESET_BTN.Name = "RESET_BTN"
         Me.RESET_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Me.RESET_BTN.Size = New System.Drawing.Size(270, 90)
+        Me.RESET_BTN.Size = New System.Drawing.Size(312, 90)
         Me.RESET_BTN.TabIndex = 79
         Me.RESET_BTN.Text = "RESET ALL"
         '
@@ -264,10 +265,10 @@ Partial Class Collect_Payment_Admin
         Me.COLLECT_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.COLLECT_BTN.HoverState.FillColor2 = System.Drawing.Color.Green
         Me.COLLECT_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.COLLECT_BTN.Location = New System.Drawing.Point(731, 567)
+        Me.COLLECT_BTN.Location = New System.Drawing.Point(699, 567)
         Me.COLLECT_BTN.Name = "COLLECT_BTN"
         Me.COLLECT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Me.COLLECT_BTN.Size = New System.Drawing.Size(270, 90)
+        Me.COLLECT_BTN.Size = New System.Drawing.Size(312, 90)
         Me.COLLECT_BTN.TabIndex = 78
         Me.COLLECT_BTN.Text = "COLLECT PAYMENT"
         '
@@ -1034,4 +1035,5 @@ Partial Class Collect_Payment_Admin
     Friend WithEvents CUST_NAME_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CUST_NAME_LABEL As Label
     Friend WithEvents SEARCH_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

@@ -34,6 +34,8 @@ Partial Class Change_Password
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.asasasas = New System.Windows.Forms.Panel()
         Me.CLEAR_BTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.CHANGE_PASSWORD_BTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
@@ -47,6 +49,7 @@ Partial Class Change_Password
         Me.USERNAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_NAasME_LABEL = New System.Windows.Forms.Label()
         Me.MessageBox = New Guna.UI2.WinForms.Guna2MessageDialog()
+        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.asasasas.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,6 +67,7 @@ Partial Class Change_Password
         Me.asasasas.Controls.Add(Me.CUST_HOUasasSENAME_LABEL)
         Me.asasasas.Controls.Add(Me.USERNAME_TEXTBOX)
         Me.asasasas.Controls.Add(Me.CUST_NAasME_LABEL)
+        Me.asasasas.Controls.Add(Me.Guna2GroupBox1)
         Me.asasasas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.asasasas.Location = New System.Drawing.Point(0, 0)
         Me.asasasas.Name = "asasasas"
@@ -89,7 +93,7 @@ Partial Class Change_Password
         Me.CLEAR_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.CLEAR_BTN.HoverState.FillColor2 = System.Drawing.Color.Green
         Me.CLEAR_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CLEAR_BTN.Location = New System.Drawing.Point(709, 301)
+        Me.CLEAR_BTN.Location = New System.Drawing.Point(708, 346)
         Me.CLEAR_BTN.Name = "CLEAR_BTN"
         Me.CLEAR_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         Me.CLEAR_BTN.Size = New System.Drawing.Size(216, 65)
@@ -115,7 +119,7 @@ Partial Class Change_Password
         Me.CHANGE_PASSWORD_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.CHANGE_PASSWORD_BTN.HoverState.FillColor2 = System.Drawing.Color.Green
         Me.CHANGE_PASSWORD_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CHANGE_PASSWORD_BTN.Location = New System.Drawing.Point(478, 301)
+        Me.CHANGE_PASSWORD_BTN.Location = New System.Drawing.Point(477, 346)
         Me.CHANGE_PASSWORD_BTN.Name = "CHANGE_PASSWORD_BTN"
         Me.CHANGE_PASSWORD_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Me.CHANGE_PASSWORD_BTN.Size = New System.Drawing.Size(216, 65)
@@ -303,6 +307,20 @@ Partial Class Change_Password
         Me.MessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
         Me.MessageBox.Text = Nothing
         '
+        'Guna2GroupBox1
+        '
+        Me.Guna2GroupBox1.BorderColor = System.Drawing.Color.SpringGreen
+        Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox1.CustomizableEdges = CustomizableEdges13
+        Me.Guna2GroupBox1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(386, 68)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(647, 262)
+        Me.Guna2GroupBox1.TabIndex = 1
+        '
         'Change_Password
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -333,4 +351,5 @@ Partial Class Change_Password
     Friend WithEvents CLEAR_BTN As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents CHANGE_PASSWORD_BTN As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents MessageBox As Guna.UI2.WinForms.Guna2MessageDialog
+    Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
 End Class

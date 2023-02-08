@@ -32,3 +32,6 @@
 [2023-02-04 23:19:13] An error occurred: Data type mismatch in criteria expression.
 [2023-02-04 23:19:46] An error occurred: Data type mismatch in criteria expression.
 [2023-02-04 23:24:15] An error occurred: No value given for one or more required parameters.
+[2023-02-07 18:31:35] An error occurred: The INSERT INTO statement contains the following unknown field name: 'CABLE_ID'. Make sure you have typed the name correctly, and try the operation again.
+[2023-02-07 18:35:36] An error occurred: The INSERT INTO statement contains the following unknown field name: 'CABLE_ID'. Make sure you have typed the name correctly, and try the operation again.
+[2023-02-08 00:58:23] An error occurred: The INSERT INTO statement contains the following unknown field name: 'PAYMENT_NO'. Make sure you have typed the name correctly, and try the operation again.

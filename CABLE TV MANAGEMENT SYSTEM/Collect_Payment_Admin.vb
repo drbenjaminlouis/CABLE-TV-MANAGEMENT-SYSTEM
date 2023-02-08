@@ -1,9 +1,16 @@
-﻿Imports System.Collections.ObjectModel
+﻿Imports System.Buffers
+Imports System.Collections.ObjectModel
 Imports System.Data.OleDb
+Imports System.Drawing.Printing
+Imports System.Net
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports System.Drawing.Drawing2D
+Imports Microsoft.VisualBasic.Logging
 
 Public Class Collect_Payment_Admin
+    Dim payment_mode As String
     Private Sub Collect_Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Dim currentYear As Integer = DateTime.Now.Year
         PAYMENT_YEAR.Items.Add(currentYear)
         PAYMENT_YEAR.Items.Add(currentYear - 1)
@@ -148,6 +155,18 @@ Public Class Collect_Payment_Admin
     End Sub
 
     Private Sub COLLECT_BTN_Click(sender As Object, e As EventArgs) Handles COLLECT_BTN.Click
+        If CASH_RADIO.Checked = False And QR_RADIO.Checked = False Then
+            MessageBox.Show("Please Select Any Payment Method", "ALERT")
+        End If
+        If CASH_RADIO.Checked = True Then
+            payment_mode = "CASH"
+        End If
+        If QR_RADIO.Checked = True Then
+            payment_mode = "ONLINE"
+            If REFERANCE_NO.Text = "" Then
+                MessageBox.Show("Please Enter Referance Number", "ALERT")
+            End If
+        End If
         If QR_RADIO.Checked = False And CASH_RADIO.Checked = False Then
             MessageBox.Show("Please Select A Payment Method", "ALERT")
         End If
@@ -185,6 +204,13 @@ Public Class Collect_Payment_Admin
                             cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                             cmd.ExecuteNonQuery()
                         Next
+                        Dim ref As String = "INSERT INTO PAYMENT (CRF,PAYMENT_DATE,REFERANCE_NO,MODE) VALUES (@CRF,@PAYMENT_DATE,@REFERANCE_NO,@MODE)"
+                        Dim refcmd As New OleDbCommand(ref, con)
+                        refcmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                        refcmd.Parameters.AddWithValue("@PAYMENT_DATE", Date.Today)
+                        refcmd.Parameters.AddWithValue("@REFERANCE_NO", "121")
+                        refcmd.Parameters.AddWithValue("@MODE", payment_mode)
+                        refcmd.ExecuteNonQuery()
                         con.Close()
                         MessageBox.Show("Payment Successful", "ALERT")
                         AMOUNT.Clear()
@@ -266,5 +292,53 @@ Public Class Collect_Payment_Admin
             End Try
         End If
 
+    End Sub
+
+    Private Sub PRINT_BTN_Click(sender As Object, e As EventArgs) Handles PRINT_BTN.Click
+
+        Dim printDoc As New PrintDocument()
+        AddHandler printDoc.PrintPage, AddressOf PrintPageHandler
+        printDoc.Print()
+    End Sub
+
+    Private Sub PrintPageHandler(sender As Object, e As PrintPageEventArgs)
+        Dim font1 As New Font("Arial Black", 28, FontStyle.Bold)
+        Dim font2 As New Font("Arial", 14, FontStyle.Bold)
+        Dim text As String = "BHARATH CABLE TV NETWORK"
+        Dim text1 As String = "KARIKKATTOOR CENTRE & MAKKAPUZHA"
+        Dim text2 As String = "KOTTAYAM, KERALA, 686544"
+        Dim text3 As String = "MOB: 6282522127"
+        Dim textSize As SizeF = e.Graphics.MeasureString(text, font1)
+        Dim text1Size As SizeF = e.Graphics.MeasureString(text1, font2)
+        Dim text2Size As SizeF = e.Graphics.MeasureString(text2, font2)
+        Dim text3Size As SizeF = e.Graphics.MeasureString(text3, font2)
+        ' Define the font and the text to print
+        e.Graphics.DrawString(text, font1, Brushes.Red, (e.PageBounds.Width - textSize.Width) / 2, 10)
+        e.Graphics.DrawString(text1, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, (e.PageBounds.Width - text1Size.Width) / 2, textSize.Height)
+        e.Graphics.DrawString(text2, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, (e.PageBounds.Width - text2Size.Width) / 2, textSize.Height + text1Size.Height)
+        e.Graphics.DrawString(text3, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, (e.PageBounds.Width - text3Size.Width) / 2, textSize.Height + text1Size.Height + text2Size.Height)
+        Dim pen As New Pen(Color.Black, 5)
+        e.Graphics.DrawLine(pen, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 20, e.PageBounds.Width - 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 20)
+        e.Graphics.DrawString("INVOICE NO: 100" & CUST_CRF_TEXTBOX.Text, New Font("Arial Black", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 40)
+        e.Graphics.DrawString("DATE: " & Date.Today, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, e.PageBounds.Width - 185, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 40)
+        e.Graphics.DrawString("BILL TO", New Font("Arial Black", 14), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 120)
+        e.Graphics.DrawString("CUSTOMER NAME          : " & CUST_NAME_TEXTBOX.Text, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 180)
+        e.Graphics.DrawString("HOUSE NAME                  : " & CUST_HOUSENAME_TEXTBOX.Text, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 210)
+        e.Graphics.DrawString("CRF NUMBER                  : " & CUST_CRF_TEXTBOX.Text, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 240)
+        e.Graphics.DrawString("SERVICE                          : " & SERVICE_COMBOBOX.SelectedItem, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 270)
+        e.Graphics.DrawString("MONTH                             : " & PAYMENT_MONTH_LISTBOX.SelectedItem, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 300)
+        e.Graphics.DrawString("AMOUNT PAID                 : " & AMOUNT.Text, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 330)
+        e.Graphics.DrawString("PENDING AMOUNT         : " & CUST_PENDING_AMOUNT_TEXTBOX.Text, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 360)
+        e.Graphics.DrawLine(pen, 15, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 420, e.PageBounds.Width - 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 420)
+        Dim sealImage As Image = Image.FromFile("C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Resources\SEAL.png")
+        Dim x As Integer = e.PageBounds.Width - sealImage.Width + 40
+        Dim y As Integer = 520
+        Dim newWidth As Integer = sealImage.Width - 50
+        Dim newHeight As Integer = sealImage.Height - 50
+        e.Graphics.DrawImage(sealImage, x, y, newWidth, newHeight)
+        e.Graphics.DrawString("SEAL & SIGNATURE", New Font("Arial", 14, FontStyle.Bold), Brushes.Black, e.PageBounds.Width - 230, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 600)
+        ' e.Graphics.DrawString("*PLEASE PAY THE MONTHLY RENTAL ON OR BEFORE 10TH EVERY MONTH.", New Font("Arial", 12), Brushes.Black, 10, 330) '
+        ' e.Graphics.DrawString("*DUE FOR MORE THAN 1 MONTH WILL LEAD TO DISCONNECTION WITHOUT ANY PRIOR NOTICE.", New Font("Arial", 12), Brushes.Black, 10, 350) '
+        e.HasMorePages = False
     End Sub
 End Class

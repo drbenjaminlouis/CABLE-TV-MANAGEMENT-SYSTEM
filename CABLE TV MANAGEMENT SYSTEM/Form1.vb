@@ -7,7 +7,7 @@ Public Class Form1
             Guna2ProgressIndicator1.Start()
             Payment_Sync.Payment_Sync()
             Me.Hide()
-            Dim log_selector As New Login_Selector
+            Dim log_selector As New Admin_Dashboard
             log_selector.Show()
             Timer1.Enabled = False
             Guna2ProgressIndicator1.Stop()
