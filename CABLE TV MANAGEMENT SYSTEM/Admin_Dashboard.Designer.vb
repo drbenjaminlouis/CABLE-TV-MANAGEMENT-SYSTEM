@@ -23,19 +23,18 @@ Partial Class Admin_Dashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin_Dashboard))
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin_Dashboard))
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -64,6 +63,8 @@ Partial Class Admin_Dashboard
         Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -100,9 +101,11 @@ Partial Class Admin_Dashboard
         Me.Guna2NotificationPaint1 = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
         Me.MessageBox2 = New Guna.UI2.WinForms.Guna2MessageDialog()
         Me.PanelDesktop = New System.Windows.Forms.Panel()
+        Me.Progress = New Guna.UI2.WinForms.Guna2ProgressIndicator()
         Me.Guna2Panel1.SuspendLayout()
         Me.Guna2Panel2.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelDesktop.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Elipse1
@@ -116,12 +119,12 @@ Partial Class Admin_Dashboard
         Me.Guna2Panel1.BorderColor = System.Drawing.Color.White
         Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
         Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox1)
-        Me.Guna2Panel1.CustomizableEdges = CustomizableEdges5
+        Me.Guna2Panel1.CustomizableEdges = CustomizableEdges6
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Guna2Panel1.FillColor = System.Drawing.Color.Black
         Me.Guna2Panel1.Location = New System.Drawing.Point(322, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Me.Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges7
         Me.Guna2Panel1.Size = New System.Drawing.Size(1378, 51)
         Me.Guna2Panel1.TabIndex = 0
         '
@@ -131,7 +134,7 @@ Partial Class Admin_Dashboard
         Me.Guna2ControlBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Guna2ControlBox2.BorderThickness = 1
         Me.Guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
-        Me.Guna2ControlBox2.CustomizableEdges = CustomizableEdges1
+        Me.Guna2ControlBox2.CustomizableEdges = CustomizableEdges2
         Me.Guna2ControlBox2.Dock = System.Windows.Forms.DockStyle.Right
         Me.Guna2ControlBox2.FillColor = System.Drawing.Color.Black
         Me.Guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -139,7 +142,7 @@ Partial Class Admin_Dashboard
         Me.Guna2ControlBox2.Location = New System.Drawing.Point(1248, 0)
         Me.Guna2ControlBox2.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2ControlBox2.Name = "Guna2ControlBox2"
-        Me.Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Me.Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges3
         Me.Guna2ControlBox2.Size = New System.Drawing.Size(65, 51)
         Me.Guna2ControlBox2.TabIndex = 3
         '
@@ -150,7 +153,7 @@ Partial Class Admin_Dashboard
         Me.Guna2ControlBox1.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2ControlBox1.BorderThickness = 1
         Me.Guna2ControlBox1.CustomClick = True
-        Me.Guna2ControlBox1.CustomizableEdges = CustomizableEdges3
+        Me.Guna2ControlBox1.CustomizableEdges = CustomizableEdges4
         Me.Guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Guna2ControlBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red
@@ -158,7 +161,7 @@ Partial Class Admin_Dashboard
         Me.Guna2ControlBox1.Location = New System.Drawing.Point(1313, 0)
         Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Me.Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Me.Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges5
         Me.Guna2ControlBox1.Size = New System.Drawing.Size(65, 51)
         Me.Guna2ControlBox1.TabIndex = 2
         '
@@ -193,11 +196,11 @@ Partial Class Admin_Dashboard
         Me.Guna2Panel2.Controls.Add(Me.Guna2PictureBox2)
         Me.Guna2Panel2.Controls.Add(Me.Label1)
         Me.Guna2Panel2.Controls.Add(Me.Label2)
-        Me.Guna2Panel2.CustomizableEdges = CustomizableEdges39
+        Me.Guna2Panel2.CustomizableEdges = CustomizableEdges40
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        Me.Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges41
         Me.Guna2Panel2.Size = New System.Drawing.Size(322, 1063)
         Me.Guna2Panel2.TabIndex = 1
         '
@@ -207,7 +210,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton15.BorderRadius = 10
         Me.Guna2GradientButton15.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton15.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton15.CustomizableEdges = CustomizableEdges7
+        Me.Guna2GradientButton15.CustomizableEdges = CustomizableEdges8
         Me.Guna2GradientButton15.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton15.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -227,7 +230,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton15.Location = New System.Drawing.Point(4, 233)
         Me.Guna2GradientButton15.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton15.Name = "Guna2GradientButton15"
-        Me.Guna2GradientButton15.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Me.Guna2GradientButton15.ShadowDecoration.CustomizableEdges = CustomizableEdges9
         Me.Guna2GradientButton15.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton15.TabIndex = 35
         Me.Guna2GradientButton15.Text = "COLLECT PAYMENT"
@@ -239,7 +242,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton14.BorderRadius = 10
         Me.Guna2GradientButton14.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton14.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton14.CustomizableEdges = CustomizableEdges9
+        Me.Guna2GradientButton14.CustomizableEdges = CustomizableEdges10
         Me.Guna2GradientButton14.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton14.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton14.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -259,7 +262,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton14.Location = New System.Drawing.Point(4, 468)
         Me.Guna2GradientButton14.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton14.Name = "Guna2GradientButton14"
-        Me.Guna2GradientButton14.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Me.Guna2GradientButton14.ShadowDecoration.CustomizableEdges = CustomizableEdges11
         Me.Guna2GradientButton14.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton14.TabIndex = 34
         Me.Guna2GradientButton14.Text = "SALARY DETAILS"
@@ -271,7 +274,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton11.BorderRadius = 10
         Me.Guna2GradientButton11.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton11.CustomizableEdges = CustomizableEdges11
+        Me.Guna2GradientButton11.CustomizableEdges = CustomizableEdges12
         Me.Guna2GradientButton11.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton11.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -291,7 +294,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton11.Location = New System.Drawing.Point(1, 700)
         Me.Guna2GradientButton11.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton11.Name = "Guna2GradientButton11"
-        Me.Guna2GradientButton11.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        Me.Guna2GradientButton11.ShadowDecoration.CustomizableEdges = CustomizableEdges13
         Me.Guna2GradientButton11.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton11.TabIndex = 28
         Me.Guna2GradientButton11.Text = "EDIT CUSTOMER"
@@ -303,7 +306,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton13.BorderRadius = 10
         Me.Guna2GradientButton13.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton13.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton13.CustomizableEdges = CustomizableEdges13
+        Me.Guna2GradientButton13.CustomizableEdges = CustomizableEdges14
         Me.Guna2GradientButton13.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton13.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -323,7 +326,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton13.Location = New System.Drawing.Point(3, 188)
         Me.Guna2GradientButton13.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton13.Name = "Guna2GradientButton13"
-        Me.Guna2GradientButton13.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Me.Guna2GradientButton13.ShadowDecoration.CustomizableEdges = CustomizableEdges15
         Me.Guna2GradientButton13.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton13.TabIndex = 33
         Me.Guna2GradientButton13.Text = "CHANGE PASSWORD"
@@ -382,7 +385,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton10.BorderRadius = 10
         Me.Guna2GradientButton10.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton10.CustomizableEdges = CustomizableEdges15
+        Me.Guna2GradientButton10.CustomizableEdges = CustomizableEdges16
         Me.Guna2GradientButton10.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton10.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -402,7 +405,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton10.Location = New System.Drawing.Point(1, 835)
         Me.Guna2GradientButton10.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton10.Name = "Guna2GradientButton10"
-        Me.Guna2GradientButton10.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Me.Guna2GradientButton10.ShadowDecoration.CustomizableEdges = CustomizableEdges17
         Me.Guna2GradientButton10.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton10.TabIndex = 27
         Me.Guna2GradientButton10.Text = "COMPLAINTS"
@@ -414,7 +417,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton12.BorderRadius = 10
         Me.Guna2GradientButton12.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton12.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton12.CustomizableEdges = CustomizableEdges17
+        Me.Guna2GradientButton12.CustomizableEdges = CustomizableEdges18
         Me.Guna2GradientButton12.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton12.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -434,7 +437,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton12.Location = New System.Drawing.Point(1, 897)
         Me.Guna2GradientButton12.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton12.Name = "Guna2GradientButton12"
-        Me.Guna2GradientButton12.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        Me.Guna2GradientButton12.ShadowDecoration.CustomizableEdges = CustomizableEdges19
         Me.Guna2GradientButton12.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton12.TabIndex = 29
         Me.Guna2GradientButton12.Text = "LOGOUT"
@@ -463,7 +466,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton8.BorderRadius = 10
         Me.Guna2GradientButton8.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton8.CustomizableEdges = CustomizableEdges19
+        Me.Guna2GradientButton8.CustomizableEdges = CustomizableEdges20
         Me.Guna2GradientButton8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -483,7 +486,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton8.Location = New System.Drawing.Point(1, 790)
         Me.Guna2GradientButton8.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton8.Name = "Guna2GradientButton8"
-        Me.Guna2GradientButton8.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Me.Guna2GradientButton8.ShadowDecoration.CustomizableEdges = CustomizableEdges21
         Me.Guna2GradientButton8.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton8.TabIndex = 23
         Me.Guna2GradientButton8.Text = "REMINDERS"
@@ -495,7 +498,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton9.BorderRadius = 10
         Me.Guna2GradientButton9.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton9.CustomizableEdges = CustomizableEdges21
+        Me.Guna2GradientButton9.CustomizableEdges = CustomizableEdges22
         Me.Guna2GradientButton9.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -515,7 +518,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton9.Location = New System.Drawing.Point(1, 745)
         Me.Guna2GradientButton9.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton9.Name = "Guna2GradientButton9"
-        Me.Guna2GradientButton9.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Me.Guna2GradientButton9.ShadowDecoration.CustomizableEdges = CustomizableEdges23
         Me.Guna2GradientButton9.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton9.TabIndex = 22
         Me.Guna2GradientButton9.Text = "PAYMENT DETAILS"
@@ -527,7 +530,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton5.BorderRadius = 10
         Me.Guna2GradientButton5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton5.CustomizableEdges = CustomizableEdges23
+        Me.Guna2GradientButton5.CustomizableEdges = CustomizableEdges24
         Me.Guna2GradientButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -547,7 +550,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton5.Location = New System.Drawing.Point(1, 655)
         Me.Guna2GradientButton5.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton5.Name = "Guna2GradientButton5"
-        Me.Guna2GradientButton5.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Me.Guna2GradientButton5.ShadowDecoration.CustomizableEdges = CustomizableEdges25
         Me.Guna2GradientButton5.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton5.TabIndex = 21
         Me.Guna2GradientButton5.Text = "CUSTOMER DETAILS"
@@ -559,7 +562,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton6.BorderRadius = 10
         Me.Guna2GradientButton6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton6.CustomizableEdges = CustomizableEdges25
+        Me.Guna2GradientButton6.CustomizableEdges = CustomizableEdges26
         Me.Guna2GradientButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -579,7 +582,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton6.Location = New System.Drawing.Point(1, 610)
         Me.Guna2GradientButton6.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton6.Name = "Guna2GradientButton6"
-        Me.Guna2GradientButton6.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        Me.Guna2GradientButton6.ShadowDecoration.CustomizableEdges = CustomizableEdges27
         Me.Guna2GradientButton6.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton6.TabIndex = 20
         Me.Guna2GradientButton6.Text = "REMOVE CUSTOMER"
@@ -591,7 +594,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton7.BorderRadius = 10
         Me.Guna2GradientButton7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton7.CustomizableEdges = CustomizableEdges27
+        Me.Guna2GradientButton7.CustomizableEdges = CustomizableEdges28
         Me.Guna2GradientButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -611,7 +614,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton7.Location = New System.Drawing.Point(4, 565)
         Me.Guna2GradientButton7.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton7.Name = "Guna2GradientButton7"
-        Me.Guna2GradientButton7.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        Me.Guna2GradientButton7.ShadowDecoration.CustomizableEdges = CustomizableEdges29
         Me.Guna2GradientButton7.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton7.TabIndex = 19
         Me.Guna2GradientButton7.Text = "ADD CUSTOMER"
@@ -634,7 +637,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton4.BorderRadius = 10
         Me.Guna2GradientButton4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton4.CustomizableEdges = CustomizableEdges29
+        Me.Guna2GradientButton4.CustomizableEdges = CustomizableEdges30
         Me.Guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -654,7 +657,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton4.Location = New System.Drawing.Point(4, 423)
         Me.Guna2GradientButton4.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton4.Name = "Guna2GradientButton4"
-        Me.Guna2GradientButton4.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        Me.Guna2GradientButton4.ShadowDecoration.CustomizableEdges = CustomizableEdges31
         Me.Guna2GradientButton4.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton4.TabIndex = 17
         Me.Guna2GradientButton4.Text = "EDIT EMPLOYEE"
@@ -677,7 +680,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton3.BorderRadius = 10
         Me.Guna2GradientButton3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton3.CustomizableEdges = CustomizableEdges31
+        Me.Guna2GradientButton3.CustomizableEdges = CustomizableEdges32
         Me.Guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -697,7 +700,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton3.Location = New System.Drawing.Point(4, 378)
         Me.Guna2GradientButton3.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton3.Name = "Guna2GradientButton3"
-        Me.Guna2GradientButton3.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        Me.Guna2GradientButton3.ShadowDecoration.CustomizableEdges = CustomizableEdges33
         Me.Guna2GradientButton3.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton3.TabIndex = 15
         Me.Guna2GradientButton3.Text = "REMOVE EMPLOYEE"
@@ -709,7 +712,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton2.BorderRadius = 10
         Me.Guna2GradientButton2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton2.CustomizableEdges = CustomizableEdges33
+        Me.Guna2GradientButton2.CustomizableEdges = CustomizableEdges34
         Me.Guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -729,7 +732,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton2.Location = New System.Drawing.Point(4, 333)
         Me.Guna2GradientButton2.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton2.Name = "Guna2GradientButton2"
-        Me.Guna2GradientButton2.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Me.Guna2GradientButton2.ShadowDecoration.CustomizableEdges = CustomizableEdges35
         Me.Guna2GradientButton2.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton2.TabIndex = 14
         Me.Guna2GradientButton2.Text = "ADD EMPLOYEE"
@@ -742,7 +745,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         Me.Guna2GradientButton1.Checked = True
         Me.Guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2GradientButton1.CustomizableEdges = CustomizableEdges35
+        Me.Guna2GradientButton1.CustomizableEdges = CustomizableEdges36
         Me.Guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -762,7 +765,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton1.Location = New System.Drawing.Point(3, 143)
         Me.Guna2GradientButton1.Margin = New System.Windows.Forms.Padding(0)
         Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Me.Guna2GradientButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        Me.Guna2GradientButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges37
         Me.Guna2GradientButton1.Size = New System.Drawing.Size(316, 45)
         Me.Guna2GradientButton1.TabIndex = 13
         Me.Guna2GradientButton1.Text = "DASHBOARD"
@@ -773,13 +776,13 @@ Partial Class Admin_Dashboard
         Me.Guna2PictureBox2.AutoRoundedCorners = True
         Me.Guna2PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Guna2PictureBox2.BorderRadius = 46
-        Me.Guna2PictureBox2.CustomizableEdges = CustomizableEdges37
+        Me.Guna2PictureBox2.CustomizableEdges = CustomizableEdges38
         Me.Guna2PictureBox2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox2.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.a9176696b8740c402d84b55374ea0107_w200
         Me.Guna2PictureBox2.ImageRotate = 0!
         Me.Guna2PictureBox2.Location = New System.Drawing.Point(4, 0)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        Me.Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges39
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(98, 94)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Guna2PictureBox2.TabIndex = 4
@@ -838,11 +841,20 @@ Partial Class Admin_Dashboard
         'PanelDesktop
         '
         Me.PanelDesktop.BackColor = System.Drawing.Color.Black
+        Me.PanelDesktop.Controls.Add(Me.Progress)
         Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelDesktop.Location = New System.Drawing.Point(322, 51)
         Me.PanelDesktop.Name = "PanelDesktop"
         Me.PanelDesktop.Size = New System.Drawing.Size(1378, 1012)
         Me.PanelDesktop.TabIndex = 3
+        '
+        'Progress
+        '
+        Me.Progress.Location = New System.Drawing.Point(581, 514)
+        Me.Progress.Name = "Progress"
+        Me.Progress.ShadowDecoration.CustomizableEdges = CustomizableEdges1
+        Me.Progress.Size = New System.Drawing.Size(90, 90)
+        Me.Progress.TabIndex = 4
         '
         'Admin_Dashboard
         '
@@ -865,6 +877,7 @@ Partial Class Admin_Dashboard
         Me.Guna2Panel2.ResumeLayout(False)
         Me.Guna2Panel2.PerformLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelDesktop.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -906,4 +919,5 @@ Partial Class Admin_Dashboard
     Friend WithEvents PanelDesktop As Panel
     Friend WithEvents Guna2GradientButton14 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton15 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents Progress As Guna.UI2.WinForms.Guna2ProgressIndicator
 End Class

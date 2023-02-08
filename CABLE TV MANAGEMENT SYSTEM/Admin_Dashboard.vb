@@ -25,6 +25,8 @@
 
     'For Inter-Changing Panels'
     Public Sub OpenChildForm(ChildForm As Form)
+        Progress.Show()
+        Progress.Start()
         If CurrentChildFrom IsNot Nothing Then
             CurrentChildFrom.Close()
 
@@ -37,6 +39,8 @@
         PanelDesktop.Tag = ChildForm
         ChildForm.BringToFront()
         ChildForm.Show()
+        Progress.Stop()
+        Progress.Hide()
     End Sub
 
 
@@ -91,5 +95,9 @@
 
     Private Sub Guna2GradientButton9_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton9.Click
         OpenChildForm(New Payment_Details)
+    End Sub
+
+    Private Sub Guna2GradientButton8_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton8.Click
+        OpenChildForm(New REMINDER)
     End Sub
 End Class
