@@ -35,3 +35,7 @@
 [2023-02-07 18:31:35] An error occurred: The INSERT INTO statement contains the following unknown field name: 'CABLE_ID'. Make sure you have typed the name correctly, and try the operation again.
 [2023-02-07 18:35:36] An error occurred: The INSERT INTO statement contains the following unknown field name: 'CABLE_ID'. Make sure you have typed the name correctly, and try the operation again.
 [2023-02-08 00:58:23] An error occurred: The INSERT INTO statement contains the following unknown field name: 'PAYMENT_NO'. Make sure you have typed the name correctly, and try the operation again.
+[2023-02-10 00:41:08] An Error Occured While Sending Invoice : The parameter 'addresses' cannot be an empty string. (Parameter 'addresses')
+[2023-02-10 00:48:51] An Error Occured While Sending Invoice : Could not find file 'C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\invoices\.pdf'.
+[2023-02-10 00:50:38] An Error Occured While Sending Invoice : The parameter 'addresses' cannot be an empty string. (Parameter 'addresses')
+[2023-02-10 00:54:17] An Error Occured While Sending Invoice : The parameter 'addresses' cannot be an empty string. (Parameter 'addresses')
