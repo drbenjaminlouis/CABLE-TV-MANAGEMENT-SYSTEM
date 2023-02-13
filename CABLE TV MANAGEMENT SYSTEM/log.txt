@@ -39,3 +39,9 @@
 [2023-02-10 00:48:51] An Error Occured While Sending Invoice : Could not find file 'C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\invoices\.pdf'.
 [2023-02-10 00:50:38] An Error Occured While Sending Invoice : The parameter 'addresses' cannot be an empty string. (Parameter 'addresses')
 [2023-02-10 00:54:17] An Error Occured While Sending Invoice : The parameter 'addresses' cannot be an empty string. (Parameter 'addresses')
+[2023-02-10 16:43:39] An Error occurred in Fetching Customer And Service Details:Specified cast is not valid.
+[2023-02-10 17:25:31] An Error occurred in Fetching Customer And Service Details:The table 'TV_CONNECTION_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+[2023-02-10 19:21:11] An Error Occoured During Payment: No value given for one or more required parameters.
+[2023-02-10 19:32:08] An Error Occoured During Payment: No value given for one or more required parameters.
+[2023-02-10 19:32:37] An Error Occoured During Payment: No value given for one or more required parameters.
+[2023-02-10 19:42:17] An Error Occoured During Payment: No value given for one or more required parameters.

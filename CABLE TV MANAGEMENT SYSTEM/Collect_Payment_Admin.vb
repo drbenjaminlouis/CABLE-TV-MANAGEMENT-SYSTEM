@@ -1,11 +1,17 @@
 ﻿Imports System.Data.OleDb
 Imports System.Drawing.Printing
 Imports System.IO
+Imports System.Security.Cryptography
+
 Public Class Collect_Payment_Admin
     'variable for selected payment mode
     Dim payment_mode As String
     'generating invoice number
     Dim invoice_no As Integer = generateInvoice()
+    'Variable for last_renewal date
+    Dim last_renewal_date_tv As Date
+    'Variable for last_renewal date  of broadband
+    Dim last_renewal_date_broadband As Date
     Private Sub Collect_Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'storing current year and previous year to payment_year combobox
         Dim currentYear As Integer = DateTime.Now.Year
@@ -338,6 +344,8 @@ Public Class Collect_Payment_Admin
                     Dim sqlCheck As String = "SELECT * FROM [CUSTOMER_DETAILS] WHERE [CRF] =@CRF"
                     'Query For Fetching Details Based On CRF Number
                     Dim sqlFetch As String = "SELECT CUST_NAME,CUST_HOUSE_NAME,CUST_AREA,CUST_DISTRICT,CUST_STATE,CUST_MOBILE,CUST_EMAIL FROM CUSTOMER_DETAILS WHERE CRF=@CRF"
+                    Dim sqlFetch2 As String = "SELECT LAST_RENEWAL_DATE FROM TV_CONNECTION_DETAILS WHERE CRF=@CRF AND CUST_TV_CONNECTION=@CUST_TV_CONNECTION"
+                    Dim sqlFetch3 As String = "SELECT LAST_RENEWAL_DATE FROM BROADBAND_CONNECTION_DETAILS WHERE CRF=@CRF AND BROADBAND_CONNECTION=@BROADBAND_CONNECTION"
                     'Qurey For Fetching Connection Details
                     Dim sqlService As String = "SELECT * FROM TV_CONNECTION_DETAILS WHERE CRF=@CRF AND CUST_TV_CONNECTION=@STATUS"
                     Dim sqlService2 As String = "SELECT * FROM BROADBAND_CONNECTION_DETAILS WHERE CRF=@CRF AND BROADBAND_CONNECTION=@STATUS"
@@ -373,29 +381,49 @@ Public Class Collect_Payment_Admin
                         End If
                         reader.Close()
                     End Using
+                    Using cmdfetch2 As New OleDbCommand(sqlFetch2, con)
+                        cmdfetch2.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                        cmdfetch2.Parameters.AddWithValue("@CUST_TV_CONNECTION", "YES")
+                        Dim reader As OleDbDataReader = cmdfetch2.ExecuteReader
+                        If reader.HasRows Then
+                            While reader.Read()
+                                last_renewal_date_tv = reader.GetDateTime(0)
+                            End While
+                        End If
+                    End Using
+                    Using cmdfetch3 As New OleDbCommand(sqlFetch3, con)
+                        cmdfetch3.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                        cmdfetch3.Parameters.AddWithValue("@BROADBAND_CONNECTION", "YES")
+                        Dim reader As OleDbDataReader = cmdfetch3.ExecuteReader
+                        If reader.HasRows Then
+                            While reader.Read()
+                                last_renewal_date_broadband = reader.GetDateTime(0)
+                            End While
+                        End If
+                    End Using
                     'Fetching Service Details
                     Using cmdService As New OleDbCommand(sqlService, con)
-                        cmdService.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                        cmdService.Parameters.AddWithValue("@STATUS", "YES")
-                        Dim reader As OleDbDataReader = cmdService.ExecuteReader()
-                        'If a Customer Of Cable TV Service
-                        If reader.HasRows Then
-                            SERVICE_COMBOBOX.Items.Clear()
-                            SERVICE_COMBOBOX.Items.Add("CABLE TV")
-                            reader.Close()
-                        End If
+                            cmdService.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                            cmdService.Parameters.AddWithValue("@STATUS", "YES")
+                            Dim reader As OleDbDataReader = cmdService.ExecuteReader()
+                            'If a Customer Of Cable TV Service
+                            If reader.HasRows Then
+                                SERVICE_COMBOBOX.Items.Clear()
+                                SERVICE_COMBOBOX.Items.Add("CABLE TV")
+                                reader.Close()
+                            End If
+                        End Using
+                        Using cmdService2 As New OleDbCommand(sqlService2, con)
+                            cmdService2.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                            cmdService2.Parameters.AddWithValue("@STATUS", "YES")
+                            Dim reader As OleDbDataReader = cmdService2.ExecuteReader()
+                            'If A Customer Of Broadband Service
+                            If reader.HasRows Then
+                                SERVICE_COMBOBOX.Items.Add("BROADBAND")
+                                reader.Close()
+                            End If
+                        End Using
                     End Using
-                    Using cmdService2 As New OleDbCommand(sqlService2, con)
-                        cmdService2.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                        cmdService2.Parameters.AddWithValue("@STATUS", "YES")
-                        Dim reader As OleDbDataReader = cmdService2.ExecuteReader()
-                        'If A Customer Of Broadband Service
-                        If reader.HasRows Then
-                            SERVICE_COMBOBOX.Items.Add("BROADBAND")
-                            reader.Close()
-                        End If
-                    End Using
-                End Using
             Catch ex As Exception
                 'If An Exception Occured, Updating It In Log File And Showing A Message
                 LogError("An Error occurred in Fetching Customer And Service Details:" & ex.Message)
@@ -488,6 +516,22 @@ Public Class Collect_Payment_Admin
                                     cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                                     cmd.ExecuteNonQuery()
                                 Next
+                                Dim query2 As String = "UPDATE TV_CONNECTION_DETAILS SET LAST_RENEWAL_DATE=@last_renewal_date,EXPIRY_DATE=@expiry_date,TV_CONNECTION_STATUS=@status WHERE CRF=@CRF "
+                                Dim cmd1 As New OleDbCommand(query2, con)
+                                cmd1.Transaction = transaction
+                                cmd1.Parameters.AddWithValue("@last_renewal_date", Date.Today)
+                                Dim lastRenewalDate As Date = Date.Today
+                                Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30)
+                                'To store date without time'
+                                Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
+                                cmd1.Parameters.AddWithValue("@EXPIRY_DATE", expiryDateWithoutTime)
+                                If CUST_PENDING_AMOUNT_TEXTBOX.Text = 0 Then
+                                    cmd1.Parameters.AddWithValue("@STATUS", "ACTIVE")
+                                Else
+                                    cmd1.Parameters.AddWithValue("@STATUS", "INACTIVE")
+                                End If
+                                cmd1.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                cmd1.ExecuteNonQuery()
                             End If
                             'UPDATING PAYMENT STATUS FOR BROADBAND IF SELECTED SERVICE IS BROADBAND
                             If SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
@@ -499,8 +543,25 @@ Public Class Collect_Payment_Admin
                                     cmd.Parameters.AddWithValue("@status", "PAID")
                                     cmd.Parameters.AddWithValue("@YEAR", PAYMENT_YEAR.SelectedItem)
                                     cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+
                                     cmd.ExecuteNonQuery()
                                 Next
+                                Dim query2 As String = "UPDATE BROADBAND_CONNECTION_DETAILS SET LAST_RENEWAL_DATE=@last_renewal_date,EXPIRY_DATE=@expiry_date,STATUS=@status WHERE CRF=@CRF "
+                                Dim cmd2 As New OleDbCommand(query2, con)
+                                cmd2.Transaction = transaction
+                                cmd2.Parameters.AddWithValue("@last_renewal_date", Date.Today)
+                                Dim lastRenewalDate As Date = last_renewal_date_broadband
+                                Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30)
+                                'To store date without time'
+                                Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
+                                cmd2.Parameters.AddWithValue("@EXPIRY_DATE", expiryDateWithoutTime)
+                                If CUST_PENDING_AMOUNT_TEXTBOX.Text = 0 Then
+                                    cmd2.Parameters.AddWithValue("@STATUS", "ACTIVE")
+                                Else
+                                    cmd2.Parameters.AddWithValue("@STATUS", "INACTIVE")
+                                End If
+                                cmd2.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                cmd2.ExecuteNonQuery()
                             End If
                             'QUERY FOR ADDING INVOICE DETAILS
                             Dim cmd_INVOICE As New OleDbCommand("INSERT INTO INVOICE_DETAILS (CRF,SERVICE,PAYMENT_DATE,INVOICE_NO,REFERANCE_NO,MODE,INVOICE) VALUES (@crf,@service, @payment_date, @invoice_no, @mode,@referance_no, @invoice_file)", con)
