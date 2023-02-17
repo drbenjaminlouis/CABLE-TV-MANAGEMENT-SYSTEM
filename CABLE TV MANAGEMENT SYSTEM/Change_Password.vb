@@ -10,6 +10,12 @@ Public Class Change_Password
         ElseIf USERNAME_TEXTBOX.Text <> Module1.UserName Then
             MessageBox.Show("Please Enter Your Username", "ALERT")
             USERNAME_TEXTBOX.Clear()
+        ElseIf NEW_PASSWORD_TEXTBOX.Text = "" Then
+            MessageBox.Show("Please Enter New Password", "ALERT")
+        ElseIf NEW_PASSWORD_TEXTBOX.Text = OLD_PASSWORD_TEXTBOX.Text Then
+            MessageBox.Show("New Password Should Be Different From Old Password", "ALERT")
+            NEW_PASSWORD_TEXTBOX.Clear()
+            CONFIRM_PASSWORD_TEXTBOX.Clear()
         Else
             ' Define the connection string
             Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb"

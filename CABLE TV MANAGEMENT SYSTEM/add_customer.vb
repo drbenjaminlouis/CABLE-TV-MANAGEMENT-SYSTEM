@@ -1,11 +1,14 @@
 ﻿Imports System.Collections.ObjectModel
 Imports System.Data.Common
 Imports System.Data.OleDb
+Imports System.Globalization
 Imports System.Text.RegularExpressions
+Imports System.Threading
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports CABLE_TV_MANAGEMENT_SYSTEM.LogModule
 Imports CABLE_TV_MANAGEMENT_SYSTEM.Payment_Sync
 Public Class add_customer
+    Dim months As New List(Of String)
     'Function for clearing all inputs'
     Public Function ClearAll()
         CUST_CRF_TEXTBOX.Clear()
@@ -103,6 +106,13 @@ Public Class add_customer
     End Sub
     'If Create Button Clicked'
     Private Sub ADD_CUST_CREATEBTN_Click_1(sender As Object, e As EventArgs) Handles ADD_CUST_CREATEBTN.Click
+        Dim startDate As Date = Date.Today.AddMonths(1)
+        Dim endDate As Date = Date.Today.AddMonths(3)
+
+        ' Iterate over the months and update the values
+        Dim loopDate As Date = startDate
+
+
         Dim found As Boolean = False
         'To Check Whether The Entered Value in Email Textbox Is Email or Not'
         Dim emailRegex As New Regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
@@ -137,9 +147,10 @@ Public Class add_customer
                         Dim cmd2 As New OleDbCommand("INSERT INTO CUSTOMER_LOGIN_DETAILS (CRF,CUST_USERNAME,CUST_PASSWORD) VALUES (@CRF,@CUST_USERNAME,@CUST_PASSWORD)", con)
                         Dim cmd3 As New OleDbCommand("INSERT INTO TV_CONNECTION_DETAILS (CRF,TV_CONNECTION_ID,CUST_TV_CONNECTION,CUST_TV_PLAN,CHIP_ID,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,TV_CONNECTION_STATUS) VALUES (@CRF,@TV_CONNECTION_ID,@CUST_TV_CONNECTION,@CUST_TV_PLAN,@CHIP_ID,@TV_REGISTRATION_DATE,@TV_LAST_RENEWAL_DATE,@EXPIRY_DATE,@TV_CONNECTION_STATUS)", con)
                         Dim cmd4 As New OleDbCommand("INSERT INTO TV_PAYMENT_DETAILS (CRF,CURRENT_YEAR) VALUES (@CRF,@YEAR)", con)
-                        Dim cmd5 As New OleDbCommand("INSERT INTO BROADBAND_CONNECTION_DETAILS (CRF,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,STATUS,RECHARGED_BY,CURRENT_PLAN) VALUES (@CRF,@REGISTRATION_DATE,@LAST_RENEWAL_DATE,@EXPIRY_DATE,@STATUS,@RECHARGED_BY,@CURRENT_PLAN)", con)
+                        Dim cmd5 As New OleDbCommand("INSERT INTO BROADBAND_CONNECTION_DETAILS (CRF,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,STATUS,RECHARGED_BY,CURRENT_PLAN,BROADBAND_CONNECTION) VALUES (@CRF,@REGISTRATION_DATE,@LAST_RENEWAL_DATE,@EXPIRY_DATE,@STATUS,@RECHARGED_BY,@CURRENT_PLAN,@BROADBAND_CONNECTION)", con)
                         Dim cmd6 As New OleDbCommand("INSERT INTO BROADBAND_LOGIN (CRF,CUST_BROADBAND_USERNAME,CUST_BROADBAND_PASSWORD) VALUES (@CRF,@CUST_BROADBAND_USERNAME,@CUST_BROADBAND_PASSWORD)", con)
                         Dim cmd7 As New OleDbCommand("INSERT INTO BROADBAND_PAYMENT_DETAILS (CRF,BROADBAND_ID,CURRENT_YEAR) VALUES (@CRF,@BROADBAND_ID,@YEAR)", con)
+
                         cmd.Transaction = transaction
                         cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                         cmd.Parameters.AddWithValue("@NAME", CUST_NAME_TEXTBOX.Text)
@@ -208,6 +219,7 @@ Public Class add_customer
                         End If
                         cmd5.Parameters.AddWithValue("@RECHARGED_BY", "ADMIN")
                         cmd5.Parameters.AddWithValue("@CURRENT_PLAN", CUST_BROADBAND_PLAN_COMBOBOX.SelectedItem)
+                        cmd5.Parameters.AddWithValue("@BROADBAND_CONNECTION", "YES")
                         cmd6.Parameters.Clear()
                         cmd6.Transaction = transaction
                         cmd6.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -234,6 +246,22 @@ Public Class add_customer
                             cmd6.Parameters.Clear()
                             cmd7.Parameters.Clear()
                         End If
+                        Dim fromdate As Date = TV_Reg_Picker.Value
+                        Dim todate As Date = tv_todayWithoutTime
+                        Dim crf As Integer = CUST_CRF_TEXTBOX.Text
+                        Dim months As List(Of String) = GetMonthsBetween(fromdate, todate)
+                        Dim count As Integer = months.Count
+
+                        If count < 0 Then
+                            MessageBox.Show("Less than 0")
+                        Else
+                            For i = 0 To count - 1
+                                Dim command As New OleDbCommand("UPDATE TV_PAYMENT_DETAILS SET " & months(i) & "='NOT PAID' WHERE CRF=@CRF AND " & months(i) & "='NILL'", con)
+                                command.Transaction = transaction
+                                command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                command.ExecuteNonQuery()
+                            Next
+                        End If
                         transaction.Commit()
                         MessageBox2.Show("Registration Sucessfull", "ALERT")
                         Payment_Sync.Payment_Sync()
@@ -257,6 +285,26 @@ Public Class add_customer
             End Try
         End If
     End Sub
+    Private Function GetMonthsBetween(ByVal startDate As Date, ByVal endDate As Date) As List(Of String)
+        Dim months As New List(Of String)
+        Dim currentMonth As Integer = startDate.Month
+        Dim currentYear As Integer = startDate.Year
+
+        While currentMonth <= endDate.Month And currentYear <= endDate.Year
+            Dim monthName As String = DateTimeFormatInfo.CurrentInfo.GetMonthName(currentMonth)
+            months.Add(monthName)
+            currentMonth += 1
+            If currentMonth > 12 Then
+                currentMonth = 1
+                currentYear += 1
+            End If
+        End While
+
+        Return months
+    End Function
+
+    'Now you can use the "months" array to do whatever you need to do
+
     'For Reset Button'
     Private Sub ADD_CUST_RESETBTN_Click(sender As Object, e As EventArgs) Handles ADD_CUST_RESETBTN.Click
         ClearAll()

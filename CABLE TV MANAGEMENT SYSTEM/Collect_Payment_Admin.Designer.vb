@@ -23,8 +23,8 @@ Partial Class Collect_Payment_Admin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -35,28 +35,28 @@ Partial Class Collect_Payment_Admin
         Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -67,7 +67,13 @@ Partial Class Collect_Payment_Admin
         Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        Me.INVOICE_NUMBER_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.INVOICE_NUMBER_LABEL = New System.Windows.Forms.Label()
         Me.SEARCH_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.PRINT_BTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.CUST_CRF_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
@@ -95,7 +101,9 @@ Partial Class Collect_Payment_Admin
         Me.PAYMENT_MONTH_LABEL = New System.Windows.Forms.Label()
         Me.PENDING_AMOUNT_LABEL = New System.Windows.Forms.Label()
         Me.Guna2GroupBox7 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.CUST_EMAIL_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_MOBILE_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.CUST_EMAIL_LABEL = New System.Windows.Forms.Label()
         Me.CUST_MOBILE_LABEL = New System.Windows.Forms.Label()
         Me.CUST_STATE_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_STATE_LABEL = New System.Windows.Forms.Label()
@@ -111,6 +119,7 @@ Partial Class Collect_Payment_Admin
         Me.MessageBox = New Guna.UI2.WinForms.Guna2MessageDialog()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2GroupBox2.SuspendLayout()
         CType(Me.QR_CODE, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,6 +129,8 @@ Partial Class Collect_Payment_Admin
         '
         'Guna2CustomGradientPanel1
         '
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.INVOICE_NUMBER_TEXTBOX)
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.INVOICE_NUMBER_LABEL)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.SEARCH_BTN)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.PRINT_BTN)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.CUST_CRF_TEXTBOX)
@@ -130,21 +141,64 @@ Partial Class Collect_Payment_Admin
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2GroupBox1)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2GroupBox7)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.HEADER_LABEL)
-        Me.Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges43
+        Me.Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges47
         Me.Guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Black
         Me.Guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Black
         Me.Guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black
         Me.Guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Black
         Me.Guna2CustomGradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Me.Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges44
+        Me.Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges48
         Me.Guna2CustomGradientPanel1.Size = New System.Drawing.Size(1378, 1100)
         Me.Guna2CustomGradientPanel1.TabIndex = 0
+        '
+        'INVOICE_NUMBER_TEXTBOX
+        '
+        Me.INVOICE_NUMBER_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.INVOICE_NUMBER_TEXTBOX.Animated = True
+        Me.INVOICE_NUMBER_TEXTBOX.AutoSize = True
+        Me.INVOICE_NUMBER_TEXTBOX.BorderRadius = 3
+        Me.INVOICE_NUMBER_TEXTBOX.BorderThickness = 0
+        Me.INVOICE_NUMBER_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.INVOICE_NUMBER_TEXTBOX.CustomizableEdges = CustomizableEdges1
+        Me.INVOICE_NUMBER_TEXTBOX.DefaultText = ""
+        Me.INVOICE_NUMBER_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.INVOICE_NUMBER_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.INVOICE_NUMBER_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.INVOICE_NUMBER_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.INVOICE_NUMBER_TEXTBOX.FillColor = System.Drawing.Color.Transparent
+        Me.INVOICE_NUMBER_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.INVOICE_NUMBER_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.INVOICE_NUMBER_TEXTBOX.ForeColor = System.Drawing.Color.Green
+        Me.INVOICE_NUMBER_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.INVOICE_NUMBER_TEXTBOX.Location = New System.Drawing.Point(156, 77)
+        Me.INVOICE_NUMBER_TEXTBOX.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.INVOICE_NUMBER_TEXTBOX.MaxLength = 10
+        Me.INVOICE_NUMBER_TEXTBOX.Name = "INVOICE_NUMBER_TEXTBOX"
+        Me.INVOICE_NUMBER_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.INVOICE_NUMBER_TEXTBOX.PlaceholderText = ""
+        Me.INVOICE_NUMBER_TEXTBOX.ReadOnly = True
+        Me.INVOICE_NUMBER_TEXTBOX.SelectedText = ""
+        Me.INVOICE_NUMBER_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Me.INVOICE_NUMBER_TEXTBOX.Size = New System.Drawing.Size(93, 49)
+        Me.INVOICE_NUMBER_TEXTBOX.TabIndex = 90
+        '
+        'INVOICE_NUMBER_LABEL
+        '
+        Me.INVOICE_NUMBER_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.INVOICE_NUMBER_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.INVOICE_NUMBER_LABEL.ForeColor = System.Drawing.Color.White
+        Me.INVOICE_NUMBER_LABEL.Location = New System.Drawing.Point(36, 77)
+        Me.INVOICE_NUMBER_LABEL.Name = "INVOICE_NUMBER_LABEL"
+        Me.INVOICE_NUMBER_LABEL.Size = New System.Drawing.Size(111, 49)
+        Me.INVOICE_NUMBER_LABEL.TabIndex = 89
+        Me.INVOICE_NUMBER_LABEL.Text = "INVOICE NO :"
+        Me.INVOICE_NUMBER_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'SEARCH_BTN
         '
         Me.SEARCH_BTN.Animated = True
-        Me.SEARCH_BTN.CustomizableEdges = CustomizableEdges1
+        Me.SEARCH_BTN.CustomizableEdges = CustomizableEdges3
         Me.SEARCH_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.SEARCH_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.SEARCH_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -158,9 +212,9 @@ Partial Class Collect_Payment_Admin
         Me.SEARCH_BTN.HoverState.FillColor = System.Drawing.Color.Green
         Me.SEARCH_BTN.HoverState.FillColor2 = System.Drawing.Color.Black
         Me.SEARCH_BTN.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_search_client_50
-        Me.SEARCH_BTN.Location = New System.Drawing.Point(553, 125)
+        Me.SEARCH_BTN.Location = New System.Drawing.Point(554, 168)
         Me.SEARCH_BTN.Name = "SEARCH_BTN"
-        Me.SEARCH_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Me.SEARCH_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Me.SEARCH_BTN.Size = New System.Drawing.Size(130, 36)
         Me.SEARCH_BTN.TabIndex = 88
         Me.SEARCH_BTN.Text = "SEARCH"
@@ -170,7 +224,7 @@ Partial Class Collect_Payment_Admin
         Me.PRINT_BTN.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.PRINT_BTN.Animated = True
         Me.PRINT_BTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PRINT_BTN.CustomizableEdges = CustomizableEdges3
+        Me.PRINT_BTN.CustomizableEdges = CustomizableEdges5
         Me.PRINT_BTN.DisabledState.BorderColor = System.Drawing.Color.Transparent
         Me.PRINT_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.PRINT_BTN.DisabledState.FillColor = System.Drawing.Color.Black
@@ -184,9 +238,9 @@ Partial Class Collect_Payment_Admin
         Me.PRINT_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.PRINT_BTN.HoverState.FillColor2 = System.Drawing.Color.Green
         Me.PRINT_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.PRINT_BTN.Location = New System.Drawing.Point(1232, 125)
+        Me.PRINT_BTN.Location = New System.Drawing.Point(1233, 168)
         Me.PRINT_BTN.Name = "PRINT_BTN"
-        Me.PRINT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Me.PRINT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         Me.PRINT_BTN.Size = New System.Drawing.Size(139, 36)
         Me.PRINT_BTN.TabIndex = 87
         Me.PRINT_BTN.Text = "PRINT BILL"
@@ -199,7 +253,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_CRF_TEXTBOX.BorderRadius = 3
         Me.CUST_CRF_TEXTBOX.BorderThickness = 0
         Me.CUST_CRF_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_CRF_TEXTBOX.CustomizableEdges = CustomizableEdges5
+        Me.CUST_CRF_TEXTBOX.CustomizableEdges = CustomizableEdges7
         Me.CUST_CRF_TEXTBOX.DefaultText = ""
         Me.CUST_CRF_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_CRF_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -210,13 +264,13 @@ Partial Class Collect_Payment_Admin
         Me.CUST_CRF_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.CUST_CRF_TEXTBOX.ForeColor = System.Drawing.Color.White
         Me.CUST_CRF_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_CRF_TEXTBOX.Location = New System.Drawing.Point(241, 125)
+        Me.CUST_CRF_TEXTBOX.Location = New System.Drawing.Point(242, 168)
         Me.CUST_CRF_TEXTBOX.MaxLength = 10
         Me.CUST_CRF_TEXTBOX.Name = "CUST_CRF_TEXTBOX"
         Me.CUST_CRF_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.CUST_CRF_TEXTBOX.PlaceholderText = ""
         Me.CUST_CRF_TEXTBOX.SelectedText = ""
-        Me.CUST_CRF_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Me.CUST_CRF_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         Me.CUST_CRF_TEXTBOX.Size = New System.Drawing.Size(306, 36)
         Me.CUST_CRF_TEXTBOX.TabIndex = 10
         '
@@ -225,7 +279,7 @@ Partial Class Collect_Payment_Admin
         Me.RESET_BTN.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.RESET_BTN.Animated = True
         Me.RESET_BTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RESET_BTN.CustomizableEdges = CustomizableEdges7
+        Me.RESET_BTN.CustomizableEdges = CustomizableEdges9
         Me.RESET_BTN.DisabledState.BorderColor = System.Drawing.Color.Transparent
         Me.RESET_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.RESET_BTN.DisabledState.FillColor = System.Drawing.Color.Black
@@ -239,9 +293,9 @@ Partial Class Collect_Payment_Admin
         Me.RESET_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.RESET_BTN.HoverState.FillColor2 = System.Drawing.Color.Green
         Me.RESET_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.RESET_BTN.Location = New System.Drawing.Point(1058, 567)
+        Me.RESET_BTN.Location = New System.Drawing.Point(1059, 610)
         Me.RESET_BTN.Name = "RESET_BTN"
-        Me.RESET_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Me.RESET_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         Me.RESET_BTN.Size = New System.Drawing.Size(312, 90)
         Me.RESET_BTN.TabIndex = 79
         Me.RESET_BTN.Text = "RESET ALL"
@@ -251,7 +305,7 @@ Partial Class Collect_Payment_Admin
         Me.COLLECT_BTN.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.COLLECT_BTN.Animated = True
         Me.COLLECT_BTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.COLLECT_BTN.CustomizableEdges = CustomizableEdges9
+        Me.COLLECT_BTN.CustomizableEdges = CustomizableEdges11
         Me.COLLECT_BTN.DisabledState.BorderColor = System.Drawing.Color.Transparent
         Me.COLLECT_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.COLLECT_BTN.DisabledState.FillColor = System.Drawing.Color.Black
@@ -265,9 +319,9 @@ Partial Class Collect_Payment_Admin
         Me.COLLECT_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.COLLECT_BTN.HoverState.FillColor2 = System.Drawing.Color.Green
         Me.COLLECT_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.COLLECT_BTN.Location = New System.Drawing.Point(699, 567)
+        Me.COLLECT_BTN.Location = New System.Drawing.Point(700, 610)
         Me.COLLECT_BTN.Name = "COLLECT_BTN"
-        Me.COLLECT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Me.COLLECT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         Me.COLLECT_BTN.Size = New System.Drawing.Size(312, 90)
         Me.COLLECT_BTN.TabIndex = 78
         Me.COLLECT_BTN.Text = "COLLECT PAYMENT"
@@ -288,13 +342,13 @@ Partial Class Collect_Payment_Admin
         Me.Guna2GroupBox2.Controls.Add(Me.CASH_LABEL)
         Me.Guna2GroupBox2.Controls.Add(Me.QR_LABEL)
         Me.Guna2GroupBox2.CustomBorderColor = System.Drawing.Color.Empty
-        Me.Guna2GroupBox2.CustomizableEdges = CustomizableEdges17
+        Me.Guna2GroupBox2.CustomizableEdges = CustomizableEdges19
         Me.Guna2GroupBox2.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox2.Location = New System.Drawing.Point(699, 172)
+        Me.Guna2GroupBox2.Location = New System.Drawing.Point(700, 215)
         Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
-        Me.Guna2GroupBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        Me.Guna2GroupBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges20
         Me.Guna2GroupBox2.Size = New System.Drawing.Size(672, 380)
         Me.Guna2GroupBox2.TabIndex = 78
         Me.Guna2GroupBox2.Text = "PAYMENT METHOD"
@@ -310,7 +364,7 @@ Partial Class Collect_Payment_Admin
         Me.CASH_RADIO.ForeColor = System.Drawing.Color.White
         Me.CASH_RADIO.Location = New System.Drawing.Point(359, 55)
         Me.CASH_RADIO.Name = "CASH_RADIO"
-        Me.CASH_RADIO.ShadowDecoration.CustomizableEdges = CustomizableEdges11
+        Me.CASH_RADIO.ShadowDecoration.CustomizableEdges = CustomizableEdges13
         Me.CASH_RADIO.Size = New System.Drawing.Size(46, 36)
         Me.CASH_RADIO.TabIndex = 97
         Me.CASH_RADIO.Text = "CASH"
@@ -327,7 +381,7 @@ Partial Class Collect_Payment_Admin
         Me.REFERANCE_NO.BorderRadius = 3
         Me.REFERANCE_NO.BorderThickness = 0
         Me.REFERANCE_NO.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.REFERANCE_NO.CustomizableEdges = CustomizableEdges12
+        Me.REFERANCE_NO.CustomizableEdges = CustomizableEdges14
         Me.REFERANCE_NO.DefaultText = ""
         Me.REFERANCE_NO.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.REFERANCE_NO.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -344,7 +398,7 @@ Partial Class Collect_Payment_Admin
         Me.REFERANCE_NO.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.REFERANCE_NO.PlaceholderText = ""
         Me.REFERANCE_NO.SelectedText = ""
-        Me.REFERANCE_NO.ShadowDecoration.CustomizableEdges = CustomizableEdges13
+        Me.REFERANCE_NO.ShadowDecoration.CustomizableEdges = CustomizableEdges15
         Me.REFERANCE_NO.Size = New System.Drawing.Size(387, 36)
         Me.REFERANCE_NO.TabIndex = 102
         '
@@ -381,7 +435,7 @@ Partial Class Collect_Payment_Admin
         Me.QR_RADIO.Location = New System.Drawing.Point(219, 55)
         Me.QR_RADIO.Margin = New System.Windows.Forms.Padding(0)
         Me.QR_RADIO.Name = "QR_RADIO"
-        Me.QR_RADIO.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Me.QR_RADIO.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         Me.QR_RADIO.Size = New System.Drawing.Size(46, 36)
         Me.QR_RADIO.TabIndex = 98
         Me.QR_RADIO.Text = "QR CODE"
@@ -394,12 +448,12 @@ Partial Class Collect_Payment_Admin
         '
         Me.QR_CODE.BackgroundImage = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.QR_PAYMENT1
         Me.QR_CODE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.QR_CODE.CustomizableEdges = CustomizableEdges15
+        Me.QR_CODE.CustomizableEdges = CustomizableEdges17
         Me.QR_CODE.FillColor = System.Drawing.Color.Transparent
         Me.QR_CODE.ImageRotate = 0!
         Me.QR_CODE.Location = New System.Drawing.Point(228, 104)
         Me.QR_CODE.Name = "QR_CODE"
-        Me.QR_CODE.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Me.QR_CODE.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         Me.QR_CODE.Size = New System.Drawing.Size(183, 175)
         Me.QR_CODE.TabIndex = 95
         Me.QR_CODE.TabStop = False
@@ -431,7 +485,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_CRF_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.CUST_CRF_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.CUST_CRF_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_CRF_LABEL.Location = New System.Drawing.Point(35, 125)
+        Me.CUST_CRF_LABEL.Location = New System.Drawing.Point(36, 168)
         Me.CUST_CRF_LABEL.Name = "CUST_CRF_LABEL"
         Me.CUST_CRF_LABEL.Size = New System.Drawing.Size(184, 36)
         Me.CUST_CRF_LABEL.TabIndex = 9
@@ -456,13 +510,13 @@ Partial Class Collect_Payment_Admin
         Me.Guna2GroupBox1.Controls.Add(Me.PAYMENT_MONTH_LABEL)
         Me.Guna2GroupBox1.Controls.Add(Me.PENDING_AMOUNT_LABEL)
         Me.Guna2GroupBox1.CustomBorderColor = System.Drawing.Color.Empty
-        Me.Guna2GroupBox1.CustomizableEdges = CustomizableEdges27
+        Me.Guna2GroupBox1.CustomizableEdges = CustomizableEdges29
         Me.Guna2GroupBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox1.Location = New System.Drawing.Point(35, 567)
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(36, 610)
         Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
-        Me.Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        Me.Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges30
         Me.Guna2GroupBox1.Size = New System.Drawing.Size(648, 380)
         Me.Guna2GroupBox1.TabIndex = 77
         Me.Guna2GroupBox1.Text = "PLEASE ENTER THE DETAILS"
@@ -489,7 +543,7 @@ Partial Class Collect_Payment_Admin
         Me.PAYMENT_MONTH_LISTBOX.ItemHeight = 21
         Me.PAYMENT_MONTH_LISTBOX.Location = New System.Drawing.Point(205, 181)
         Me.PAYMENT_MONTH_LISTBOX.Name = "PAYMENT_MONTH_LISTBOX"
-        Me.PAYMENT_MONTH_LISTBOX.SelectionMode = System.Windows.Forms.SelectionMode.None
+        Me.PAYMENT_MONTH_LISTBOX.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple
         Me.PAYMENT_MONTH_LISTBOX.Size = New System.Drawing.Size(387, 126)
         Me.PAYMENT_MONTH_LISTBOX.TabIndex = 103
         '
@@ -500,7 +554,7 @@ Partial Class Collect_Payment_Admin
         Me.PAYMENT_YEAR.BorderColor = System.Drawing.Color.Transparent
         Me.PAYMENT_YEAR.BorderThickness = 0
         Me.PAYMENT_YEAR.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PAYMENT_YEAR.CustomizableEdges = CustomizableEdges19
+        Me.PAYMENT_YEAR.CustomizableEdges = CustomizableEdges21
         Me.PAYMENT_YEAR.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.PAYMENT_YEAR.DisabledState.ForeColor = System.Drawing.Color.Black
         Me.PAYMENT_YEAR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
@@ -517,7 +571,7 @@ Partial Class Collect_Payment_Admin
         Me.PAYMENT_YEAR.ItemHeight = 30
         Me.PAYMENT_YEAR.Location = New System.Drawing.Point(205, 49)
         Me.PAYMENT_YEAR.Name = "PAYMENT_YEAR"
-        Me.PAYMENT_YEAR.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Me.PAYMENT_YEAR.ShadowDecoration.CustomizableEdges = CustomizableEdges22
         Me.PAYMENT_YEAR.Size = New System.Drawing.Size(387, 36)
         Me.PAYMENT_YEAR.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.PAYMENT_YEAR.TabIndex = 98
@@ -529,7 +583,7 @@ Partial Class Collect_Payment_Admin
         Me.SERVICE_COMBOBOX.BorderColor = System.Drawing.Color.Transparent
         Me.SERVICE_COMBOBOX.BorderThickness = 0
         Me.SERVICE_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SERVICE_COMBOBOX.CustomizableEdges = CustomizableEdges21
+        Me.SERVICE_COMBOBOX.CustomizableEdges = CustomizableEdges23
         Me.SERVICE_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.SERVICE_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
         Me.SERVICE_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
@@ -546,7 +600,7 @@ Partial Class Collect_Payment_Admin
         Me.SERVICE_COMBOBOX.ItemHeight = 30
         Me.SERVICE_COMBOBOX.Location = New System.Drawing.Point(205, 93)
         Me.SERVICE_COMBOBOX.Name = "SERVICE_COMBOBOX"
-        Me.SERVICE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Me.SERVICE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges24
         Me.SERVICE_COMBOBOX.Size = New System.Drawing.Size(387, 36)
         Me.SERVICE_COMBOBOX.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.SERVICE_COMBOBOX.TabIndex = 102
@@ -571,7 +625,7 @@ Partial Class Collect_Payment_Admin
         Me.AMOUNT.BorderRadius = 3
         Me.AMOUNT.BorderThickness = 0
         Me.AMOUNT.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.AMOUNT.CustomizableEdges = CustomizableEdges23
+        Me.AMOUNT.CustomizableEdges = CustomizableEdges25
         Me.AMOUNT.DefaultText = ""
         Me.AMOUNT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.AMOUNT.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -588,7 +642,7 @@ Partial Class Collect_Payment_Admin
         Me.AMOUNT.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.AMOUNT.PlaceholderText = ""
         Me.AMOUNT.SelectedText = ""
-        Me.AMOUNT.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Me.AMOUNT.ShadowDecoration.CustomizableEdges = CustomizableEdges26
         Me.AMOUNT.Size = New System.Drawing.Size(387, 36)
         Me.AMOUNT.TabIndex = 100
         '
@@ -612,7 +666,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_PENDING_AMOUNT_TEXTBOX.BorderRadius = 3
         Me.CUST_PENDING_AMOUNT_TEXTBOX.BorderThickness = 0
         Me.CUST_PENDING_AMOUNT_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_PENDING_AMOUNT_TEXTBOX.CustomizableEdges = CustomizableEdges25
+        Me.CUST_PENDING_AMOUNT_TEXTBOX.CustomizableEdges = CustomizableEdges27
         Me.CUST_PENDING_AMOUNT_TEXTBOX.DefaultText = ""
         Me.CUST_PENDING_AMOUNT_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_PENDING_AMOUNT_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -630,7 +684,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_PENDING_AMOUNT_TEXTBOX.PlaceholderText = ""
         Me.CUST_PENDING_AMOUNT_TEXTBOX.ReadOnly = True
         Me.CUST_PENDING_AMOUNT_TEXTBOX.SelectedText = ""
-        Me.CUST_PENDING_AMOUNT_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        Me.CUST_PENDING_AMOUNT_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         Me.CUST_PENDING_AMOUNT_TEXTBOX.Size = New System.Drawing.Size(387, 36)
         Me.CUST_PENDING_AMOUNT_TEXTBOX.TabIndex = 97
         '
@@ -665,7 +719,9 @@ Partial Class Collect_Payment_Admin
         Me.Guna2GroupBox7.BackColor = System.Drawing.Color.Black
         Me.Guna2GroupBox7.BorderColor = System.Drawing.Color.Green
         Me.Guna2GroupBox7.BorderRadius = 3
+        Me.Guna2GroupBox7.Controls.Add(Me.CUST_EMAIL_TEXTBOX)
         Me.Guna2GroupBox7.Controls.Add(Me.CUST_MOBILE_TEXTBOX)
+        Me.Guna2GroupBox7.Controls.Add(Me.CUST_EMAIL_LABEL)
         Me.Guna2GroupBox7.Controls.Add(Me.CUST_MOBILE_LABEL)
         Me.Guna2GroupBox7.Controls.Add(Me.CUST_STATE_TEXTBOX)
         Me.Guna2GroupBox7.Controls.Add(Me.CUST_STATE_LABEL)
@@ -678,16 +734,44 @@ Partial Class Collect_Payment_Admin
         Me.Guna2GroupBox7.Controls.Add(Me.CUST_NAME_TEXTBOX)
         Me.Guna2GroupBox7.Controls.Add(Me.CUST_NAME_LABEL)
         Me.Guna2GroupBox7.CustomBorderColor = System.Drawing.Color.Empty
-        Me.Guna2GroupBox7.CustomizableEdges = CustomizableEdges41
+        Me.Guna2GroupBox7.CustomizableEdges = CustomizableEdges45
         Me.Guna2GroupBox7.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox7.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2GroupBox7.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox7.Location = New System.Drawing.Point(35, 172)
+        Me.Guna2GroupBox7.Location = New System.Drawing.Point(36, 215)
         Me.Guna2GroupBox7.Name = "Guna2GroupBox7"
-        Me.Guna2GroupBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        Me.Guna2GroupBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges46
         Me.Guna2GroupBox7.Size = New System.Drawing.Size(648, 380)
         Me.Guna2GroupBox7.TabIndex = 76
         Me.Guna2GroupBox7.Text = "CUSTOMER DETAILS"
+        '
+        'CUST_EMAIL_TEXTBOX
+        '
+        Me.CUST_EMAIL_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CUST_EMAIL_TEXTBOX.Animated = True
+        Me.CUST_EMAIL_TEXTBOX.AutoSize = True
+        Me.CUST_EMAIL_TEXTBOX.BorderRadius = 3
+        Me.CUST_EMAIL_TEXTBOX.BorderThickness = 0
+        Me.CUST_EMAIL_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_EMAIL_TEXTBOX.CustomizableEdges = CustomizableEdges31
+        Me.CUST_EMAIL_TEXTBOX.DefaultText = ""
+        Me.CUST_EMAIL_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_EMAIL_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_EMAIL_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.Location = New System.Drawing.Point(204, 311)
+        Me.CUST_EMAIL_TEXTBOX.Name = "CUST_EMAIL_TEXTBOX"
+        Me.CUST_EMAIL_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_EMAIL_TEXTBOX.PlaceholderText = ""
+        Me.CUST_EMAIL_TEXTBOX.SelectedText = ""
+        Me.CUST_EMAIL_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        Me.CUST_EMAIL_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_EMAIL_TEXTBOX.TabIndex = 48
         '
         'CUST_MOBILE_TEXTBOX
         '
@@ -697,7 +781,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_MOBILE_TEXTBOX.BorderRadius = 3
         Me.CUST_MOBILE_TEXTBOX.BorderThickness = 0
         Me.CUST_MOBILE_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_MOBILE_TEXTBOX.CustomizableEdges = CustomizableEdges29
+        Me.CUST_MOBILE_TEXTBOX.CustomizableEdges = CustomizableEdges33
         Me.CUST_MOBILE_TEXTBOX.DefaultText = ""
         Me.CUST_MOBILE_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_MOBILE_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -708,16 +792,28 @@ Partial Class Collect_Payment_Admin
         Me.CUST_MOBILE_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.CUST_MOBILE_TEXTBOX.ForeColor = System.Drawing.Color.White
         Me.CUST_MOBILE_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_MOBILE_TEXTBOX.Location = New System.Drawing.Point(206, 269)
+        Me.CUST_MOBILE_TEXTBOX.Location = New System.Drawing.Point(204, 269)
         Me.CUST_MOBILE_TEXTBOX.MaxLength = 10
         Me.CUST_MOBILE_TEXTBOX.Name = "CUST_MOBILE_TEXTBOX"
         Me.CUST_MOBILE_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.CUST_MOBILE_TEXTBOX.PlaceholderText = ""
         Me.CUST_MOBILE_TEXTBOX.ReadOnly = True
         Me.CUST_MOBILE_TEXTBOX.SelectedText = ""
-        Me.CUST_MOBILE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        Me.CUST_MOBILE_TEXTBOX.Size = New System.Drawing.Size(387, 36)
+        Me.CUST_MOBILE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Me.CUST_MOBILE_TEXTBOX.Size = New System.Drawing.Size(389, 36)
         Me.CUST_MOBILE_TEXTBOX.TabIndex = 98
+        '
+        'CUST_EMAIL_LABEL
+        '
+        Me.CUST_EMAIL_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CUST_EMAIL_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_EMAIL_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_EMAIL_LABEL.Location = New System.Drawing.Point(14, 311)
+        Me.CUST_EMAIL_LABEL.Name = "CUST_EMAIL_LABEL"
+        Me.CUST_EMAIL_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_EMAIL_LABEL.TabIndex = 47
+        Me.CUST_EMAIL_LABEL.Text = "Email ID :"
+        Me.CUST_EMAIL_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'CUST_MOBILE_LABEL
         '
@@ -739,7 +835,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_STATE_TEXTBOX.BorderRadius = 3
         Me.CUST_STATE_TEXTBOX.BorderThickness = 0
         Me.CUST_STATE_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_STATE_TEXTBOX.CustomizableEdges = CustomizableEdges31
+        Me.CUST_STATE_TEXTBOX.CustomizableEdges = CustomizableEdges35
         Me.CUST_STATE_TEXTBOX.DefaultText = ""
         Me.CUST_STATE_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_STATE_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -750,15 +846,15 @@ Partial Class Collect_Payment_Admin
         Me.CUST_STATE_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.CUST_STATE_TEXTBOX.ForeColor = System.Drawing.Color.White
         Me.CUST_STATE_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_STATE_TEXTBOX.Location = New System.Drawing.Point(206, 225)
+        Me.CUST_STATE_TEXTBOX.Location = New System.Drawing.Point(204, 225)
         Me.CUST_STATE_TEXTBOX.MaxLength = 10
         Me.CUST_STATE_TEXTBOX.Name = "CUST_STATE_TEXTBOX"
         Me.CUST_STATE_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.CUST_STATE_TEXTBOX.PlaceholderText = ""
         Me.CUST_STATE_TEXTBOX.ReadOnly = True
         Me.CUST_STATE_TEXTBOX.SelectedText = ""
-        Me.CUST_STATE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        Me.CUST_STATE_TEXTBOX.Size = New System.Drawing.Size(387, 36)
+        Me.CUST_STATE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        Me.CUST_STATE_TEXTBOX.Size = New System.Drawing.Size(389, 36)
         Me.CUST_STATE_TEXTBOX.TabIndex = 94
         '
         'CUST_STATE_LABEL
@@ -781,7 +877,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_HOUSENAME_TEXTBOX.BorderRadius = 3
         Me.CUST_HOUSENAME_TEXTBOX.BorderThickness = 0
         Me.CUST_HOUSENAME_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_HOUSENAME_TEXTBOX.CustomizableEdges = CustomizableEdges33
+        Me.CUST_HOUSENAME_TEXTBOX.CustomizableEdges = CustomizableEdges37
         Me.CUST_HOUSENAME_TEXTBOX.DefaultText = ""
         Me.CUST_HOUSENAME_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_HOUSENAME_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -799,7 +895,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_HOUSENAME_TEXTBOX.PlaceholderText = ""
         Me.CUST_HOUSENAME_TEXTBOX.ReadOnly = True
         Me.CUST_HOUSENAME_TEXTBOX.SelectedText = ""
-        Me.CUST_HOUSENAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Me.CUST_HOUSENAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges38
         Me.CUST_HOUSENAME_TEXTBOX.Size = New System.Drawing.Size(387, 36)
         Me.CUST_HOUSENAME_TEXTBOX.TabIndex = 92
         '
@@ -823,7 +919,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_AREA_TEXTBOX.BorderRadius = 3
         Me.CUST_AREA_TEXTBOX.BorderThickness = 0
         Me.CUST_AREA_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_AREA_TEXTBOX.CustomizableEdges = CustomizableEdges35
+        Me.CUST_AREA_TEXTBOX.CustomizableEdges = CustomizableEdges39
         Me.CUST_AREA_TEXTBOX.DefaultText = ""
         Me.CUST_AREA_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_AREA_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -841,7 +937,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_AREA_TEXTBOX.PlaceholderText = ""
         Me.CUST_AREA_TEXTBOX.ReadOnly = True
         Me.CUST_AREA_TEXTBOX.SelectedText = ""
-        Me.CUST_AREA_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        Me.CUST_AREA_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges40
         Me.CUST_AREA_TEXTBOX.Size = New System.Drawing.Size(387, 36)
         Me.CUST_AREA_TEXTBOX.TabIndex = 90
         '
@@ -865,7 +961,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_DISTRICT_TEXTBOX.BorderRadius = 3
         Me.CUST_DISTRICT_TEXTBOX.BorderThickness = 0
         Me.CUST_DISTRICT_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_DISTRICT_TEXTBOX.CustomizableEdges = CustomizableEdges37
+        Me.CUST_DISTRICT_TEXTBOX.CustomizableEdges = CustomizableEdges41
         Me.CUST_DISTRICT_TEXTBOX.DefaultText = ""
         Me.CUST_DISTRICT_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_DISTRICT_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -883,7 +979,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_DISTRICT_TEXTBOX.PlaceholderText = ""
         Me.CUST_DISTRICT_TEXTBOX.ReadOnly = True
         Me.CUST_DISTRICT_TEXTBOX.SelectedText = ""
-        Me.CUST_DISTRICT_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        Me.CUST_DISTRICT_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges42
         Me.CUST_DISTRICT_TEXTBOX.Size = New System.Drawing.Size(387, 36)
         Me.CUST_DISTRICT_TEXTBOX.TabIndex = 88
         '
@@ -907,7 +1003,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_NAME_TEXTBOX.BorderRadius = 3
         Me.CUST_NAME_TEXTBOX.BorderThickness = 0
         Me.CUST_NAME_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_NAME_TEXTBOX.CustomizableEdges = CustomizableEdges39
+        Me.CUST_NAME_TEXTBOX.CustomizableEdges = CustomizableEdges43
         Me.CUST_NAME_TEXTBOX.DefaultText = ""
         Me.CUST_NAME_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_NAME_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -925,7 +1021,7 @@ Partial Class Collect_Payment_Admin
         Me.CUST_NAME_TEXTBOX.PlaceholderText = ""
         Me.CUST_NAME_TEXTBOX.ReadOnly = True
         Me.CUST_NAME_TEXTBOX.SelectedText = ""
-        Me.CUST_NAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        Me.CUST_NAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges44
         Me.CUST_NAME_TEXTBOX.Size = New System.Drawing.Size(387, 36)
         Me.CUST_NAME_TEXTBOX.TabIndex = 86
         '
@@ -967,6 +1063,10 @@ Partial Class Collect_Payment_Admin
         Me.Guna2BorderlessForm1.ContainerControl = Me
         Me.Guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6R
         Me.Guna2BorderlessForm1.TransparentWhileDrag = True
+        '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.UseEXDialog = True
         '
         'Collect_Payment_Admin
         '
@@ -1036,4 +1136,9 @@ Partial Class Collect_Payment_Admin
     Friend WithEvents CUST_NAME_LABEL As Label
     Friend WithEvents SEARCH_BTN As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents CUST_EMAIL_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents CUST_EMAIL_LABEL As Label
+    Friend WithEvents PrintDialog1 As PrintDialog
+    Friend WithEvents INVOICE_NUMBER_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents INVOICE_NUMBER_LABEL As Label
 End Class
