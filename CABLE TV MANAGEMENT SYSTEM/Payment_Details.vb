@@ -4,7 +4,7 @@ Imports Guna.UI2.WinForms
 
 Public Class Payment_Details
     Private Sub Payment_Details_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Payment_Sync.Payment_Sync()
     End Sub
     Private Sub CheckTextBoxValues()
         Dim monthNames() As Guna2TextBox = {JANUARY_TEXTBOX, FEBRUARY_TEXTBOX, MARCH_TEXTBOX, APRIL_TEXTBOX, MAY_TEXTBOX, JUNE_TEXTBOX, JULY_TEXTBOX, AUGUST_TEXTBOX, SEPTEMBER_TEXTBOX, OCTOBER_TEXTBOX, NOVEMBER_TEXTBOX, DECEMBER_TEXTBOX}

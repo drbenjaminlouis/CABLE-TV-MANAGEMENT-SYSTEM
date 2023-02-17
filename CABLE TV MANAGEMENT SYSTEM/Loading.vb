@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Imports CABLE_TV_MANAGEMENT_SYSTEM.Payment_Sync
-Public Class Form1
+Public Class Loading
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         MyProgress.Increment(1)
         If MyProgress.Value = 100 Then

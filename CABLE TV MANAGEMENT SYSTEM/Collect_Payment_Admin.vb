@@ -437,7 +437,9 @@ Public Class Collect_Payment_Admin
         If AMOUNT.Text = "" Then
 
         Else
-            CUST_PENDING_AMOUNT_TEXTBOX.Text = CUST_PENDING_AMOUNT_TEXTBOX.Text - AMOUNT.Text
+            If Not CUST_PENDING_AMOUNT_TEXTBOX.Text = "0" Then
+                CUST_PENDING_AMOUNT_TEXTBOX.Text = CUST_PENDING_AMOUNT_TEXTBOX.Text - AMOUNT.Text
+            End If
         End If
     End Sub
 
@@ -447,6 +449,7 @@ Public Class Collect_Payment_Admin
         PAYMENT_MONTH_LISTBOX.Items.Clear()
         updatepending()
         updatependingbroadband()
+        AMOUNT.Clear()
     End Sub
     'Code For Clearing Service Combobox,Payment_Month_Listbox,Pending Amount,Payment Amount
     Private Sub PAYMENT_YEAR_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles PAYMENT_YEAR.SelectedIndexChanged
@@ -475,6 +478,7 @@ Public Class Collect_Payment_Admin
     End Sub
     Private Sub RESET_BTN_Click(sender As Object, e As EventArgs) Handles RESET_BTN.Click
         'Clearing All Values
+        CUST_CRF_TEXTBOX.Clear()
         clearAll()
     End Sub
     Private Sub COLLECT_BTN_Click(sender As Object, e As EventArgs) Handles COLLECT_BTN.Click
@@ -485,6 +489,7 @@ Public Class Collect_Payment_Admin
             MessageBox.Show("Please Enter Amount", "ALERT")
         ElseIf enteredAmount Mod 250 <> 0 Then
             MessageBox.Show("Please Enter Amount As Multiples Of 250", "ALERT")
+
         ElseIf PAYMENT_MONTH_LISTBOX.SelectedItem = "" Then
             MessageBox.Show("Please Select Month", "ALERT")
         ElseIf QR_RADIO.Checked = True And REFERANCE_NO.Text = "" Then

@@ -68,6 +68,7 @@ Partial Class Admin_Dashboard_Panel
         '
         'Guna2Panel1
         '
+        Me.Guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Guna2Panel1.AutoSize = True
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Black
         Me.Guna2Panel1.Controls.Add(Me.BroadBand_Customers)
@@ -84,7 +85,6 @@ Partial Class Admin_Dashboard_Panel
         Me.Guna2Panel1.Controls.Add(Me.Inactive_Customers)
         Me.Guna2Panel1.Controls.Add(Me.Active_Customers)
         Me.Guna2Panel1.CustomizableEdges = CustomizableEdges25
-        Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2Panel1.FillColor = System.Drawing.Color.Black
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"

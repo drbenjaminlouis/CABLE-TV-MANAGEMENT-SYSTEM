@@ -45,3 +45,25 @@
 [2023-02-10 19:32:08] An Error Occoured During Payment: No value given for one or more required parameters.
 [2023-02-10 19:32:37] An Error Occoured During Payment: No value given for one or more required parameters.
 [2023-02-10 19:42:17] An Error Occoured During Payment: No value given for one or more required parameters.
+[2023-02-17 18:52:26] An error occurred: ExecuteNonQuery requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+[2023-02-17 18:55:43] An error occurred: No value given for one or more required parameters.
+[2023-02-17 18:58:13] An error occurred: No value given for one or more required parameters.
+[2023-02-17 19:01:32] An error occurred: No value given for one or more required parameters.
+[2023-02-17 19:06:27] An error occurred: Could not find file 'C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\path_to_your_database.accdb'.
+[2023-02-17 19:08:25] An error occurred: The transaction is either not associated with the current connection or has been completed.
+[2023-02-17 19:10:03] An error occurred: No value given for one or more required parameters.
+[2023-02-17 19:43:30] An error occurred: No value given for one or more required parameters.
+[2023-02-17 19:45:08] An error occurred: No value given for one or more required parameters.
+[2023-02-17 19:45:16] An error occurred: No value given for one or more required parameters.
+[2023-02-17 19:48:21] An error occurred: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+[2023-02-17 19:49:40] An error occurred: No value given for one or more required parameters.
+[2023-02-17 19:52:12] An error occurred: No value given for one or more required parameters.
+[2023-02-17 20:01:24] An error occurred: No value given for one or more required parameters.
+[2023-02-17 20:10:51] An error occurred: This OleDbTransaction has completed; it is no longer usable.
+[2023-02-17 20:12:55] An error occurred: Overflow
+[2023-02-17 20:22:58] An error occurred: This OleDbTransaction has completed; it is no longer usable.
+[2023-02-17 21:41:09] An error occurred: ExecuteNonQuery requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+[2023-02-17 21:43:26] An error occurred: Syntax error in UPDATE statement.
+[2023-02-17 21:45:34] An error occurred: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-17 21:47:55] An error occurred: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-17 21:51:18] An error occurred: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')

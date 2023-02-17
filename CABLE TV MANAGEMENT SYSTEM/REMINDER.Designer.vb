@@ -22,29 +22,29 @@ Partial Class REMINDER
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.RESET_BTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.COLLECT_BTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
@@ -80,11 +80,11 @@ Partial Class REMINDER
         Me.Guna2GradientPanel1.Controls.Add(Me.COLLECT_BTN)
         Me.Guna2GradientPanel1.Controls.Add(Me.HEADER_LABEL)
         Me.Guna2GradientPanel1.Controls.Add(Me.Guna2GroupBox1)
-        Me.Guna2GradientPanel1.CustomizableEdges = CustomizableEdges22
+        Me.Guna2GradientPanel1.CustomizableEdges = CustomizableEdges45
         Me.Guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges23
+        Me.Guna2GradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges46
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1407, 899)
         Me.Guna2GradientPanel1.TabIndex = 0
         '
@@ -93,7 +93,7 @@ Partial Class REMINDER
         Me.RESET_BTN.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.RESET_BTN.Animated = True
         Me.RESET_BTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RESET_BTN.CustomizableEdges = CustomizableEdges1
+        Me.RESET_BTN.CustomizableEdges = CustomizableEdges24
         Me.RESET_BTN.DisabledState.BorderColor = System.Drawing.Color.Transparent
         Me.RESET_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.RESET_BTN.DisabledState.FillColor = System.Drawing.Color.Black
@@ -109,7 +109,7 @@ Partial Class REMINDER
         Me.RESET_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RESET_BTN.Location = New System.Drawing.Point(742, 684)
         Me.RESET_BTN.Name = "RESET_BTN"
-        Me.RESET_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Me.RESET_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges25
         Me.RESET_BTN.Size = New System.Drawing.Size(280, 90)
         Me.RESET_BTN.TabIndex = 118
         Me.RESET_BTN.Text = "RESET"
@@ -119,7 +119,7 @@ Partial Class REMINDER
         Me.COLLECT_BTN.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.COLLECT_BTN.Animated = True
         Me.COLLECT_BTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.COLLECT_BTN.CustomizableEdges = CustomizableEdges3
+        Me.COLLECT_BTN.CustomizableEdges = CustomizableEdges26
         Me.COLLECT_BTN.DisabledState.BorderColor = System.Drawing.Color.Transparent
         Me.COLLECT_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.Transparent
         Me.COLLECT_BTN.DisabledState.FillColor = System.Drawing.Color.Black
@@ -135,7 +135,7 @@ Partial Class REMINDER
         Me.COLLECT_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.COLLECT_BTN.Location = New System.Drawing.Point(393, 684)
         Me.COLLECT_BTN.Name = "COLLECT_BTN"
-        Me.COLLECT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Me.COLLECT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges27
         Me.COLLECT_BTN.Size = New System.Drawing.Size(280, 90)
         Me.COLLECT_BTN.TabIndex = 117
         Me.COLLECT_BTN.Text = "SEND"
@@ -174,13 +174,13 @@ Partial Class REMINDER
         Me.Guna2GroupBox1.Controls.Add(Me.CUST_PENDING_AMOUNT_TEXTBOX)
         Me.Guna2GroupBox1.Controls.Add(Me.SEARCH_BTN)
         Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
-        Me.Guna2GroupBox1.CustomizableEdges = CustomizableEdges20
+        Me.Guna2GroupBox1.CustomizableEdges = CustomizableEdges43
         Me.Guna2GroupBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
         Me.Guna2GroupBox1.Location = New System.Drawing.Point(393, 91)
         Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
-        Me.Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges21
+        Me.Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges44
         Me.Guna2GroupBox1.Size = New System.Drawing.Size(629, 566)
         Me.Guna2GroupBox1.TabIndex = 116
         '
@@ -189,7 +189,7 @@ Partial Class REMINDER
         Me.Guna2ProgressIndicator1.Location = New System.Drawing.Point(291, 234)
         Me.Guna2ProgressIndicator1.Name = "Guna2ProgressIndicator1"
         Me.Guna2ProgressIndicator1.ProgressColor = System.Drawing.Color.Green
-        Me.Guna2ProgressIndicator1.ShadowDecoration.CustomizableEdges = CustomizableEdges5
+        Me.Guna2ProgressIndicator1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         Me.Guna2ProgressIndicator1.Size = New System.Drawing.Size(90, 90)
         Me.Guna2ProgressIndicator1.TabIndex = 119
         Me.Guna2ProgressIndicator1.Visible = False
@@ -274,7 +274,7 @@ Partial Class REMINDER
         Me.CUST_EMAIL_TEXTBOX.BorderRadius = 3
         Me.CUST_EMAIL_TEXTBOX.BorderThickness = 0
         Me.CUST_EMAIL_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_EMAIL_TEXTBOX.CustomizableEdges = CustomizableEdges6
+        Me.CUST_EMAIL_TEXTBOX.CustomizableEdges = CustomizableEdges29
         Me.CUST_EMAIL_TEXTBOX.DefaultText = ""
         Me.CUST_EMAIL_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_EMAIL_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -290,7 +290,7 @@ Partial Class REMINDER
         Me.CUST_EMAIL_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.CUST_EMAIL_TEXTBOX.PlaceholderText = ""
         Me.CUST_EMAIL_TEXTBOX.SelectedText = ""
-        Me.CUST_EMAIL_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges7
+        Me.CUST_EMAIL_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges30
         Me.CUST_EMAIL_TEXTBOX.Size = New System.Drawing.Size(387, 36)
         Me.CUST_EMAIL_TEXTBOX.TabIndex = 115
         '
@@ -314,7 +314,7 @@ Partial Class REMINDER
         Me.CUST_NAME_TEXTBOX.BorderRadius = 3
         Me.CUST_NAME_TEXTBOX.BorderThickness = 0
         Me.CUST_NAME_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_NAME_TEXTBOX.CustomizableEdges = CustomizableEdges8
+        Me.CUST_NAME_TEXTBOX.CustomizableEdges = CustomizableEdges31
         Me.CUST_NAME_TEXTBOX.DefaultText = ""
         Me.CUST_NAME_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_NAME_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -332,7 +332,7 @@ Partial Class REMINDER
         Me.CUST_NAME_TEXTBOX.PlaceholderText = ""
         Me.CUST_NAME_TEXTBOX.ReadOnly = True
         Me.CUST_NAME_TEXTBOX.SelectedText = ""
-        Me.CUST_NAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges9
+        Me.CUST_NAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges32
         Me.CUST_NAME_TEXTBOX.Size = New System.Drawing.Size(387, 36)
         Me.CUST_NAME_TEXTBOX.TabIndex = 93
         '
@@ -356,7 +356,7 @@ Partial Class REMINDER
         Me.CUST_CRF_TEXTBOX.BorderRadius = 3
         Me.CUST_CRF_TEXTBOX.BorderThickness = 0
         Me.CUST_CRF_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_CRF_TEXTBOX.CustomizableEdges = CustomizableEdges10
+        Me.CUST_CRF_TEXTBOX.CustomizableEdges = CustomizableEdges33
         Me.CUST_CRF_TEXTBOX.DefaultText = ""
         Me.CUST_CRF_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_CRF_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -373,7 +373,7 @@ Partial Class REMINDER
         Me.CUST_CRF_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.CUST_CRF_TEXTBOX.PlaceholderText = ""
         Me.CUST_CRF_TEXTBOX.SelectedText = ""
-        Me.CUST_CRF_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges11
+        Me.CUST_CRF_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges34
         Me.CUST_CRF_TEXTBOX.Size = New System.Drawing.Size(273, 36)
         Me.CUST_CRF_TEXTBOX.TabIndex = 90
         '
@@ -384,7 +384,7 @@ Partial Class REMINDER
         Me.SERVICE_COMBOBOX.BorderColor = System.Drawing.Color.Transparent
         Me.SERVICE_COMBOBOX.BorderThickness = 0
         Me.SERVICE_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SERVICE_COMBOBOX.CustomizableEdges = CustomizableEdges12
+        Me.SERVICE_COMBOBOX.CustomizableEdges = CustomizableEdges35
         Me.SERVICE_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.SERVICE_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
         Me.SERVICE_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
@@ -401,7 +401,7 @@ Partial Class REMINDER
         Me.SERVICE_COMBOBOX.ItemHeight = 30
         Me.SERVICE_COMBOBOX.Location = New System.Drawing.Point(211, 192)
         Me.SERVICE_COMBOBOX.Name = "SERVICE_COMBOBOX"
-        Me.SERVICE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges13
+        Me.SERVICE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges36
         Me.SERVICE_COMBOBOX.Size = New System.Drawing.Size(387, 36)
         Me.SERVICE_COMBOBOX.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.SERVICE_COMBOBOX.TabIndex = 112
@@ -413,7 +413,7 @@ Partial Class REMINDER
         Me.PAYMENT_YEAR.BorderColor = System.Drawing.Color.Transparent
         Me.PAYMENT_YEAR.BorderThickness = 0
         Me.PAYMENT_YEAR.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PAYMENT_YEAR.CustomizableEdges = CustomizableEdges14
+        Me.PAYMENT_YEAR.CustomizableEdges = CustomizableEdges37
         Me.PAYMENT_YEAR.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.PAYMENT_YEAR.DisabledState.ForeColor = System.Drawing.Color.Black
         Me.PAYMENT_YEAR.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
@@ -430,7 +430,7 @@ Partial Class REMINDER
         Me.PAYMENT_YEAR.ItemHeight = 30
         Me.PAYMENT_YEAR.Location = New System.Drawing.Point(211, 150)
         Me.PAYMENT_YEAR.Name = "PAYMENT_YEAR"
-        Me.PAYMENT_YEAR.ShadowDecoration.CustomizableEdges = CustomizableEdges15
+        Me.PAYMENT_YEAR.ShadowDecoration.CustomizableEdges = CustomizableEdges38
         Me.PAYMENT_YEAR.Size = New System.Drawing.Size(387, 36)
         Me.PAYMENT_YEAR.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.PAYMENT_YEAR.TabIndex = 107
@@ -455,7 +455,7 @@ Partial Class REMINDER
         Me.CUST_PENDING_AMOUNT_TEXTBOX.BorderRadius = 3
         Me.CUST_PENDING_AMOUNT_TEXTBOX.BorderThickness = 0
         Me.CUST_PENDING_AMOUNT_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_PENDING_AMOUNT_TEXTBOX.CustomizableEdges = CustomizableEdges16
+        Me.CUST_PENDING_AMOUNT_TEXTBOX.CustomizableEdges = CustomizableEdges39
         Me.CUST_PENDING_AMOUNT_TEXTBOX.DefaultText = ""
         Me.CUST_PENDING_AMOUNT_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CUST_PENDING_AMOUNT_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -473,14 +473,14 @@ Partial Class REMINDER
         Me.CUST_PENDING_AMOUNT_TEXTBOX.PlaceholderText = ""
         Me.CUST_PENDING_AMOUNT_TEXTBOX.ReadOnly = True
         Me.CUST_PENDING_AMOUNT_TEXTBOX.SelectedText = ""
-        Me.CUST_PENDING_AMOUNT_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges17
+        Me.CUST_PENDING_AMOUNT_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges40
         Me.CUST_PENDING_AMOUNT_TEXTBOX.Size = New System.Drawing.Size(387, 36)
         Me.CUST_PENDING_AMOUNT_TEXTBOX.TabIndex = 106
         '
         'SEARCH_BTN
         '
         Me.SEARCH_BTN.Animated = True
-        Me.SEARCH_BTN.CustomizableEdges = CustomizableEdges18
+        Me.SEARCH_BTN.CustomizableEdges = CustomizableEdges41
         Me.SEARCH_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.SEARCH_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.SEARCH_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -496,7 +496,7 @@ Partial Class REMINDER
         Me.SEARCH_BTN.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_search_client_50
         Me.SEARCH_BTN.Location = New System.Drawing.Point(490, 24)
         Me.SEARCH_BTN.Name = "SEARCH_BTN"
-        Me.SEARCH_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges19
+        Me.SEARCH_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges42
         Me.SEARCH_BTN.Size = New System.Drawing.Size(108, 36)
         Me.SEARCH_BTN.TabIndex = 91
         Me.SEARCH_BTN.Text = "SEARCH"
@@ -507,7 +507,7 @@ Partial Class REMINDER
         Me.MessageBox.Caption = Nothing
         Me.MessageBox.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
         Me.MessageBox.Parent = Nothing
-        Me.MessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.[Default]
+        Me.MessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
         Me.MessageBox.Text = Nothing
         '
         'REMINDER
