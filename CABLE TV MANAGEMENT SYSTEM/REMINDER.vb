@@ -9,12 +9,14 @@ Public Class REMINDER
         Dim currentYear As Integer = DateTime.Now.Year
         PAYMENT_YEAR.Items.Add(currentYear)
         PAYMENT_YEAR.Items.Add(currentYear - 1)
+        LogError(Application.StartupPath)
+
     End Sub
     Private Sub SEARCH_BTN_Click(sender As Object, e As EventArgs) Handles SEARCH_BTN.Click
         If CUST_CRF_TEXTBOX.Text = "" Then
         Else
             Try
-                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                     con.Open()
                     Dim sqlCheck As String = "SELECT * FROM [CUSTOMER_DETAILS] WHERE [CRF] =@CRF"
                     Dim sqlFetch As String = "SELECT CUST_NAME,CUST_EMAIL FROM CUSTOMER_DETAILS WHERE CRF=@CRF"
@@ -65,6 +67,7 @@ Public Class REMINDER
                             reader.Close()
                         End If
                     End Using
+                    con.Close()
                 End Using
             Catch ex As Exception
 
@@ -77,7 +80,7 @@ Public Class REMINDER
             If PAYMENT_YEAR.SelectedItem = Nothing Then
                 MessageBox.Show("Please Select Year", "ALERT")
             Else
-                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                     con.Open()
                     Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
                                            "IIF([february]='Not Paid',1,0) AS february, " &
@@ -163,7 +166,7 @@ Public Class REMINDER
             If PAYMENT_YEAR.SelectedItem = Nothing Then
                 MessageBox.Show("Please Select Year", "ALERT")
             Else
-                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                     con.Open()
                     Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
                                            "IIF([february]='Not Paid',1,0) AS february, " &

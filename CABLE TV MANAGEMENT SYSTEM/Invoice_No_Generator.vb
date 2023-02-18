@@ -2,7 +2,7 @@
 
 Module Invoice_No_Generator
     Public Function generateInvoice()
-        Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+        Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
         con.Open()
 
         Dim cmd As New OleDbCommand("SELECT MAX(INVOICE_NO) FROM INVOICE_DETAILS", con)

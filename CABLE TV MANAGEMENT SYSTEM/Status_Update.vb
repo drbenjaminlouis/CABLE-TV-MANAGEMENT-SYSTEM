@@ -1,10 +1,11 @@
 ﻿Imports System.Data.OleDb
 
-Module Update_Pending_Amout_And_Months
-    Public Function GetPendingPayments(ByVal crf As String, ByVal year As Integer) As Integer
+Module Status_Update
+    Public Function statusUpdater()
+        Dim CRF_LIST As New List(Of Integer)
         Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
             con.Open()
-            Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
+            Dim query As String = "SELECT CRF,IIF([january]='Not Paid',1,0) AS january, " &
                                    "IIF([february]='Not Paid',1,0) AS february, " &
                                    "IIF([march]='Not Paid',1,0) AS march, " &
                                    "IIF([april]='Not Paid',1,0) AS april, " &
@@ -16,12 +17,9 @@ Module Update_Pending_Amout_And_Months
                                    "IIF([october]='Not Paid',1,0) AS october, " &
                                     "IIF([november]='Not Paid',1,0) AS november, " &
                                     "IIF([december]='Not Paid',1,0) AS december " &
-                                    "FROM TV_PAYMENT_DETAILS " &
-                                    "WHERE CRF=@CRF AND CURRENT_YEAR=@YEAR"
+                                    "FROM TV_PAYMENT_DETAILS "
 
             Using command As New OleDbCommand(query, con)
-                command.Parameters.AddWithValue("@CRF", crf)
-                command.Parameters.AddWithValue("@YEAR", year)
                 Dim reader As OleDbDataReader = command.ExecuteReader()
                 Dim pendingPayments As Integer = 0
 
@@ -31,7 +29,7 @@ Module Update_Pending_Amout_And_Months
 
                     ' Check the value of each month and add the corresponding month name to the ComboBox if it's not paid
                     If reader("january") = 1 Then
-                        pendingPayments += 250
+
                     End If
                     If reader("february") = 1 Then
                         pendingPayments += 250

@@ -187,7 +187,8 @@ Public Class Admin_Dashboard_Panel
 
     Private Sub Admin_Dashboard_Panel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+
+            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                 connection.Open()
                 Dim sql_command1 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE TV_CONNECTION_STATUS = 'ACTIVE'"
                 Dim sql_command2 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE TV_CONNECTION_STATUS = 'INACTIVE'"

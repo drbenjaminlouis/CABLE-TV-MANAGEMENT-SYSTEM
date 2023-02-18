@@ -39,7 +39,7 @@ Public Class Collect_Payment_Admin
 
                 CUST_PENDING_AMOUNT_TEXTBOX.Clear()
                 Try
-                    Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                    Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                         con.Open()
                         'Query for selecting months which are not paid 
                         Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
@@ -118,6 +118,7 @@ Public Class Collect_Payment_Admin
                             'assigning value pendingpayments to pending amount textbox
                             CUST_PENDING_AMOUNT_TEXTBOX.Text = pendingPayments
                         End Using
+                        con.Close()
                     End Using
                 Catch ex As Exception
                     'If An Exception Occured, Updating It In Log File And Showing A Message
@@ -138,7 +139,7 @@ Public Class Collect_Payment_Admin
                 'If Year Is Selected
                 CUST_PENDING_AMOUNT_TEXTBOX.Clear()
                 Try
-                    Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                    Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                         con.Open()
                         'Query for selecting months which are not paid 
                         Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
@@ -216,6 +217,7 @@ Public Class Collect_Payment_Admin
                             'Assigning value pendingpayments to pending amount textbox
                             CUST_PENDING_AMOUNT_TEXTBOX.Text = pendingPayments
                         End Using
+                        con.Close()
                     End Using
                 Catch ex As Exception
                     'If An Exception Occured, Updating It In Log File And Showing A Message
@@ -268,7 +270,7 @@ Public Class Collect_Payment_Admin
         'Drawing Line
         Dim pen As New Pen(Color.Black, 5)
         e.Graphics.DrawLine(pen, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 20, e.PageBounds.Width - 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 20)
-        e.Graphics.DrawString("INVOICE NO: 100" & invoice_no, New Font("Arial Black", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 40)
+        e.Graphics.DrawString("INVOICE NO: " & invoice_no, New Font("Arial Black", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 40)
         e.Graphics.DrawString("DATE: " & Date.Today, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, e.PageBounds.Width - 185, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 40)
         e.Graphics.DrawString("BILL TO", New Font("Arial Black", 14), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 120)
         e.Graphics.DrawString("CUSTOMER NAME          : " & CUST_NAME_TEXTBOX.Text, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 180)
@@ -280,17 +282,19 @@ Public Class Collect_Payment_Admin
 
         Dim selectedMonths As New List(Of String)
         For i As Integer = 0 To PAYMENT_MONTH_LISTBOX.Items.Count - 1
-            If PAYMENT_MONTH_LISTBOX.GetSelected(i) And monthsToUpdate > 0 Then
+            If monthsToUpdate > 0 Then
                 selectedMonths.Add(PAYMENT_MONTH_LISTBOX.Items(i).ToString())
                 monthsToUpdate -= 1
             End If
         Next
-        e.Graphics.DrawString("MONTH                             : " & PAYMENT_MONTH_LISTBOX.SelectedItems.ToString, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 300)
+
+        Dim selectedMonthsString As String = String.Join(", ", selectedMonths)
+        e.Graphics.DrawString("MONTH                             : " & selectedMonthsString, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 300)
         e.Graphics.DrawString("AMOUNT PAID                 : " & AMOUNT.Text, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 330)
         e.Graphics.DrawString("PENDING AMOUNT         : " & CUST_PENDING_AMOUNT_TEXTBOX.Text, New Font("Arial", 14, FontStyle.Bold), Brushes.Black, 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 360)
         e.Graphics.DrawLine(pen, 15, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 420, e.PageBounds.Width - 20, textSize.Height + text1Size.Height + text2Size.Height + text3Size.Height + 420)
         'Adding Seal To Document, X Is X Axis And Y Is Y Axis
-        Dim sealImage As Image = Image.FromFile("C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Resources\SEAL.png")
+        Dim sealImage As Image = Image.FromFile(seal_path)
         Dim x As Integer = e.PageBounds.Width - sealImage.Width + 40
         Dim y As Integer = 520
         'Reducing Size Of Seal
@@ -338,14 +342,14 @@ Public Class Collect_Payment_Admin
         Else
             'If CRF Entered
             Try
-                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                     con.Open()
                     'Query For Cheking CRF Present Or NOT
                     Dim sqlCheck As String = "SELECT * FROM [CUSTOMER_DETAILS] WHERE [CRF] =@CRF"
                     'Query For Fetching Details Based On CRF Number
                     Dim sqlFetch As String = "SELECT CUST_NAME,CUST_HOUSE_NAME,CUST_AREA,CUST_DISTRICT,CUST_STATE,CUST_MOBILE,CUST_EMAIL FROM CUSTOMER_DETAILS WHERE CRF=@CRF"
-                    Dim sqlFetch2 As String = "SELECT LAST_RENEWAL_DATE FROM TV_CONNECTION_DETAILS WHERE CRF=@CRF AND CUST_TV_CONNECTION=@CUST_TV_CONNECTION"
-                    Dim sqlFetch3 As String = "SELECT LAST_RENEWAL_DATE FROM BROADBAND_CONNECTION_DETAILS WHERE CRF=@CRF AND BROADBAND_CONNECTION=@BROADBAND_CONNECTION"
+                    Dim sqlFetch2 As String = "SELECT EXPIRY_DATE FROM TV_CONNECTION_DETAILS WHERE CRF=@CRF AND CUST_TV_CONNECTION=@CUST_TV_CONNECTION"
+                    Dim sqlFetch3 As String = "SELECT EXPIRY_DATE FROM BROADBAND_CONNECTION_DETAILS WHERE CRF=@CRF AND BROADBAND_CONNECTION=@BROADBAND_CONNECTION"
                     'Qurey For Fetching Connection Details
                     Dim sqlService As String = "SELECT * FROM TV_CONNECTION_DETAILS WHERE CRF=@CRF AND CUST_TV_CONNECTION=@STATUS"
                     Dim sqlService2 As String = "SELECT * FROM BROADBAND_CONNECTION_DETAILS WHERE CRF=@CRF AND BROADBAND_CONNECTION=@STATUS"
@@ -403,27 +407,28 @@ Public Class Collect_Payment_Admin
                     End Using
                     'Fetching Service Details
                     Using cmdService As New OleDbCommand(sqlService, con)
-                            cmdService.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                            cmdService.Parameters.AddWithValue("@STATUS", "YES")
-                            Dim reader As OleDbDataReader = cmdService.ExecuteReader()
-                            'If a Customer Of Cable TV Service
-                            If reader.HasRows Then
-                                SERVICE_COMBOBOX.Items.Clear()
-                                SERVICE_COMBOBOX.Items.Add("CABLE TV")
-                                reader.Close()
-                            End If
-                        End Using
-                        Using cmdService2 As New OleDbCommand(sqlService2, con)
-                            cmdService2.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                            cmdService2.Parameters.AddWithValue("@STATUS", "YES")
-                            Dim reader As OleDbDataReader = cmdService2.ExecuteReader()
-                            'If A Customer Of Broadband Service
-                            If reader.HasRows Then
-                                SERVICE_COMBOBOX.Items.Add("BROADBAND")
-                                reader.Close()
-                            End If
-                        End Using
+                        cmdService.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                        cmdService.Parameters.AddWithValue("@STATUS", "YES")
+                        Dim reader As OleDbDataReader = cmdService.ExecuteReader()
+                        'If a Customer Of Cable TV Service
+                        If reader.HasRows Then
+                            SERVICE_COMBOBOX.Items.Clear()
+                            SERVICE_COMBOBOX.Items.Add("CABLE TV")
+                            reader.Close()
+                        End If
                     End Using
+                    Using cmdService2 As New OleDbCommand(sqlService2, con)
+                        cmdService2.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                        cmdService2.Parameters.AddWithValue("@STATUS", "YES")
+                        Dim reader As OleDbDataReader = cmdService2.ExecuteReader()
+                        'If A Customer Of Broadband Service
+                        If reader.HasRows Then
+                            SERVICE_COMBOBOX.Items.Add("BROADBAND")
+                            reader.Close()
+                        End If
+                    End Using
+                    con.Close()
+                End Using
             Catch ex As Exception
                 'If An Exception Occured, Updating It In Log File And Showing A Message
                 LogError("An Error occurred in Fetching Customer And Service Details:" & ex.Message)
@@ -482,7 +487,9 @@ Public Class Collect_Payment_Admin
         clearAll()
     End Sub
     Private Sub COLLECT_BTN_Click(sender As Object, e As EventArgs) Handles COLLECT_BTN.Click
-        Dim enteredAmount As Integer = CInt(AMOUNT.Text)
+        Dim month_count As Integer = PAYMENT_MONTH_LISTBOX.Items.Count
+        Dim enteredAmount = CInt(AMOUNT.Text)
+
         If CASH_RADIO.Checked = False And QR_RADIO.Checked = False Then
             MessageBox.Show("Please Select Any Payment Method", "ALERT")
         ElseIf AMOUNT.Text = "" Then
@@ -490,14 +497,15 @@ Public Class Collect_Payment_Admin
         ElseIf enteredAmount Mod 250 <> 0 Then
             MessageBox.Show("Please Enter Amount As Multiples Of 250", "ALERT")
 
-        ElseIf PAYMENT_MONTH_LISTBOX.SelectedItem = "" Then
+        ElseIf month_count < PAYMENT_MONTH_LISTBOX.SelectedIndex Then
             MessageBox.Show("Please Select Month", "ALERT")
         ElseIf QR_RADIO.Checked = True And REFERANCE_NO.Text = "" Then
             MessageBox.Show("Please Enter Referance Number", "ALERT")
         Else
+
             If (AMOUNT.Text Mod 250) = 0 Then
                 If SERVICE_COMBOBOX.SelectedItem = "CABLE TV" Or SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
-                    Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                    Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                         con.Open()
                         'Database Transaction Begins
                         Dim transaction As OleDbTransaction = con.BeginTransaction()
@@ -521,11 +529,12 @@ Public Class Collect_Payment_Admin
                                     cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                                     cmd.ExecuteNonQuery()
                                 Next
+
                                 Dim query2 As String = "UPDATE TV_CONNECTION_DETAILS SET LAST_RENEWAL_DATE=@last_renewal_date,EXPIRY_DATE=@expiry_date,TV_CONNECTION_STATUS=@status WHERE CRF=@CRF "
                                 Dim cmd1 As New OleDbCommand(query2, con)
                                 cmd1.Transaction = transaction
-                                cmd1.Parameters.AddWithValue("@last_renewal_date", Date.Today)
-                                Dim lastRenewalDate As Date = Date.Today
+                                cmd1.Parameters.AddWithValue("@last_renewal_date", last_renewal_date_tv)
+                                Dim lastRenewalDate As Date = last_renewal_date_tv
                                 Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30)
                                 'To store date without time'
                                 Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
@@ -554,7 +563,7 @@ Public Class Collect_Payment_Admin
                                 Dim query2 As String = "UPDATE BROADBAND_CONNECTION_DETAILS SET LAST_RENEWAL_DATE=@last_renewal_date,EXPIRY_DATE=@expiry_date,STATUS=@status WHERE CRF=@CRF "
                                 Dim cmd2 As New OleDbCommand(query2, con)
                                 cmd2.Transaction = transaction
-                                cmd2.Parameters.AddWithValue("@last_renewal_date", Date.Today)
+                                cmd2.Parameters.AddWithValue("@last_renewal_date", last_renewal_date_broadband)
                                 Dim lastRenewalDate As Date = last_renewal_date_broadband
                                 Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30)
                                 'To store date without time'
@@ -582,7 +591,8 @@ Public Class Collect_Payment_Admin
                                 cmd_INVOICE.Parameters.AddWithValue("@referance_no", "NILL")
                             End If
                             cmd_INVOICE.Parameters.AddWithValue("@mode", payment_mode)
-                            cmd_INVOICE.Parameters.AddWithValue("@invoice_file", "C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\Invoices\" & invoice_no & ".pdf")
+                            Dim invoiceFilePath As String = invoicepath & invoice_no & ".pdf"
+                            cmd_INVOICE.Parameters.AddWithValue("@invoice_file", invoiceFilePath)
                             cmd_INVOICE.ExecuteNonQuery()
 
                             'CALLING METHOD FOR GENERATING INVOICE
@@ -591,19 +601,14 @@ Public Class Collect_Payment_Admin
                             If CUST_EMAIL_TEXTBOX.Text IsNot Nothing Then
                                 Dim email_to As String = CUST_EMAIL_TEXTBOX.Text
                                 Dim pending_amt As Integer = CUST_PENDING_AMOUNT_TEXTBOX.Text
+                                Dim service As String = SERVICE_COMBOBOX.SelectedItem
                                 Dim cust_name As String = CUST_NAME_TEXTBOX.Text
                                 Dim invoiceNumber As String = invoice_no
                                 Dim invoicesFolder As String = "Invoices\"
                                 Dim filePath As String = Path.Combine(invoicesFolder, invoiceNumber & ".pdf")
-                                Dim email_body As String = "Dear" & cust_name & "," & vbCrLf & vbCrLf &
-                                                            "We hope this email finds you well. We would Like To confirm the receipt Of your recent payment For your cable TV service. Thank you For choosing us As your service provider." & vbCrLf & "
-                                                            Please find attached to this email a copy of your latest bill, which includes a breakdown of your current balance and payment history. As of " & Date.Today & ", your outstanding balance is " & pending_amt & "." & vbCrLf & "
-                                                            We kindly request that you continue to make payments on time to ensure uninterrupted service. If you have any questions or concerns, please don't hesitate to reach out to our customer service team." & vbCrLf & "
-                                                            Thank you for your prompt payment." & vbCrLf & "
-                                                            Best regards," & vbCrLf & "
-                                                            BHARATH CABLE TV NETWORK"
 
-                                Invoice_Sender.Email(email_to, "PAYMENT CONFIRMATION", email_body, filePath)
+
+                                Invoice_Sender.Email(email_to, "PAYMENT CONFIRMATION", filePath, cust_name, pending_amt)
                             End If
                             'COMMITTING ALL THE TRANSACTIONS
                             transaction.Commit()
@@ -617,6 +622,7 @@ Public Class Collect_Payment_Admin
                             LogError("An Error Occoured During Payment: " & ex.Message)
                             MessageBox.Show("Payment Declined. Check Log For More Details", "ERROR")
                         End Try
+                        con.Close()
                     End Using
                 End If
             End If

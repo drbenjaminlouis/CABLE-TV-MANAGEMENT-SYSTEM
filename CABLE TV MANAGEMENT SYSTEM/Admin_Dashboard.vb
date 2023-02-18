@@ -21,6 +21,7 @@
     End Sub
     Private Sub Admin_Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         OpenChildForm(New Admin_Dashboard_Panel)
+        Payment_Sync.Payment_Sync()
     End Sub
 
     'For Inter-Changing Panels'

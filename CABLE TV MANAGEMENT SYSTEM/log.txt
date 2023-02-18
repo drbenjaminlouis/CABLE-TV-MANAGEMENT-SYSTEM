@@ -67,3 +67,9 @@
 [2023-02-17 21:45:34] An error occurred: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
 [2023-02-17 21:47:55] An error occurred: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
 [2023-02-17 21:51:18] An error occurred: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-18 13:04:26] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-18 16:28:11] An Error Occoured During Payment: InvalidArgument=Value of '0' is not valid for 'index'. (Parameter 'index')
+Actual value was 0.
+[2023-02-18 18:19:11] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-18 18:19:14] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-18 18:19:17] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
