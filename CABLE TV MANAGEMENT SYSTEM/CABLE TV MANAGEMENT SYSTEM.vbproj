@@ -21,21 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Add_Customer_admin.Designer.vb">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Add_Customer_admin.xsd</DependentUpon>
-    </Compile>
-    <Compile Update="DataSet1.Designer.vb">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Update="LoginForAdmin.Designer.vb">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>LoginForAdmin.xsd</DependentUpon>
-    </Compile>
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -62,17 +47,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Add_Customer_admin.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Add_Customer_admin.Designer.vb</LastGenOutput>
+    <None Update="App_Data\CABLE_TV_DB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    <None Update="App_Data\Database\Admin_Login_db.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="LoginForAdmin.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LoginForAdmin.Designer.vb</LastGenOutput>
+    <None Update="App_Data\Database\CABLE_TV_DB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

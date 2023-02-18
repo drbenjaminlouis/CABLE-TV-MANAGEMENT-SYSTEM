@@ -7,6 +7,8 @@ Imports System.Threading
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports CABLE_TV_MANAGEMENT_SYSTEM.LogModule
 Imports CABLE_TV_MANAGEMENT_SYSTEM.Payment_Sync
+Imports Guna.UI2.WinForms
+
 Public Class add_customer
     Dim months As New List(Of String)
     'Function for clearing all inputs'
@@ -35,9 +37,7 @@ Public Class add_customer
         CUST_USERNAME_TEXTBOX.Clear()
         CUST_PASSWORD_TEXTBOX.Clear()
         BROADBAND_REG_DATE.ResetText()
-        BROADBAND_RENEWAL_DATE.ResetText()
         TV_Reg_Picker.ResetText()
-        TV_Renewal_Picker.ResetText()
         Return 0
     End Function
     'For Storing Current Year'
@@ -45,7 +45,7 @@ Public Class add_customer
 
     'Function For Generating Unique CRF Number'
     Public Function GenerateCRF() As Integer
-        Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+        Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
             connection.Open()
             Dim uniqueNumber As Integer = 100
             Dim found As Boolean = False
@@ -60,6 +60,7 @@ Public Class add_customer
             End While
             connection.Close()
             Return uniqueNumber
+            connection.Close()
         End Using
     End Function
     'Function For Adding Asian Countries To Combobox
@@ -84,6 +85,15 @@ Public Class add_customer
         CUST_COUNTRY_COMBOBOX.Items.Cast(Of String)().ToList().Sort()
 
         CUST_CRF_TEXTBOX.Text = GenerateCRF()
+        BROADBAND_REG_DATE.MinDate = Date.Today
+        BROADBAND_REG_DATE.MaxDate = Date.Today
+        TV_Reg_Picker.MaxDate = Date.Today
+        TV_Reg_Picker.MinDate = Date.Today
+        DOB_PICKER.MinDate = DateTime.Today.AddYears(-80)
+        DOB_PICKER.MaxDate = DateTime.Today.AddYears(-18)
+        DOB_PICKER.Value = DateTime.Today.AddYears(-18)
+
+
     End Sub
     'For Checking Entered Value Is Number Or Not'
     Private Sub CUST_MOBILE_TEXTBOX_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
@@ -129,16 +139,12 @@ Public Class add_customer
             MessageBox2.Show("Please Enter All Broadband Connection Details", "ALERT")
         ElseIf CUST_TV_CONNECTION_COMBOBOX.SelectedItem = "YES" And CUST_CABLE_PLAN_COMBOBOX.Text = "" And CUST_CHIP_ID_TEXTBOX.Text = "" Then
             MessageBox2.Show("Please Enter All TV Connection Details", "ALERT")
-        ElseIf TV_Reg_Picker.Value > TV_Renewal_Picker.Value Then
-            MessageBox2.Show("Select Correct TV Registration And Renewal Date", "ALERT")
-        ElseIf BROADBAND_REG_DATE.Value > BROADBAND_RENEWAL_DATE.Value Then
-            MessageBox2.Show("Select Correct Broadband Registration And Renewal Date", "ALERT")
         Else
             Try
                 'For Inserting Data To Database'
                 ADD_CUSTOMER_PROGRESS.Visible = True
                 ADD_CUSTOMER_PROGRESS.Start()
-                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                     con.Open()
                     'For Begining The Transaction'
                     Dim transaction As OleDbTransaction = con.BeginTransaction()
@@ -179,8 +185,8 @@ Public Class add_customer
                         cmd3.Parameters.AddWithValue("@CUST_TV_PLAN", CUST_CABLE_PLAN_COMBOBOX.SelectedItem)
                         cmd3.Parameters.AddWithValue("@CHIP_ID", CUST_CHIP_ID_TEXTBOX.Text)
                         cmd3.Parameters.AddWithValue("@TV_REGISTRATION_DATE", TV_Reg_Picker.Value)
-                        cmd3.Parameters.AddWithValue("@TV_LAST_RENEWAL_DATE", TV_Renewal_Picker.Value)
-                        Dim tv_lastRenewalDate As Date = TV_Renewal_Picker.Value
+                        cmd3.Parameters.AddWithValue("@TV_LAST_RENEWAL_DATE", TV_Reg_Picker.Value)
+                        Dim tv_lastRenewalDate As Date = TV_Reg_Picker.Value
                         Dim tv_thirtyDaysLater As Date = tv_lastRenewalDate.AddDays(30)
                         'To store date without time'
                         Dim tv_expiryDateWithoutTime As Date = New Date(tv_thirtyDaysLater.Year, tv_thirtyDaysLater.Month, tv_thirtyDaysLater.Day)
@@ -202,8 +208,8 @@ Public Class add_customer
                         cmd5.Transaction = transaction
                         cmd5.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                         cmd5.Parameters.AddWithValue("@REGISTRATION_DATE", BROADBAND_REG_DATE.Value)
-                        cmd5.Parameters.AddWithValue("@LAST_RENEWAL_DATE", BROADBAND_RENEWAL_DATE.Value)
-                        Dim lastRenewalDate As Date = BROADBAND_RENEWAL_DATE.Value
+                        cmd5.Parameters.AddWithValue("@LAST_RENEWAL_DATE", BROADBAND_REG_DATE.Value)
+                        Dim lastRenewalDate As Date = BROADBAND_REG_DATE.Value
                         Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30)
                         'To store date without time'
                         Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
@@ -233,6 +239,22 @@ Public Class add_customer
                         If CUST_TV_CONNECTION_COMBOBOX.SelectedItem = "YES" Then
                             cmd3.ExecuteNonQuery()
                             cmd4.ExecuteNonQuery()
+                            Dim fromdate As Date = TV_Reg_Picker.Value
+                            Dim todate As Date = todayWithoutTime
+                            Dim crf As Integer = CUST_CRF_TEXTBOX.Text
+                            Dim months As List(Of String) = GetMonthsBetween(fromdate, todate)
+                            Dim count As Integer = months.Count
+
+                            If count < 0 Then
+                                MessageBox.Show("Less than 0")
+                            Else
+                                For i = 0 To count - 1
+                                    Dim command As New OleDbCommand("UPDATE TV_PAYMENT_DETAILS SET " & months(i) & "='NOT PAID' WHERE CRF=@CRF AND " & months(i) & "='NILL'", con)
+                                    command.Transaction = transaction
+                                    command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                    command.ExecuteNonQuery()
+                                Next
+                            End If
                         Else
                             cmd3.Parameters.Clear()
                             cmd4.Parameters.Clear()
@@ -241,27 +263,28 @@ Public Class add_customer
                             cmd5.ExecuteNonQuery()
                             cmd6.ExecuteNonQuery()
                             cmd7.ExecuteNonQuery()
+                            Dim fromdate As Date = BROADBAND_REG_DATE.Value
+                            Dim todate As Date = todayWithoutTime
+                            Dim crf As Integer = CUST_CRF_TEXTBOX.Text
+                            Dim months As List(Of String) = GetMonthsBetween(fromdate, todate)
+                            Dim count As Integer = months.Count
+
+                            If count < 0 Then
+                                MessageBox.Show("Less than 0")
+                            Else
+                                For i = 0 To count - 1
+                                    Dim command As New OleDbCommand("UPDATE BROADBAND_PAYMENT_DETAILS SET " & months(i) & "='NOT PAID' WHERE CRF=@CRF AND " & months(i) & "='PENDING'", con)
+                                    command.Transaction = transaction
+                                    command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                    command.ExecuteNonQuery()
+                                Next
+                            End If
                         Else
                             cmd5.Parameters.Clear()
                             cmd6.Parameters.Clear()
                             cmd7.Parameters.Clear()
                         End If
-                        Dim fromdate As Date = TV_Reg_Picker.Value
-                        Dim todate As Date = tv_todayWithoutTime
-                        Dim crf As Integer = CUST_CRF_TEXTBOX.Text
-                        Dim months As List(Of String) = GetMonthsBetween(fromdate, todate)
-                        Dim count As Integer = months.Count
 
-                        If count < 0 Then
-                            MessageBox.Show("Less than 0")
-                        Else
-                            For i = 0 To count - 1
-                                Dim command As New OleDbCommand("UPDATE TV_PAYMENT_DETAILS SET " & months(i) & "='NOT PAID' WHERE CRF=@CRF AND " & months(i) & "='NILL'", con)
-                                command.Transaction = transaction
-                                command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                                command.ExecuteNonQuery()
-                            Next
-                        End If
                         transaction.Commit()
                         MessageBox2.Show("Registration Sucessfull", "ALERT")
                         Payment_Sync.Payment_Sync()
@@ -277,6 +300,7 @@ Public Class add_customer
                         ADD_CUSTOMER_PROGRESS.Stop()
                         ADD_CUSTOMER_PROGRESS.Visible = False
                     End Try
+                    con.Close()
                 End Using
             Catch ex As Exception
                 LogError("An error occurred: " & ex.Message)
@@ -316,6 +340,8 @@ Public Class add_customer
             CUST_CABLE_PLAN_LABEL.Show()
             CUST_CHIP_ID_LABEL.Show()
             CUST_CHIP_ID_TEXTBOX.Show()
+            TV_Reg_Label.Show()
+            TV_Reg_Picker.Show()
         End If
         If CUST_TV_CONNECTION_COMBOBOX.SelectedItem = "NO" Then
             CUST_CABLE_PLAN_COMBOBOX.Hide()
@@ -324,6 +350,8 @@ Public Class add_customer
             CUST_CHIP_ID_TEXTBOX.Hide()
             CUST_CABLE_PLAN_COMBOBOX.Text = ""
             CUST_CHIP_ID_TEXTBOX.Text = ""
+            TV_Reg_Label.Hide()
+            TV_Reg_Picker.Hide()
         End If
     End Sub
     'For Hiding Rest Of The Inputs When Broadband Connection Not Selected.'
@@ -337,8 +365,6 @@ Public Class add_customer
             CUST_BROADBAND_PASSWORD_TEXTBOX.Show()
             BB_REG_DATE_LABEL.Show()
             BROADBAND_REG_DATE.Show()
-            BROADBAND_RENEWAL_DATE.Show()
-            LAST_RENEWAL_DATE_LABEL.Show()
         End If
         If CUST_BROADBAND_COMBOBOX.SelectedItem = "NO" Then
             CUST_BROADBAND_PLAN_COMBOBOX.Hide()
@@ -349,19 +375,17 @@ Public Class add_customer
             CUST_BROADBAND_PASSWORD_TEXTBOX.Hide()
             BB_REG_DATE_LABEL.Hide()
             BROADBAND_REG_DATE.Hide()
-            BROADBAND_RENEWAL_DATE.Hide()
-            LAST_RENEWAL_DATE_LABEL.Hide()
             CUST_BROADBAND_PLAN_COMBOBOX.Text = ""
             CUST_BROADBAND_USERNAME_TEXTBOX.Text = ""
             CUST_BROADBAND_PASSWORD_TEXTBOX.Text = ""
             BROADBAND_REG_DATE.Text = ""
-            BROADBAND_RENEWAL_DATE.Text = ""
+
         End If
     End Sub
     'For Checking If Username is Already Seleccted'
     Private Sub CUST_USERNAME_TEXTBOX_Leave(sender As Object, e As EventArgs) Handles CUST_USERNAME_TEXTBOX.Leave
         Try
-            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                 connection.Open()
                 Dim found As Boolean = False
                 Dim cmd As New OleDbCommand("SELECT * FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@CUST_USERNAME", connection)
@@ -373,6 +397,7 @@ Public Class add_customer
                     CUST_USERNAME_TEXTBOX.Clear()
                     CUST_USERNAME_TEXTBOX.Focus()
                 End If
+                connection.Close()
             End Using
         Catch ex As Exception
             LogError("ADD CUSTOMER - CUST_USERNAME_TEXTBOX_LEAVE")
@@ -383,7 +408,7 @@ Public Class add_customer
     'For Checking If Broadband Username Already Taken'
     Private Sub CUST_BROADBAND_USERNAME_TEXTBOX_Leave(sender As Object, e As EventArgs) Handles CUST_BROADBAND_USERNAME_TEXTBOX.Leave
         Try
-            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                 connection.Open()
                 Dim found As Boolean = False
                 Dim cmd As New OleDbCommand("SELECT * FROM BROADBAND_LOGIN WHERE CUST_BROADBAND_USERNAME=@CUST_USERNAME", connection)
@@ -395,6 +420,7 @@ Public Class add_customer
                     CUST_BROADBAND_USERNAME_TEXTBOX.Clear()
                     CUST_BROADBAND_USERNAME_TEXTBOX.Focus()
                 End If
+                connection.Close()
             End Using
         Catch ex As Exception
             LogError("ADD CUSTOMER - CUST_BROADBAND_USERNAME_TEXTBOX_LEAVE")
@@ -404,7 +430,7 @@ Public Class add_customer
     'For Checking If CHIP ID Already Added'
     Private Sub CUST_CHIP_ID_TEXTBOX_Leave(sender As Object, e As EventArgs) Handles CUST_CHIP_ID_TEXTBOX.Leave
         Try
-            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb")
+            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                 connection.Open()
                 Dim found As Boolean = False
                 Dim cmd As New OleDbCommand("SELECT * FROM TV_CONNECTION_DETAILS WHERE CHIP_ID=@CHIP_ID", connection)
@@ -416,6 +442,7 @@ Public Class add_customer
                     CUST_CHIP_ID_TEXTBOX.Clear()
                     CUST_CHIP_ID_TEXTBOX.Focus()
                 End If
+                connection.Close()
             End Using
         Catch ex As Exception
             LogError("ADD CUSTOMER - CUST_CHIP_ID_TEXTBOX_LEAVE")

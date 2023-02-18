@@ -115,6 +115,7 @@ Partial Class Admin_Dashboard
         '
         'Guna2Panel1
         '
+        Me.Guna2Panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Black
         Me.Guna2Panel1.BorderColor = System.Drawing.Color.White
         Me.Guna2Panel1.Controls.Add(Me.Guna2ControlBox2)
@@ -840,6 +841,7 @@ Partial Class Admin_Dashboard
         '
         'PanelDesktop
         '
+        Me.PanelDesktop.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.PanelDesktop.BackColor = System.Drawing.Color.Black
         Me.PanelDesktop.Controls.Add(Me.Progress)
         Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill

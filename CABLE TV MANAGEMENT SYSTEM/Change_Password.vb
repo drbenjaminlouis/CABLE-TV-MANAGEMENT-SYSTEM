@@ -18,7 +18,7 @@ Public Class Change_Password
             CONFIRM_PASSWORD_TEXTBOX.Clear()
         Else
             ' Define the connection string
-            Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb"
+            Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath
             ' Define the SQL query for checking the username and old password
             Dim sqlCheck As String = "SELECT * FROM [ADMIN_LOGIN_DETAILS] WHERE [USERNAME] = @UserName AND [PASSWORD] = @Password"
             ' Define the SQL query for updating the password
@@ -56,6 +56,7 @@ Public Class Change_Password
                         MessageBox.Show("User name or old password is incorrect.", "ALERT")
                     End If
                 End Using
+                conn.Close()
             End Using
         End If
     End Sub

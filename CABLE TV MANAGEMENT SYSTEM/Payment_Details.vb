@@ -24,7 +24,7 @@ Public Class Payment_Details
         Next
     End Sub
     Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
-        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Database\Customer_Details_Db.accdb"
+        Dim connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath
         Dim sql As String = "SELECT JANUARY,FEBRUARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER FROM TV_PAYMENT_DETAILS WHERE CRF = @CRF AND YEAR = @YEAR"
         Dim sql2 As String = "SELECT CUST_NAME,CUST_DOB,CUST_HOUSE_NAME,CUST_AREA,CUST_DISTRICT,CUST_STATE,CUST_COUNTRY,CUST_PINCODE,CUST_MOBILE,CUST_EMAIL FROM CUSTOMER_DETAILS WHERE CRF = @CRF"
         Using connection As New OleDbConnection(connectionString)
@@ -63,6 +63,7 @@ Public Class Payment_Details
                 CUST_EMAIL_TEXTBOX.Text = reader2("CUST_EMAIL").ToString()
             End If
             CheckTextBoxValues()
+            connection.Close()
         End Using
     End Sub
 
