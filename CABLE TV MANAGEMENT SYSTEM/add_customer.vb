@@ -85,7 +85,8 @@ Public Class add_customer
         CUST_COUNTRY_COMBOBOX.Items.Cast(Of String)().ToList().Sort()
 
         CUST_CRF_TEXTBOX.Text = GenerateCRF()
-        BROADBAND_REG_DATE.MinDate = Date.Today
+
+        'ROADBAND_REG_DATE.MinDate = DateTime.Now.Date
         BROADBAND_REG_DATE.MaxDate = Date.Today
         TV_Reg_Picker.MaxDate = Date.Today
         TV_Reg_Picker.MinDate = Date.Today

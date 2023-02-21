@@ -20,6 +20,7 @@
         End If
     End Sub
     Private Sub Admin_Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        App_Name.Text = app_name_text
         OpenChildForm(New Admin_Dashboard_Panel)
         Payment_Sync.Payment_Sync()
     End Sub
@@ -61,7 +62,7 @@
         OpenChildForm(New Add_Employee)
     End Sub
     Private Sub Guna2GradientButton5_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton5.Click
-        OpenChildForm(New Customer_Details)
+        OpenChildForm(New CUSTOMER_DETAILS_NEW)
     End Sub
 
     Private Sub Guna2GradientButton11_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton11.Click

@@ -95,7 +95,7 @@ Partial Class Admin_Dashboard
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.App_Name = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.MessageBox1 = New Guna.UI2.WinForms.Guna2MessageDialog()
         Me.Guna2NotificationPaint1 = New Guna.UI2.WinForms.Guna2NotificationPaint(Me.components)
@@ -110,7 +110,7 @@ Partial Class Admin_Dashboard
         '
         'Guna2Elipse1
         '
-        Me.Guna2Elipse1.BorderRadius = 10
+        Me.Guna2Elipse1.BorderRadius = 0
         Me.Guna2Elipse1.TargetControl = Me
         '
         'Guna2Panel1
@@ -196,7 +196,7 @@ Partial Class Admin_Dashboard
         Me.Guna2Panel2.Controls.Add(Me.Guna2GradientButton1)
         Me.Guna2Panel2.Controls.Add(Me.Guna2PictureBox2)
         Me.Guna2Panel2.Controls.Add(Me.Label1)
-        Me.Guna2Panel2.Controls.Add(Me.Label2)
+        Me.Guna2Panel2.Controls.Add(Me.App_Name)
         Me.Guna2Panel2.CustomizableEdges = CustomizableEdges40
         Me.Guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Guna2Panel2.Location = New System.Drawing.Point(0, 0)
@@ -800,17 +800,17 @@ Partial Class Admin_Dashboard
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "ADMIN"
         '
-        'Label2
+        'App_Name
         '
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Arial Black", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(97, -3)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(222, 83)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "CABLE TV MANAGEMENT SYSTEM"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.App_Name.BackColor = System.Drawing.Color.Transparent
+        Me.App_Name.Font = New System.Drawing.Font("Arial Black", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.App_Name.ForeColor = System.Drawing.Color.White
+        Me.App_Name.Location = New System.Drawing.Point(97, -3)
+        Me.App_Name.Name = "App_Name"
+        Me.App_Name.Size = New System.Drawing.Size(222, 83)
+        Me.App_Name.TabIndex = 4
+        Me.App_Name.Text = "CABLE TV MANAGEMENT SYSTEM"
+        Me.App_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
         '
@@ -844,7 +844,6 @@ Partial Class Admin_Dashboard
         Me.PanelDesktop.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.PanelDesktop.BackColor = System.Drawing.Color.Black
         Me.PanelDesktop.Controls.Add(Me.Progress)
-        Me.PanelDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelDesktop.Location = New System.Drawing.Point(322, 51)
         Me.PanelDesktop.Name = "PanelDesktop"
         Me.PanelDesktop.Size = New System.Drawing.Size(1378, 1012)
@@ -890,7 +889,7 @@ Partial Class Admin_Dashboard
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents App_Name As Label
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
