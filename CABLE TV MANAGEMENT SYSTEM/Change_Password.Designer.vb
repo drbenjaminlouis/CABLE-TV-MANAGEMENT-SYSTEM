@@ -22,34 +22,34 @@ Partial Class Change_Password
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.asasasas = New System.Windows.Forms.Panel()
         Me.CLEAR_BTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.CHANGE_PASSWORD_BTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.CUST_DISTRasasaICT_LABEL = New System.Windows.Forms.Label()
+        Me.Confirm_password_Label = New System.Windows.Forms.Label()
         Me.CONFIRM_PASSWORD_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.NEW_PASSWORD_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CUST_AasasREA_LABEL = New System.Windows.Forms.Label()
-        Me.OLD_PASSWORD_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CUST_HOUasasSENAME_LABEL = New System.Windows.Forms.Label()
+        Me.New_Password_Label = New System.Windows.Forms.Label()
+        Me.CURRENT_PASSWORD_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Current_password_label = New System.Windows.Forms.Label()
         Me.USERNAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CUST_NAasME_LABEL = New System.Windows.Forms.Label()
-        Me.MessageBox = New Guna.UI2.WinForms.Guna2MessageDialog()
+        Me.Username_Label = New System.Windows.Forms.Label()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.MessageBox = New Guna.UI2.WinForms.Guna2MessageDialog()
         Me.asasasas.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,14 +59,14 @@ Partial Class Change_Password
         Me.asasasas.Controls.Add(Me.CLEAR_BTN)
         Me.asasasas.Controls.Add(Me.CHANGE_PASSWORD_BTN)
         Me.asasasas.Controls.Add(Me.Label9)
-        Me.asasasas.Controls.Add(Me.CUST_DISTRasasaICT_LABEL)
+        Me.asasasas.Controls.Add(Me.Confirm_password_Label)
         Me.asasasas.Controls.Add(Me.CONFIRM_PASSWORD_TEXTBOX)
         Me.asasasas.Controls.Add(Me.NEW_PASSWORD_TEXTBOX)
-        Me.asasasas.Controls.Add(Me.CUST_AasasREA_LABEL)
-        Me.asasasas.Controls.Add(Me.OLD_PASSWORD_TEXTBOX)
-        Me.asasasas.Controls.Add(Me.CUST_HOUasasSENAME_LABEL)
+        Me.asasasas.Controls.Add(Me.New_Password_Label)
+        Me.asasasas.Controls.Add(Me.CURRENT_PASSWORD_TEXTBOX)
+        Me.asasasas.Controls.Add(Me.Current_password_label)
         Me.asasasas.Controls.Add(Me.USERNAME_TEXTBOX)
-        Me.asasasas.Controls.Add(Me.CUST_NAasME_LABEL)
+        Me.asasasas.Controls.Add(Me.Username_Label)
         Me.asasasas.Controls.Add(Me.Guna2GroupBox1)
         Me.asasasas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.asasasas.Location = New System.Drawing.Point(0, 0)
@@ -79,7 +79,7 @@ Partial Class Change_Password
         Me.CLEAR_BTN.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.CLEAR_BTN.Animated = True
         Me.CLEAR_BTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CLEAR_BTN.CustomizableEdges = CustomizableEdges1
+        Me.CLEAR_BTN.CustomizableEdges = CustomizableEdges15
         Me.CLEAR_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.CLEAR_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.CLEAR_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -95,7 +95,7 @@ Partial Class Change_Password
         Me.CLEAR_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.CLEAR_BTN.Location = New System.Drawing.Point(708, 346)
         Me.CLEAR_BTN.Name = "CLEAR_BTN"
-        Me.CLEAR_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Me.CLEAR_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         Me.CLEAR_BTN.Size = New System.Drawing.Size(216, 65)
         Me.CLEAR_BTN.TabIndex = 54
         Me.CLEAR_BTN.Text = "CLEAR"
@@ -105,7 +105,7 @@ Partial Class Change_Password
         Me.CHANGE_PASSWORD_BTN.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.CHANGE_PASSWORD_BTN.Animated = True
         Me.CHANGE_PASSWORD_BTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CHANGE_PASSWORD_BTN.CustomizableEdges = CustomizableEdges3
+        Me.CHANGE_PASSWORD_BTN.CustomizableEdges = CustomizableEdges17
         Me.CHANGE_PASSWORD_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.CHANGE_PASSWORD_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.CHANGE_PASSWORD_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -121,7 +121,7 @@ Partial Class Change_Password
         Me.CHANGE_PASSWORD_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.CHANGE_PASSWORD_BTN.Location = New System.Drawing.Point(477, 346)
         Me.CHANGE_PASSWORD_BTN.Name = "CHANGE_PASSWORD_BTN"
-        Me.CHANGE_PASSWORD_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Me.CHANGE_PASSWORD_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         Me.CHANGE_PASSWORD_BTN.Size = New System.Drawing.Size(216, 65)
         Me.CHANGE_PASSWORD_BTN.TabIndex = 53
         Me.CHANGE_PASSWORD_BTN.Text = "CHANGE"
@@ -138,17 +138,17 @@ Partial Class Change_Password
         Me.Label9.Text = "CHANGE PASSWORD"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'CUST_DISTRasasaICT_LABEL
+        'Confirm_password_Label
         '
-        Me.CUST_DISTRasasaICT_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_DISTRasasaICT_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_DISTRasasaICT_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_DISTRasasaICT_LABEL.Location = New System.Drawing.Point(406, 234)
-        Me.CUST_DISTRasasaICT_LABEL.Name = "CUST_DISTRasasaICT_LABEL"
-        Me.CUST_DISTRasasaICT_LABEL.Size = New System.Drawing.Size(190, 36)
-        Me.CUST_DISTRasasaICT_LABEL.TabIndex = 49
-        Me.CUST_DISTRasasaICT_LABEL.Text = "CONFIRM PASSWORD : "
-        Me.CUST_DISTRasasaICT_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Confirm_password_Label.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Confirm_password_Label.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Confirm_password_Label.ForeColor = System.Drawing.Color.White
+        Me.Confirm_password_Label.Location = New System.Drawing.Point(406, 234)
+        Me.Confirm_password_Label.Name = "Confirm_password_Label"
+        Me.Confirm_password_Label.Size = New System.Drawing.Size(205, 36)
+        Me.Confirm_password_Label.TabIndex = 49
+        Me.Confirm_password_Label.Text = "CONFIRM PASSWORD  : "
+        Me.Confirm_password_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'CONFIRM_PASSWORD_TEXTBOX
         '
@@ -158,7 +158,7 @@ Partial Class Change_Password
         Me.CONFIRM_PASSWORD_TEXTBOX.BorderRadius = 3
         Me.CONFIRM_PASSWORD_TEXTBOX.BorderThickness = 0
         Me.CONFIRM_PASSWORD_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CONFIRM_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges5
+        Me.CONFIRM_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges19
         Me.CONFIRM_PASSWORD_TEXTBOX.DefaultText = ""
         Me.CONFIRM_PASSWORD_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.CONFIRM_PASSWORD_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -174,7 +174,7 @@ Partial Class Change_Password
         Me.CONFIRM_PASSWORD_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.CONFIRM_PASSWORD_TEXTBOX.PlaceholderText = ""
         Me.CONFIRM_PASSWORD_TEXTBOX.SelectedText = ""
-        Me.CONFIRM_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Me.CONFIRM_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges20
         Me.CONFIRM_PASSWORD_TEXTBOX.Size = New System.Drawing.Size(389, 36)
         Me.CONFIRM_PASSWORD_TEXTBOX.TabIndex = 50
         '
@@ -186,7 +186,7 @@ Partial Class Change_Password
         Me.NEW_PASSWORD_TEXTBOX.BorderRadius = 3
         Me.NEW_PASSWORD_TEXTBOX.BorderThickness = 0
         Me.NEW_PASSWORD_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.NEW_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges7
+        Me.NEW_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges21
         Me.NEW_PASSWORD_TEXTBOX.DefaultText = ""
         Me.NEW_PASSWORD_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.NEW_PASSWORD_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -202,61 +202,61 @@ Partial Class Change_Password
         Me.NEW_PASSWORD_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.NEW_PASSWORD_TEXTBOX.PlaceholderText = ""
         Me.NEW_PASSWORD_TEXTBOX.SelectedText = ""
-        Me.NEW_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Me.NEW_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges22
         Me.NEW_PASSWORD_TEXTBOX.Size = New System.Drawing.Size(389, 36)
         Me.NEW_PASSWORD_TEXTBOX.TabIndex = 48
         '
-        'CUST_AasasREA_LABEL
+        'New_Password_Label
         '
-        Me.CUST_AasasREA_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_AasasREA_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_AasasREA_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_AasasREA_LABEL.Location = New System.Drawing.Point(406, 192)
-        Me.CUST_AasasREA_LABEL.Name = "CUST_AasasREA_LABEL"
-        Me.CUST_AasasREA_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_AasasREA_LABEL.TabIndex = 47
-        Me.CUST_AasasREA_LABEL.Text = "NEW PASSWORD : "
-        Me.CUST_AasasREA_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.New_Password_Label.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.New_Password_Label.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.New_Password_Label.ForeColor = System.Drawing.Color.White
+        Me.New_Password_Label.Location = New System.Drawing.Point(406, 192)
+        Me.New_Password_Label.Name = "New_Password_Label"
+        Me.New_Password_Label.Size = New System.Drawing.Size(205, 36)
+        Me.New_Password_Label.TabIndex = 47
+        Me.New_Password_Label.Text = "NEW PASSWORD         : "
+        Me.New_Password_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'OLD_PASSWORD_TEXTBOX
+        'CURRENT_PASSWORD_TEXTBOX
         '
-        Me.OLD_PASSWORD_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.OLD_PASSWORD_TEXTBOX.Animated = True
-        Me.OLD_PASSWORD_TEXTBOX.AutoSize = True
-        Me.OLD_PASSWORD_TEXTBOX.BorderRadius = 3
-        Me.OLD_PASSWORD_TEXTBOX.BorderThickness = 0
-        Me.OLD_PASSWORD_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.OLD_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges9
-        Me.OLD_PASSWORD_TEXTBOX.DefaultText = ""
-        Me.OLD_PASSWORD_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.OLD_PASSWORD_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.OLD_PASSWORD_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.OLD_PASSWORD_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.OLD_PASSWORD_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.OLD_PASSWORD_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.OLD_PASSWORD_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.OLD_PASSWORD_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.OLD_PASSWORD_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.OLD_PASSWORD_TEXTBOX.Location = New System.Drawing.Point(617, 150)
-        Me.OLD_PASSWORD_TEXTBOX.Name = "OLD_PASSWORD_TEXTBOX"
-        Me.OLD_PASSWORD_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.OLD_PASSWORD_TEXTBOX.PlaceholderText = ""
-        Me.OLD_PASSWORD_TEXTBOX.SelectedText = ""
-        Me.OLD_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Me.OLD_PASSWORD_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.OLD_PASSWORD_TEXTBOX.TabIndex = 46
+        Me.CURRENT_PASSWORD_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CURRENT_PASSWORD_TEXTBOX.Animated = True
+        Me.CURRENT_PASSWORD_TEXTBOX.AutoSize = True
+        Me.CURRENT_PASSWORD_TEXTBOX.BorderRadius = 3
+        Me.CURRENT_PASSWORD_TEXTBOX.BorderThickness = 0
+        Me.CURRENT_PASSWORD_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CURRENT_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges23
+        Me.CURRENT_PASSWORD_TEXTBOX.DefaultText = ""
+        Me.CURRENT_PASSWORD_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CURRENT_PASSWORD_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CURRENT_PASSWORD_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CURRENT_PASSWORD_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CURRENT_PASSWORD_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CURRENT_PASSWORD_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CURRENT_PASSWORD_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CURRENT_PASSWORD_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CURRENT_PASSWORD_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CURRENT_PASSWORD_TEXTBOX.Location = New System.Drawing.Point(617, 150)
+        Me.CURRENT_PASSWORD_TEXTBOX.Name = "CURRENT_PASSWORD_TEXTBOX"
+        Me.CURRENT_PASSWORD_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CURRENT_PASSWORD_TEXTBOX.PlaceholderText = ""
+        Me.CURRENT_PASSWORD_TEXTBOX.SelectedText = ""
+        Me.CURRENT_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Me.CURRENT_PASSWORD_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CURRENT_PASSWORD_TEXTBOX.TabIndex = 46
         '
-        'CUST_HOUasasSENAME_LABEL
+        'Current_password_label
         '
-        Me.CUST_HOUasasSENAME_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_HOUasasSENAME_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_HOUasasSENAME_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_HOUasasSENAME_LABEL.Location = New System.Drawing.Point(406, 150)
-        Me.CUST_HOUasasSENAME_LABEL.Name = "CUST_HOUasasSENAME_LABEL"
-        Me.CUST_HOUasasSENAME_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_HOUasasSENAME_LABEL.TabIndex = 45
-        Me.CUST_HOUasasSENAME_LABEL.Text = "OLD PASSWORD :"
-        Me.CUST_HOUasasSENAME_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Current_password_label.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Current_password_label.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Current_password_label.ForeColor = System.Drawing.Color.White
+        Me.Current_password_label.Location = New System.Drawing.Point(406, 150)
+        Me.Current_password_label.Name = "Current_password_label"
+        Me.Current_password_label.Size = New System.Drawing.Size(205, 36)
+        Me.Current_password_label.TabIndex = 45
+        Me.Current_password_label.Text = "CURRENT PASSWORD  :"
+        Me.Current_password_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'USERNAME_TEXTBOX
         '
@@ -266,7 +266,7 @@ Partial Class Change_Password
         Me.USERNAME_TEXTBOX.BorderRadius = 3
         Me.USERNAME_TEXTBOX.BorderThickness = 0
         Me.USERNAME_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges11
+        Me.USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges25
         Me.USERNAME_TEXTBOX.DefaultText = ""
         Me.USERNAME_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
         Me.USERNAME_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
@@ -282,21 +282,35 @@ Partial Class Change_Password
         Me.USERNAME_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.USERNAME_TEXTBOX.PlaceholderText = ""
         Me.USERNAME_TEXTBOX.SelectedText = ""
-        Me.USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        Me.USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges26
         Me.USERNAME_TEXTBOX.Size = New System.Drawing.Size(389, 36)
         Me.USERNAME_TEXTBOX.TabIndex = 44
         '
-        'CUST_NAasME_LABEL
+        'Username_Label
         '
-        Me.CUST_NAasME_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_NAasME_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_NAasME_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_NAasME_LABEL.Location = New System.Drawing.Point(406, 105)
-        Me.CUST_NAasME_LABEL.Name = "CUST_NAasME_LABEL"
-        Me.CUST_NAasME_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_NAasME_LABEL.TabIndex = 43
-        Me.CUST_NAasME_LABEL.Text = "USER NAME :"
-        Me.CUST_NAasME_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Username_Label.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Username_Label.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Username_Label.ForeColor = System.Drawing.Color.White
+        Me.Username_Label.Location = New System.Drawing.Point(406, 105)
+        Me.Username_Label.Name = "Username_Label"
+        Me.Username_Label.Size = New System.Drawing.Size(205, 36)
+        Me.Username_Label.TabIndex = 43
+        Me.Username_Label.Text = "USER NAME                 :"
+        Me.Username_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Guna2GroupBox1
+        '
+        Me.Guna2GroupBox1.BorderColor = System.Drawing.Color.SpringGreen
+        Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
+        Me.Guna2GroupBox1.CustomizableEdges = CustomizableEdges27
+        Me.Guna2GroupBox1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(386, 68)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(647, 262)
+        Me.Guna2GroupBox1.TabIndex = 1
         '
         'MessageBox
         '
@@ -306,20 +320,6 @@ Partial Class Change_Password
         Me.MessageBox.Parent = Nothing
         Me.MessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
         Me.MessageBox.Text = Nothing
-        '
-        'Guna2GroupBox1
-        '
-        Me.Guna2GroupBox1.BorderColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox1.CustomBorderThickness = New System.Windows.Forms.Padding(0)
-        Me.Guna2GroupBox1.CustomizableEdges = CustomizableEdges13
-        Me.Guna2GroupBox1.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.Guna2GroupBox1.Location = New System.Drawing.Point(386, 68)
-        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
-        Me.Guna2GroupBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        Me.Guna2GroupBox1.Size = New System.Drawing.Size(647, 262)
-        Me.Guna2GroupBox1.TabIndex = 1
         '
         'Change_Password
         '
@@ -339,14 +339,14 @@ Partial Class Change_Password
     End Sub
 
     Friend WithEvents asasasas As Panel
-    Friend WithEvents CUST_DISTRasasaICT_LABEL As Label
+    Friend WithEvents Confirm_password_Label As Label
     Friend WithEvents CONFIRM_PASSWORD_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents NEW_PASSWORD_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents CUST_AasasREA_LABEL As Label
-    Friend WithEvents OLD_PASSWORD_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents CUST_HOUasasSENAME_LABEL As Label
+    Friend WithEvents New_Password_Label As Label
+    Friend WithEvents CURRENT_PASSWORD_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Current_password_label As Label
     Friend WithEvents USERNAME_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents CUST_NAasME_LABEL As Label
+    Friend WithEvents Username_Label As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents CLEAR_BTN As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents CHANGE_PASSWORD_BTN As Guna.UI2.WinForms.Guna2GradientTileButton

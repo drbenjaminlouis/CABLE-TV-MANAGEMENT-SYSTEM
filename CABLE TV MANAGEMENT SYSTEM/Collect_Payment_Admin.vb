@@ -2,8 +2,11 @@
 Imports System.Drawing.Printing
 Imports System.IO
 Imports System.Security.Cryptography
+Imports System.Media
 
 Public Class Collect_Payment_Admin
+
+
     'variable for selected payment mode
     Dim payment_mode As String
     'generating invoice number
@@ -13,6 +16,7 @@ Public Class Collect_Payment_Admin
     'Variable for last_renewal date  of broadband
     Dim last_renewal_date_broadband As Date
     Private Sub Collect_Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         'storing current year and previous year to payment_year combobox
         Dim currentYear As Integer = DateTime.Now.Year
         PAYMENT_YEAR.Items.Add(currentYear)
@@ -338,6 +342,7 @@ Public Class Collect_Payment_Admin
         clearAll()
         'If CRF Not Entered
         If CUST_CRF_TEXTBOX.Text = "" Then
+            ErrorAlert.Play()
             MessageBox.Show("Please Enter CRF Number", "ALERT")
         Else
             'If CRF Entered
@@ -487,145 +492,160 @@ Public Class Collect_Payment_Admin
         clearAll()
     End Sub
     Private Sub COLLECT_BTN_Click(sender As Object, e As EventArgs) Handles COLLECT_BTN.Click
+        Dim multiple As Integer = CInt(AMOUNT.Text / 250)
         Dim month_count As Integer = PAYMENT_MONTH_LISTBOX.Items.Count
-        Dim enteredAmount = CInt(AMOUNT.Text)
+        Dim enteredAmount As Integer
+        If Integer.TryParse(AMOUNT.Text, enteredAmount) Then
+            ' Use enteredAmount for further processing
+            If CASH_RADIO.Checked = False And QR_RADIO.Checked = False Then
+                MessageBox.Show("Please Select Any Payment Method", "ALERT")
+            ElseIf AMOUNT.Text = "" Then
+                MessageBox.Show("Please Enter Amount", "ALERT")
+            ElseIf enteredAmount Mod 250 <> 0 Then
+                MessageBox.Show("Please Enter Amount As Multiples Of 250", "ALERT")
 
-        If CASH_RADIO.Checked = False And QR_RADIO.Checked = False Then
-            MessageBox.Show("Please Select Any Payment Method", "ALERT")
-        ElseIf AMOUNT.Text = "" Then
-            MessageBox.Show("Please Enter Amount", "ALERT")
-        ElseIf enteredAmount Mod 250 <> 0 Then
-            MessageBox.Show("Please Enter Amount As Multiples Of 250", "ALERT")
+            ElseIf month_count < PAYMENT_MONTH_LISTBOX.SelectedIndex Then
+                MessageBox.Show("Please Select Month", "ALERT")
+            ElseIf QR_RADIO.Checked = True And REFERANCE_NO.Text = "" Then
+                MessageBox.Show("Please Enter Referance Number", "ALERT")
+            Else
 
-        ElseIf month_count < PAYMENT_MONTH_LISTBOX.SelectedIndex Then
-            MessageBox.Show("Please Select Month", "ALERT")
-        ElseIf QR_RADIO.Checked = True And REFERANCE_NO.Text = "" Then
-            MessageBox.Show("Please Enter Referance Number", "ALERT")
-        Else
-
-            If (AMOUNT.Text Mod 250) = 0 Then
-                If SERVICE_COMBOBOX.SelectedItem = "CABLE TV" Or SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
-                    Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-                        con.Open()
-                        'Database Transaction Begins
-                        Dim transaction As OleDbTransaction = con.BeginTransaction()
-                        Try
-                            Dim monthsToUpdate As Integer = AMOUNT.Text / 250
-                            For i As Integer = 0 To PAYMENT_MONTH_LISTBOX.Items.Count - 1
-                                If (PAYMENT_MONTH_LISTBOX.Items(i) = "PAID") Then
-                                    MessageBox.Show("Selected month(s) have already been paid", "ALERT")
-                                    Return
-                                End If
-                            Next
-                            'UPDATING PAYMENT STATUS FOR CABLE TV IF SELECTED SERVICE IS CABLE TV
-                            If SERVICE_COMBOBOX.SelectedItem = "CABLE TV" Then
-                                For i As Integer = 0 To monthsToUpdate - 1
-                                    'UPDATE PAYMENT QUERY FOR CABLE TV
-                                    Dim query As String = "UPDATE TV_PAYMENT_DETAILS SET " & PAYMENT_MONTH_LISTBOX.Items(i) & " = @status WHERE CURRENT_YEAR = @YEAR AND CRF = @CRF"
-                                    Dim cmd As New OleDbCommand(query, con)
-                                    cmd.Transaction = transaction
-                                    cmd.Parameters.AddWithValue("@status", "PAID")
-                                    cmd.Parameters.AddWithValue("@YEAR", PAYMENT_YEAR.SelectedItem)
-                                    cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                                    cmd.ExecuteNonQuery()
+                If (AMOUNT.Text Mod 250) = 0 Then
+                    If SERVICE_COMBOBOX.SelectedItem = "CABLE TV" Or SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
+                        Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+                            con.Open()
+                            'Database Transaction Begins
+                            Dim transaction As OleDbTransaction = con.BeginTransaction()
+                            Try
+                                Dim monthsToUpdate As Integer = AMOUNT.Text / 250
+                                For i As Integer = 0 To PAYMENT_MONTH_LISTBOX.Items.Count - 1
+                                    If (PAYMENT_MONTH_LISTBOX.Items(i) = "PAID") Then
+                                        MessageBox.Show("Selected month(s) have already been paid", "ALERT")
+                                        Return
+                                    End If
                                 Next
+                                'UPDATING PAYMENT STATUS FOR CABLE TV IF SELECTED SERVICE IS CABLE TV
+                                If SERVICE_COMBOBOX.SelectedItem = "CABLE TV" Then
+                                    For i As Integer = 0 To monthsToUpdate - 1
+                                        'UPDATE PAYMENT QUERY FOR CABLE TV
+                                        Dim query As String = "UPDATE TV_PAYMENT_DETAILS SET " & PAYMENT_MONTH_LISTBOX.Items(i) & " = @status WHERE CURRENT_YEAR = @YEAR AND CRF = @CRF"
+                                        Dim cmd As New OleDbCommand(query, con)
+                                        cmd.Transaction = transaction
+                                        cmd.Parameters.AddWithValue("@status", "PAID")
+                                        cmd.Parameters.AddWithValue("@YEAR", PAYMENT_YEAR.SelectedItem)
+                                        cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                        cmd.ExecuteNonQuery()
+                                    Next
 
-                                Dim query2 As String = "UPDATE TV_CONNECTION_DETAILS SET LAST_RENEWAL_DATE=@last_renewal_date,EXPIRY_DATE=@expiry_date,TV_CONNECTION_STATUS=@status WHERE CRF=@CRF "
-                                Dim cmd1 As New OleDbCommand(query2, con)
-                                cmd1.Transaction = transaction
-                                cmd1.Parameters.AddWithValue("@last_renewal_date", last_renewal_date_tv)
-                                Dim lastRenewalDate As Date = last_renewal_date_tv
-                                Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30)
-                                'To store date without time'
-                                Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
-                                cmd1.Parameters.AddWithValue("@EXPIRY_DATE", expiryDateWithoutTime)
-                                If CUST_PENDING_AMOUNT_TEXTBOX.Text = 0 Then
-                                    cmd1.Parameters.AddWithValue("@STATUS", "ACTIVE")
-                                Else
-                                    cmd1.Parameters.AddWithValue("@STATUS", "INACTIVE")
+                                    Dim query2 As String = "UPDATE TV_CONNECTION_DETAILS SET LAST_RENEWAL_DATE=@last_renewal_date,EXPIRY_DATE=@expiry_date,TV_CONNECTION_STATUS=@status WHERE CRF=@CRF "
+                                    Dim cmd1 As New OleDbCommand(query2, con)
+                                    cmd1.Transaction = transaction
+                                    cmd1.Parameters.AddWithValue("@last_renewal_date", last_renewal_date_tv)
+                                    Dim lastRenewalDate As Date = last_renewal_date_tv
+                                    Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30 * multiple)
+                                    'To store date without time'
+                                    Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
+                                    cmd1.Parameters.AddWithValue("@EXPIRY_DATE", expiryDateWithoutTime)
+                                    If CUST_PENDING_AMOUNT_TEXTBOX.Text = 0 Then
+                                        cmd1.Parameters.AddWithValue("@STATUS", "ACTIVE")
+                                    Else
+                                        cmd1.Parameters.AddWithValue("@STATUS", "INACTIVE")
+                                    End If
+                                    cmd1.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                    cmd1.ExecuteNonQuery()
                                 End If
-                                cmd1.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                                cmd1.ExecuteNonQuery()
-                            End If
-                            'UPDATING PAYMENT STATUS FOR BROADBAND IF SELECTED SERVICE IS BROADBAND
-                            If SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
-                                For i As Integer = 0 To monthsToUpdate - 1
-                                    'UPDATE PAYMENT QUERY FOR BROADBAND
-                                    Dim query As String = "UPDATE BROADBAND_PAYMENT_DETAILS SET " & PAYMENT_MONTH_LISTBOX.Items(i) & " = @status WHERE CURRENT_YEAR = @YEAR AND CRF = @CRF"
-                                    Dim cmd As New OleDbCommand(query, con)
-                                    cmd.Transaction = transaction
-                                    cmd.Parameters.AddWithValue("@status", "PAID")
-                                    cmd.Parameters.AddWithValue("@YEAR", PAYMENT_YEAR.SelectedItem)
-                                    cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                'UPDATING PAYMENT STATUS FOR BROADBAND IF SELECTED SERVICE IS BROADBAND
+                                If SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
+                                    For i As Integer = 0 To monthsToUpdate - 1
+                                        'UPDATE PAYMENT QUERY FOR BROADBAND
+                                        Dim query As String = "UPDATE BROADBAND_PAYMENT_DETAILS SET " & PAYMENT_MONTH_LISTBOX.Items(i) & " = @status WHERE CURRENT_YEAR = @YEAR AND CRF = @CRF"
+                                        Dim cmd As New OleDbCommand(query, con)
+                                        cmd.Transaction = transaction
+                                        cmd.Parameters.AddWithValue("@status", "PAID")
+                                        cmd.Parameters.AddWithValue("@YEAR", PAYMENT_YEAR.SelectedItem)
+                                        cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
 
-                                    cmd.ExecuteNonQuery()
-                                Next
-                                Dim query2 As String = "UPDATE BROADBAND_CONNECTION_DETAILS SET LAST_RENEWAL_DATE=@last_renewal_date,EXPIRY_DATE=@expiry_date,STATUS=@status WHERE CRF=@CRF "
-                                Dim cmd2 As New OleDbCommand(query2, con)
-                                cmd2.Transaction = transaction
-                                cmd2.Parameters.AddWithValue("@last_renewal_date", last_renewal_date_broadband)
-                                Dim lastRenewalDate As Date = last_renewal_date_broadband
-                                Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30)
-                                'To store date without time'
-                                Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
-                                cmd2.Parameters.AddWithValue("@EXPIRY_DATE", expiryDateWithoutTime)
-                                If CUST_PENDING_AMOUNT_TEXTBOX.Text = 0 Then
-                                    cmd2.Parameters.AddWithValue("@STATUS", "ACTIVE")
-                                Else
-                                    cmd2.Parameters.AddWithValue("@STATUS", "INACTIVE")
+                                        cmd.ExecuteNonQuery()
+                                    Next
+                                    Dim query2 As String = "UPDATE BROADBAND_CONNECTION_DETAILS SET LAST_RENEWAL_DATE=@last_renewal_date,EXPIRY_DATE=@expiry_date,STATUS=@status WHERE CRF=@CRF "
+                                    Dim cmd2 As New OleDbCommand(query2, con)
+                                    cmd2.Transaction = transaction
+                                    cmd2.Parameters.AddWithValue("@last_renewal_date", last_renewal_date_broadband)
+                                    Dim lastRenewalDate As Date = last_renewal_date_broadband
+                                    Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30 * multiple)
+                                    'To store date without time'
+                                    Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
+                                    cmd2.Parameters.AddWithValue("@EXPIRY_DATE", expiryDateWithoutTime)
+                                    If CUST_PENDING_AMOUNT_TEXTBOX.Text = 0 Then
+                                        cmd2.Parameters.AddWithValue("@STATUS", "ACTIVE")
+                                    Else
+                                        cmd2.Parameters.AddWithValue("@STATUS", "INACTIVE")
+                                    End If
+                                    cmd2.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                                    cmd2.ExecuteNonQuery()
                                 End If
-                                cmd2.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                                cmd2.ExecuteNonQuery()
-                            End If
-                            'QUERY FOR ADDING INVOICE DETAILS
-                            Dim cmd_INVOICE As New OleDbCommand("INSERT INTO INVOICE_DETAILS (CRF,SERVICE,PAYMENT_DATE,INVOICE_NO,REFERANCE_NO,MODE,INVOICE) VALUES (@crf,@service, @payment_date, @invoice_no, @mode,@referance_no, @invoice_file)", con)
-                            cmd_INVOICE.Transaction = transaction
-                            cmd_INVOICE.Parameters.AddWithValue("@crf", CUST_CRF_TEXTBOX.Text)
-                            cmd_INVOICE.Parameters.AddWithValue("@service", SERVICE_COMBOBOX.SelectedItem)
-                            cmd_INVOICE.Parameters.AddWithValue("@payment_date", Date.Today)
-                            cmd_INVOICE.Parameters.AddWithValue("@invoice_no", invoice_no)
-                            If QR_RADIO.Checked = True Then
-                                cmd_INVOICE.Parameters.AddWithValue("@referance_no", REFERANCE_NO.Text)
-                            End If
-                            If CASH_RADIO.Checked = True Then
-                                cmd_INVOICE.Parameters.AddWithValue("@referance_no", "NILL")
-                            End If
-                            cmd_INVOICE.Parameters.AddWithValue("@mode", payment_mode)
-                            Dim invoiceFilePath As String = invoicepath & invoice_no & ".pdf"
-                            cmd_INVOICE.Parameters.AddWithValue("@invoice_file", invoiceFilePath)
-                            cmd_INVOICE.ExecuteNonQuery()
+                                'QUERY FOR ADDING INVOICE DETAILS
+                                Dim cmd_INVOICE As New OleDbCommand("INSERT INTO INVOICE_DETAILS (CRF,SERVICE,PAYMENT_DATE,INVOICE_NO,REFERANCE_NO,MODE,INVOICE) VALUES (@crf,@service, @payment_date, @invoice_no, @mode,@referance_no, @invoice_file)", con)
+                                cmd_INVOICE.Transaction = transaction
+                                cmd_INVOICE.Parameters.AddWithValue("@crf", CUST_CRF_TEXTBOX.Text)
+                                cmd_INVOICE.Parameters.AddWithValue("@service", SERVICE_COMBOBOX.SelectedItem)
+                                cmd_INVOICE.Parameters.AddWithValue("@payment_date", Date.Today)
+                                cmd_INVOICE.Parameters.AddWithValue("@invoice_no", invoice_no)
+                                If QR_RADIO.Checked = True Then
+                                    cmd_INVOICE.Parameters.AddWithValue("@referance_no", REFERANCE_NO.Text)
+                                End If
+                                If CASH_RADIO.Checked = True Then
+                                    cmd_INVOICE.Parameters.AddWithValue("@referance_no", "NILL")
+                                End If
+                                cmd_INVOICE.Parameters.AddWithValue("@mode", payment_mode)
+                                Dim invoiceFilePath As String = invoicepath & invoice_no & ".pdf"
+                                cmd_INVOICE.Parameters.AddWithValue("@invoice_file", invoiceFilePath)
+                                cmd_INVOICE.ExecuteNonQuery()
 
-                            'CALLING METHOD FOR GENERATING INVOICE
-                            Generate_Invoice()
-                            'CALLING FUNCTION FOR SENDING INVOICE TO CUSTOMER MAIL
-                            If CUST_EMAIL_TEXTBOX.Text IsNot Nothing Then
-                                Dim email_to As String = CUST_EMAIL_TEXTBOX.Text
-                                Dim pending_amt As Integer = CUST_PENDING_AMOUNT_TEXTBOX.Text
-                                Dim service As String = SERVICE_COMBOBOX.SelectedItem
-                                Dim cust_name As String = CUST_NAME_TEXTBOX.Text
-                                Dim invoiceNumber As String = invoice_no
-                                Dim invoicesFolder As String = "Invoices\"
-                                Dim filePath As String = Path.Combine(invoicesFolder, invoiceNumber & ".pdf")
+                                'CALLING METHOD FOR GENERATING INVOICE
+                                Generate_Invoice()
+                                'CALLING FUNCTION FOR SENDING INVOICE TO CUSTOMER MAIL
+                                If CUST_EMAIL_TEXTBOX.Text IsNot Nothing Then
+                                    Dim email_to As String = CUST_EMAIL_TEXTBOX.Text
+                                    Dim pending_amt As Integer = CUST_PENDING_AMOUNT_TEXTBOX.Text
+                                    Dim service As String = SERVICE_COMBOBOX.SelectedItem
+                                    Dim cust_name As String = CUST_NAME_TEXTBOX.Text
+                                    Dim invoiceNumber As String = invoice_no
+                                    Dim invoicesFolder As String = "Invoices\"
+                                    Dim filePath As String = Path.Combine(invoicesFolder, invoiceNumber & ".pdf")
 
 
-                                Invoice_Sender.Email(email_to, "PAYMENT CONFIRMATION", filePath, cust_name, pending_amt)
-                            End If
-                            'COMMITTING ALL THE TRANSACTIONS
-                            transaction.Commit()
-                            'IF PAYMENT IS SUCCESS
-                            MessageBox.Show("Payment Successful", "ALERT")
-                            'AFTER SUCCESSFULL PAYMENT, PRINT BUTTON BECOMES VISIBLE
-                            PRINT_BTN.Visible = True
-                        Catch ex As Exception
-                            'IF ANY ERROR OCCURED TRANSACTION IS ROLLBACKED AND ADD THE ERROR MESSAGE TO LOG
-                            transaction.Rollback()
-                            LogError("An Error Occoured During Payment: " & ex.Message)
-                            MessageBox.Show("Payment Declined. Check Log For More Details", "ERROR")
-                        End Try
-                        con.Close()
-                    End Using
+                                    Invoice_Sender.Email(email_to, "PAYMENT CONFIRMATION", filePath, cust_name, pending_amt)
+                                End If
+                                'COMMITTING ALL THE TRANSACTIONS
+                                transaction.Commit()
+                                con.Close()
+                                'IF PAYMENT IS SUCCESS
+                                SuccessAlert.Play()
+                                MessageBox.Show("Payment Successful", "ALERT")
+                                'AFTER SUCCESSFULL PAYMENT, PRINT BUTTON BECOMES VISIBLE
+                                PRINT_BTN.Visible = True
+                            Catch ex As Exception
+                                'IF ANY ERROR OCCURED TRANSACTION IS ROLLBACKED AND ADD THE ERROR MESSAGE TO LOG
+                                transaction.Rollback()
+                                LogError("An Error Occoured During Payment: " & ex.Message)
+                                MessageBox.Show("Payment Declined. Check Log For More Details", "ERROR")
+                            End Try
+                            con.Close()
+                        End Using
+                    End If
                 End If
+
             End If
+        Else
+            ' Display an error message to the user
+            MessageBox.Show("Please enter a valid integer value for AMOUNT.")
+        End If
+    End Sub
+
+    Private Sub CUST_CRF_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_CRF_TEXTBOX.TextChanged
+        If CUST_CRF_TEXTBOX.Text = "" Then
+            clearAll()
         End If
     End Sub
 End Class

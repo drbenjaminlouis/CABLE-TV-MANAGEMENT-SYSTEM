@@ -68,6 +68,8 @@ Partial Class add_customer
         Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -84,8 +86,6 @@ Partial Class add_customer
         Dim CustomizableEdges57 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges61 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim Animation1 As Guna.UI2.AnimatorNS.Animation = New Guna.UI2.AnimatorNS.Animation()
@@ -129,6 +129,7 @@ Partial Class add_customer
         Me.CRF_LABEL = New System.Windows.Forms.Label()
         Me.CUST_CRF_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.CUST_HOUSENAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_COUNTRY_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.DOB_PICKER = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.CUST_DOB_LABEL = New System.Windows.Forms.Label()
@@ -145,7 +146,6 @@ Partial Class add_customer
         Me.CUST_DISTRICT_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_AREA_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_AREA_LABEL = New System.Windows.Forms.Label()
-        Me.CUST_HOUSENAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_HOUSENAME_LABEL = New System.Windows.Forms.Label()
         Me.CUST_NAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_NAME_LABEL = New System.Windows.Forms.Label()
@@ -959,6 +959,35 @@ Partial Class add_customer
         Me.Guna2GroupBox4.TabIndex = 44
         Me.Guna2GroupBox4.Text = "Contact Details"
         '
+        'CUST_HOUSENAME_TEXTBOX
+        '
+        Me.CUST_HOUSENAME_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CUST_HOUSENAME_TEXTBOX.Animated = True
+        Me.CUST_HOUSENAME_TEXTBOX.AutoSize = True
+        Me.CUST_HOUSENAME_TEXTBOX.BorderRadius = 3
+        Me.CUST_HOUSENAME_TEXTBOX.BorderThickness = 0
+        Me.CUST_HOUSENAME_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_HOUSENAME_TEXTBOX.CustomizableEdges = CustomizableEdges42
+        Me.Guna2Transition1.SetDecoration(Me.CUST_HOUSENAME_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.CUST_HOUSENAME_TEXTBOX.DefaultText = ""
+        Me.CUST_HOUSENAME_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_HOUSENAME_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_HOUSENAME_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_HOUSENAME_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_HOUSENAME_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_HOUSENAME_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_HOUSENAME_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_HOUSENAME_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_HOUSENAME_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_HOUSENAME_TEXTBOX.Location = New System.Drawing.Point(204, 130)
+        Me.CUST_HOUSENAME_TEXTBOX.Name = "CUST_HOUSENAME_TEXTBOX"
+        Me.CUST_HOUSENAME_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_HOUSENAME_TEXTBOX.PlaceholderText = ""
+        Me.CUST_HOUSENAME_TEXTBOX.SelectedText = ""
+        Me.CUST_HOUSENAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges43
+        Me.CUST_HOUSENAME_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_HOUSENAME_TEXTBOX.TabIndex = 33
+        '
         'CUST_COUNTRY_COMBOBOX
         '
         Me.CUST_COUNTRY_COMBOBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
@@ -1285,35 +1314,6 @@ Partial Class add_customer
         Me.CUST_AREA_LABEL.TabIndex = 34
         Me.CUST_AREA_LABEL.Text = "Area :"
         Me.CUST_AREA_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'CUST_HOUSENAME_TEXTBOX
-        '
-        Me.CUST_HOUSENAME_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_HOUSENAME_TEXTBOX.Animated = True
-        Me.CUST_HOUSENAME_TEXTBOX.AutoSize = True
-        Me.CUST_HOUSENAME_TEXTBOX.BorderRadius = 3
-        Me.CUST_HOUSENAME_TEXTBOX.BorderThickness = 0
-        Me.CUST_HOUSENAME_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_HOUSENAME_TEXTBOX.CustomizableEdges = CustomizableEdges42
-        Me.Guna2Transition1.SetDecoration(Me.CUST_HOUSENAME_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.CUST_HOUSENAME_TEXTBOX.DefaultText = ""
-        Me.CUST_HOUSENAME_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_HOUSENAME_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_HOUSENAME_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_HOUSENAME_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_HOUSENAME_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_HOUSENAME_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_HOUSENAME_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_HOUSENAME_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_HOUSENAME_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_HOUSENAME_TEXTBOX.Location = New System.Drawing.Point(204, 130)
-        Me.CUST_HOUSENAME_TEXTBOX.Name = "CUST_HOUSENAME_TEXTBOX"
-        Me.CUST_HOUSENAME_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_HOUSENAME_TEXTBOX.PlaceholderText = ""
-        Me.CUST_HOUSENAME_TEXTBOX.SelectedText = ""
-        Me.CUST_HOUSENAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges43
-        Me.CUST_HOUSENAME_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_HOUSENAME_TEXTBOX.TabIndex = 33
         '
         'CUST_HOUSENAME_LABEL
         '
