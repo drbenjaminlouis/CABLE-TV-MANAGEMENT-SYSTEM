@@ -25,9 +25,9 @@ Partial Class Admin_Dashboard_Panel
         Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin_Dashboard_Panel))
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin_Dashboard_Panel))
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -115,7 +115,7 @@ Partial Class Admin_Dashboard_Panel
         Me.BroadBand_Customers.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.BroadBand_Customers.HoverState.FillColor2 = System.Drawing.Color.Yellow
         Me.BroadBand_Customers.HoverState.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Customers.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_broadband_50
+        Me.BroadBand_Customers.Image = CType(resources.GetObject("BroadBand_Customers.Image"), System.Drawing.Image)
         Me.BroadBand_Customers.ImageSize = New System.Drawing.Size(50, 50)
         Me.BroadBand_Customers.Location = New System.Drawing.Point(21, 251)
         Me.BroadBand_Customers.Name = "BroadBand_Customers"
@@ -414,7 +414,7 @@ Partial Class Admin_Dashboard_Panel
         Me.Suspended_Customers.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.Suspended_Customers.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Suspended_Customers.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Suspended_Customers.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_high_importance_50
+        Me.Suspended_Customers.Image = CType(resources.GetObject("Suspended_Customers.Image"), System.Drawing.Image)
         Me.Suspended_Customers.ImageSize = New System.Drawing.Size(50, 50)
         Me.Suspended_Customers.Location = New System.Drawing.Point(693, 92)
         Me.Suspended_Customers.Name = "Suspended_Customers"
@@ -446,7 +446,7 @@ Partial Class Admin_Dashboard_Panel
         Me.Inactive_Customers.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.Inactive_Customers.HoverState.FillColor2 = System.Drawing.Color.Red
         Me.Inactive_Customers.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Inactive_Customers.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_multiply_50
+        Me.Inactive_Customers.Image = CType(resources.GetObject("Inactive_Customers.Image"), System.Drawing.Image)
         Me.Inactive_Customers.ImageSize = New System.Drawing.Size(50, 50)
         Me.Inactive_Customers.Location = New System.Drawing.Point(357, 92)
         Me.Inactive_Customers.Name = "Inactive_Customers"
@@ -478,7 +478,7 @@ Partial Class Admin_Dashboard_Panel
         Me.Active_Customers.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.Active_Customers.HoverState.FillColor2 = System.Drawing.Color.Green
         Me.Active_Customers.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Active_Customers.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_checkmark_50
+        Me.Active_Customers.Image = CType(resources.GetObject("Active_Customers.Image"), System.Drawing.Image)
         Me.Active_Customers.ImageSize = New System.Drawing.Size(50, 50)
         Me.Active_Customers.Location = New System.Drawing.Point(21, 92)
         Me.Active_Customers.Name = "Active_Customers"

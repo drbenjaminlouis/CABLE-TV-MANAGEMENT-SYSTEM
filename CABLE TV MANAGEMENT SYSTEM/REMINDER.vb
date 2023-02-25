@@ -1,9 +1,14 @@
 ﻿Imports System.Data.OleDb
 Imports System.Net.Mail
+Imports System.Reflection.Metadata
+Imports System.Security.Policy
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Tab
 Imports CABLE_TV_MANAGEMENT_SYSTEM.Email
+Imports Microsoft.VisualBasic.Devices
+Imports TheArtOfDevHtmlRenderer.Adapters.Entities
 
 Public Class REMINDER
+    Dim messageHtml As String
     Private Sub REMINDER_LOAD(SENDER As Object, e As EventArgs) Handles MyBase.Load
         Payment_Sync.Payment_Sync()
         Dim currentYear As Integer = DateTime.Now.Year
@@ -258,6 +263,8 @@ Public Class REMINDER
     Private Sub SERVICE_COMBOBOX_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles SERVICE_COMBOBOX.SelectedIndexChanged
         CUST_PENDING_AMOUNT_TEXTBOX.Clear()
         PAYMENT_MONTH_LISTBOX.Items.Clear()
+        Message.Clear()
+        CUST_PENDING_AMOUNT_TEXTBOX.Clear()
         updatepending()
         If Not CUST_PENDING_AMOUNT_TEXTBOX.Text = "0" Then
             Dim name As String = CUST_NAME_TEXTBOX.Text
@@ -269,22 +276,96 @@ Public Class REMINDER
                 pendingMonths.Add(item.ToString())
             Next
 
-            Message.Text = "Dear " & name & "," & vbCrLf & vbCrLf &
-                             "I hope this email finds you well. This is a gentle reminder that your payment for " & service & " is pending.The due amount is " & amount & "" & vbCrLf & vbCrLf
+            messageHtml = $"<html>
+                                <head>
+                                    <style>
+                                        #container 
+                                        {{
+                                            width:100%;
+                                            height:600px;
+                                            background-color: black;
+                                        }}
+                                        #header 
+                                        {{
+                                              display: flex;
+                                              flex-direction: column;
+                                              align-items: center;
+                                              justify-content: center;
+                                              background-color: black;
+                                              color:white;
+                                              border-top-left-radius: 10px;
+                                              border-top-right-radius: 10px;
+                                              padding: 20px;
+                                              font-size: 24px;
+                                        }}
+                                        #header img 
+                                        {{
+                                            margin-bottom: 10px;
+                                        }}
+                                        #header h1  
+                                        {{
+                                            margin-top:20px;
+                                        }}
+                                        #message {{
+                                            text-align: justify;
+                                            background-color: black;
+                                            color:white;
+                                            border-bottom-left-radius: 10px;
+                                            border-bottom-right-radius: 10px;
+                                            padding: 20px;
+                                        }}
+                                        #message p 
+                                        {{
+                                            margin: 0;
+                                            font-size: 16px;
+                                        }}
+                                       #button 
+                                       {{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            margin: 20px;
+                                       }}
+                                        #button a 
+                                        {{
+                                            display: block;
+                                            background-color: black;
+                                            color: white;
+                                            padding: 10px 20px;
+                                            border-radius: 5px;
+                                            text-decoration: none;
+                                        }}
+                                </style>
+                            </head>
+                        <body>
+                            <div id='container'>
+                                <div id='header'>
+                                    <img src='https://www.linkpicture.com/q/LOGO.gif' alt='Logo' width='100' height='100'><br>
+                                    <br>
+                                    <h1>BHARATH CABLE NETWORK</h1>
+                                </div>
+                                <div id='message'>
+                                        <p><strong>Dear {name},</strong>,</p>
+                                        <p>I hope this email finds you well. This is a gentle reminder that your payment for {service} is pending. The due amount is {amount}.</p>"
             If pendingMonths.Count > 1 Then
-                Message.Text &= "Please note that your payments for the following months are pending: " & String.Join(", ", pendingMonths) & vbCrLf & vbCrLf
+                messageHtml &= "<p>Please note that your payments for the following months are pending: " & String.Join(", ", pendingMonths) & ".</p>
+                    <p>We kindly request that you make the payment for these pending months as soon as possible to avoid any late fees or service interruptions. If you are unable to make the payment in full at this time, please contact us to discuss payment options.</p>"
             End If
             If pendingMonths.Count = 1 Then
-                Message.Text &= "Please note that your payment for the following month is pending: " & String.Join(", ", pendingMonths) & vbCrLf & vbCrLf
+                messageHtml &= "<p>Please note that your payment for the following month is pending: " & String.Join(", ", pendingMonths) & ".</p>
+                    <p>We kindly request that you make the payment for this pending month as soon as possible to avoid any late fees or service interruptions.<br> 
+                       If you are unable to make the payment in full at this time, please contact us to discuss payment options.</p>"
             End If
-            Message.Text &= "If you have already made the payment, please ignore this email. If you need assistance with your payment or have any questions, please do not hesitate to contact us." & vbCrLf & vbCrLf &
-                    "Thank you for your time and attention. We look forward to hearing from you soon." & vbCrLf & vbCrLf &
-                    "Best regards," & vbCrLf & yourName
+            messageHtml &= "<p>If you have already made the payment, please ignore this email. If you need assistance with your payment or have any questions, please do not hesitate to contact us.</p>
+                <p>We value your business and appreciate your timely attention to this matter. Thank you for choosing our services.</p>
+                                    
+                                    <a href='mailto:your_email_address@example.com' style='background-color: #f7f7f7; border-radius: 5px; color: #333; display: inline-block; font-size: 16px; font-weight: bold; padding: 10px 20px; text-decoration: none;'>Contact Us</a>" &
+    "</div></div></div></div></body></html>"
         End If
     End Sub
 
     Private Sub COLLECT_BTN_Click(sender As Object, e As EventArgs) Handles COLLECT_BTN.Click
-        Email.Email(CUST_EMAIL_TEXTBOX.Text, "Payment Reminder", Message.Text)
+        Email.Email(CUST_EMAIL_TEXTBOX.Text, "Payment Reminder", messageHtml)
     End Sub
     Private Sub ClearAll()
         CUST_NAME_TEXTBOX.Clear()

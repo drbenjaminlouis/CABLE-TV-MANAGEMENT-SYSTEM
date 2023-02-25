@@ -1040,11 +1040,12 @@ Partial Class Collect_Payment_Admin
         'HEADER_LABEL
         '
         Me.HEADER_LABEL.BackColor = System.Drawing.Color.Black
+        Me.HEADER_LABEL.Dock = System.Windows.Forms.DockStyle.Top
         Me.HEADER_LABEL.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.HEADER_LABEL.ForeColor = System.Drawing.Color.SpringGreen
         Me.HEADER_LABEL.Location = New System.Drawing.Point(0, 0)
         Me.HEADER_LABEL.Name = "HEADER_LABEL"
-        Me.HEADER_LABEL.Size = New System.Drawing.Size(1375, 65)
+        Me.HEADER_LABEL.Size = New System.Drawing.Size(1378, 65)
         Me.HEADER_LABEL.TabIndex = 70
         Me.HEADER_LABEL.Text = "COLLECT PAYMENT"
         Me.HEADER_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

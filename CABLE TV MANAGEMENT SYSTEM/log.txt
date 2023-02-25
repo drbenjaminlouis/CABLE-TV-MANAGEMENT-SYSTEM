@@ -73,3 +73,98 @@ Actual value was 0.
 [2023-02-18 18:19:11] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
 [2023-02-18 18:19:14] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
 [2023-02-18 18:19:17] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-23 00:16:45] C:\ProgramData\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\1.0.0
+[2023-02-23 00:20:32] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-23 00:24:55] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM
+[2023-02-23 00:26:13] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM
+[2023-02-23 01:01:59] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM
+[2023-02-23 01:17:06] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-23 15:50:31] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\Assets\Error.wav
+[2023-02-23 15:50:33] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\Assets\Error.wav
+[2023-02-23 15:54:54] Assets\Error.wav
+[2023-02-23 15:55:41] Assets\Error.wav
+[2023-02-23 15:56:37] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\Assets\Error.wav
+[2023-02-23 15:58:07] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\Assets\Error.wav
+[2023-02-23 15:58:35] \Assets\Error.wav
+[2023-02-23 16:03:28] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\Assets\Error.wav
+[2023-02-23 16:06:24] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\Error.wav
+[2023-02-23 16:06:26] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\Error.wav
+[2023-02-23 16:07:04] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\Error.wav
+[2023-02-23 16:11:31] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\Error.wav
+[2023-02-23 16:11:34] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\Error.wav
+[2023-02-23 16:14:22] Assets\Error.wav
+[2023-02-23 16:17:43] Assets\Error.wav
+[2023-02-23 18:40:20] An Error Occured While Fetching Data: Syntax error (missing operator) in query expression 'TV_CONNECTION_STATUS WHERE CRF=@CRF'.
+[2023-02-23 18:42:47] An Error Occured While Fetching Data: No data exists for the row/column.
+[2023-02-23 18:44:53] An Error Occured While Fetching Data: No data exists for the row/column.
+[2023-02-23 19:22:22] An Error Occured While Payment Sync: The table 'BROADBAND_CONNECTION_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+[2023-02-23 19:23:27] An Error Occured While Payment Sync: The table 'BROADBAND_CONNECTION_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+[2023-02-23 19:24:47] An Error Occured While Fetching Data: ExecuteReader: Connection property has not been initialized.
+[2023-02-23 19:25:33] An Error Occured While Fetching Data: No value given for one or more required parameters.
+[2023-02-23 19:33:09] An Error Occured While Fetching Data: No data exists for the row/column.
+[2023-02-23 19:48:33] An Error Occured While Fetching Data: There is already an open DataReader associated with this Command which must be closed first.
+[2023-02-23 19:50:19] An Error Occured While Fetching Data: There is already an open DataReader associated with this Command which must be closed first.
+[2023-02-23 19:51:06] An Error Occured While Fetching Data: No value given for one or more required parameters.
+[2023-02-23 19:53:56] An Error Occured While Fetching Data: No data exists for the row/column.
+[2023-02-23 19:57:47] An Error Occured While Fetching Data: Arithmetic operation resulted in an overflow.
+[2023-02-23 20:01:03] An Error Occured While Fetching Data: No data exists for the row/column.
+[2023-02-23 20:09:00] An Error Occured While Fetching Data: Valid values are between 1 and 13, inclusive. (Parameter 'month')
+Actual value was 2023.
+[2023-02-23 20:46:17] An Error Occured While Fetching Data: No data exists for the row/column.
+[2023-02-23 21:18:34] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-23 21:24:46] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-23 21:32:54] An Error Occured While Fetching Data: january
+[2023-02-23 21:34:10] An Error Occured While Fetching Data: january
+[2023-02-23 21:38:03] An Error Occured While Fetching Data: Syntax error in FROM clause.
+[2023-02-23 21:38:55] An Error Occured While Fetching Data: january
+[2023-02-24 00:13:00] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:18:07] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:19:25] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:20:17] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:21:10] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:22:44] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:27:29] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:44:49] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:50:18] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:55:08] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 00:59:50] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:02:13] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:04:46] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:08:22] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:09:34] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:16:30] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:18:07] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:19:38] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:21:31] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:22:50] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 01:24:01] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 09:08:01] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 11:49:00] An Error Occured While Generating New CRF: The table 'CUSTOMER_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+[2023-02-24 11:51:58] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 11:58:44] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 11:58:47] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 11:58:50] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 11:58:51] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 11:58:55] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 11:58:57] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 11:58:59] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 11:59:56] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 11:59:57] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 11:59:57] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 12:02:23] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 12:03:29] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 12:05:05] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 12:07:46] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 12:46:00] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 12:47:54] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 17:31:07] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 17:31:09] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 17:32:04] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 17:32:06] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 17:32:53] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 17:32:55] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 17:32:55] An Error Occured While Fetching Details: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+[2023-02-24 19:56:36] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-24 23:46:52] An Error Occured While Updating Data: ExecuteNonQuery requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+[2023-02-24 23:48:50] An Error Occured While Updating Data: Syntax error (missing operator) in query expression '@CUST_EMAIL FROM CUSTOMER_DETAILS'.
+[2023-02-25 15:55:02] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
