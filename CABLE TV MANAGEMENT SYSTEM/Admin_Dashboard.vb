@@ -69,13 +69,13 @@
         OpenChildForm(New Edit_Customer)
     End Sub
 
-    Private Sub Guna2GradientButton6_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton6.Click
+    Private Sub Guna2GradientButton6_Click(sender As Object, e As EventArgs) Handles REMOVE_CUSTOMER_BTN.Click
 
         OpenChildForm(New Remove_Customer)
 
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+    Private Sub Label4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -87,7 +87,7 @@
         OpenChildForm(New Collect_Payment_Admin)
     End Sub
 
-    Private Sub Guna2GradientButton4_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton4.Click
+    Private Sub Guna2GradientButton4_Click(sender As Object, e As EventArgs)
         OpenChildForm(New Edit_Employee)
     End Sub
 

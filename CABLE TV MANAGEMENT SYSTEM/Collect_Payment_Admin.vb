@@ -3,6 +3,7 @@ Imports System.Drawing.Printing
 Imports System.IO
 Imports System.Security.Cryptography
 Imports System.Media
+Imports System.Security.Policy
 
 Public Class Collect_Payment_Admin
 
@@ -16,7 +17,6 @@ Public Class Collect_Payment_Admin
     'Variable for last_renewal date  of broadband
     Dim last_renewal_date_broadband As Date
     Private Sub Collect_Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
         'storing current year and previous year to payment_year combobox
         Dim currentYear As Integer = DateTime.Now.Year
         PAYMENT_YEAR.Items.Add(currentYear)
@@ -231,13 +231,12 @@ Public Class Collect_Payment_Admin
             End If
         End If
     End Sub
-
     'Method For Generating Invoice With Invoice Number As File Name And Saving To Invoices Folder.
     Public Sub Generate_Invoice()
         Dim printDoc As New PrintDocument()
         AddHandler printDoc.PrintPage, AddressOf PrintPageHandler
         Dim invoiceNumber As String = invoice_no
-        Dim invoicesFolder As String = "Invoices\"
+        Dim invoicesFolder As String = (invoicepath)
         'If Folder Doesn't Exist Creating A New Folder Named Invoices
         If Not Directory.Exists(invoicesFolder) Then
             Directory.CreateDirectory(invoicesFolder)
@@ -611,10 +610,8 @@ Public Class Collect_Payment_Admin
                                     Dim service As String = SERVICE_COMBOBOX.SelectedItem
                                     Dim cust_name As String = CUST_NAME_TEXTBOX.Text
                                     Dim invoiceNumber As String = invoice_no
-                                    Dim invoicesFolder As String = "Invoices\"
+                                    Dim invoicesFolder As String = invoicepath
                                     Dim filePath As String = Path.Combine(invoicesFolder, invoiceNumber & ".pdf")
-
-
                                     Invoice_Sender.Email(email_to, "PAYMENT CONFIRMATION", filePath, cust_name, pending_amt)
                                 End If
                                 'COMMITTING ALL THE TRANSACTIONS

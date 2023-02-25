@@ -45,23 +45,30 @@ Public Class add_customer
 
     'Function For Generating Unique CRF Number'
     Public Function GenerateCRF() As Integer
-        Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-            connection.Open()
-            Dim uniqueNumber As Integer = 100
-            Dim found As Boolean = False
-            While Not found
-                Dim command As New OleDb.OleDbCommand("SELECT COUNT(*) FROM CUSTOMER_DETAILS WHERE CRF = " & uniqueNumber & "", connection)
-                Dim count As Integer = command.ExecuteScalar()
-                If count = 0 Then
-                    found = True
-                Else
-                    uniqueNumber += 1
-                End If
-            End While
-            connection.Close()
-            Return uniqueNumber
-            connection.Close()
-        End Using
+        Try
+            Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+                connection.Open()
+                Dim uniqueNumber As Integer = 100
+                Dim found As Boolean = False
+                While Not found
+                    Dim command As New OleDb.OleDbCommand("SELECT COUNT(*) FROM CUSTOMER_DETAILS WHERE CRF = " & uniqueNumber & "", connection)
+                    Dim count As Integer = command.ExecuteScalar()
+                    If count = 0 Then
+                        found = True
+                    Else
+                        uniqueNumber += 1
+                    End If
+                End While
+                connection.Close()
+                Return uniqueNumber
+                connection.Close()
+            End Using
+        Catch ex As Exception
+            ErrorAlert.Play()
+            LogError("An Error Occured While Generating New CRF: " & ex.Message)
+            MessageBox2.Show("An Error Occured While Generating New CRF: Check Log For More Details.")
+        End Try
+        Return 0
     End Function
     'Function For Adding Asian Countries To Combobox
     Function IsAsianCountry(country As String) As Boolean
@@ -96,13 +103,7 @@ Public Class add_customer
 
 
     End Sub
-    'For Checking Entered Value Is Number Or Not'
-    Private Sub CUST_MOBILE_TEXTBOX_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
-        If Not Char.IsNumber(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
-            e.Handled = True
-            MessageBox2.Show("PLEASE ENTER A VALID MOBILE NUMBER", "ALERT")
-        End If
-    End Sub
+
     'For Adding Indian States If Selected Country Is India'
     Private Sub CUST_COUNTRY_COMBOBOX_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles CUST_COUNTRY_COMBOBOX.SelectedIndexChanged
         Dim IndianStates As String() = {"Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal"}
@@ -115,13 +116,14 @@ Public Class add_customer
             CUST_STATE_COMBOBOX.Items.Clear()
         End If
     End Sub
+
     'If Create Button Clicked'
     Private Sub ADD_CUST_CREATEBTN_Click_1(sender As Object, e As EventArgs) Handles ADD_CUST_CREATEBTN.Click
-        Dim startDate As Date = Date.Today.AddMonths(1)
-        Dim endDate As Date = Date.Today.AddMonths(3)
+        'Dim startDate As Date = Date.Today.AddMonths(1)
+        ' Dim endDate As Date = Date.Today.AddMonths(3)
 
         ' Iterate over the months and update the values
-        Dim loopDate As Date = startDate
+        ' Dim loopDate As Date = startDate
 
 
         Dim found As Boolean = False
@@ -129,7 +131,7 @@ Public Class add_customer
         Dim emailRegex As New Regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
         If Not emailRegex.IsMatch(CUST_EMAIL_TEXTBOX.Text) Then
             MessageBox2.Show("Invalid email address. Please enter a valid email address.", "ALERT")
-            CUST_EMAIL_TEXTBOX.Text = ""
+            CUST_EMAIL_TEXTBOX.Clear()
         ElseIf CUST_STATE_COMBOBOX.Text = "PLEASE SELECT COUNTRY FIRST" Then
             MessageBox2.Show("PLEASE SELECT STATE", "ALERT")
         ElseIf CUST_CRF_TEXTBOX.Text = "" Or CUST_NAME_TEXTBOX.Text = "" Or DOB_PICKER.Text = "" Or CUST_HOUSENAME_TEXTBOX.Text = "" Or CUST_AREA_TEXTBOX.Text = "" Or CUST_DISTRICT_TEXTBOX.Text = "" Or CUST_STATE_COMBOBOX.Text = "" Or CUST_COUNTRY_COMBOBOX.Text = "" Or CUST_IDTYPE_COMBOBOX.Text = "" Or CUST_IDNUMBER_TEXTBOX.Text = "" Or CUST_MOBILE_TEXTBOX.Text = "" Or CUST_EMAIL_TEXTBOX.Text = "" Or CUST_BROADBAND_COMBOBOX.Text = "" Or CUST_TV_CONNECTION_COMBOBOX.Text = "" Then
@@ -187,20 +189,8 @@ Public Class add_customer
                         cmd3.Parameters.AddWithValue("@CHIP_ID", CUST_CHIP_ID_TEXTBOX.Text)
                         cmd3.Parameters.AddWithValue("@TV_REGISTRATION_DATE", TV_Reg_Picker.Value)
                         cmd3.Parameters.AddWithValue("@TV_LAST_RENEWAL_DATE", TV_Reg_Picker.Value)
-                        Dim tv_lastRenewalDate As Date = TV_Reg_Picker.Value
-                        Dim tv_thirtyDaysLater As Date = tv_lastRenewalDate.AddDays(30)
-                        'To store date without time'
-                        Dim tv_expiryDateWithoutTime As Date = New Date(tv_thirtyDaysLater.Year, tv_thirtyDaysLater.Month, tv_thirtyDaysLater.Day)
-                        cmd3.Parameters.AddWithValue("@EXPIRY_DATE", tv_expiryDateWithoutTime)
-                        Dim tv_today As Date = Date.Today
-                        'To store date without time'
-                        Dim tv_todayWithoutTime As Date = New Date(tv_today.Year, tv_today.Month, tv_today.Day)
-                        'To Update Status Comparing Current Date and Expiry Date
-                        If tv_todayWithoutTime >= tv_expiryDateWithoutTime Then
-                            cmd3.Parameters.AddWithValue("@TV_CONNECTION_STATUS", "INACTIVE")
-                        Else
-                            cmd3.Parameters.AddWithValue("@TV_CONNECTION_STATUS", "ACTIVE")
-                        End If
+                        cmd3.Parameters.AddWithValue("@EXPIRY_DATE", TV_Reg_Picker.Value)
+                        cmd3.Parameters.AddWithValue("@TV_CONNECTION_STATUS", "INACTIVE")
                         cmd4.Parameters.Clear()
                         cmd4.Transaction = transaction
                         cmd4.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -210,20 +200,8 @@ Public Class add_customer
                         cmd5.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                         cmd5.Parameters.AddWithValue("@REGISTRATION_DATE", BROADBAND_REG_DATE.Value)
                         cmd5.Parameters.AddWithValue("@LAST_RENEWAL_DATE", BROADBAND_REG_DATE.Value)
-                        Dim lastRenewalDate As Date = BROADBAND_REG_DATE.Value
-                        Dim thirtyDaysLater As Date = lastRenewalDate.AddDays(30)
-                        'To store date without time'
-                        Dim expiryDateWithoutTime As Date = New Date(thirtyDaysLater.Year, thirtyDaysLater.Month, thirtyDaysLater.Day)
-                        cmd5.Parameters.AddWithValue("@EXPIRY_DATE", expiryDateWithoutTime)
-                        Dim today As Date = Date.Today
-                        'To store date without time'
-                        Dim todayWithoutTime As Date = New Date(today.Year, today.Month, today.Day)
-                        'To Update Status Comparing Current Date and Expiry Date
-                        If todayWithoutTime >= expiryDateWithoutTime Then
-                            cmd5.Parameters.AddWithValue("@STATUS", "INACTIVE")
-                        Else
-                            cmd5.Parameters.AddWithValue("@STATUS", "ACTIVE")
-                        End If
+                        cmd5.Parameters.AddWithValue("@EXPIRY_DATE", BROADBAND_REG_DATE.Value)
+                        cmd5.Parameters.AddWithValue("@STATUS", "INACTIVE")
                         cmd5.Parameters.AddWithValue("@RECHARGED_BY", "ADMIN")
                         cmd5.Parameters.AddWithValue("@CURRENT_PLAN", CUST_BROADBAND_PLAN_COMBOBOX.SelectedItem)
                         cmd5.Parameters.AddWithValue("@BROADBAND_CONNECTION", "YES")
@@ -240,6 +218,7 @@ Public Class add_customer
                         If CUST_TV_CONNECTION_COMBOBOX.SelectedItem = "YES" Then
                             cmd3.ExecuteNonQuery()
                             cmd4.ExecuteNonQuery()
+                            Dim todayWithoutTime As Date = Date.Today
                             Dim fromdate As Date = TV_Reg_Picker.Value
                             Dim todate As Date = todayWithoutTime
                             Dim crf As Integer = CUST_CRF_TEXTBOX.Text
@@ -261,6 +240,7 @@ Public Class add_customer
                             cmd4.Parameters.Clear()
                         End If
                         If CUST_BROADBAND_COMBOBOX.SelectedItem = "YES" Then
+                            Dim todayWithoutTime As Date = Date.Today
                             cmd5.ExecuteNonQuery()
                             cmd6.ExecuteNonQuery()
                             cmd7.ExecuteNonQuery()
@@ -449,5 +429,30 @@ Public Class add_customer
             LogError("ADD CUSTOMER - CUST_CHIP_ID_TEXTBOX_LEAVE")
             LogError("An error occurred: " & ex.Message)
         End Try
+    End Sub
+
+    Private Sub CUST_EMAIL_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_EMAIL_TEXTBOX.Leave
+        If CUST_EMAIL_TEXTBOX.Text = "" Then
+        Else
+            Dim emailRegex As New Regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+            If Not emailRegex.IsMatch(CUST_EMAIL_TEXTBOX.Text) Then
+                MessageBox2.Show("Invalid email address. Please enter a valid email address.", "ALERT")
+                CUST_EMAIL_TEXTBOX.Clear()
+            End If
+        End If
+    End Sub
+    'For Checking Entered Value Is Number Or Not'
+    Private Sub CUST_MOBILE_TEXTBOX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CUST_MOBILE_TEXTBOX.KeyPress
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+            MessageBox2.Show("Only Number Are Allowed.", "ALERT")
+        End If
+    End Sub
+    'For Checking Entered Value Is Pincode Or Not
+    Private Sub CUST_PINCODE_TEXTBOX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CUST_PINCODE_TEXTBOX.KeyPress
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+            MessageBox2.Show("Only Number Are Allowed.", "ALERT")
+        End If
     End Sub
 End Class

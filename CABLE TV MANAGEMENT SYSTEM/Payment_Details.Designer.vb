@@ -128,6 +128,7 @@ Partial Class Payment_Details
         Me.CUST_NAME_LABEL = New System.Windows.Forms.Label()
         Me.YEAR_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MessageBox = New Guna.UI2.WinForms.Guna2MessageDialog()
         Me.Guna2GroupBox5.SuspendLayout()
         Me.Guna2GroupBox4.SuspendLayout()
         Me.SuspendLayout()
@@ -1244,6 +1245,15 @@ Partial Class Payment_Details
         Me.Label1.Text = "YEAR"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'MessageBox
+        '
+        Me.MessageBox.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK
+        Me.MessageBox.Caption = Nothing
+        Me.MessageBox.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
+        Me.MessageBox.Parent = Nothing
+        Me.MessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
+        Me.MessageBox.Text = Nothing
+        '
         'Payment_Details
         '
         Me.BackColor = System.Drawing.Color.Black
@@ -1321,4 +1331,5 @@ Partial Class Payment_Details
     Friend WithEvents CUST_TV_CONNECTION_LABEL As Label
     Friend WithEvents CUST_STATE_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CUST_COUNTRY_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents MessageBox As Guna.UI2.WinForms.Guna2MessageDialog
 End Class

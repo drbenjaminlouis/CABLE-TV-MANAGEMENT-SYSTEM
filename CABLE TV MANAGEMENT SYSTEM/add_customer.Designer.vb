@@ -736,6 +736,7 @@ Partial Class add_customer
         Me.TV_Reg_Picker.Checked = True
         Me.TV_Reg_Picker.CustomizableEdges = CustomizableEdges30
         Me.Guna2Transition1.SetDecoration(Me.TV_Reg_Picker, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.TV_Reg_Picker.Enabled = False
         Me.TV_Reg_Picker.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.TV_Reg_Picker.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TV_Reg_Picker.ForeColor = System.Drawing.Color.White

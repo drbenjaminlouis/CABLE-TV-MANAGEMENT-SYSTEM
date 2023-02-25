@@ -24,38 +24,6 @@ Partial Class Edit_Customer
     Private Sub InitializeComponent()
         Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges51 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -76,17 +44,60 @@ Partial Class Edit_Customer
         Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges55 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges57 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges51 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges55 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.DOB_PICKER = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.CUST_DOB_LABEL = New System.Windows.Forms.Label()
-        Me.CUST_EMAIL_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.EDIT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        Me.RESETBTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Me.SAVE_BTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Me.Guna2GroupBox7 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.CUST_PASSWORD_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.CUST_PASSWORD_LABEL = New System.Windows.Forms.Label()
+        Me.CUST_USERNAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.CUST_USERNAME_LABEL = New System.Windows.Forms.Label()
+        Me.Guna2GroupBox6 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.CUST_IDTYPE_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.CUST_IDNUMBER_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.CUST_IDNUMBER_LABEL = New System.Windows.Forms.Label()
+        Me.CUST_IDTYPE_LABEL = New System.Windows.Forms.Label()
+        Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.CUST_CABLE_PLAN_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CUST_BROADBAND_PLAN_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.CUST_BROADBAND_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
@@ -97,7 +108,17 @@ Partial Class Edit_Customer
         Me.CUST_BROADBAND_USERNAME_LABEL = New System.Windows.Forms.Label()
         Me.CUST_BROADBAND_PLAN_LABEL = New System.Windows.Forms.Label()
         Me.CUST_BROADBAND_LABEL = New System.Windows.Forms.Label()
+        Me.CUST_CHIP_ID_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.CUST_CHIP_ID_LABEL = New System.Windows.Forms.Label()
+        Me.CUST_CABLE_PLAN_LABEL = New System.Windows.Forms.Label()
+        Me.CUST_TV_CONNECTION_LABEL = New System.Windows.Forms.Label()
+        Me.CRF_LABEL = New System.Windows.Forms.Label()
+        Me.CUST_CRF_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.CUST_COUNTRY_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.DOB_PICKER = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.CUST_DOB_LABEL = New System.Windows.Forms.Label()
+        Me.CUST_EMAIL_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_EMAIL_LABEL = New System.Windows.Forms.Label()
         Me.CUST_MOBILE_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_MOBILE_LABEL = New System.Windows.Forms.Label()
@@ -112,29 +133,10 @@ Partial Class Edit_Customer
         Me.CUST_AREA_LABEL = New System.Windows.Forms.Label()
         Me.CUST_HOUSENAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_HOUSENAME_LABEL = New System.Windows.Forms.Label()
-        Me.CUST_NAME_LABEL = New System.Windows.Forms.Label()
-        Me.CUST_CHIP_ID_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.EDIT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
-        Me.ADD_CUST_RESETBTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.ADD_CUST_CREATEBTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Guna2GroupBox7 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.CUST_PASSWORD_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CUST_PASSWORD_LABEL = New System.Windows.Forms.Label()
-        Me.CUST_USERNAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CUST_USERNAME_LABEL = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox6 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.CUST_IDTYPE_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.CUST_IDNUMBER_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CUST_IDNUMBER_LABEL = New System.Windows.Forms.Label()
-        Me.CUST_IDTYPE_LABEL = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.CUST_CHIP_ID_LABEL = New System.Windows.Forms.Label()
-        Me.CUST_CABLE_PLAN_LABEL = New System.Windows.Forms.Label()
-        Me.CUST_TV_CONNECTION_LABEL = New System.Windows.Forms.Label()
-        Me.CRF_LABEL = New System.Windows.Forms.Label()
         Me.CUST_NAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.CUST_CRF_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.CUST_NAME_LABEL = New System.Windows.Forms.Label()
+        Me.MessageBox = New Guna.UI2.WinForms.Guna2MessageDialog()
+        Me.MessageBox2 = New Guna.UI2.WinForms.Guna2MessageDialog()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2GroupBox7.SuspendLayout()
         Me.Guna2GroupBox6.SuspendLayout()
@@ -146,8 +148,8 @@ Partial Class Edit_Customer
         '
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Label9)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.EDIT_BTN)
-        Me.Guna2CustomGradientPanel1.Controls.Add(Me.ADD_CUST_RESETBTN)
-        Me.Guna2CustomGradientPanel1.Controls.Add(Me.ADD_CUST_CREATEBTN)
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.RESETBTN)
+        Me.Guna2CustomGradientPanel1.Controls.Add(Me.SAVE_BTN)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2GroupBox7)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2GroupBox6)
         Me.Guna2CustomGradientPanel1.Controls.Add(Me.Guna2GroupBox5)
@@ -178,66 +180,319 @@ Partial Class Edit_Customer
         Me.Label9.TabIndex = 60
         Me.Label9.Text = "EDIT CUSTOMER"
         '
-        'DOB_PICKER
+        'EDIT_BTN
         '
-        Me.DOB_PICKER.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.DOB_PICKER.Animated = True
-        Me.DOB_PICKER.Checked = True
-        Me.DOB_PICKER.CustomizableEdges = CustomizableEdges39
-        Me.DOB_PICKER.Enabled = False
-        Me.DOB_PICKER.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.DOB_PICKER.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.DOB_PICKER.ForeColor = System.Drawing.Color.White
-        Me.DOB_PICKER.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.DOB_PICKER.Location = New System.Drawing.Point(204, 85)
-        Me.DOB_PICKER.MaxDate = New Date(2003, 1, 1, 0, 0, 0, 0)
-        Me.DOB_PICKER.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
-        Me.DOB_PICKER.Name = "DOB_PICKER"
-        Me.DOB_PICKER.ShadowDecoration.CustomizableEdges = CustomizableEdges40
-        Me.DOB_PICKER.Size = New System.Drawing.Size(389, 36)
-        Me.DOB_PICKER.TabIndex = 28
-        Me.DOB_PICKER.Value = New Date(2003, 1, 1, 0, 0, 0, 0)
+        Me.EDIT_BTN.Animated = True
+        Me.EDIT_BTN.CustomizableEdges = CustomizableEdges1
+        Me.EDIT_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.EDIT_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.EDIT_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.EDIT_BTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.EDIT_BTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.EDIT_BTN.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.EDIT_BTN.FillColor2 = System.Drawing.Color.Green
+        Me.EDIT_BTN.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.EDIT_BTN.ForeColor = System.Drawing.Color.White
+        Me.EDIT_BTN.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.EDIT_BTN.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_edit_property_403
+        Me.EDIT_BTN.Location = New System.Drawing.Point(1166, 142)
+        Me.EDIT_BTN.Name = "EDIT_BTN"
+        Me.EDIT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Me.EDIT_BTN.Size = New System.Drawing.Size(180, 45)
+        Me.EDIT_BTN.TabIndex = 69
+        Me.EDIT_BTN.Text = "EDIT DETAILS"
         '
-        'CUST_DOB_LABEL
+        'RESETBTN
         '
-        Me.CUST_DOB_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_DOB_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_DOB_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_DOB_LABEL.Location = New System.Drawing.Point(14, 85)
-        Me.CUST_DOB_LABEL.Name = "CUST_DOB_LABEL"
-        Me.CUST_DOB_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_DOB_LABEL.TabIndex = 26
-        Me.CUST_DOB_LABEL.Text = "DOB :"
-        Me.CUST_DOB_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.RESETBTN.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.RESETBTN.Animated = True
+        Me.RESETBTN.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RESETBTN.CustomizableEdges = CustomizableEdges3
+        Me.RESETBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.RESETBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.RESETBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.RESETBTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.RESETBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.RESETBTN.FillColor = System.Drawing.Color.Green
+        Me.RESETBTN.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
+        Me.RESETBTN.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.RESETBTN.ForeColor = System.Drawing.Color.White
+        Me.RESETBTN.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.RESETBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
+        Me.RESETBTN.HoverState.FillColor2 = System.Drawing.Color.Green
+        Me.RESETBTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.RESETBTN.Location = New System.Drawing.Point(1038, 789)
+        Me.RESETBTN.Name = "RESETBTN"
+        Me.RESETBTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Me.RESETBTN.Size = New System.Drawing.Size(308, 98)
+        Me.RESETBTN.TabIndex = 68
+        Me.RESETBTN.Text = "RESET"
         '
-        'CUST_EMAIL_TEXTBOX
+        'SAVE_BTN
         '
-        Me.CUST_EMAIL_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_EMAIL_TEXTBOX.Animated = True
-        Me.CUST_EMAIL_TEXTBOX.AutoSize = True
-        Me.CUST_EMAIL_TEXTBOX.BorderRadius = 3
-        Me.CUST_EMAIL_TEXTBOX.BorderThickness = 0
-        Me.CUST_EMAIL_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_EMAIL_TEXTBOX.CustomizableEdges = CustomizableEdges41
-        Me.CUST_EMAIL_TEXTBOX.DefaultText = ""
-        Me.CUST_EMAIL_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_EMAIL_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_EMAIL_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_EMAIL_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_EMAIL_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_EMAIL_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_EMAIL_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_EMAIL_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_EMAIL_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_EMAIL_TEXTBOX.Location = New System.Drawing.Point(204, 439)
-        Me.CUST_EMAIL_TEXTBOX.Name = "CUST_EMAIL_TEXTBOX"
-        Me.CUST_EMAIL_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_EMAIL_TEXTBOX.PlaceholderText = ""
-        Me.CUST_EMAIL_TEXTBOX.ReadOnly = True
-        Me.CUST_EMAIL_TEXTBOX.SelectedText = ""
-        Me.CUST_EMAIL_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges42
-        Me.CUST_EMAIL_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_EMAIL_TEXTBOX.TabIndex = 25
+        Me.SAVE_BTN.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.SAVE_BTN.Animated = True
+        Me.SAVE_BTN.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SAVE_BTN.CustomizableEdges = CustomizableEdges5
+        Me.SAVE_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.SAVE_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.SAVE_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.SAVE_BTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.SAVE_BTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SAVE_BTN.FillColor = System.Drawing.Color.Green
+        Me.SAVE_BTN.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
+        Me.SAVE_BTN.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.SAVE_BTN.ForeColor = System.Drawing.Color.White
+        Me.SAVE_BTN.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.SAVE_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
+        Me.SAVE_BTN.HoverState.FillColor2 = System.Drawing.Color.Green
+        Me.SAVE_BTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.SAVE_BTN.Location = New System.Drawing.Point(702, 789)
+        Me.SAVE_BTN.Name = "SAVE_BTN"
+        Me.SAVE_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        Me.SAVE_BTN.Size = New System.Drawing.Size(308, 98)
+        Me.SAVE_BTN.TabIndex = 67
+        Me.SAVE_BTN.Text = "SAVE"
+        '
+        'Guna2GroupBox7
+        '
+        Me.Guna2GroupBox7.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2GroupBox7.BackColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox7.BorderColor = System.Drawing.Color.Green
+        Me.Guna2GroupBox7.BorderRadius = 3
+        Me.Guna2GroupBox7.Controls.Add(Me.CUST_PASSWORD_TEXTBOX)
+        Me.Guna2GroupBox7.Controls.Add(Me.CUST_PASSWORD_LABEL)
+        Me.Guna2GroupBox7.Controls.Add(Me.CUST_USERNAME_TEXTBOX)
+        Me.Guna2GroupBox7.Controls.Add(Me.CUST_USERNAME_LABEL)
+        Me.Guna2GroupBox7.CustomBorderColor = System.Drawing.Color.Empty
+        Me.Guna2GroupBox7.CustomizableEdges = CustomizableEdges11
+        Me.Guna2GroupBox7.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox7.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GroupBox7.ForeColor = System.Drawing.Color.SpringGreen
+        Me.Guna2GroupBox7.Location = New System.Drawing.Point(12, 761)
+        Me.Guna2GroupBox7.Name = "Guna2GroupBox7"
+        Me.Guna2GroupBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        Me.Guna2GroupBox7.Size = New System.Drawing.Size(657, 149)
+        Me.Guna2GroupBox7.TabIndex = 66
+        Me.Guna2GroupBox7.Text = "Login Details"
+        '
+        'CUST_PASSWORD_TEXTBOX
+        '
+        Me.CUST_PASSWORD_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_PASSWORD_TEXTBOX.Animated = True
+        Me.CUST_PASSWORD_TEXTBOX.AutoSize = True
+        Me.CUST_PASSWORD_TEXTBOX.BorderRadius = 3
+        Me.CUST_PASSWORD_TEXTBOX.BorderThickness = 0
+        Me.CUST_PASSWORD_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges7
+        Me.CUST_PASSWORD_TEXTBOX.DefaultText = ""
+        Me.CUST_PASSWORD_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_PASSWORD_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_PASSWORD_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_PASSWORD_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_PASSWORD_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_PASSWORD_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_PASSWORD_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_PASSWORD_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_PASSWORD_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_PASSWORD_TEXTBOX.Location = New System.Drawing.Point(204, 87)
+        Me.CUST_PASSWORD_TEXTBOX.MaxLength = 10
+        Me.CUST_PASSWORD_TEXTBOX.Name = "CUST_PASSWORD_TEXTBOX"
+        Me.CUST_PASSWORD_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_PASSWORD_TEXTBOX.PlaceholderText = ""
+        Me.CUST_PASSWORD_TEXTBOX.ReadOnly = True
+        Me.CUST_PASSWORD_TEXTBOX.SelectedText = ""
+        Me.CUST_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        Me.CUST_PASSWORD_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_PASSWORD_TEXTBOX.TabIndex = 10
+        '
+        'CUST_PASSWORD_LABEL
+        '
+        Me.CUST_PASSWORD_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_PASSWORD_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_PASSWORD_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_PASSWORD_LABEL.Location = New System.Drawing.Point(14, 87)
+        Me.CUST_PASSWORD_LABEL.Name = "CUST_PASSWORD_LABEL"
+        Me.CUST_PASSWORD_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_PASSWORD_LABEL.TabIndex = 9
+        Me.CUST_PASSWORD_LABEL.Text = "Password :"
+        Me.CUST_PASSWORD_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'CUST_USERNAME_TEXTBOX
+        '
+        Me.CUST_USERNAME_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_USERNAME_TEXTBOX.Animated = True
+        Me.CUST_USERNAME_TEXTBOX.AutoSize = True
+        Me.CUST_USERNAME_TEXTBOX.BorderRadius = 3
+        Me.CUST_USERNAME_TEXTBOX.BorderThickness = 0
+        Me.CUST_USERNAME_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges9
+        Me.CUST_USERNAME_TEXTBOX.DefaultText = ""
+        Me.CUST_USERNAME_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_USERNAME_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_USERNAME_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_USERNAME_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_USERNAME_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_USERNAME_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_USERNAME_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_USERNAME_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_USERNAME_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_USERNAME_TEXTBOX.Location = New System.Drawing.Point(204, 40)
+        Me.CUST_USERNAME_TEXTBOX.MaxLength = 10
+        Me.CUST_USERNAME_TEXTBOX.Name = "CUST_USERNAME_TEXTBOX"
+        Me.CUST_USERNAME_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_USERNAME_TEXTBOX.PlaceholderText = ""
+        Me.CUST_USERNAME_TEXTBOX.ReadOnly = True
+        Me.CUST_USERNAME_TEXTBOX.SelectedText = ""
+        Me.CUST_USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        Me.CUST_USERNAME_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_USERNAME_TEXTBOX.TabIndex = 8
+        '
+        'CUST_USERNAME_LABEL
+        '
+        Me.CUST_USERNAME_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_USERNAME_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_USERNAME_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_USERNAME_LABEL.Location = New System.Drawing.Point(14, 40)
+        Me.CUST_USERNAME_LABEL.Name = "CUST_USERNAME_LABEL"
+        Me.CUST_USERNAME_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_USERNAME_LABEL.TabIndex = 7
+        Me.CUST_USERNAME_LABEL.Text = "Username :"
+        Me.CUST_USERNAME_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Guna2GroupBox6
+        '
+        Me.Guna2GroupBox6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2GroupBox6.BackColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox6.BorderColor = System.Drawing.Color.Green
+        Me.Guna2GroupBox6.BorderRadius = 3
+        Me.Guna2GroupBox6.Controls.Add(Me.CUST_IDTYPE_COMBOBOX)
+        Me.Guna2GroupBox6.Controls.Add(Me.CUST_IDNUMBER_TEXTBOX)
+        Me.Guna2GroupBox6.Controls.Add(Me.CUST_IDNUMBER_LABEL)
+        Me.Guna2GroupBox6.Controls.Add(Me.CUST_IDTYPE_LABEL)
+        Me.Guna2GroupBox6.CustomBorderColor = System.Drawing.Color.Empty
+        Me.Guna2GroupBox6.CustomizableEdges = CustomizableEdges17
+        Me.Guna2GroupBox6.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox6.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GroupBox6.ForeColor = System.Drawing.Color.SpringGreen
+        Me.Guna2GroupBox6.Location = New System.Drawing.Point(702, 603)
+        Me.Guna2GroupBox6.Name = "Guna2GroupBox6"
+        Me.Guna2GroupBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        Me.Guna2GroupBox6.Size = New System.Drawing.Size(644, 152)
+        Me.Guna2GroupBox6.TabIndex = 64
+        Me.Guna2GroupBox6.Text = "Document Details"
+        '
+        'CUST_IDTYPE_COMBOBOX
+        '
+        Me.CUST_IDTYPE_COMBOBOX.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_IDTYPE_COMBOBOX.BackColor = System.Drawing.Color.Transparent
+        Me.CUST_IDTYPE_COMBOBOX.BorderThickness = 0
+        Me.CUST_IDTYPE_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CUST_IDTYPE_COMBOBOX.CustomizableEdges = CustomizableEdges13
+        Me.CUST_IDTYPE_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_IDTYPE_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.White
+        Me.CUST_IDTYPE_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.CUST_IDTYPE_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CUST_IDTYPE_COMBOBOX.Enabled = False
+        Me.CUST_IDTYPE_COMBOBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_IDTYPE_COMBOBOX.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_IDTYPE_COMBOBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_IDTYPE_COMBOBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_IDTYPE_COMBOBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_IDTYPE_COMBOBOX.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_IDTYPE_COMBOBOX.HoverState.ForeColor = System.Drawing.Color.White
+        Me.CUST_IDTYPE_COMBOBOX.ItemHeight = 30
+        Me.CUST_IDTYPE_COMBOBOX.Items.AddRange(New Object() {"AADHAAR"})
+        Me.CUST_IDTYPE_COMBOBOX.Location = New System.Drawing.Point(207, 44)
+        Me.CUST_IDTYPE_COMBOBOX.Name = "CUST_IDTYPE_COMBOBOX"
+        Me.CUST_IDTYPE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Me.CUST_IDTYPE_COMBOBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_IDTYPE_COMBOBOX.TabIndex = 11
+        '
+        'CUST_IDNUMBER_TEXTBOX
+        '
+        Me.CUST_IDNUMBER_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_IDNUMBER_TEXTBOX.Animated = True
+        Me.CUST_IDNUMBER_TEXTBOX.AutoSize = True
+        Me.CUST_IDNUMBER_TEXTBOX.BorderRadius = 3
+        Me.CUST_IDNUMBER_TEXTBOX.BorderThickness = 0
+        Me.CUST_IDNUMBER_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_IDNUMBER_TEXTBOX.CustomizableEdges = CustomizableEdges15
+        Me.CUST_IDNUMBER_TEXTBOX.DefaultText = ""
+        Me.CUST_IDNUMBER_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_IDNUMBER_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_IDNUMBER_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_IDNUMBER_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_IDNUMBER_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_IDNUMBER_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_IDNUMBER_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_IDNUMBER_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_IDNUMBER_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_IDNUMBER_TEXTBOX.Location = New System.Drawing.Point(207, 91)
+        Me.CUST_IDNUMBER_TEXTBOX.Name = "CUST_IDNUMBER_TEXTBOX"
+        Me.CUST_IDNUMBER_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_IDNUMBER_TEXTBOX.PlaceholderText = ""
+        Me.CUST_IDNUMBER_TEXTBOX.ReadOnly = True
+        Me.CUST_IDNUMBER_TEXTBOX.SelectedText = ""
+        Me.CUST_IDNUMBER_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Me.CUST_IDNUMBER_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_IDNUMBER_TEXTBOX.TabIndex = 10
+        '
+        'CUST_IDNUMBER_LABEL
+        '
+        Me.CUST_IDNUMBER_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_IDNUMBER_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_IDNUMBER_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_IDNUMBER_LABEL.Location = New System.Drawing.Point(17, 91)
+        Me.CUST_IDNUMBER_LABEL.Name = "CUST_IDNUMBER_LABEL"
+        Me.CUST_IDNUMBER_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_IDNUMBER_LABEL.TabIndex = 9
+        Me.CUST_IDNUMBER_LABEL.Text = "ID Number :"
+        Me.CUST_IDNUMBER_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'CUST_IDTYPE_LABEL
+        '
+        Me.CUST_IDTYPE_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_IDTYPE_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_IDTYPE_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_IDTYPE_LABEL.Location = New System.Drawing.Point(17, 44)
+        Me.CUST_IDTYPE_LABEL.Name = "CUST_IDTYPE_LABEL"
+        Me.CUST_IDTYPE_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_IDTYPE_LABEL.TabIndex = 7
+        Me.CUST_IDTYPE_LABEL.Text = "ID Type:"
+        Me.CUST_IDTYPE_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Guna2GroupBox5
+        '
+        Me.Guna2GroupBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2GroupBox5.BackColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox5.BorderColor = System.Drawing.Color.Green
+        Me.Guna2GroupBox5.BorderRadius = 3
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_CABLE_PLAN_COMBOBOX)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_PLAN_COMBOBOX)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_COMBOBOX)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_TV_CONNECTION_COMBOBOX)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_PASSWORD_TEXTBOX)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_PASSWORD_LABEL)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_USERNAME_TEXTBOX)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_USERNAME_LABEL)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_PLAN_LABEL)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_LABEL)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_CHIP_ID_TEXTBOX)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_CHIP_ID_LABEL)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_CABLE_PLAN_LABEL)
+        Me.Guna2GroupBox5.Controls.Add(Me.CUST_TV_CONNECTION_LABEL)
+        Me.Guna2GroupBox5.CustomBorderColor = System.Drawing.Color.Empty
+        Me.Guna2GroupBox5.CustomizableEdges = CustomizableEdges33
+        Me.Guna2GroupBox5.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox5.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GroupBox5.ForeColor = System.Drawing.Color.SpringGreen
+        Me.Guna2GroupBox5.Location = New System.Drawing.Point(702, 198)
+        Me.Guna2GroupBox5.Name = "Guna2GroupBox5"
+        Me.Guna2GroupBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Me.Guna2GroupBox5.Size = New System.Drawing.Size(644, 399)
+        Me.Guna2GroupBox5.TabIndex = 65
+        Me.Guna2GroupBox5.Text = "Connection Details"
         '
         'CUST_CABLE_PLAN_COMBOBOX
         '
@@ -247,7 +502,7 @@ Partial Class Edit_Customer
         Me.CUST_CABLE_PLAN_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CUST_CABLE_PLAN_COMBOBOX.CustomizableEdges = CustomizableEdges19
         Me.CUST_CABLE_PLAN_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_CABLE_PLAN_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
+        Me.CUST_CABLE_PLAN_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.White
         Me.CUST_CABLE_PLAN_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CUST_CABLE_PLAN_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CUST_CABLE_PLAN_COMBOBOX.Enabled = False
@@ -274,7 +529,7 @@ Partial Class Edit_Customer
         Me.CUST_BROADBAND_PLAN_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CUST_BROADBAND_PLAN_COMBOBOX.CustomizableEdges = CustomizableEdges21
         Me.CUST_BROADBAND_PLAN_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_BROADBAND_PLAN_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
+        Me.CUST_BROADBAND_PLAN_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.White
         Me.CUST_BROADBAND_PLAN_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CUST_BROADBAND_PLAN_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CUST_BROADBAND_PLAN_COMBOBOX.Enabled = False
@@ -301,7 +556,7 @@ Partial Class Edit_Customer
         Me.CUST_BROADBAND_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CUST_BROADBAND_COMBOBOX.CustomizableEdges = CustomizableEdges23
         Me.CUST_BROADBAND_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_BROADBAND_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
+        Me.CUST_BROADBAND_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.White
         Me.CUST_BROADBAND_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CUST_BROADBAND_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CUST_BROADBAND_COMBOBOX.Enabled = False
@@ -328,7 +583,7 @@ Partial Class Edit_Customer
         Me.CUST_TV_CONNECTION_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CUST_TV_CONNECTION_COMBOBOX.CustomizableEdges = CustomizableEdges25
         Me.CUST_TV_CONNECTION_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_TV_CONNECTION_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
+        Me.CUST_TV_CONNECTION_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.White
         Me.CUST_TV_CONNECTION_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CUST_TV_CONNECTION_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CUST_TV_CONNECTION_COMBOBOX.Enabled = False
@@ -454,6 +709,149 @@ Partial Class Edit_Customer
         Me.CUST_BROADBAND_LABEL.Text = "Broadband Connection:"
         Me.CUST_BROADBAND_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'CUST_CHIP_ID_TEXTBOX
+        '
+        Me.CUST_CHIP_ID_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_CHIP_ID_TEXTBOX.Animated = True
+        Me.CUST_CHIP_ID_TEXTBOX.AutoSize = True
+        Me.CUST_CHIP_ID_TEXTBOX.BorderRadius = 3
+        Me.CUST_CHIP_ID_TEXTBOX.BorderThickness = 0
+        Me.CUST_CHIP_ID_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_CHIP_ID_TEXTBOX.CustomizableEdges = CustomizableEdges31
+        Me.CUST_CHIP_ID_TEXTBOX.DefaultText = ""
+        Me.CUST_CHIP_ID_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_CHIP_ID_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_CHIP_ID_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_CHIP_ID_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_CHIP_ID_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_CHIP_ID_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_CHIP_ID_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_CHIP_ID_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_CHIP_ID_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_CHIP_ID_TEXTBOX.Location = New System.Drawing.Point(216, 129)
+        Me.CUST_CHIP_ID_TEXTBOX.Name = "CUST_CHIP_ID_TEXTBOX"
+        Me.CUST_CHIP_ID_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_CHIP_ID_TEXTBOX.PlaceholderText = ""
+        Me.CUST_CHIP_ID_TEXTBOX.ReadOnly = True
+        Me.CUST_CHIP_ID_TEXTBOX.SelectedText = ""
+        Me.CUST_CHIP_ID_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        Me.CUST_CHIP_ID_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_CHIP_ID_TEXTBOX.TabIndex = 12
+        '
+        'CUST_CHIP_ID_LABEL
+        '
+        Me.CUST_CHIP_ID_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_CHIP_ID_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_CHIP_ID_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_CHIP_ID_LABEL.Location = New System.Drawing.Point(17, 134)
+        Me.CUST_CHIP_ID_LABEL.Name = "CUST_CHIP_ID_LABEL"
+        Me.CUST_CHIP_ID_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_CHIP_ID_LABEL.TabIndex = 11
+        Me.CUST_CHIP_ID_LABEL.Text = "Chip ID :"
+        Me.CUST_CHIP_ID_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'CUST_CABLE_PLAN_LABEL
+        '
+        Me.CUST_CABLE_PLAN_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_CABLE_PLAN_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_CABLE_PLAN_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_CABLE_PLAN_LABEL.Location = New System.Drawing.Point(17, 87)
+        Me.CUST_CABLE_PLAN_LABEL.Name = "CUST_CABLE_PLAN_LABEL"
+        Me.CUST_CABLE_PLAN_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_CABLE_PLAN_LABEL.TabIndex = 9
+        Me.CUST_CABLE_PLAN_LABEL.Text = "Cable Plan :"
+        Me.CUST_CABLE_PLAN_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'CUST_TV_CONNECTION_LABEL
+        '
+        Me.CUST_TV_CONNECTION_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_TV_CONNECTION_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_TV_CONNECTION_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_TV_CONNECTION_LABEL.Location = New System.Drawing.Point(17, 40)
+        Me.CUST_TV_CONNECTION_LABEL.Name = "CUST_TV_CONNECTION_LABEL"
+        Me.CUST_TV_CONNECTION_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_TV_CONNECTION_LABEL.TabIndex = 7
+        Me.CUST_TV_CONNECTION_LABEL.Text = "TV Connection  :"
+        Me.CUST_TV_CONNECTION_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'CRF_LABEL
+        '
+        Me.CRF_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CRF_LABEL.BackColor = System.Drawing.Color.Black
+        Me.CRF_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CRF_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CRF_LABEL.Location = New System.Drawing.Point(12, 142)
+        Me.CRF_LABEL.Name = "CRF_LABEL"
+        Me.CRF_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CRF_LABEL.TabIndex = 61
+        Me.CRF_LABEL.Text = "CRF NUMBER :"
+        Me.CRF_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'CUST_CRF_TEXTBOX
+        '
+        Me.CUST_CRF_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.CUST_CRF_TEXTBOX.AutoSize = True
+        Me.CUST_CRF_TEXTBOX.BackColor = System.Drawing.Color.Black
+        Me.CUST_CRF_TEXTBOX.BorderRadius = 3
+        Me.CUST_CRF_TEXTBOX.BorderThickness = 0
+        Me.CUST_CRF_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_CRF_TEXTBOX.CustomizableEdges = CustomizableEdges35
+        Me.CUST_CRF_TEXTBOX.DefaultText = ""
+        Me.CUST_CRF_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_CRF_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_CRF_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_CRF_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_CRF_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_CRF_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_CRF_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_CRF_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_CRF_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_CRF_TEXTBOX.Location = New System.Drawing.Point(216, 142)
+        Me.CUST_CRF_TEXTBOX.Name = "CUST_CRF_TEXTBOX"
+        Me.CUST_CRF_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_CRF_TEXTBOX.PlaceholderText = ""
+        Me.CUST_CRF_TEXTBOX.SelectedText = ""
+        Me.CUST_CRF_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        Me.CUST_CRF_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_CRF_TEXTBOX.TabIndex = 62
+        '
+        'Guna2GroupBox4
+        '
+        Me.Guna2GroupBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2GroupBox4.BackColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox4.BorderColor = System.Drawing.Color.Green
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_COUNTRY_COMBOBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.DOB_PICKER)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_DOB_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_EMAIL_TEXTBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_EMAIL_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_MOBILE_TEXTBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_MOBILE_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_PINCODE_TEXTBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_PINCODE_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_STATE_COMBOBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_DISTRICT_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_COUNTRY_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_STATE_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_DISTRICT_TEXTBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_AREA_TEXTBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_AREA_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_HOUSENAME_TEXTBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_HOUSENAME_LABEL)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_NAME_TEXTBOX)
+        Me.Guna2GroupBox4.Controls.Add(Me.CUST_NAME_LABEL)
+        Me.Guna2GroupBox4.CustomBorderColor = System.Drawing.Color.Empty
+        Me.Guna2GroupBox4.CustomizableEdges = CustomizableEdges57
+        Me.Guna2GroupBox4.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2GroupBox4.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GroupBox4.ForeColor = System.Drawing.Color.SpringGreen
+        Me.Guna2GroupBox4.Location = New System.Drawing.Point(12, 198)
+        Me.Guna2GroupBox4.Name = "Guna2GroupBox4"
+        Me.Guna2GroupBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges58
+        Me.Guna2GroupBox4.Size = New System.Drawing.Size(657, 557)
+        Me.Guna2GroupBox4.TabIndex = 63
+        Me.Guna2GroupBox4.Text = "Contact Details"
+        '
         'CUST_COUNTRY_COMBOBOX
         '
         Me.CUST_COUNTRY_COMBOBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
@@ -463,7 +861,7 @@ Partial Class Edit_Customer
         Me.CUST_COUNTRY_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CUST_COUNTRY_COMBOBOX.CustomizableEdges = CustomizableEdges37
         Me.CUST_COUNTRY_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_COUNTRY_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
+        Me.CUST_COUNTRY_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.White
         Me.CUST_COUNTRY_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CUST_COUNTRY_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CUST_COUNTRY_COMBOBOX.DropDownWidth = 389
@@ -483,6 +881,67 @@ Partial Class Edit_Customer
         Me.CUST_COUNTRY_COMBOBOX.Size = New System.Drawing.Size(389, 36)
         Me.CUST_COUNTRY_COMBOBOX.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         Me.CUST_COUNTRY_COMBOBOX.TabIndex = 29
+        '
+        'DOB_PICKER
+        '
+        Me.DOB_PICKER.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.DOB_PICKER.Animated = True
+        Me.DOB_PICKER.Checked = True
+        Me.DOB_PICKER.CustomizableEdges = CustomizableEdges39
+        Me.DOB_PICKER.Enabled = False
+        Me.DOB_PICKER.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.DOB_PICKER.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DOB_PICKER.ForeColor = System.Drawing.Color.White
+        Me.DOB_PICKER.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.DOB_PICKER.Location = New System.Drawing.Point(204, 85)
+        Me.DOB_PICKER.MaxDate = New Date(2003, 1, 1, 0, 0, 0, 0)
+        Me.DOB_PICKER.MinDate = New Date(1900, 1, 1, 0, 0, 0, 0)
+        Me.DOB_PICKER.Name = "DOB_PICKER"
+        Me.DOB_PICKER.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        Me.DOB_PICKER.Size = New System.Drawing.Size(389, 36)
+        Me.DOB_PICKER.TabIndex = 28
+        Me.DOB_PICKER.Value = New Date(2003, 1, 1, 0, 0, 0, 0)
+        '
+        'CUST_DOB_LABEL
+        '
+        Me.CUST_DOB_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CUST_DOB_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_DOB_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_DOB_LABEL.Location = New System.Drawing.Point(14, 85)
+        Me.CUST_DOB_LABEL.Name = "CUST_DOB_LABEL"
+        Me.CUST_DOB_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_DOB_LABEL.TabIndex = 26
+        Me.CUST_DOB_LABEL.Text = "DOB :"
+        Me.CUST_DOB_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'CUST_EMAIL_TEXTBOX
+        '
+        Me.CUST_EMAIL_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CUST_EMAIL_TEXTBOX.Animated = True
+        Me.CUST_EMAIL_TEXTBOX.AutoSize = True
+        Me.CUST_EMAIL_TEXTBOX.BorderRadius = 3
+        Me.CUST_EMAIL_TEXTBOX.BorderThickness = 0
+        Me.CUST_EMAIL_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.CUST_EMAIL_TEXTBOX.CustomizableEdges = CustomizableEdges41
+        Me.CUST_EMAIL_TEXTBOX.DefaultText = ""
+        Me.CUST_EMAIL_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_EMAIL_TEXTBOX.ForeColor = System.Drawing.Color.White
+        Me.CUST_EMAIL_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.CUST_EMAIL_TEXTBOX.Location = New System.Drawing.Point(204, 439)
+        Me.CUST_EMAIL_TEXTBOX.Name = "CUST_EMAIL_TEXTBOX"
+        Me.CUST_EMAIL_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.CUST_EMAIL_TEXTBOX.PlaceholderText = ""
+        Me.CUST_EMAIL_TEXTBOX.ReadOnly = True
+        Me.CUST_EMAIL_TEXTBOX.SelectedText = ""
+        Me.CUST_EMAIL_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        Me.CUST_EMAIL_TEXTBOX.Size = New System.Drawing.Size(389, 36)
+        Me.CUST_EMAIL_TEXTBOX.TabIndex = 25
         '
         'CUST_EMAIL_LABEL
         '
@@ -588,7 +1047,7 @@ Partial Class Edit_Customer
         Me.CUST_STATE_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CUST_STATE_COMBOBOX.CustomizableEdges = CustomizableEdges47
         Me.CUST_STATE_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_STATE_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
+        Me.CUST_STATE_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.White
         Me.CUST_STATE_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.CUST_STATE_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CUST_STATE_COMBOBOX.DropDownWidth = 389
@@ -756,409 +1215,6 @@ Partial Class Edit_Customer
         Me.CUST_HOUSENAME_LABEL.Text = "House Name :"
         Me.CUST_HOUSENAME_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'CUST_NAME_LABEL
-        '
-        Me.CUST_NAME_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CUST_NAME_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_NAME_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_NAME_LABEL.Location = New System.Drawing.Point(14, 40)
-        Me.CUST_NAME_LABEL.Name = "CUST_NAME_LABEL"
-        Me.CUST_NAME_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_NAME_LABEL.TabIndex = 7
-        Me.CUST_NAME_LABEL.Text = "Name :"
-        Me.CUST_NAME_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'CUST_CHIP_ID_TEXTBOX
-        '
-        Me.CUST_CHIP_ID_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_CHIP_ID_TEXTBOX.Animated = True
-        Me.CUST_CHIP_ID_TEXTBOX.AutoSize = True
-        Me.CUST_CHIP_ID_TEXTBOX.BorderRadius = 3
-        Me.CUST_CHIP_ID_TEXTBOX.BorderThickness = 0
-        Me.CUST_CHIP_ID_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_CHIP_ID_TEXTBOX.CustomizableEdges = CustomizableEdges31
-        Me.CUST_CHIP_ID_TEXTBOX.DefaultText = ""
-        Me.CUST_CHIP_ID_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_CHIP_ID_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_CHIP_ID_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_CHIP_ID_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_CHIP_ID_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_CHIP_ID_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_CHIP_ID_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_CHIP_ID_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_CHIP_ID_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_CHIP_ID_TEXTBOX.Location = New System.Drawing.Point(216, 129)
-        Me.CUST_CHIP_ID_TEXTBOX.Name = "CUST_CHIP_ID_TEXTBOX"
-        Me.CUST_CHIP_ID_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_CHIP_ID_TEXTBOX.PlaceholderText = ""
-        Me.CUST_CHIP_ID_TEXTBOX.ReadOnly = True
-        Me.CUST_CHIP_ID_TEXTBOX.SelectedText = ""
-        Me.CUST_CHIP_ID_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        Me.CUST_CHIP_ID_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_CHIP_ID_TEXTBOX.TabIndex = 12
-        '
-        'EDIT_BTN
-        '
-        Me.EDIT_BTN.CustomizableEdges = CustomizableEdges1
-        Me.EDIT_BTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.EDIT_BTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.EDIT_BTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.EDIT_BTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.EDIT_BTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.EDIT_BTN.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.EDIT_BTN.FillColor2 = System.Drawing.Color.Green
-        Me.EDIT_BTN.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.EDIT_BTN.ForeColor = System.Drawing.Color.White
-        Me.EDIT_BTN.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.EDIT_BTN.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_edit_property_403
-        Me.EDIT_BTN.Location = New System.Drawing.Point(1166, 142)
-        Me.EDIT_BTN.Name = "EDIT_BTN"
-        Me.EDIT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Me.EDIT_BTN.Size = New System.Drawing.Size(180, 45)
-        Me.EDIT_BTN.TabIndex = 69
-        Me.EDIT_BTN.Text = "EDIT DETAILS"
-        '
-        'ADD_CUST_RESETBTN
-        '
-        Me.ADD_CUST_RESETBTN.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ADD_CUST_RESETBTN.Animated = True
-        Me.ADD_CUST_RESETBTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ADD_CUST_RESETBTN.CustomizableEdges = CustomizableEdges3
-        Me.ADD_CUST_RESETBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.ADD_CUST_RESETBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.ADD_CUST_RESETBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ADD_CUST_RESETBTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ADD_CUST_RESETBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.ADD_CUST_RESETBTN.FillColor = System.Drawing.Color.Green
-        Me.ADD_CUST_RESETBTN.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
-        Me.ADD_CUST_RESETBTN.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ADD_CUST_RESETBTN.ForeColor = System.Drawing.Color.White
-        Me.ADD_CUST_RESETBTN.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.ADD_CUST_RESETBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
-        Me.ADD_CUST_RESETBTN.HoverState.FillColor2 = System.Drawing.Color.Green
-        Me.ADD_CUST_RESETBTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ADD_CUST_RESETBTN.Location = New System.Drawing.Point(1038, 789)
-        Me.ADD_CUST_RESETBTN.Name = "ADD_CUST_RESETBTN"
-        Me.ADD_CUST_RESETBTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Me.ADD_CUST_RESETBTN.Size = New System.Drawing.Size(308, 98)
-        Me.ADD_CUST_RESETBTN.TabIndex = 68
-        Me.ADD_CUST_RESETBTN.Text = "RESET"
-        '
-        'ADD_CUST_CREATEBTN
-        '
-        Me.ADD_CUST_CREATEBTN.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ADD_CUST_CREATEBTN.Animated = True
-        Me.ADD_CUST_CREATEBTN.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ADD_CUST_CREATEBTN.CustomizableEdges = CustomizableEdges5
-        Me.ADD_CUST_CREATEBTN.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.ADD_CUST_CREATEBTN.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.ADD_CUST_CREATEBTN.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ADD_CUST_CREATEBTN.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.ADD_CUST_CREATEBTN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.ADD_CUST_CREATEBTN.FillColor = System.Drawing.Color.Green
-        Me.ADD_CUST_CREATEBTN.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
-        Me.ADD_CUST_CREATEBTN.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ADD_CUST_CREATEBTN.ForeColor = System.Drawing.Color.White
-        Me.ADD_CUST_CREATEBTN.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
-        Me.ADD_CUST_CREATEBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(4, Byte), Integer))
-        Me.ADD_CUST_CREATEBTN.HoverState.FillColor2 = System.Drawing.Color.Green
-        Me.ADD_CUST_CREATEBTN.HoverState.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.ADD_CUST_CREATEBTN.Location = New System.Drawing.Point(702, 789)
-        Me.ADD_CUST_CREATEBTN.Name = "ADD_CUST_CREATEBTN"
-        Me.ADD_CUST_CREATEBTN.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Me.ADD_CUST_CREATEBTN.Size = New System.Drawing.Size(308, 98)
-        Me.ADD_CUST_CREATEBTN.TabIndex = 67
-        Me.ADD_CUST_CREATEBTN.Text = "SAVE"
-        '
-        'Guna2GroupBox7
-        '
-        Me.Guna2GroupBox7.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2GroupBox7.BackColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox7.BorderColor = System.Drawing.Color.Green
-        Me.Guna2GroupBox7.BorderRadius = 3
-        Me.Guna2GroupBox7.Controls.Add(Me.CUST_PASSWORD_TEXTBOX)
-        Me.Guna2GroupBox7.Controls.Add(Me.CUST_PASSWORD_LABEL)
-        Me.Guna2GroupBox7.Controls.Add(Me.CUST_USERNAME_TEXTBOX)
-        Me.Guna2GroupBox7.Controls.Add(Me.CUST_USERNAME_LABEL)
-        Me.Guna2GroupBox7.CustomBorderColor = System.Drawing.Color.Empty
-        Me.Guna2GroupBox7.CustomizableEdges = CustomizableEdges11
-        Me.Guna2GroupBox7.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox7.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GroupBox7.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox7.Location = New System.Drawing.Point(12, 761)
-        Me.Guna2GroupBox7.Name = "Guna2GroupBox7"
-        Me.Guna2GroupBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Me.Guna2GroupBox7.Size = New System.Drawing.Size(657, 149)
-        Me.Guna2GroupBox7.TabIndex = 66
-        Me.Guna2GroupBox7.Text = "Login Details"
-        '
-        'CUST_PASSWORD_TEXTBOX
-        '
-        Me.CUST_PASSWORD_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_PASSWORD_TEXTBOX.Animated = True
-        Me.CUST_PASSWORD_TEXTBOX.AutoSize = True
-        Me.CUST_PASSWORD_TEXTBOX.BorderRadius = 3
-        Me.CUST_PASSWORD_TEXTBOX.BorderThickness = 0
-        Me.CUST_PASSWORD_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges7
-        Me.CUST_PASSWORD_TEXTBOX.DefaultText = ""
-        Me.CUST_PASSWORD_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_PASSWORD_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_PASSWORD_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_PASSWORD_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_PASSWORD_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_PASSWORD_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_PASSWORD_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_PASSWORD_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_PASSWORD_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_PASSWORD_TEXTBOX.Location = New System.Drawing.Point(204, 87)
-        Me.CUST_PASSWORD_TEXTBOX.MaxLength = 10
-        Me.CUST_PASSWORD_TEXTBOX.Name = "CUST_PASSWORD_TEXTBOX"
-        Me.CUST_PASSWORD_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_PASSWORD_TEXTBOX.PlaceholderText = ""
-        Me.CUST_PASSWORD_TEXTBOX.ReadOnly = True
-        Me.CUST_PASSWORD_TEXTBOX.SelectedText = ""
-        Me.CUST_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Me.CUST_PASSWORD_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_PASSWORD_TEXTBOX.TabIndex = 10
-        '
-        'CUST_PASSWORD_LABEL
-        '
-        Me.CUST_PASSWORD_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_PASSWORD_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_PASSWORD_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_PASSWORD_LABEL.Location = New System.Drawing.Point(14, 87)
-        Me.CUST_PASSWORD_LABEL.Name = "CUST_PASSWORD_LABEL"
-        Me.CUST_PASSWORD_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_PASSWORD_LABEL.TabIndex = 9
-        Me.CUST_PASSWORD_LABEL.Text = "Password :"
-        Me.CUST_PASSWORD_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'CUST_USERNAME_TEXTBOX
-        '
-        Me.CUST_USERNAME_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_USERNAME_TEXTBOX.Animated = True
-        Me.CUST_USERNAME_TEXTBOX.AutoSize = True
-        Me.CUST_USERNAME_TEXTBOX.BorderRadius = 3
-        Me.CUST_USERNAME_TEXTBOX.BorderThickness = 0
-        Me.CUST_USERNAME_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges9
-        Me.CUST_USERNAME_TEXTBOX.DefaultText = ""
-        Me.CUST_USERNAME_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_USERNAME_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_USERNAME_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_USERNAME_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_USERNAME_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_USERNAME_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_USERNAME_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_USERNAME_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_USERNAME_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_USERNAME_TEXTBOX.Location = New System.Drawing.Point(204, 40)
-        Me.CUST_USERNAME_TEXTBOX.MaxLength = 10
-        Me.CUST_USERNAME_TEXTBOX.Name = "CUST_USERNAME_TEXTBOX"
-        Me.CUST_USERNAME_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_USERNAME_TEXTBOX.PlaceholderText = ""
-        Me.CUST_USERNAME_TEXTBOX.ReadOnly = True
-        Me.CUST_USERNAME_TEXTBOX.SelectedText = ""
-        Me.CUST_USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Me.CUST_USERNAME_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_USERNAME_TEXTBOX.TabIndex = 8
-        '
-        'CUST_USERNAME_LABEL
-        '
-        Me.CUST_USERNAME_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_USERNAME_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_USERNAME_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_USERNAME_LABEL.Location = New System.Drawing.Point(14, 40)
-        Me.CUST_USERNAME_LABEL.Name = "CUST_USERNAME_LABEL"
-        Me.CUST_USERNAME_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_USERNAME_LABEL.TabIndex = 7
-        Me.CUST_USERNAME_LABEL.Text = "Username :"
-        Me.CUST_USERNAME_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Guna2GroupBox6
-        '
-        Me.Guna2GroupBox6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2GroupBox6.BackColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox6.BorderColor = System.Drawing.Color.Green
-        Me.Guna2GroupBox6.BorderRadius = 3
-        Me.Guna2GroupBox6.Controls.Add(Me.CUST_IDTYPE_COMBOBOX)
-        Me.Guna2GroupBox6.Controls.Add(Me.CUST_IDNUMBER_TEXTBOX)
-        Me.Guna2GroupBox6.Controls.Add(Me.CUST_IDNUMBER_LABEL)
-        Me.Guna2GroupBox6.Controls.Add(Me.CUST_IDTYPE_LABEL)
-        Me.Guna2GroupBox6.CustomBorderColor = System.Drawing.Color.Empty
-        Me.Guna2GroupBox6.CustomizableEdges = CustomizableEdges17
-        Me.Guna2GroupBox6.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox6.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GroupBox6.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox6.Location = New System.Drawing.Point(702, 603)
-        Me.Guna2GroupBox6.Name = "Guna2GroupBox6"
-        Me.Guna2GroupBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        Me.Guna2GroupBox6.Size = New System.Drawing.Size(644, 152)
-        Me.Guna2GroupBox6.TabIndex = 64
-        Me.Guna2GroupBox6.Text = "Document Details"
-        '
-        'CUST_IDTYPE_COMBOBOX
-        '
-        Me.CUST_IDTYPE_COMBOBOX.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_IDTYPE_COMBOBOX.BackColor = System.Drawing.Color.Transparent
-        Me.CUST_IDTYPE_COMBOBOX.BorderThickness = 0
-        Me.CUST_IDTYPE_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CUST_IDTYPE_COMBOBOX.CustomizableEdges = CustomizableEdges13
-        Me.CUST_IDTYPE_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_IDTYPE_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
-        Me.CUST_IDTYPE_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.CUST_IDTYPE_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CUST_IDTYPE_COMBOBOX.Enabled = False
-        Me.CUST_IDTYPE_COMBOBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_IDTYPE_COMBOBOX.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_IDTYPE_COMBOBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_IDTYPE_COMBOBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_IDTYPE_COMBOBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_IDTYPE_COMBOBOX.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_IDTYPE_COMBOBOX.HoverState.ForeColor = System.Drawing.Color.White
-        Me.CUST_IDTYPE_COMBOBOX.ItemHeight = 30
-        Me.CUST_IDTYPE_COMBOBOX.Items.AddRange(New Object() {"AADHAAR"})
-        Me.CUST_IDTYPE_COMBOBOX.Location = New System.Drawing.Point(207, 44)
-        Me.CUST_IDTYPE_COMBOBOX.Name = "CUST_IDTYPE_COMBOBOX"
-        Me.CUST_IDTYPE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        Me.CUST_IDTYPE_COMBOBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_IDTYPE_COMBOBOX.TabIndex = 11
-        '
-        'CUST_IDNUMBER_TEXTBOX
-        '
-        Me.CUST_IDNUMBER_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_IDNUMBER_TEXTBOX.Animated = True
-        Me.CUST_IDNUMBER_TEXTBOX.AutoSize = True
-        Me.CUST_IDNUMBER_TEXTBOX.BorderRadius = 3
-        Me.CUST_IDNUMBER_TEXTBOX.BorderThickness = 0
-        Me.CUST_IDNUMBER_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_IDNUMBER_TEXTBOX.CustomizableEdges = CustomizableEdges15
-        Me.CUST_IDNUMBER_TEXTBOX.DefaultText = ""
-        Me.CUST_IDNUMBER_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_IDNUMBER_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_IDNUMBER_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_IDNUMBER_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_IDNUMBER_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_IDNUMBER_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_IDNUMBER_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_IDNUMBER_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_IDNUMBER_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_IDNUMBER_TEXTBOX.Location = New System.Drawing.Point(207, 91)
-        Me.CUST_IDNUMBER_TEXTBOX.Name = "CUST_IDNUMBER_TEXTBOX"
-        Me.CUST_IDNUMBER_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_IDNUMBER_TEXTBOX.PlaceholderText = ""
-        Me.CUST_IDNUMBER_TEXTBOX.ReadOnly = True
-        Me.CUST_IDNUMBER_TEXTBOX.SelectedText = ""
-        Me.CUST_IDNUMBER_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        Me.CUST_IDNUMBER_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_IDNUMBER_TEXTBOX.TabIndex = 10
-        '
-        'CUST_IDNUMBER_LABEL
-        '
-        Me.CUST_IDNUMBER_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_IDNUMBER_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_IDNUMBER_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_IDNUMBER_LABEL.Location = New System.Drawing.Point(17, 91)
-        Me.CUST_IDNUMBER_LABEL.Name = "CUST_IDNUMBER_LABEL"
-        Me.CUST_IDNUMBER_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_IDNUMBER_LABEL.TabIndex = 9
-        Me.CUST_IDNUMBER_LABEL.Text = "ID Number :"
-        Me.CUST_IDNUMBER_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'CUST_IDTYPE_LABEL
-        '
-        Me.CUST_IDTYPE_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_IDTYPE_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_IDTYPE_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_IDTYPE_LABEL.Location = New System.Drawing.Point(17, 44)
-        Me.CUST_IDTYPE_LABEL.Name = "CUST_IDTYPE_LABEL"
-        Me.CUST_IDTYPE_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_IDTYPE_LABEL.TabIndex = 7
-        Me.CUST_IDTYPE_LABEL.Text = "ID Type:"
-        Me.CUST_IDTYPE_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Guna2GroupBox5
-        '
-        Me.Guna2GroupBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2GroupBox5.BackColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox5.BorderColor = System.Drawing.Color.Green
-        Me.Guna2GroupBox5.BorderRadius = 3
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_CABLE_PLAN_COMBOBOX)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_PLAN_COMBOBOX)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_COMBOBOX)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_TV_CONNECTION_COMBOBOX)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_PASSWORD_TEXTBOX)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_PASSWORD_LABEL)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_USERNAME_TEXTBOX)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_USERNAME_LABEL)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_PLAN_LABEL)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_BROADBAND_LABEL)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_CHIP_ID_TEXTBOX)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_CHIP_ID_LABEL)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_CABLE_PLAN_LABEL)
-        Me.Guna2GroupBox5.Controls.Add(Me.CUST_TV_CONNECTION_LABEL)
-        Me.Guna2GroupBox5.CustomBorderColor = System.Drawing.Color.Empty
-        Me.Guna2GroupBox5.CustomizableEdges = CustomizableEdges33
-        Me.Guna2GroupBox5.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox5.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GroupBox5.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox5.Location = New System.Drawing.Point(702, 198)
-        Me.Guna2GroupBox5.Name = "Guna2GroupBox5"
-        Me.Guna2GroupBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges34
-        Me.Guna2GroupBox5.Size = New System.Drawing.Size(644, 399)
-        Me.Guna2GroupBox5.TabIndex = 65
-        Me.Guna2GroupBox5.Text = "Connection Details"
-        '
-        'CUST_CHIP_ID_LABEL
-        '
-        Me.CUST_CHIP_ID_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_CHIP_ID_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_CHIP_ID_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_CHIP_ID_LABEL.Location = New System.Drawing.Point(17, 134)
-        Me.CUST_CHIP_ID_LABEL.Name = "CUST_CHIP_ID_LABEL"
-        Me.CUST_CHIP_ID_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_CHIP_ID_LABEL.TabIndex = 11
-        Me.CUST_CHIP_ID_LABEL.Text = "Chip ID :"
-        Me.CUST_CHIP_ID_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'CUST_CABLE_PLAN_LABEL
-        '
-        Me.CUST_CABLE_PLAN_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_CABLE_PLAN_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_CABLE_PLAN_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_CABLE_PLAN_LABEL.Location = New System.Drawing.Point(17, 87)
-        Me.CUST_CABLE_PLAN_LABEL.Name = "CUST_CABLE_PLAN_LABEL"
-        Me.CUST_CABLE_PLAN_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_CABLE_PLAN_LABEL.TabIndex = 9
-        Me.CUST_CABLE_PLAN_LABEL.Text = "Cable Plan :"
-        Me.CUST_CABLE_PLAN_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'CUST_TV_CONNECTION_LABEL
-        '
-        Me.CUST_TV_CONNECTION_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_TV_CONNECTION_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_TV_CONNECTION_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CUST_TV_CONNECTION_LABEL.Location = New System.Drawing.Point(17, 40)
-        Me.CUST_TV_CONNECTION_LABEL.Name = "CUST_TV_CONNECTION_LABEL"
-        Me.CUST_TV_CONNECTION_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CUST_TV_CONNECTION_LABEL.TabIndex = 7
-        Me.CUST_TV_CONNECTION_LABEL.Text = "TV Connection  :"
-        Me.CUST_TV_CONNECTION_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'CRF_LABEL
-        '
-        Me.CRF_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.CRF_LABEL.BackColor = System.Drawing.Color.Black
-        Me.CRF_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CRF_LABEL.ForeColor = System.Drawing.Color.White
-        Me.CRF_LABEL.Location = New System.Drawing.Point(12, 142)
-        Me.CRF_LABEL.Name = "CRF_LABEL"
-        Me.CRF_LABEL.Size = New System.Drawing.Size(184, 36)
-        Me.CRF_LABEL.TabIndex = 61
-        Me.CRF_LABEL.Text = "CRF NUMBER :"
-        Me.CRF_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'CUST_NAME_TEXTBOX
         '
         Me.CUST_NAME_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.Left
@@ -1188,70 +1244,35 @@ Partial Class Edit_Customer
         Me.CUST_NAME_TEXTBOX.Size = New System.Drawing.Size(389, 36)
         Me.CUST_NAME_TEXTBOX.TabIndex = 8
         '
-        'CUST_CRF_TEXTBOX
+        'CUST_NAME_LABEL
         '
-        Me.CUST_CRF_TEXTBOX.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.CUST_CRF_TEXTBOX.AutoSize = True
-        Me.CUST_CRF_TEXTBOX.BackColor = System.Drawing.Color.Black
-        Me.CUST_CRF_TEXTBOX.BorderRadius = 3
-        Me.CUST_CRF_TEXTBOX.BorderThickness = 0
-        Me.CUST_CRF_TEXTBOX.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.CUST_CRF_TEXTBOX.CustomizableEdges = CustomizableEdges35
-        Me.CUST_CRF_TEXTBOX.DefaultText = ""
-        Me.CUST_CRF_TEXTBOX.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.CUST_CRF_TEXTBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.CUST_CRF_TEXTBOX.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_CRF_TEXTBOX.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.CUST_CRF_TEXTBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.CUST_CRF_TEXTBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_CRF_TEXTBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CUST_CRF_TEXTBOX.ForeColor = System.Drawing.Color.White
-        Me.CUST_CRF_TEXTBOX.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.CUST_CRF_TEXTBOX.Location = New System.Drawing.Point(216, 142)
-        Me.CUST_CRF_TEXTBOX.Name = "CUST_CRF_TEXTBOX"
-        Me.CUST_CRF_TEXTBOX.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.CUST_CRF_TEXTBOX.PlaceholderText = ""
-        Me.CUST_CRF_TEXTBOX.SelectedText = ""
-        Me.CUST_CRF_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges36
-        Me.CUST_CRF_TEXTBOX.Size = New System.Drawing.Size(389, 36)
-        Me.CUST_CRF_TEXTBOX.TabIndex = 62
+        Me.CUST_NAME_LABEL.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.CUST_NAME_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.CUST_NAME_LABEL.ForeColor = System.Drawing.Color.White
+        Me.CUST_NAME_LABEL.Location = New System.Drawing.Point(14, 40)
+        Me.CUST_NAME_LABEL.Name = "CUST_NAME_LABEL"
+        Me.CUST_NAME_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.CUST_NAME_LABEL.TabIndex = 7
+        Me.CUST_NAME_LABEL.Text = "Name :"
+        Me.CUST_NAME_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Guna2GroupBox4
+        'MessageBox
         '
-        Me.Guna2GroupBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2GroupBox4.BackColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox4.BorderColor = System.Drawing.Color.Green
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_COUNTRY_COMBOBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.DOB_PICKER)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_DOB_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_EMAIL_TEXTBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_EMAIL_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_MOBILE_TEXTBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_MOBILE_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_PINCODE_TEXTBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_PINCODE_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_STATE_COMBOBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_DISTRICT_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_COUNTRY_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_STATE_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_DISTRICT_TEXTBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_AREA_TEXTBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_AREA_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_HOUSENAME_TEXTBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_HOUSENAME_LABEL)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_NAME_TEXTBOX)
-        Me.Guna2GroupBox4.Controls.Add(Me.CUST_NAME_LABEL)
-        Me.Guna2GroupBox4.CustomBorderColor = System.Drawing.Color.Empty
-        Me.Guna2GroupBox4.CustomizableEdges = CustomizableEdges57
-        Me.Guna2GroupBox4.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2GroupBox4.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GroupBox4.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox4.Location = New System.Drawing.Point(12, 198)
-        Me.Guna2GroupBox4.Name = "Guna2GroupBox4"
-        Me.Guna2GroupBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges58
-        Me.Guna2GroupBox4.Size = New System.Drawing.Size(657, 557)
-        Me.Guna2GroupBox4.TabIndex = 63
-        Me.Guna2GroupBox4.Text = "Contact Details"
+        Me.MessageBox.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK
+        Me.MessageBox.Caption = Nothing
+        Me.MessageBox.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
+        Me.MessageBox.Parent = Nothing
+        Me.MessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
+        Me.MessageBox.Text = Nothing
+        '
+        'MessageBox2
+        '
+        Me.MessageBox2.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo
+        Me.MessageBox2.Caption = Nothing
+        Me.MessageBox2.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
+        Me.MessageBox2.Parent = Nothing
+        Me.MessageBox2.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
+        Me.MessageBox2.Text = Nothing
         '
         'Edit_Customer
         '
@@ -1281,8 +1302,8 @@ Partial Class Edit_Customer
     Friend WithEvents Guna2CustomGradientPanel1 As Guna.UI2.WinForms.Guna2CustomGradientPanel
     Friend WithEvents Label9 As Label
     Friend WithEvents EDIT_BTN As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents ADD_CUST_RESETBTN As Guna.UI2.WinForms.Guna2GradientTileButton
-    Friend WithEvents ADD_CUST_CREATEBTN As Guna.UI2.WinForms.Guna2GradientTileButton
+    Friend WithEvents RESETBTN As Guna.UI2.WinForms.Guna2GradientTileButton
+    Friend WithEvents SAVE_BTN As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents Guna2GroupBox7 As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents CUST_PASSWORD_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CUST_PASSWORD_LABEL As Label
@@ -1311,7 +1332,6 @@ Partial Class Edit_Customer
     Friend WithEvents CRF_LABEL As Label
     Friend WithEvents CUST_CRF_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2GroupBox4 As Guna.UI2.WinForms.Guna2GroupBox
-    Friend WithEvents CUST_COUNTRY_COMBOBOX As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents DOB_PICKER As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents CUST_DOB_LABEL As Label
     Friend WithEvents CUST_EMAIL_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
@@ -1320,7 +1340,6 @@ Partial Class Edit_Customer
     Friend WithEvents CUST_MOBILE_LABEL As Label
     Friend WithEvents CUST_PINCODE_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CUST_PINCODE_LABEL As Label
-    Friend WithEvents CUST_STATE_COMBOBOX As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents CUST_DISTRICT_LABEL As Label
     Friend WithEvents CUST_COUNTRY_LABEL As Label
     Friend WithEvents CUST_STATE_LABEL As Label
@@ -1331,4 +1350,8 @@ Partial Class Edit_Customer
     Friend WithEvents CUST_HOUSENAME_LABEL As Label
     Friend WithEvents CUST_NAME_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CUST_NAME_LABEL As Label
+    Friend WithEvents CUST_COUNTRY_COMBOBOX As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents CUST_STATE_COMBOBOX As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents MessageBox As Guna.UI2.WinForms.Guna2MessageDialog
+    Friend WithEvents MessageBox2 As Guna.UI2.WinForms.Guna2MessageDialog
 End Class
