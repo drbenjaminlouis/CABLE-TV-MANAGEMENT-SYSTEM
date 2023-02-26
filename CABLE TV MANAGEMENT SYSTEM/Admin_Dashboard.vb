@@ -69,7 +69,7 @@
         OpenChildForm(New Edit_Customer)
     End Sub
 
-    Private Sub Guna2GradientButton6_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton6.Click
+    Private Sub Guna2GradientButton6_Click(sender As Object, e As EventArgs) Handles REMOVE_CUSTOMER_BTN.Click
 
         OpenChildForm(New Remove_Customer)
 
