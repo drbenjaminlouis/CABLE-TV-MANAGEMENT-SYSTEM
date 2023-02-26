@@ -25,9 +25,9 @@ Partial Class Admin_Dashboard_Panel
         Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin_Dashboard_Panel))
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Admin_Dashboard_Panel))
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -49,460 +49,446 @@ Partial Class Admin_Dashboard_Panel
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.BroadBand_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Complaints = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.FeedBacks = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.BroadBand_Suspended = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.BroadBand_Inactive = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.BroadBand_Renewals = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Cable_TV_Renewals = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Pending_Payments = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Received_Payments = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Suspended_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Inactive_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Active_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Me.Guna2Panel1.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Guna2Panel1.AutoSize = True
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.Black
-        Me.Guna2Panel1.Controls.Add(Me.BroadBand_Customers)
-        Me.Guna2Panel1.Controls.Add(Me.Label7)
-        Me.Guna2Panel1.Controls.Add(Me.Complaints)
-        Me.Guna2Panel1.Controls.Add(Me.FeedBacks)
-        Me.Guna2Panel1.Controls.Add(Me.BroadBand_Suspended)
-        Me.Guna2Panel1.Controls.Add(Me.BroadBand_Inactive)
-        Me.Guna2Panel1.Controls.Add(Me.BroadBand_Renewals)
-        Me.Guna2Panel1.Controls.Add(Me.Cable_TV_Renewals)
-        Me.Guna2Panel1.Controls.Add(Me.Pending_Payments)
-        Me.Guna2Panel1.Controls.Add(Me.Received_Payments)
-        Me.Guna2Panel1.Controls.Add(Me.Suspended_Customers)
-        Me.Guna2Panel1.Controls.Add(Me.Inactive_Customers)
-        Me.Guna2Panel1.Controls.Add(Me.Active_Customers)
-        Me.Guna2Panel1.CustomizableEdges = CustomizableEdges25
-        Me.Guna2Panel1.FillColor = System.Drawing.Color.Black
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges26
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1377, 671)
-        Me.Guna2Panel1.TabIndex = 0
-        '
-        'BroadBand_Customers
-        '
-        Me.BroadBand_Customers.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.BroadBand_Customers.Animated = True
-        Me.BroadBand_Customers.AnimatedGIF = True
-        Me.BroadBand_Customers.BorderColor = System.Drawing.Color.White
-        Me.BroadBand_Customers.BorderRadius = 10
-        Me.BroadBand_Customers.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.BroadBand_Customers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BroadBand_Customers.CustomizableEdges = CustomizableEdges1
-        Me.BroadBand_Customers.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BroadBand_Customers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BroadBand_Customers.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BroadBand_Customers.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BroadBand_Customers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BroadBand_Customers.FillColor = System.Drawing.Color.Yellow
-        Me.BroadBand_Customers.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.BroadBand_Customers.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.BroadBand_Customers.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Customers.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.BroadBand_Customers.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.BroadBand_Customers.HoverState.FillColor2 = System.Drawing.Color.Yellow
-        Me.BroadBand_Customers.HoverState.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Customers.Image = CType(resources.GetObject("BroadBand_Customers.Image"), System.Drawing.Image)
-        Me.BroadBand_Customers.ImageSize = New System.Drawing.Size(50, 50)
-        Me.BroadBand_Customers.Location = New System.Drawing.Point(21, 251)
-        Me.BroadBand_Customers.Name = "BroadBand_Customers"
-        Me.BroadBand_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Me.BroadBand_Customers.Size = New System.Drawing.Size(330, 153)
-        Me.BroadBand_Customers.TabIndex = 27
-        Me.BroadBand_Customers.Text = "BROADBAND CUSTOMERS"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Label7.Location = New System.Drawing.Point(12, 9)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(292, 65)
-        Me.Label7.TabIndex = 36
-        Me.Label7.Text = "WELCOME !"
-        '
-        'Complaints
-        '
-        Me.Complaints.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Complaints.Animated = True
-        Me.Complaints.AnimatedGIF = True
-        Me.Complaints.BorderColor = System.Drawing.Color.White
-        Me.Complaints.BorderRadius = 10
-        Me.Complaints.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.Complaints.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Complaints.CustomizableEdges = CustomizableEdges3
-        Me.Complaints.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Complaints.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Complaints.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Complaints.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Complaints.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Complaints.FillColor = System.Drawing.Color.SaddleBrown
-        Me.Complaints.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Complaints.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Complaints.ForeColor = System.Drawing.Color.White
-        Me.Complaints.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.Complaints.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Complaints.HoverState.FillColor2 = System.Drawing.Color.SaddleBrown
-        Me.Complaints.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Complaints.Image = CType(resources.GetObject("Complaints.Image"), System.Drawing.Image)
-        Me.Complaints.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Complaints.Location = New System.Drawing.Point(1029, 410)
-        Me.Complaints.Name = "Complaints"
-        Me.Complaints.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Me.Complaints.Size = New System.Drawing.Size(330, 153)
-        Me.Complaints.TabIndex = 35
-        Me.Complaints.Text = "COMPLAINTS"
-        '
-        'FeedBacks
-        '
-        Me.FeedBacks.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.FeedBacks.Animated = True
-        Me.FeedBacks.AnimatedGIF = True
-        Me.FeedBacks.BorderColor = System.Drawing.Color.White
-        Me.FeedBacks.BorderRadius = 10
-        Me.FeedBacks.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.FeedBacks.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.FeedBacks.CustomizableEdges = CustomizableEdges5
-        Me.FeedBacks.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.FeedBacks.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.FeedBacks.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.FeedBacks.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.FeedBacks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.FeedBacks.FillColor = System.Drawing.SystemColors.ScrollBar
-        Me.FeedBacks.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.FeedBacks.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.FeedBacks.ForeColor = System.Drawing.Color.White
-        Me.FeedBacks.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.FeedBacks.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.FeedBacks.HoverState.FillColor2 = System.Drawing.SystemColors.ScrollBar
-        Me.FeedBacks.HoverState.ForeColor = System.Drawing.Color.White
-        Me.FeedBacks.Image = CType(resources.GetObject("FeedBacks.Image"), System.Drawing.Image)
-        Me.FeedBacks.ImageSize = New System.Drawing.Size(50, 50)
-        Me.FeedBacks.Location = New System.Drawing.Point(693, 410)
-        Me.FeedBacks.Name = "FeedBacks"
-        Me.FeedBacks.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Me.FeedBacks.Size = New System.Drawing.Size(330, 153)
-        Me.FeedBacks.TabIndex = 34
-        Me.FeedBacks.Text = "FEEDBACKS"
-        '
-        'BroadBand_Suspended
-        '
-        Me.BroadBand_Suspended.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.BroadBand_Suspended.Animated = True
-        Me.BroadBand_Suspended.AnimatedGIF = True
-        Me.BroadBand_Suspended.BorderColor = System.Drawing.Color.White
-        Me.BroadBand_Suspended.BorderRadius = 10
-        Me.BroadBand_Suspended.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.BroadBand_Suspended.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BroadBand_Suspended.CustomizableEdges = CustomizableEdges7
-        Me.BroadBand_Suspended.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BroadBand_Suspended.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BroadBand_Suspended.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BroadBand_Suspended.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BroadBand_Suspended.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BroadBand_Suspended.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.BroadBand_Suspended.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.BroadBand_Suspended.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.BroadBand_Suspended.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Suspended.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.BroadBand_Suspended.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.BroadBand_Suspended.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.BroadBand_Suspended.HoverState.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Suspended.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_wi_fi_off_50
-        Me.BroadBand_Suspended.ImageSize = New System.Drawing.Size(50, 50)
-        Me.BroadBand_Suspended.Location = New System.Drawing.Point(693, 251)
-        Me.BroadBand_Suspended.Name = "BroadBand_Suspended"
-        Me.BroadBand_Suspended.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        Me.BroadBand_Suspended.Size = New System.Drawing.Size(330, 153)
-        Me.BroadBand_Suspended.TabIndex = 32
-        Me.BroadBand_Suspended.Text = "BROADBAND SUSPENDED"
-        '
-        'BroadBand_Inactive
-        '
-        Me.BroadBand_Inactive.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.BroadBand_Inactive.Animated = True
-        Me.BroadBand_Inactive.AnimatedGIF = True
-        Me.BroadBand_Inactive.BorderColor = System.Drawing.Color.White
-        Me.BroadBand_Inactive.BorderRadius = 10
-        Me.BroadBand_Inactive.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.BroadBand_Inactive.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BroadBand_Inactive.CustomizableEdges = CustomizableEdges9
-        Me.BroadBand_Inactive.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BroadBand_Inactive.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BroadBand_Inactive.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BroadBand_Inactive.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BroadBand_Inactive.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BroadBand_Inactive.FillColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(2, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.BroadBand_Inactive.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.BroadBand_Inactive.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.BroadBand_Inactive.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Inactive.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.BroadBand_Inactive.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.BroadBand_Inactive.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(2, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.BroadBand_Inactive.HoverState.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Inactive.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_wi_fi_disconnected_501
-        Me.BroadBand_Inactive.ImageSize = New System.Drawing.Size(50, 50)
-        Me.BroadBand_Inactive.Location = New System.Drawing.Point(357, 251)
-        Me.BroadBand_Inactive.Name = "BroadBand_Inactive"
-        Me.BroadBand_Inactive.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        Me.BroadBand_Inactive.Size = New System.Drawing.Size(330, 153)
-        Me.BroadBand_Inactive.TabIndex = 33
-        Me.BroadBand_Inactive.Text = "BROADBAND INACTIVE"
-        '
-        'BroadBand_Renewals
-        '
-        Me.BroadBand_Renewals.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.BroadBand_Renewals.Animated = True
-        Me.BroadBand_Renewals.AnimatedGIF = True
-        Me.BroadBand_Renewals.BorderColor = System.Drawing.Color.White
-        Me.BroadBand_Renewals.BorderRadius = 10
-        Me.BroadBand_Renewals.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.BroadBand_Renewals.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BroadBand_Renewals.CustomizableEdges = CustomizableEdges11
-        Me.BroadBand_Renewals.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.BroadBand_Renewals.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.BroadBand_Renewals.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BroadBand_Renewals.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.BroadBand_Renewals.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BroadBand_Renewals.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BroadBand_Renewals.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.BroadBand_Renewals.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.BroadBand_Renewals.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Renewals.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.BroadBand_Renewals.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.BroadBand_Renewals.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BroadBand_Renewals.HoverState.ForeColor = System.Drawing.Color.White
-        Me.BroadBand_Renewals.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_pay_date_50__1_
-        Me.BroadBand_Renewals.ImageSize = New System.Drawing.Size(50, 50)
-        Me.BroadBand_Renewals.Location = New System.Drawing.Point(1029, 251)
-        Me.BroadBand_Renewals.Name = "BroadBand_Renewals"
-        Me.BroadBand_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Me.BroadBand_Renewals.Size = New System.Drawing.Size(330, 153)
-        Me.BroadBand_Renewals.TabIndex = 31
-        Me.BroadBand_Renewals.Text = "BROADBAND RENEWALS"
-        '
-        'Cable_TV_Renewals
-        '
-        Me.Cable_TV_Renewals.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Cable_TV_Renewals.Animated = True
-        Me.Cable_TV_Renewals.AnimatedGIF = True
-        Me.Cable_TV_Renewals.BorderColor = System.Drawing.Color.White
-        Me.Cable_TV_Renewals.BorderRadius = 10
-        Me.Cable_TV_Renewals.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.Cable_TV_Renewals.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Cable_TV_Renewals.CustomizableEdges = CustomizableEdges13
-        Me.Cable_TV_Renewals.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Cable_TV_Renewals.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Cable_TV_Renewals.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Cable_TV_Renewals.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Cable_TV_Renewals.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Cable_TV_Renewals.FillColor = System.Drawing.Color.DarkOrchid
-        Me.Cable_TV_Renewals.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Cable_TV_Renewals.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Cable_TV_Renewals.ForeColor = System.Drawing.Color.White
-        Me.Cable_TV_Renewals.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.Cable_TV_Renewals.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Cable_TV_Renewals.HoverState.FillColor2 = System.Drawing.Color.DarkOrchid
-        Me.Cable_TV_Renewals.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Cable_TV_Renewals.Image = CType(resources.GetObject("Cable_TV_Renewals.Image"), System.Drawing.Image)
-        Me.Cable_TV_Renewals.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Cable_TV_Renewals.Location = New System.Drawing.Point(1029, 92)
-        Me.Cable_TV_Renewals.Name = "Cable_TV_Renewals"
-        Me.Cable_TV_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        Me.Cable_TV_Renewals.Size = New System.Drawing.Size(330, 153)
-        Me.Cable_TV_Renewals.TabIndex = 30
-        Me.Cable_TV_Renewals.Text = "CABLE RENEWALS"
-        '
-        'Pending_Payments
-        '
-        Me.Pending_Payments.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Pending_Payments.Animated = True
-        Me.Pending_Payments.AnimatedGIF = True
-        Me.Pending_Payments.BorderColor = System.Drawing.Color.White
-        Me.Pending_Payments.BorderRadius = 10
-        Me.Pending_Payments.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.Pending_Payments.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Pending_Payments.CustomizableEdges = CustomizableEdges15
-        Me.Pending_Payments.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Pending_Payments.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Pending_Payments.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Pending_Payments.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Pending_Payments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Pending_Payments.FillColor = System.Drawing.Color.LightPink
-        Me.Pending_Payments.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Pending_Payments.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Pending_Payments.ForeColor = System.Drawing.Color.White
-        Me.Pending_Payments.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.Pending_Payments.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Pending_Payments.HoverState.FillColor2 = System.Drawing.Color.LightPink
-        Me.Pending_Payments.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Pending_Payments.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_hourglass_50
-        Me.Pending_Payments.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Pending_Payments.Location = New System.Drawing.Point(21, 410)
-        Me.Pending_Payments.Name = "Pending_Payments"
-        Me.Pending_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        Me.Pending_Payments.Size = New System.Drawing.Size(330, 153)
-        Me.Pending_Payments.TabIndex = 28
-        Me.Pending_Payments.Text = "PENDING PAYMENTS"
-        '
-        'Received_Payments
-        '
-        Me.Received_Payments.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Received_Payments.Animated = True
-        Me.Received_Payments.AnimatedGIF = True
-        Me.Received_Payments.BorderColor = System.Drawing.Color.White
-        Me.Received_Payments.BorderRadius = 10
-        Me.Received_Payments.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.Received_Payments.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Received_Payments.CustomizableEdges = CustomizableEdges17
-        Me.Received_Payments.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Received_Payments.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Received_Payments.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Received_Payments.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Received_Payments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Received_Payments.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Received_Payments.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Received_Payments.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Received_Payments.ForeColor = System.Drawing.Color.White
-        Me.Received_Payments.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.Received_Payments.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Received_Payments.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Received_Payments.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Received_Payments.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_get_cash_50
-        Me.Received_Payments.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Received_Payments.Location = New System.Drawing.Point(357, 410)
-        Me.Received_Payments.Name = "Received_Payments"
-        Me.Received_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        Me.Received_Payments.Size = New System.Drawing.Size(330, 153)
-        Me.Received_Payments.TabIndex = 29
-        Me.Received_Payments.Text = "RECEIVED PAYMENTS"
-        '
-        'Suspended_Customers
-        '
-        Me.Suspended_Customers.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Suspended_Customers.Animated = True
-        Me.Suspended_Customers.AnimatedGIF = True
-        Me.Suspended_Customers.BorderColor = System.Drawing.Color.White
-        Me.Suspended_Customers.BorderRadius = 10
-        Me.Suspended_Customers.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.Suspended_Customers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Suspended_Customers.CustomizableEdges = CustomizableEdges19
-        Me.Suspended_Customers.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Suspended_Customers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Suspended_Customers.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Suspended_Customers.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Suspended_Customers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Suspended_Customers.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Suspended_Customers.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Suspended_Customers.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Suspended_Customers.ForeColor = System.Drawing.Color.White
-        Me.Suspended_Customers.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.Suspended_Customers.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Suspended_Customers.HoverState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Suspended_Customers.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Suspended_Customers.Image = CType(resources.GetObject("Suspended_Customers.Image"), System.Drawing.Image)
-        Me.Suspended_Customers.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Suspended_Customers.Location = New System.Drawing.Point(693, 92)
-        Me.Suspended_Customers.Name = "Suspended_Customers"
-        Me.Suspended_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        Me.Suspended_Customers.Size = New System.Drawing.Size(330, 153)
-        Me.Suspended_Customers.TabIndex = 26
-        Me.Suspended_Customers.Text = "SUSPENDED CUSTOMERS"
-        '
-        'Inactive_Customers
-        '
-        Me.Inactive_Customers.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Inactive_Customers.Animated = True
-        Me.Inactive_Customers.AnimatedGIF = True
-        Me.Inactive_Customers.BorderColor = System.Drawing.Color.White
-        Me.Inactive_Customers.BorderRadius = 10
-        Me.Inactive_Customers.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.Inactive_Customers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Inactive_Customers.CustomizableEdges = CustomizableEdges21
-        Me.Inactive_Customers.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Inactive_Customers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Inactive_Customers.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Inactive_Customers.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Inactive_Customers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Inactive_Customers.FillColor = System.Drawing.Color.Red
-        Me.Inactive_Customers.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Inactive_Customers.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Inactive_Customers.ForeColor = System.Drawing.Color.White
-        Me.Inactive_Customers.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.Inactive_Customers.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Inactive_Customers.HoverState.FillColor2 = System.Drawing.Color.Red
-        Me.Inactive_Customers.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Inactive_Customers.Image = CType(resources.GetObject("Inactive_Customers.Image"), System.Drawing.Image)
-        Me.Inactive_Customers.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Inactive_Customers.Location = New System.Drawing.Point(357, 92)
-        Me.Inactive_Customers.Name = "Inactive_Customers"
-        Me.Inactive_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        Me.Inactive_Customers.Size = New System.Drawing.Size(330, 153)
-        Me.Inactive_Customers.TabIndex = 24
-        Me.Inactive_Customers.Text = "INACTIVE CUSTOMERS"
-        '
-        'Active_Customers
-        '
-        Me.Active_Customers.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Active_Customers.Animated = True
-        Me.Active_Customers.AnimatedGIF = True
-        Me.Active_Customers.BorderColor = System.Drawing.Color.White
-        Me.Active_Customers.BorderRadius = 10
-        Me.Active_Customers.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash
-        Me.Active_Customers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Active_Customers.CustomizableEdges = CustomizableEdges23
-        Me.Active_Customers.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Active_Customers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Active_Customers.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Active_Customers.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Active_Customers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Active_Customers.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Active_Customers.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Active_Customers.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Active_Customers.ForeColor = System.Drawing.Color.White
-        Me.Active_Customers.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.Active_Customers.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
-        Me.Active_Customers.HoverState.FillColor2 = System.Drawing.Color.Green
-        Me.Active_Customers.HoverState.ForeColor = System.Drawing.Color.White
-        Me.Active_Customers.Image = CType(resources.GetObject("Active_Customers.Image"), System.Drawing.Image)
-        Me.Active_Customers.ImageSize = New System.Drawing.Size(50, 50)
-        Me.Active_Customers.Location = New System.Drawing.Point(21, 92)
-        Me.Active_Customers.Name = "Active_Customers"
-        Me.Active_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        Me.Active_Customers.Size = New System.Drawing.Size(330, 153)
-        Me.Active_Customers.TabIndex = 25
-        Me.Active_Customers.Text = "TOTAL CUSTOMERS"
-        '
-        'Admin_Dashboard_Panel
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1377, 671)
-        Me.Controls.Add(Me.Guna2Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Admin_Dashboard_Panel"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Admin_Dashboard_Panel"
-        Me.Guna2Panel1.ResumeLayout(False)
-        Me.Guna2Panel1.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        BroadBand_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Label7 = New Label()
+        Complaints = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        FeedBacks = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        BroadBand_Suspended = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        BroadBand_Inactive = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        BroadBand_Renewals = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Cable_TV_Renewals = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Pending_Payments = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Received_Payments = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Suspended_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Inactive_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Active_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        Guna2Panel1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Guna2Panel1
+        ' 
+        Guna2Panel1.Anchor = AnchorStyles.Top
+        Guna2Panel1.AutoSize = True
+        Guna2Panel1.BackColor = Color.Black
+        Guna2Panel1.Controls.Add(BroadBand_Customers)
+        Guna2Panel1.Controls.Add(Label7)
+        Guna2Panel1.Controls.Add(Complaints)
+        Guna2Panel1.Controls.Add(FeedBacks)
+        Guna2Panel1.Controls.Add(BroadBand_Suspended)
+        Guna2Panel1.Controls.Add(BroadBand_Inactive)
+        Guna2Panel1.Controls.Add(BroadBand_Renewals)
+        Guna2Panel1.Controls.Add(Cable_TV_Renewals)
+        Guna2Panel1.Controls.Add(Pending_Payments)
+        Guna2Panel1.Controls.Add(Received_Payments)
+        Guna2Panel1.Controls.Add(Suspended_Customers)
+        Guna2Panel1.Controls.Add(Inactive_Customers)
+        Guna2Panel1.Controls.Add(Active_Customers)
+        Guna2Panel1.CustomizableEdges = CustomizableEdges25
+        Guna2Panel1.FillColor = Color.Black
+        Guna2Panel1.Location = New Point(0, 0)
+        Guna2Panel1.Name = "Guna2Panel1"
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        Guna2Panel1.Size = New Size(1377, 671)
+        Guna2Panel1.TabIndex = 0
+        ' 
+        ' BroadBand_Customers
+        ' 
+        BroadBand_Customers.Anchor = AnchorStyles.Top
+        BroadBand_Customers.Animated = True
+        BroadBand_Customers.AnimatedGIF = True
+        BroadBand_Customers.BorderColor = Color.White
+        BroadBand_Customers.BorderRadius = 10
+        BroadBand_Customers.BorderStyle = Drawing2D.DashStyle.Dash
+        BroadBand_Customers.Cursor = Cursors.Hand
+        BroadBand_Customers.CustomizableEdges = CustomizableEdges1
+        BroadBand_Customers.DisabledState.BorderColor = Color.DarkGray
+        BroadBand_Customers.DisabledState.CustomBorderColor = Color.DarkGray
+        BroadBand_Customers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Customers.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Customers.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BroadBand_Customers.FillColor = Color.Yellow
+        BroadBand_Customers.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Customers.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        BroadBand_Customers.ForeColor = Color.White
+        BroadBand_Customers.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        BroadBand_Customers.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Customers.HoverState.FillColor2 = Color.Yellow
+        BroadBand_Customers.HoverState.ForeColor = Color.White
+        BroadBand_Customers.Image = My.Resources.Resources.icons8_broadband_502
+        BroadBand_Customers.ImageSize = New Size(50, 50)
+        BroadBand_Customers.Location = New Point(21, 251)
+        BroadBand_Customers.Name = "BroadBand_Customers"
+        BroadBand_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        BroadBand_Customers.Size = New Size(330, 153)
+        BroadBand_Customers.TabIndex = 27
+        BroadBand_Customers.Text = "BROADBAND CUSTOMERS"' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.ForeColor = Color.SpringGreen
+        Label7.Location = New Point(12, 9)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(292, 65)
+        Label7.TabIndex = 36
+        Label7.Text = "WELCOME !"' 
+        ' Complaints
+        ' 
+        Complaints.Anchor = AnchorStyles.Bottom
+        Complaints.Animated = True
+        Complaints.AnimatedGIF = True
+        Complaints.BorderColor = Color.White
+        Complaints.BorderRadius = 10
+        Complaints.BorderStyle = Drawing2D.DashStyle.Dash
+        Complaints.Cursor = Cursors.Hand
+        Complaints.CustomizableEdges = CustomizableEdges3
+        Complaints.DisabledState.BorderColor = Color.DarkGray
+        Complaints.DisabledState.CustomBorderColor = Color.DarkGray
+        Complaints.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Complaints.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Complaints.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Complaints.FillColor = Color.SaddleBrown
+        Complaints.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Complaints.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Complaints.ForeColor = Color.White
+        Complaints.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        Complaints.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Complaints.HoverState.FillColor2 = Color.SaddleBrown
+        Complaints.HoverState.ForeColor = Color.White
+        Complaints.Image = CType(resources.GetObject("Complaints.Image"), Image)
+        Complaints.ImageSize = New Size(50, 50)
+        Complaints.Location = New Point(1029, 410)
+        Complaints.Name = "Complaints"
+        Complaints.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Complaints.Size = New Size(330, 153)
+        Complaints.TabIndex = 35
+        Complaints.Text = "COMPLAINTS"' 
+        ' FeedBacks
+        ' 
+        FeedBacks.Anchor = AnchorStyles.Bottom
+        FeedBacks.Animated = True
+        FeedBacks.AnimatedGIF = True
+        FeedBacks.BorderColor = Color.White
+        FeedBacks.BorderRadius = 10
+        FeedBacks.BorderStyle = Drawing2D.DashStyle.Dash
+        FeedBacks.Cursor = Cursors.Hand
+        FeedBacks.CustomizableEdges = CustomizableEdges5
+        FeedBacks.DisabledState.BorderColor = Color.DarkGray
+        FeedBacks.DisabledState.CustomBorderColor = Color.DarkGray
+        FeedBacks.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        FeedBacks.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        FeedBacks.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        FeedBacks.FillColor = SystemColors.ScrollBar
+        FeedBacks.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        FeedBacks.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        FeedBacks.ForeColor = Color.White
+        FeedBacks.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        FeedBacks.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        FeedBacks.HoverState.FillColor2 = SystemColors.ScrollBar
+        FeedBacks.HoverState.ForeColor = Color.White
+        FeedBacks.Image = CType(resources.GetObject("FeedBacks.Image"), Image)
+        FeedBacks.ImageSize = New Size(50, 50)
+        FeedBacks.Location = New Point(693, 410)
+        FeedBacks.Name = "FeedBacks"
+        FeedBacks.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        FeedBacks.Size = New Size(330, 153)
+        FeedBacks.TabIndex = 34
+        FeedBacks.Text = "FEEDBACKS"' 
+        ' BroadBand_Suspended
+        ' 
+        BroadBand_Suspended.Anchor = AnchorStyles.Bottom
+        BroadBand_Suspended.Animated = True
+        BroadBand_Suspended.AnimatedGIF = True
+        BroadBand_Suspended.BorderColor = Color.White
+        BroadBand_Suspended.BorderRadius = 10
+        BroadBand_Suspended.BorderStyle = Drawing2D.DashStyle.Dash
+        BroadBand_Suspended.Cursor = Cursors.Hand
+        BroadBand_Suspended.CustomizableEdges = CustomizableEdges7
+        BroadBand_Suspended.DisabledState.BorderColor = Color.DarkGray
+        BroadBand_Suspended.DisabledState.CustomBorderColor = Color.DarkGray
+        BroadBand_Suspended.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Suspended.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Suspended.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BroadBand_Suspended.FillColor = Color.FromArgb(CByte(240), CByte(133), CByte(2))
+        BroadBand_Suspended.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Suspended.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        BroadBand_Suspended.ForeColor = Color.White
+        BroadBand_Suspended.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        BroadBand_Suspended.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Suspended.HoverState.FillColor2 = Color.FromArgb(CByte(240), CByte(133), CByte(2))
+        BroadBand_Suspended.HoverState.ForeColor = Color.White
+        BroadBand_Suspended.Image = My.Resources.Resources.icons8_wi_fi_off_50
+        BroadBand_Suspended.ImageSize = New Size(50, 50)
+        BroadBand_Suspended.Location = New Point(693, 251)
+        BroadBand_Suspended.Name = "BroadBand_Suspended"
+        BroadBand_Suspended.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        BroadBand_Suspended.Size = New Size(330, 153)
+        BroadBand_Suspended.TabIndex = 32
+        BroadBand_Suspended.Text = "BROADBAND SUSPENDED"' 
+        ' BroadBand_Inactive
+        ' 
+        BroadBand_Inactive.Anchor = AnchorStyles.Bottom
+        BroadBand_Inactive.Animated = True
+        BroadBand_Inactive.AnimatedGIF = True
+        BroadBand_Inactive.BorderColor = Color.White
+        BroadBand_Inactive.BorderRadius = 10
+        BroadBand_Inactive.BorderStyle = Drawing2D.DashStyle.Dash
+        BroadBand_Inactive.Cursor = Cursors.Hand
+        BroadBand_Inactive.CustomizableEdges = CustomizableEdges9
+        BroadBand_Inactive.DisabledState.BorderColor = Color.DarkGray
+        BroadBand_Inactive.DisabledState.CustomBorderColor = Color.DarkGray
+        BroadBand_Inactive.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Inactive.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Inactive.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BroadBand_Inactive.FillColor = Color.FromArgb(CByte(240), CByte(2), CByte(133))
+        BroadBand_Inactive.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Inactive.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        BroadBand_Inactive.ForeColor = Color.White
+        BroadBand_Inactive.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        BroadBand_Inactive.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Inactive.HoverState.FillColor2 = Color.FromArgb(CByte(240), CByte(2), CByte(133))
+        BroadBand_Inactive.HoverState.ForeColor = Color.White
+        BroadBand_Inactive.Image = My.Resources.Resources.icons8_wi_fi_disconnected_501
+        BroadBand_Inactive.ImageSize = New Size(50, 50)
+        BroadBand_Inactive.Location = New Point(357, 251)
+        BroadBand_Inactive.Name = "BroadBand_Inactive"
+        BroadBand_Inactive.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        BroadBand_Inactive.Size = New Size(330, 153)
+        BroadBand_Inactive.TabIndex = 33
+        BroadBand_Inactive.Text = "BROADBAND INACTIVE"' 
+        ' BroadBand_Renewals
+        ' 
+        BroadBand_Renewals.Anchor = AnchorStyles.None
+        BroadBand_Renewals.Animated = True
+        BroadBand_Renewals.AnimatedGIF = True
+        BroadBand_Renewals.BorderColor = Color.White
+        BroadBand_Renewals.BorderRadius = 10
+        BroadBand_Renewals.BorderStyle = Drawing2D.DashStyle.Dash
+        BroadBand_Renewals.Cursor = Cursors.Hand
+        BroadBand_Renewals.CustomizableEdges = CustomizableEdges11
+        BroadBand_Renewals.DisabledState.BorderColor = Color.DarkGray
+        BroadBand_Renewals.DisabledState.CustomBorderColor = Color.DarkGray
+        BroadBand_Renewals.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Renewals.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Renewals.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BroadBand_Renewals.FillColor = Color.FromArgb(CByte(0), CByte(192), CByte(192))
+        BroadBand_Renewals.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Renewals.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        BroadBand_Renewals.ForeColor = Color.White
+        BroadBand_Renewals.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        BroadBand_Renewals.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Renewals.HoverState.FillColor2 = Color.FromArgb(CByte(0), CByte(192), CByte(192))
+        BroadBand_Renewals.HoverState.ForeColor = Color.White
+        BroadBand_Renewals.Image = My.Resources.Resources.icons8_pay_date_50__1_
+        BroadBand_Renewals.ImageSize = New Size(50, 50)
+        BroadBand_Renewals.Location = New Point(1029, 251)
+        BroadBand_Renewals.Name = "BroadBand_Renewals"
+        BroadBand_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        BroadBand_Renewals.Size = New Size(330, 153)
+        BroadBand_Renewals.TabIndex = 31
+        BroadBand_Renewals.Text = "BROADBAND RENEWALS"' 
+        ' Cable_TV_Renewals
+        ' 
+        Cable_TV_Renewals.Anchor = AnchorStyles.None
+        Cable_TV_Renewals.Animated = True
+        Cable_TV_Renewals.AnimatedGIF = True
+        Cable_TV_Renewals.BorderColor = Color.White
+        Cable_TV_Renewals.BorderRadius = 10
+        Cable_TV_Renewals.BorderStyle = Drawing2D.DashStyle.Dash
+        Cable_TV_Renewals.Cursor = Cursors.Hand
+        Cable_TV_Renewals.CustomizableEdges = CustomizableEdges13
+        Cable_TV_Renewals.DisabledState.BorderColor = Color.DarkGray
+        Cable_TV_Renewals.DisabledState.CustomBorderColor = Color.DarkGray
+        Cable_TV_Renewals.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Cable_TV_Renewals.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Cable_TV_Renewals.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Cable_TV_Renewals.FillColor = Color.DarkOrchid
+        Cable_TV_Renewals.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Cable_TV_Renewals.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Cable_TV_Renewals.ForeColor = Color.White
+        Cable_TV_Renewals.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        Cable_TV_Renewals.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Cable_TV_Renewals.HoverState.FillColor2 = Color.DarkOrchid
+        Cable_TV_Renewals.HoverState.ForeColor = Color.White
+        Cable_TV_Renewals.Image = My.Resources.Resources.icons8_renew_501
+        Cable_TV_Renewals.ImageSize = New Size(50, 50)
+        Cable_TV_Renewals.Location = New Point(1029, 92)
+        Cable_TV_Renewals.Name = "Cable_TV_Renewals"
+        Cable_TV_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Cable_TV_Renewals.Size = New Size(330, 153)
+        Cable_TV_Renewals.TabIndex = 30
+        Cable_TV_Renewals.Text = "CABLE RENEWALS"' 
+        ' Pending_Payments
+        ' 
+        Pending_Payments.Anchor = AnchorStyles.None
+        Pending_Payments.Animated = True
+        Pending_Payments.AnimatedGIF = True
+        Pending_Payments.BorderColor = Color.White
+        Pending_Payments.BorderRadius = 10
+        Pending_Payments.BorderStyle = Drawing2D.DashStyle.Dash
+        Pending_Payments.Cursor = Cursors.Hand
+        Pending_Payments.CustomizableEdges = CustomizableEdges15
+        Pending_Payments.DisabledState.BorderColor = Color.DarkGray
+        Pending_Payments.DisabledState.CustomBorderColor = Color.DarkGray
+        Pending_Payments.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Pending_Payments.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Pending_Payments.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Pending_Payments.FillColor = Color.LightPink
+        Pending_Payments.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Pending_Payments.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Pending_Payments.ForeColor = Color.White
+        Pending_Payments.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        Pending_Payments.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Pending_Payments.HoverState.FillColor2 = Color.LightPink
+        Pending_Payments.HoverState.ForeColor = Color.White
+        Pending_Payments.Image = My.Resources.Resources.icons8_hourglass_50
+        Pending_Payments.ImageSize = New Size(50, 50)
+        Pending_Payments.Location = New Point(21, 410)
+        Pending_Payments.Name = "Pending_Payments"
+        Pending_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        Pending_Payments.Size = New Size(330, 153)
+        Pending_Payments.TabIndex = 28
+        Pending_Payments.Text = "PENDING PAYMENTS"' 
+        ' Received_Payments
+        ' 
+        Received_Payments.Anchor = AnchorStyles.None
+        Received_Payments.Animated = True
+        Received_Payments.AnimatedGIF = True
+        Received_Payments.BorderColor = Color.White
+        Received_Payments.BorderRadius = 10
+        Received_Payments.BorderStyle = Drawing2D.DashStyle.Dash
+        Received_Payments.Cursor = Cursors.Hand
+        Received_Payments.CustomizableEdges = CustomizableEdges17
+        Received_Payments.DisabledState.BorderColor = Color.DarkGray
+        Received_Payments.DisabledState.CustomBorderColor = Color.DarkGray
+        Received_Payments.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Received_Payments.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Received_Payments.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Received_Payments.FillColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        Received_Payments.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Received_Payments.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Received_Payments.ForeColor = Color.White
+        Received_Payments.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        Received_Payments.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Received_Payments.HoverState.FillColor2 = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        Received_Payments.HoverState.ForeColor = Color.White
+        Received_Payments.Image = My.Resources.Resources.icons8_get_cash_50
+        Received_Payments.ImageSize = New Size(50, 50)
+        Received_Payments.Location = New Point(357, 410)
+        Received_Payments.Name = "Received_Payments"
+        Received_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        Received_Payments.Size = New Size(330, 153)
+        Received_Payments.TabIndex = 29
+        Received_Payments.Text = "RECEIVED PAYMENTS"' 
+        ' Suspended_Customers
+        ' 
+        Suspended_Customers.Anchor = AnchorStyles.Top
+        Suspended_Customers.Animated = True
+        Suspended_Customers.AnimatedGIF = True
+        Suspended_Customers.BorderColor = Color.White
+        Suspended_Customers.BorderRadius = 10
+        Suspended_Customers.BorderStyle = Drawing2D.DashStyle.Dash
+        Suspended_Customers.Cursor = Cursors.Hand
+        Suspended_Customers.CustomizableEdges = CustomizableEdges19
+        Suspended_Customers.DisabledState.BorderColor = Color.DarkGray
+        Suspended_Customers.DisabledState.CustomBorderColor = Color.DarkGray
+        Suspended_Customers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Suspended_Customers.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Suspended_Customers.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Suspended_Customers.FillColor = Color.FromArgb(CByte(0), CByte(0), CByte(192))
+        Suspended_Customers.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Suspended_Customers.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Suspended_Customers.ForeColor = Color.White
+        Suspended_Customers.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        Suspended_Customers.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Suspended_Customers.HoverState.FillColor2 = Color.FromArgb(CByte(0), CByte(0), CByte(192))
+        Suspended_Customers.HoverState.ForeColor = Color.White
+        Suspended_Customers.Image = My.Resources.Resources.icons8_high_importance_502
+        Suspended_Customers.ImageSize = New Size(50, 50)
+        Suspended_Customers.Location = New Point(693, 92)
+        Suspended_Customers.Name = "Suspended_Customers"
+        Suspended_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Suspended_Customers.Size = New Size(330, 153)
+        Suspended_Customers.TabIndex = 26
+        Suspended_Customers.Text = "SUSPENDED CUSTOMERS"' 
+        ' Inactive_Customers
+        ' 
+        Inactive_Customers.Anchor = AnchorStyles.Top
+        Inactive_Customers.Animated = True
+        Inactive_Customers.AnimatedGIF = True
+        Inactive_Customers.BorderColor = Color.White
+        Inactive_Customers.BorderRadius = 10
+        Inactive_Customers.BorderStyle = Drawing2D.DashStyle.Dash
+        Inactive_Customers.Cursor = Cursors.Hand
+        Inactive_Customers.CustomizableEdges = CustomizableEdges21
+        Inactive_Customers.DisabledState.BorderColor = Color.DarkGray
+        Inactive_Customers.DisabledState.CustomBorderColor = Color.DarkGray
+        Inactive_Customers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Inactive_Customers.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Inactive_Customers.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Inactive_Customers.FillColor = Color.Red
+        Inactive_Customers.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Inactive_Customers.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Inactive_Customers.ForeColor = Color.White
+        Inactive_Customers.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        Inactive_Customers.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Inactive_Customers.HoverState.FillColor2 = Color.Red
+        Inactive_Customers.HoverState.ForeColor = Color.White
+        Inactive_Customers.Image = My.Resources.Resources.icons8_multiply_502
+        Inactive_Customers.ImageSize = New Size(50, 50)
+        Inactive_Customers.Location = New Point(357, 92)
+        Inactive_Customers.Name = "Inactive_Customers"
+        Inactive_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Inactive_Customers.Size = New Size(330, 153)
+        Inactive_Customers.TabIndex = 24
+        Inactive_Customers.Text = "INACTIVE CUSTOMERS"' 
+        ' Active_Customers
+        ' 
+        Active_Customers.Anchor = AnchorStyles.Top
+        Active_Customers.Animated = True
+        Active_Customers.AnimatedGIF = True
+        Active_Customers.BorderColor = Color.White
+        Active_Customers.BorderRadius = 10
+        Active_Customers.BorderStyle = Drawing2D.DashStyle.Dash
+        Active_Customers.Cursor = Cursors.Hand
+        Active_Customers.CustomizableEdges = CustomizableEdges23
+        Active_Customers.DisabledState.BorderColor = Color.DarkGray
+        Active_Customers.DisabledState.CustomBorderColor = Color.DarkGray
+        Active_Customers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Active_Customers.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        Active_Customers.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        Active_Customers.FillColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        Active_Customers.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Active_Customers.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Active_Customers.ForeColor = Color.White
+        Active_Customers.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        Active_Customers.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        Active_Customers.HoverState.FillColor2 = Color.Green
+        Active_Customers.HoverState.ForeColor = Color.White
+        Active_Customers.Image = My.Resources.Resources.icons8_checkmark_502
+        Active_Customers.ImageSize = New Size(50, 50)
+        Active_Customers.Location = New Point(21, 92)
+        Active_Customers.Name = "Active_Customers"
+        Active_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Active_Customers.Size = New Size(330, 153)
+        Active_Customers.TabIndex = 25
+        Active_Customers.Text = "TOTAL CUSTOMERS"' 
+        ' Admin_Dashboard_Panel
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.Black
+        ClientSize = New Size(1377, 671)
+        Controls.Add(Guna2Panel1)
+        FormBorderStyle = FormBorderStyle.None
+        Name = "Admin_Dashboard_Panel"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Admin_Dashboard_Panel"
+        Guna2Panel1.ResumeLayout(False)
+        Guna2Panel1.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel

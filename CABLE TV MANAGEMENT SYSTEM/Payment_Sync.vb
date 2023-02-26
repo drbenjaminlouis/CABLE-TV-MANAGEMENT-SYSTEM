@@ -11,9 +11,9 @@ Module Payment_Sync
             Dim currentYear As Integer = DateTime.Now.Year
             Dim currentMonth As String = DateTime.Now.ToString("MMMM")
             Dim currentdate As Date = DateAndTime.Now.Date
-            Dim updateSql As String = "UPDATE TV_PAYMENT_DETAILS SET " & currentMonth & " = 'NOT PAID' WHERE CURRENT_YEAR = " & currentYear & " AND " & currentMonth & " = 'NILL'"
+            Dim updateSql As String = "UPDATE TV_PAYMENT_DETAILS SET " & currentMonth & " = 'NOT PAID' WHERE PAYMENT_YEAR = " & currentYear & " AND " & currentMonth & " = 'NILL'"
             Dim checker1 As String = "UPDATE TV_CONNECTION_DETAILS SET TV_CONNECTION_STATUS = 'INACTIVE' WHERE CUST_TV_CONNECTION = 'YES' AND EXPIRY_DATE < #" & Format(CDate(currentdate), "yyyy-MM-dd") & "#"
-            Dim updateSql2 As String = "UPDATE BROADBAND_PAYMENT_DETAILS Set " & currentMonth & " = 'NOT PAID' WHERE CURRENT_YEAR = " & currentYear & " AND " & currentMonth & " = 'PENDING'"
+            Dim updateSql2 As String = "UPDATE BROADBAND_PAYMENT_DETAILS Set " & currentMonth & " = 'NOT PAID' WHERE PAYMENT_YEAR = " & currentYear & " AND " & currentMonth & " = 'NILL'"
             Dim checker2 As String = "UPDATE BROADBAND_CONNECTION_DETAILS SET STATUS = 'INACTIVE' WHERE BROADBAND_CONNECTION = 'YES' AND EXPIRY_DATE < #" & Format(CDate(currentdate), "yyyy-MM-dd") & "#"
             Dim cmd As New OleDb.OleDbCommand(updateSql, con)
             Dim cmd2 As New OleDb.OleDbCommand(updateSql2, con)

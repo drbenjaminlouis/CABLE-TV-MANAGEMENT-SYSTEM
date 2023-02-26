@@ -168,3 +168,16 @@ Actual value was 2023.
 [2023-02-24 23:46:52] An Error Occured While Updating Data: ExecuteNonQuery requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
 [2023-02-24 23:48:50] An Error Occured While Updating Data: Syntax error (missing operator) in query expression '@CUST_EMAIL FROM CUSTOMER_DETAILS'.
 [2023-02-25 15:55:02] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-25 19:13:37] An Error Occured While Fetching Payment Details: No value given for one or more required parameters.
+[2023-02-25 19:17:32] An Error Occured While Fetching Payment Details: No value given for one or more required parameters.
+[2023-02-25 19:20:09] An Error Occured While Fetching Payment Details: No value given for one or more required parameters.
+[2023-02-25 19:27:06] An Error Occured While Fetching Payment Details: No value given for one or more required parameters.
+[2023-02-25 19:35:54] An Error Occured While Fetching Payment Details: No value given for one or more required parameters.
+[2023-02-25 21:33:43] An Error Occured While Payment Sync: No value given for one or more required parameters.
+[2023-02-25 21:33:58] An Error Occured While Payment Sync: No value given for one or more required parameters.
+[2023-02-25 21:34:25] An Error Occured While Payment Sync: No value given for one or more required parameters.
+[2023-02-25 22:14:15] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-25 22:55:38] An Error Occured While Fetching Payment Details: No value given for one or more required parameters.
+[2023-02-25 23:03:14] An Error Occured While Fetching Payment Details: ExecuteReader requires an open and available Connection. The connection's current state is closed.
+[2023-02-25 23:06:29] An Error Occured While Fetching Payment Details: ExecuteReader requires an open and available Connection. The connection's current state is closed.
+[2023-02-26 11:59:21] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\

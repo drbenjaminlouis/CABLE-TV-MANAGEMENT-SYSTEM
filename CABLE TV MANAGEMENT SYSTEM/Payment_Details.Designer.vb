@@ -76,6 +76,8 @@ Partial Class Payment_Details
         Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges55 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Me.Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
@@ -126,9 +128,11 @@ Partial Class Payment_Details
         Me.CUST_HOUSENAME_LABEL = New System.Windows.Forms.Label()
         Me.CUST_NAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CUST_NAME_LABEL = New System.Windows.Forms.Label()
-        Me.YEAR_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SERVICE_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.SERVICE_LABEL = New System.Windows.Forms.Label()
         Me.MessageBox = New Guna.UI2.WinForms.Guna2MessageDialog()
+        Me.YEAR_COMBOBOX = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.YEAR_LABEL = New System.Windows.Forms.Label()
         Me.Guna2GroupBox5.SuspendLayout()
         Me.Guna2GroupBox4.SuspendLayout()
         Me.SuspendLayout()
@@ -150,7 +154,7 @@ Partial Class Payment_Details
         Me.Guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.Green
         Me.Guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.Black
         Me.Guna2GradientButton1.Image = Global.CABLE_TV_MANAGEMENT_SYSTEM.My.Resources.Resources.icons8_search_client_50
-        Me.Guna2GradientButton1.Location = New System.Drawing.Point(541, 188)
+        Me.Guna2GradientButton1.Location = New System.Drawing.Point(541, 235)
         Me.Guna2GradientButton1.Name = "Guna2GradientButton1"
         Me.Guna2GradientButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges2
         Me.Guna2GradientButton1.Size = New System.Drawing.Size(128, 36)
@@ -204,7 +208,7 @@ Partial Class Payment_Details
         Me.Guna2GroupBox5.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox5.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2GroupBox5.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox5.Location = New System.Drawing.Point(702, 238)
+        Me.Guna2GroupBox5.Location = New System.Drawing.Point(706, 302)
         Me.Guna2GroupBox5.Name = "Guna2GroupBox5"
         Me.Guna2GroupBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         Me.Guna2GroupBox5.Size = New System.Drawing.Size(644, 631)
@@ -798,12 +802,12 @@ Partial Class Payment_Details
         Me.Guna2GroupBox4.FillColor = System.Drawing.Color.Transparent
         Me.Guna2GroupBox4.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2GroupBox4.ForeColor = System.Drawing.Color.SpringGreen
-        Me.Guna2GroupBox4.Location = New System.Drawing.Point(12, 238)
+        Me.Guna2GroupBox4.Location = New System.Drawing.Point(12, 302)
         Me.Guna2GroupBox4.Name = "Guna2GroupBox4"
         Me.Guna2GroupBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges52
         Me.Guna2GroupBox4.Size = New System.Drawing.Size(657, 631)
         Me.Guna2GroupBox4.TabIndex = 82
-        Me.Guna2GroupBox4.Text = "Customer Details"
+        Me.Guna2GroupBox4.Text = "CUSTOMER DETAILS"
         '
         'CUST_STATE_TEXTBOX
         '
@@ -1207,13 +1211,59 @@ Partial Class Payment_Details
         Me.CUST_NAME_LABEL.Text = "Name :"
         Me.CUST_NAME_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
+        'SERVICE_COMBOBOX
+        '
+        Me.SERVICE_COMBOBOX.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.SERVICE_COMBOBOX.BackColor = System.Drawing.Color.Transparent
+        Me.SERVICE_COMBOBOX.BorderThickness = 0
+        Me.SERVICE_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SERVICE_COMBOBOX.CustomizableEdges = CustomizableEdges53
+        Me.SERVICE_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.SERVICE_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
+        Me.SERVICE_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.SERVICE_COMBOBOX.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.SERVICE_COMBOBOX.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.SERVICE_COMBOBOX.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SERVICE_COMBOBOX.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SERVICE_COMBOBOX.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.SERVICE_COMBOBOX.ForeColor = System.Drawing.Color.White
+        Me.SERVICE_COMBOBOX.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.SERVICE_COMBOBOX.HoverState.ForeColor = System.Drawing.Color.White
+        Me.SERVICE_COMBOBOX.ItemHeight = 30
+        Me.SERVICE_COMBOBOX.Location = New System.Drawing.Point(216, 188)
+        Me.SERVICE_COMBOBOX.Name = "SERVICE_COMBOBOX"
+        Me.SERVICE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges54
+        Me.SERVICE_COMBOBOX.Size = New System.Drawing.Size(319, 36)
+        Me.SERVICE_COMBOBOX.TabIndex = 87
+        '
+        'SERVICE_LABEL
+        '
+        Me.SERVICE_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.SERVICE_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.SERVICE_LABEL.ForeColor = System.Drawing.Color.White
+        Me.SERVICE_LABEL.Location = New System.Drawing.Point(12, 188)
+        Me.SERVICE_LABEL.Name = "SERVICE_LABEL"
+        Me.SERVICE_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.SERVICE_LABEL.TabIndex = 86
+        Me.SERVICE_LABEL.Text = "SERVICE"
+        Me.SERVICE_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'MessageBox
+        '
+        Me.MessageBox.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK
+        Me.MessageBox.Caption = Nothing
+        Me.MessageBox.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
+        Me.MessageBox.Parent = Nothing
+        Me.MessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
+        Me.MessageBox.Text = Nothing
+        '
         'YEAR_COMBOBOX
         '
         Me.YEAR_COMBOBOX.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.YEAR_COMBOBOX.BackColor = System.Drawing.Color.Transparent
         Me.YEAR_COMBOBOX.BorderThickness = 0
         Me.YEAR_COMBOBOX.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.YEAR_COMBOBOX.CustomizableEdges = CustomizableEdges53
+        Me.YEAR_COMBOBOX.CustomizableEdges = CustomizableEdges55
         Me.YEAR_COMBOBOX.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.YEAR_COMBOBOX.DisabledState.ForeColor = System.Drawing.Color.Black
         Me.YEAR_COMBOBOX.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
@@ -1226,40 +1276,32 @@ Partial Class Payment_Details
         Me.YEAR_COMBOBOX.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.YEAR_COMBOBOX.HoverState.ForeColor = System.Drawing.Color.White
         Me.YEAR_COMBOBOX.ItemHeight = 30
-        Me.YEAR_COMBOBOX.Items.AddRange(New Object() {"2022", "2023"})
-        Me.YEAR_COMBOBOX.Location = New System.Drawing.Point(216, 188)
+        Me.YEAR_COMBOBOX.Location = New System.Drawing.Point(216, 235)
         Me.YEAR_COMBOBOX.Name = "YEAR_COMBOBOX"
-        Me.YEAR_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges54
+        Me.YEAR_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges56
         Me.YEAR_COMBOBOX.Size = New System.Drawing.Size(319, 36)
-        Me.YEAR_COMBOBOX.TabIndex = 87
+        Me.YEAR_COMBOBOX.TabIndex = 89
         '
-        'Label1
+        'YEAR_LABEL
         '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label1.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 188)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(184, 36)
-        Me.Label1.TabIndex = 86
-        Me.Label1.Text = "YEAR"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'MessageBox
-        '
-        Me.MessageBox.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK
-        Me.MessageBox.Caption = Nothing
-        Me.MessageBox.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
-        Me.MessageBox.Parent = Nothing
-        Me.MessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
-        Me.MessageBox.Text = Nothing
+        Me.YEAR_LABEL.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.YEAR_LABEL.Font = New System.Drawing.Font("Franklin Gothic Medium", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.YEAR_LABEL.ForeColor = System.Drawing.Color.White
+        Me.YEAR_LABEL.Location = New System.Drawing.Point(12, 235)
+        Me.YEAR_LABEL.Name = "YEAR_LABEL"
+        Me.YEAR_LABEL.Size = New System.Drawing.Size(184, 36)
+        Me.YEAR_LABEL.TabIndex = 88
+        Me.YEAR_LABEL.Text = "YEAR"
+        Me.YEAR_LABEL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Payment_Details
         '
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1362, 1061)
         Me.Controls.Add(Me.YEAR_COMBOBOX)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.YEAR_LABEL)
+        Me.Controls.Add(Me.SERVICE_COMBOBOX)
+        Me.Controls.Add(Me.SERVICE_LABEL)
         Me.Controls.Add(Me.Guna2GradientButton1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Guna2GroupBox5)
@@ -1303,8 +1345,8 @@ Partial Class Payment_Details
     Friend WithEvents CUST_HOUSENAME_LABEL As Label
     Friend WithEvents CUST_NAME_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CUST_NAME_LABEL As Label
-    Friend WithEvents YEAR_COMBOBOX As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents SERVICE_COMBOBOX As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents SERVICE_LABEL As Label
     Friend WithEvents MAY_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents APRIL_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents FEBRUARY_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
@@ -1332,4 +1374,6 @@ Partial Class Payment_Details
     Friend WithEvents CUST_STATE_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents CUST_COUNTRY_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents MessageBox As Guna.UI2.WinForms.Guna2MessageDialog
+    Friend WithEvents YEAR_COMBOBOX As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents YEAR_LABEL As Label
 End Class
