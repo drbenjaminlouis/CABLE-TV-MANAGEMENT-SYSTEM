@@ -254,7 +254,7 @@ Public Class add_customer
                                 MessageBox.Show("Less than 0")
                             Else
                                 For i = 0 To count - 1
-                                    Dim command As New OleDbCommand("UPDATE BROADBAND_PAYMENT_DETAILS SET " & months(i) & "='NOT PAID' WHERE CRF=@CRF AND " & months(i) & "='PENDING'", con)
+                                    Dim command As New OleDbCommand("UPDATE BROADBAND_PAYMENT_DETAILS SET " & months(i) & "='NOT PAID' WHERE CRF=@CRF AND " & months(i) & "='NILL'", con)
                                     command.Transaction = transaction
                                     command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                                     command.ExecuteNonQuery()
