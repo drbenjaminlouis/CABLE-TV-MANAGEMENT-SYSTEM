@@ -14,8 +14,6 @@ Public Class REMINDER
         Dim currentYear As Integer = DateTime.Now.Year
         PAYMENT_YEAR.Items.Add(currentYear)
         PAYMENT_YEAR.Items.Add(currentYear - 1)
-        LogError(Application.StartupPath)
-
     End Sub
     Private Sub SEARCH_BTN_Click(sender As Object, e As EventArgs) Handles SEARCH_BTN.Click
         If CUST_CRF_TEXTBOX.Text = "" Then

@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 Public Module LogModule
     Public Sub LogError(message As String)
-        Dim logFile As String = "C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\log.txt"
+        Dim logFile As String = log_path
         Dim writer As StreamWriter
         If Not File.Exists(logFile) Then
             writer = File.CreateText(logFile)

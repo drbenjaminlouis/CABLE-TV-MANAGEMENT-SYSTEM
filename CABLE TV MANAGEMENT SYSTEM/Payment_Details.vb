@@ -169,20 +169,16 @@ Public Class Payment_Details
                         SERVICE_COMBOBOX.Enabled = False
                         YEAR_COMBOBOX.Enabled = False
                     Else
-
                         Dim command3 As New OleDbCommand("SELECT CUST_TV_CONNECTION FROM TV_CONNECTION_DETAILS WHERE CRF=@CRF", connection)
                         command3.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                         Dim command4 As New OleDbCommand("SELECT BROADBAND_CONNECTION FROM BROADBAND_CONNECTION_DETAILS WHERE CRF=@CRF", connection)
                         command4.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-
                         Dim reader3 As OleDbDataReader = command3.ExecuteReader
                         If reader3.HasRows Then
                             While reader3.Read
                                 If reader3.GetString(0) = "YES" Then
                                     SERVICE_COMBOBOX.Items.Add("CABLE TV")
-
                                 Else
-
                                 End If
                             End While
                         End If
@@ -191,15 +187,11 @@ Public Class Payment_Details
                             While reader4.Read
                                 If reader4.GetString(0) = "YES" Then
                                     SERVICE_COMBOBOX.Items.Add("BROADBAND")
-
                                 Else
 
                                 End If
                             End While
                         End If
-                        For Each year As Integer In yearList
-                            YEAR_COMBOBOX.Items.Add(year)
-                        Next
                         SERVICE_COMBOBOX.Enabled = True
                         YEAR_COMBOBOX.Enabled = True
                     End If
@@ -220,7 +212,7 @@ Public Class Payment_Details
     End Sub
 
     Private Sub SERVICE_COMBOBOX_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SERVICE_COMBOBOX.SelectedIndexChanged
-        YEAR_COMBOBOX.SelectedIndex = -1
+        YEAR_COMBOBOX.Items.Clear()
         If SERVICE_COMBOBOX.SelectedItem = "" Then
             clearALl()
         Else
@@ -229,28 +221,37 @@ Public Class Payment_Details
             If SERVICE_COMBOBOX.SelectedItem = "CABLE TV" Then
                 Dim command5 As New OleDbCommand("SELECT DISTINCT(PAYMENT_YEAR) FROM TV_PAYMENT_DETAILS WHERE CRF=@CRF", connection)
                 command5.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                yearList.Clear()
                 Dim reader5 As OleDbDataReader = command5.ExecuteReader()
-                While reader5.Read()
-                    Dim year As Integer = reader5.GetInt32(0)
-                    If Not yearList.Contains(year) Then
-                        yearList.Add(year)
-                    End If
-                End While
-                reader5.Close()
-            End If
-            If SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
+                If reader5.HasRows Then
+                    yearList.Clear()
+                    While reader5.Read()
+                        Dim year As Integer = reader5.GetInt32(0)
+                        If Not yearList.Contains(year) Then
+                            yearList.Add(year)
+                        End If
+                    End While
+                End If
+                For Each year As Integer In yearList
+                        YEAR_COMBOBOX.Items.Add(year)
+                    Next
+                    reader5.Close()
+                End If
+                If SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
                 Dim command6 As New OleDbCommand("SELECT DISTINCT(PAYMENT_YEAR) FROM BROADBAND_PAYMENT_DETAILS WHERE CRF=@CRF", connection)
                 command6.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                yearList.Clear()
                 Dim reader6 As OleDbDataReader = command6.ExecuteReader
                 If reader6.HasRows Then
+                    yearList.Clear()
                     While reader6.Read()
                         Dim year As Integer = reader6.GetInt32(0)
                         If Not yearList.Contains(year) Then
                             yearList.Add(year)
                         End If
                     End While
+
+                    For Each year As Integer In yearList
+                        YEAR_COMBOBOX.Items.Add(year)
+                    Next
                     reader6.Close()
                 End If
             End If

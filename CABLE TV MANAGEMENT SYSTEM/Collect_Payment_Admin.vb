@@ -59,7 +59,7 @@ Public Class Collect_Payment_Admin
                                                 "IIF([november]='Not Paid',1,0) AS november, " &
                                                 "IIF([december]='Not Paid',1,0) AS december " &
                                                 "FROM TV_PAYMENT_DETAILS " &
-                                                "WHERE CRF=@CRF AND CURRENT_YEAR=@YEAR"
+                                                "WHERE CRF=@CRF AND PAYMENT_YEAR=@YEAR"
 
                         Using command As New OleDbCommand(query, con)
                             command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -159,7 +159,7 @@ Public Class Collect_Payment_Admin
                                             "IIF([november]='Not Paid',1,0) AS november, " &
                                             "IIF([december]='Not Paid',1,0) AS december " &
                                             "FROM BROADBAND_PAYMENT_DETAILS " &
-                                            "WHERE CRF=@CRF AND CURRENT_YEAR=@YEAR"
+                                            "WHERE CRF=@CRF AND PAYMENT_YEAR=@YEAR"
 
                         Using command As New OleDbCommand(query, con)
                             command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -527,7 +527,7 @@ Public Class Collect_Payment_Admin
                                 If SERVICE_COMBOBOX.SelectedItem = "CABLE TV" Then
                                     For i As Integer = 0 To monthsToUpdate - 1
                                         'UPDATE PAYMENT QUERY FOR CABLE TV
-                                        Dim query As String = "UPDATE TV_PAYMENT_DETAILS SET " & PAYMENT_MONTH_LISTBOX.Items(i) & " = @status WHERE CURRENT_YEAR = @YEAR AND CRF = @CRF"
+                                        Dim query As String = "UPDATE TV_PAYMENT_DETAILS SET " & PAYMENT_MONTH_LISTBOX.Items(i) & " = @status WHERE PAYMENT_YEAR = @YEAR AND CRF = @CRF"
                                         Dim cmd As New OleDbCommand(query, con)
                                         cmd.Transaction = transaction
                                         cmd.Parameters.AddWithValue("@status", "PAID")
@@ -557,7 +557,7 @@ Public Class Collect_Payment_Admin
                                 If SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
                                     For i As Integer = 0 To monthsToUpdate - 1
                                         'UPDATE PAYMENT QUERY FOR BROADBAND
-                                        Dim query As String = "UPDATE BROADBAND_PAYMENT_DETAILS SET " & PAYMENT_MONTH_LISTBOX.Items(i) & " = @status WHERE CURRENT_YEAR = @YEAR AND CRF = @CRF"
+                                        Dim query As String = "UPDATE BROADBAND_PAYMENT_DETAILS SET " & PAYMENT_MONTH_LISTBOX.Items(i) & " = @status WHERE PAYMENT_YEAR = @YEAR AND CRF = @CRF"
                                         Dim cmd As New OleDbCommand(query, con)
                                         cmd.Transaction = transaction
                                         cmd.Parameters.AddWithValue("@status", "PAID")

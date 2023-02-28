@@ -76,7 +76,7 @@
         vBITRyZnU68UTonZDBmdSGPJ+/Mnomtp83fijo6OqvoFdtPyYd7ZJNMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="BROADBAND_CONNECTION_REPORT.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BROADBAND_CONNECTION_REPORT_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAAXtJREFUWEftmEFKA0EQRQeSMyjkBN4kuIkrvYqILvQixrU30GOIgriWgJ5AQR1/
@@ -113,7 +113,7 @@
         kXgc+Bu2Jx63SX+W2w9uq26X1YRoUV/fCZ2XRRiaU1+4AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="TV_CONNECTION_REPORT.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TV_CONNECTION_REPORT_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAABH9JREFUWEfdmEuoVVUYx69pD3oa2ouiEkzJV4qRFQhWNlF7iVqZI0EdGJmzNO09
@@ -138,7 +138,7 @@
         kXgc+Bu2Jx63SX+W2w9uq26X1YRoUV/fCZ2XRRiaU1+4AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Guna2GradientButton13.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="CHANGE_PASS_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAA/VJREFUWEfdmE1vFVUYgEshqaBU2WJIaAsuIIZiq1I2JCzU+EHSYHDhom6ktAm7
@@ -181,7 +181,7 @@
         tOl/FxpXoF7656AuHv3Wos9jscLS/lfKyn4B4SB8POo/XVcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Guna2GradientButton12.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="LOGOUT_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAA1VJREFUWEfdmNuLTVEcx8e4jIkRQxoxadymkVxeKLeSS3KJeBgkxQMlLyKXF2pI
@@ -246,7 +246,7 @@
         sV/lUUXFXmCLObl/ODblAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Guna2GradientButton9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="PAYMENT_DETAILS_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAABKlJREFUWEftmHto1WUYxzeXtTUtU+cEzaxRIUyFWQuK+kPDYtDFHNkFAoOURCuL
@@ -284,7 +284,7 @@
         gg==
 </value>
   </data>
-  <data name="Guna2GradientButton5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="CUST_DETAILS_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAAUdJREFUWEftmLFNA0EQRY8Q0wASFRjICKkCRGgbGSw3QUoDkNEToekAqAJ0vH8z
@@ -318,7 +318,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="REMOVE_CUSTOMER_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="REMOVE_CUST_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAA6hJREFUWEftmFuITVEYx8e4DLkkkmsxQi6TITLCCx49eHMpD+MSSvEkkVsj3oUR
@@ -361,7 +361,7 @@
         FX8A4rWLm529rAsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Guna2GradientButton7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ADD_CUST_BTN.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAA3lJREFUWEfdmFuITVEYxwdh3HKJTJEoxjWFF3nDgyIlnkhC8eKBPBjGiyYpxcjg

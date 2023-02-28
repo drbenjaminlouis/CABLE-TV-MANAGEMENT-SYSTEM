@@ -62,28 +62,28 @@ Partial Class Admin_Dashboard
         Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(components)
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
-        Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        CLOSE_CONTROL = New Guna.UI2.WinForms.Guna2ControlBox()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Label4 = New Label()
-        BROADBAND_CONNECTION_REPORT = New Guna.UI2.WinForms.Guna2GradientButton()
-        TV_CONNECTION_REPORT = New Guna.UI2.WinForms.Guna2GradientButton()
-        Guna2GradientButton15 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Guna2GradientButton11 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Guna2GradientButton13 = New Guna.UI2.WinForms.Guna2GradientButton()
+        BROADBAND_CONNECTION_REPORT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        TV_CONNECTION_REPORT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        COLLECT_PAYMENT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        CUST_EDIT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        CHANGE_PASS_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         version_name = New Label()
         Label11 = New Label()
         Label6 = New Label()
         Label10 = New Label()
-        Guna2GradientButton12 = New Guna.UI2.WinForms.Guna2GradientButton()
+        LOGOUT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         Guna2Separator1 = New Guna.UI2.WinForms.Guna2Separator()
         Label8 = New Label()
-        Guna2GradientButton8 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Guna2GradientButton9 = New Guna.UI2.WinForms.Guna2GradientButton()
-        Guna2GradientButton5 = New Guna.UI2.WinForms.Guna2GradientButton()
-        REMOVE_CUSTOMER_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
-        Guna2GradientButton7 = New Guna.UI2.WinForms.Guna2GradientButton()
+        REMINDER_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        PAYMENT_DETAILS_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        CUST_DETAILS_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        REMOVE_CUST_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        ADD_CUST_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         Label5 = New Label()
-        Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
+        DASHBOARD_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Label1 = New Label()
         App_Name = New Label()
@@ -110,7 +110,7 @@ Partial Class Admin_Dashboard
         Guna2Panel1.BackColor = Color.Black
         Guna2Panel1.BorderColor = Color.White
         Guna2Panel1.Controls.Add(Guna2ControlBox2)
-        Guna2Panel1.Controls.Add(Guna2ControlBox1)
+        Guna2Panel1.Controls.Add(CLOSE_CONTROL)
         Guna2Panel1.CustomizableEdges = CustomizableEdges6
         Guna2Panel1.Dock = DockStyle.Top
         Guna2Panel1.FillColor = Color.Black
@@ -138,24 +138,24 @@ Partial Class Admin_Dashboard
         Guna2ControlBox2.Size = New Size(65, 51)
         Guna2ControlBox2.TabIndex = 3
         ' 
-        ' Guna2ControlBox1
+        ' CLOSE_CONTROL
         ' 
-        Guna2ControlBox1.Animated = True
-        Guna2ControlBox1.BackColor = Color.Transparent
-        Guna2ControlBox1.BorderColor = Color.Transparent
-        Guna2ControlBox1.BorderThickness = 1
-        Guna2ControlBox1.CustomClick = True
-        Guna2ControlBox1.CustomizableEdges = CustomizableEdges4
-        Guna2ControlBox1.Dock = DockStyle.Right
-        Guna2ControlBox1.FillColor = Color.Transparent
-        Guna2ControlBox1.HoverState.FillColor = Color.Red
-        Guna2ControlBox1.IconColor = Color.White
-        Guna2ControlBox1.Location = New Point(1313, 0)
-        Guna2ControlBox1.Margin = New Padding(0)
-        Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges5
-        Guna2ControlBox1.Size = New Size(65, 51)
-        Guna2ControlBox1.TabIndex = 2
+        CLOSE_CONTROL.Animated = True
+        CLOSE_CONTROL.BackColor = Color.Transparent
+        CLOSE_CONTROL.BorderColor = Color.Transparent
+        CLOSE_CONTROL.BorderThickness = 1
+        CLOSE_CONTROL.CustomClick = True
+        CLOSE_CONTROL.CustomizableEdges = CustomizableEdges4
+        CLOSE_CONTROL.Dock = DockStyle.Right
+        CLOSE_CONTROL.FillColor = Color.Transparent
+        CLOSE_CONTROL.HoverState.FillColor = Color.Red
+        CLOSE_CONTROL.IconColor = Color.White
+        CLOSE_CONTROL.Location = New Point(1313, 0)
+        CLOSE_CONTROL.Margin = New Padding(0)
+        CLOSE_CONTROL.Name = "CLOSE_CONTROL"
+        CLOSE_CONTROL.ShadowDecoration.CustomizableEdges = CustomizableEdges5
+        CLOSE_CONTROL.Size = New Size(65, 51)
+        CLOSE_CONTROL.TabIndex = 2
         ' 
         ' Guna2Panel2
         ' 
@@ -163,25 +163,25 @@ Partial Class Admin_Dashboard
         Guna2Panel2.AutoSizeMode = AutoSizeMode.GrowAndShrink
         Guna2Panel2.BackColor = Color.Transparent
         Guna2Panel2.Controls.Add(Label4)
-        Guna2Panel2.Controls.Add(BROADBAND_CONNECTION_REPORT)
-        Guna2Panel2.Controls.Add(TV_CONNECTION_REPORT)
-        Guna2Panel2.Controls.Add(Guna2GradientButton15)
-        Guna2Panel2.Controls.Add(Guna2GradientButton11)
-        Guna2Panel2.Controls.Add(Guna2GradientButton13)
+        Guna2Panel2.Controls.Add(BROADBAND_CONNECTION_REPORT_BTN)
+        Guna2Panel2.Controls.Add(TV_CONNECTION_REPORT_BTN)
+        Guna2Panel2.Controls.Add(COLLECT_PAYMENT_BTN)
+        Guna2Panel2.Controls.Add(CUST_EDIT_BTN)
+        Guna2Panel2.Controls.Add(CHANGE_PASS_BTN)
         Guna2Panel2.Controls.Add(version_name)
         Guna2Panel2.Controls.Add(Label11)
         Guna2Panel2.Controls.Add(Label6)
         Guna2Panel2.Controls.Add(Label10)
-        Guna2Panel2.Controls.Add(Guna2GradientButton12)
+        Guna2Panel2.Controls.Add(LOGOUT_BTN)
         Guna2Panel2.Controls.Add(Guna2Separator1)
         Guna2Panel2.Controls.Add(Label8)
-        Guna2Panel2.Controls.Add(Guna2GradientButton8)
-        Guna2Panel2.Controls.Add(Guna2GradientButton9)
-        Guna2Panel2.Controls.Add(Guna2GradientButton5)
-        Guna2Panel2.Controls.Add(REMOVE_CUSTOMER_BTN)
-        Guna2Panel2.Controls.Add(Guna2GradientButton7)
+        Guna2Panel2.Controls.Add(REMINDER_BTN)
+        Guna2Panel2.Controls.Add(PAYMENT_DETAILS_BTN)
+        Guna2Panel2.Controls.Add(CUST_DETAILS_BTN)
+        Guna2Panel2.Controls.Add(REMOVE_CUST_BTN)
+        Guna2Panel2.Controls.Add(ADD_CUST_BTN)
         Guna2Panel2.Controls.Add(Label5)
-        Guna2Panel2.Controls.Add(Guna2GradientButton1)
+        Guna2Panel2.Controls.Add(DASHBOARD_BTN)
         Guna2Panel2.Controls.Add(Guna2PictureBox2)
         Guna2Panel2.Controls.Add(Label1)
         Guna2Panel2.Controls.Add(App_Name)
@@ -203,165 +203,165 @@ Partial Class Admin_Dashboard
         Label4.Size = New Size(94, 25)
         Label4.TabIndex = 38
         Label4.Text = "REPORTS"' 
-        ' BROADBAND_CONNECTION_REPORT
+        ' BROADBAND_CONNECTION_REPORT_BTN
         ' 
-        BROADBAND_CONNECTION_REPORT.Animated = True
-        BROADBAND_CONNECTION_REPORT.BorderRadius = 10
-        BROADBAND_CONNECTION_REPORT.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        BROADBAND_CONNECTION_REPORT.Cursor = Cursors.Hand
-        BROADBAND_CONNECTION_REPORT.CustomizableEdges = CustomizableEdges8
-        BROADBAND_CONNECTION_REPORT.DisabledState.BorderColor = Color.DarkGray
-        BROADBAND_CONNECTION_REPORT.DisabledState.CustomBorderColor = Color.DarkGray
-        BROADBAND_CONNECTION_REPORT.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        BROADBAND_CONNECTION_REPORT.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        BROADBAND_CONNECTION_REPORT.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        BROADBAND_CONNECTION_REPORT.FillColor = Color.Black
-        BROADBAND_CONNECTION_REPORT.FillColor2 = Color.Black
-        BROADBAND_CONNECTION_REPORT.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        BROADBAND_CONNECTION_REPORT.ForeColor = Color.White
-        BROADBAND_CONNECTION_REPORT.HoverState.FillColor = Color.Green
-        BROADBAND_CONNECTION_REPORT.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        BROADBAND_CONNECTION_REPORT.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        BROADBAND_CONNECTION_REPORT.HoverState.ForeColor = Color.White
-        BROADBAND_CONNECTION_REPORT.HoverState.Image = CType(resources.GetObject("resource.Image"), Image)
-        BROADBAND_CONNECTION_REPORT.Image = CType(resources.GetObject("BROADBAND_CONNECTION_REPORT.Image"), Image)
-        BROADBAND_CONNECTION_REPORT.ImageAlign = HorizontalAlignment.Left
-        BROADBAND_CONNECTION_REPORT.Location = New Point(1, 693)
-        BROADBAND_CONNECTION_REPORT.Margin = New Padding(0)
-        BROADBAND_CONNECTION_REPORT.Name = "BROADBAND_CONNECTION_REPORT"
-        BROADBAND_CONNECTION_REPORT.ShadowDecoration.CustomizableEdges = CustomizableEdges9
-        BROADBAND_CONNECTION_REPORT.Size = New Size(316, 45)
-        BROADBAND_CONNECTION_REPORT.TabIndex = 37
-        BROADBAND_CONNECTION_REPORT.Text = "BROADBAND CONNECTION"
-        BROADBAND_CONNECTION_REPORT.TextAlign = HorizontalAlignment.Left
+        BROADBAND_CONNECTION_REPORT_BTN.Animated = True
+        BROADBAND_CONNECTION_REPORT_BTN.BorderRadius = 10
+        BROADBAND_CONNECTION_REPORT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        BROADBAND_CONNECTION_REPORT_BTN.Cursor = Cursors.Hand
+        BROADBAND_CONNECTION_REPORT_BTN.CustomizableEdges = CustomizableEdges8
+        BROADBAND_CONNECTION_REPORT_BTN.DisabledState.BorderColor = Color.DarkGray
+        BROADBAND_CONNECTION_REPORT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        BROADBAND_CONNECTION_REPORT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BROADBAND_CONNECTION_REPORT_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BROADBAND_CONNECTION_REPORT_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BROADBAND_CONNECTION_REPORT_BTN.FillColor = Color.Black
+        BROADBAND_CONNECTION_REPORT_BTN.FillColor2 = Color.Black
+        BROADBAND_CONNECTION_REPORT_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        BROADBAND_CONNECTION_REPORT_BTN.ForeColor = Color.White
+        BROADBAND_CONNECTION_REPORT_BTN.HoverState.FillColor = Color.Green
+        BROADBAND_CONNECTION_REPORT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        BROADBAND_CONNECTION_REPORT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        BROADBAND_CONNECTION_REPORT_BTN.HoverState.ForeColor = Color.White
+        BROADBAND_CONNECTION_REPORT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image"), Image)
+        BROADBAND_CONNECTION_REPORT_BTN.Image = CType(resources.GetObject("BROADBAND_CONNECTION_REPORT_BTN.Image"), Image)
+        BROADBAND_CONNECTION_REPORT_BTN.ImageAlign = HorizontalAlignment.Left
+        BROADBAND_CONNECTION_REPORT_BTN.Location = New Point(1, 693)
+        BROADBAND_CONNECTION_REPORT_BTN.Margin = New Padding(0)
+        BROADBAND_CONNECTION_REPORT_BTN.Name = "BROADBAND_CONNECTION_REPORT_BTN"
+        BROADBAND_CONNECTION_REPORT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges9
+        BROADBAND_CONNECTION_REPORT_BTN.Size = New Size(316, 45)
+        BROADBAND_CONNECTION_REPORT_BTN.TabIndex = 37
+        BROADBAND_CONNECTION_REPORT_BTN.Text = "BROADBAND CONNECTION"
+        BROADBAND_CONNECTION_REPORT_BTN.TextAlign = HorizontalAlignment.Left
         ' 
-        ' TV_CONNECTION_REPORT
+        ' TV_CONNECTION_REPORT_BTN
         ' 
-        TV_CONNECTION_REPORT.Animated = True
-        TV_CONNECTION_REPORT.BorderRadius = 10
-        TV_CONNECTION_REPORT.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        TV_CONNECTION_REPORT.Cursor = Cursors.Hand
-        TV_CONNECTION_REPORT.CustomizableEdges = CustomizableEdges10
-        TV_CONNECTION_REPORT.DisabledState.BorderColor = Color.DarkGray
-        TV_CONNECTION_REPORT.DisabledState.CustomBorderColor = Color.DarkGray
-        TV_CONNECTION_REPORT.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        TV_CONNECTION_REPORT.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        TV_CONNECTION_REPORT.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        TV_CONNECTION_REPORT.FillColor = Color.Black
-        TV_CONNECTION_REPORT.FillColor2 = Color.Black
-        TV_CONNECTION_REPORT.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        TV_CONNECTION_REPORT.ForeColor = Color.White
-        TV_CONNECTION_REPORT.HoverState.FillColor = Color.Green
-        TV_CONNECTION_REPORT.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        TV_CONNECTION_REPORT.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        TV_CONNECTION_REPORT.HoverState.ForeColor = Color.White
-        TV_CONNECTION_REPORT.HoverState.Image = CType(resources.GetObject("resource.Image1"), Image)
-        TV_CONNECTION_REPORT.Image = CType(resources.GetObject("TV_CONNECTION_REPORT.Image"), Image)
-        TV_CONNECTION_REPORT.ImageAlign = HorizontalAlignment.Left
-        TV_CONNECTION_REPORT.Location = New Point(1, 648)
-        TV_CONNECTION_REPORT.Margin = New Padding(0)
-        TV_CONNECTION_REPORT.Name = "TV_CONNECTION_REPORT"
-        TV_CONNECTION_REPORT.ShadowDecoration.CustomizableEdges = CustomizableEdges11
-        TV_CONNECTION_REPORT.Size = New Size(316, 45)
-        TV_CONNECTION_REPORT.TabIndex = 36
-        TV_CONNECTION_REPORT.Text = "TV CONNECTION"
-        TV_CONNECTION_REPORT.TextAlign = HorizontalAlignment.Left
+        TV_CONNECTION_REPORT_BTN.Animated = True
+        TV_CONNECTION_REPORT_BTN.BorderRadius = 10
+        TV_CONNECTION_REPORT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        TV_CONNECTION_REPORT_BTN.Cursor = Cursors.Hand
+        TV_CONNECTION_REPORT_BTN.CustomizableEdges = CustomizableEdges10
+        TV_CONNECTION_REPORT_BTN.DisabledState.BorderColor = Color.DarkGray
+        TV_CONNECTION_REPORT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        TV_CONNECTION_REPORT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        TV_CONNECTION_REPORT_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        TV_CONNECTION_REPORT_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        TV_CONNECTION_REPORT_BTN.FillColor = Color.Black
+        TV_CONNECTION_REPORT_BTN.FillColor2 = Color.Black
+        TV_CONNECTION_REPORT_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        TV_CONNECTION_REPORT_BTN.ForeColor = Color.White
+        TV_CONNECTION_REPORT_BTN.HoverState.FillColor = Color.Green
+        TV_CONNECTION_REPORT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        TV_CONNECTION_REPORT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        TV_CONNECTION_REPORT_BTN.HoverState.ForeColor = Color.White
+        TV_CONNECTION_REPORT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image1"), Image)
+        TV_CONNECTION_REPORT_BTN.Image = CType(resources.GetObject("TV_CONNECTION_REPORT_BTN.Image"), Image)
+        TV_CONNECTION_REPORT_BTN.ImageAlign = HorizontalAlignment.Left
+        TV_CONNECTION_REPORT_BTN.Location = New Point(1, 648)
+        TV_CONNECTION_REPORT_BTN.Margin = New Padding(0)
+        TV_CONNECTION_REPORT_BTN.Name = "TV_CONNECTION_REPORT_BTN"
+        TV_CONNECTION_REPORT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges11
+        TV_CONNECTION_REPORT_BTN.Size = New Size(316, 45)
+        TV_CONNECTION_REPORT_BTN.TabIndex = 36
+        TV_CONNECTION_REPORT_BTN.Text = "TV CONNECTION"
+        TV_CONNECTION_REPORT_BTN.TextAlign = HorizontalAlignment.Left
         ' 
-        ' Guna2GradientButton15
+        ' COLLECT_PAYMENT_BTN
         ' 
-        Guna2GradientButton15.Animated = True
-        Guna2GradientButton15.BorderRadius = 10
-        Guna2GradientButton15.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton15.Cursor = Cursors.Hand
-        Guna2GradientButton15.CustomizableEdges = CustomizableEdges12
-        Guna2GradientButton15.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton15.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton15.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton15.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton15.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton15.FillColor = Color.Black
-        Guna2GradientButton15.FillColor2 = Color.Black
-        Guna2GradientButton15.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton15.ForeColor = Color.White
-        Guna2GradientButton15.HoverState.FillColor = Color.Green
-        Guna2GradientButton15.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton15.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton15.HoverState.ForeColor = Color.White
-        Guna2GradientButton15.HoverState.Image = My.Resources.Resources.icons8_transaction_401
-        Guna2GradientButton15.Image = My.Resources.Resources.icons8_transaction_40
-        Guna2GradientButton15.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton15.Location = New Point(4, 233)
-        Guna2GradientButton15.Margin = New Padding(0)
-        Guna2GradientButton15.Name = "Guna2GradientButton15"
-        Guna2GradientButton15.ShadowDecoration.CustomizableEdges = CustomizableEdges13
-        Guna2GradientButton15.Size = New Size(316, 45)
-        Guna2GradientButton15.TabIndex = 35
-        Guna2GradientButton15.Text = "COLLECT PAYMENT"
-        Guna2GradientButton15.TextAlign = HorizontalAlignment.Left
+        COLLECT_PAYMENT_BTN.Animated = True
+        COLLECT_PAYMENT_BTN.BorderRadius = 10
+        COLLECT_PAYMENT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        COLLECT_PAYMENT_BTN.Cursor = Cursors.Hand
+        COLLECT_PAYMENT_BTN.CustomizableEdges = CustomizableEdges12
+        COLLECT_PAYMENT_BTN.DisabledState.BorderColor = Color.DarkGray
+        COLLECT_PAYMENT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        COLLECT_PAYMENT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        COLLECT_PAYMENT_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        COLLECT_PAYMENT_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        COLLECT_PAYMENT_BTN.FillColor = Color.Black
+        COLLECT_PAYMENT_BTN.FillColor2 = Color.Black
+        COLLECT_PAYMENT_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        COLLECT_PAYMENT_BTN.ForeColor = Color.White
+        COLLECT_PAYMENT_BTN.HoverState.FillColor = Color.Green
+        COLLECT_PAYMENT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        COLLECT_PAYMENT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        COLLECT_PAYMENT_BTN.HoverState.ForeColor = Color.White
+        COLLECT_PAYMENT_BTN.HoverState.Image = My.Resources.Resources.icons8_transaction_401
+        COLLECT_PAYMENT_BTN.Image = My.Resources.Resources.icons8_transaction_40
+        COLLECT_PAYMENT_BTN.ImageAlign = HorizontalAlignment.Left
+        COLLECT_PAYMENT_BTN.Location = New Point(4, 233)
+        COLLECT_PAYMENT_BTN.Margin = New Padding(0)
+        COLLECT_PAYMENT_BTN.Name = "COLLECT_PAYMENT_BTN"
+        COLLECT_PAYMENT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges13
+        COLLECT_PAYMENT_BTN.Size = New Size(316, 45)
+        COLLECT_PAYMENT_BTN.TabIndex = 35
+        COLLECT_PAYMENT_BTN.Text = "COLLECT PAYMENT"
+        COLLECT_PAYMENT_BTN.TextAlign = HorizontalAlignment.Left
         ' 
-        ' Guna2GradientButton11
+        ' CUST_EDIT_BTN
         ' 
-        Guna2GradientButton11.Animated = True
-        Guna2GradientButton11.BorderRadius = 10
-        Guna2GradientButton11.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton11.Cursor = Cursors.Hand
-        Guna2GradientButton11.CustomizableEdges = CustomizableEdges14
-        Guna2GradientButton11.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton11.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton11.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton11.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton11.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton11.FillColor = Color.Black
-        Guna2GradientButton11.FillColor2 = Color.Black
-        Guna2GradientButton11.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton11.ForeColor = Color.White
-        Guna2GradientButton11.HoverState.FillColor = Color.Green
-        Guna2GradientButton11.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton11.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton11.HoverState.ForeColor = Color.White
-        Guna2GradientButton11.HoverState.Image = My.Resources.Resources.icons8_edit_property_40__2_2
-        Guna2GradientButton11.Image = My.Resources.Resources.icons8_edit_property_40__2_1
-        Guna2GradientButton11.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton11.Location = New Point(-3, 464)
-        Guna2GradientButton11.Margin = New Padding(0)
-        Guna2GradientButton11.Name = "Guna2GradientButton11"
-        Guna2GradientButton11.ShadowDecoration.CustomizableEdges = CustomizableEdges15
-        Guna2GradientButton11.Size = New Size(316, 45)
-        Guna2GradientButton11.TabIndex = 28
-        Guna2GradientButton11.Text = "EDIT CUSTOMER"
-        Guna2GradientButton11.TextAlign = HorizontalAlignment.Left
+        CUST_EDIT_BTN.Animated = True
+        CUST_EDIT_BTN.BorderRadius = 10
+        CUST_EDIT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        CUST_EDIT_BTN.Cursor = Cursors.Hand
+        CUST_EDIT_BTN.CustomizableEdges = CustomizableEdges14
+        CUST_EDIT_BTN.DisabledState.BorderColor = Color.DarkGray
+        CUST_EDIT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        CUST_EDIT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CUST_EDIT_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CUST_EDIT_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        CUST_EDIT_BTN.FillColor = Color.Black
+        CUST_EDIT_BTN.FillColor2 = Color.Black
+        CUST_EDIT_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        CUST_EDIT_BTN.ForeColor = Color.White
+        CUST_EDIT_BTN.HoverState.FillColor = Color.Green
+        CUST_EDIT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        CUST_EDIT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        CUST_EDIT_BTN.HoverState.ForeColor = Color.White
+        CUST_EDIT_BTN.HoverState.Image = My.Resources.Resources.icons8_edit_property_40__2_2
+        CUST_EDIT_BTN.Image = My.Resources.Resources.icons8_edit_property_40__2_1
+        CUST_EDIT_BTN.ImageAlign = HorizontalAlignment.Left
+        CUST_EDIT_BTN.Location = New Point(-3, 464)
+        CUST_EDIT_BTN.Margin = New Padding(0)
+        CUST_EDIT_BTN.Name = "CUST_EDIT_BTN"
+        CUST_EDIT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges15
+        CUST_EDIT_BTN.Size = New Size(316, 45)
+        CUST_EDIT_BTN.TabIndex = 28
+        CUST_EDIT_BTN.Text = "EDIT CUSTOMER"
+        CUST_EDIT_BTN.TextAlign = HorizontalAlignment.Left
         ' 
-        ' Guna2GradientButton13
+        ' CHANGE_PASS_BTN
         ' 
-        Guna2GradientButton13.Animated = True
-        Guna2GradientButton13.BorderRadius = 10
-        Guna2GradientButton13.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton13.Cursor = Cursors.Hand
-        Guna2GradientButton13.CustomizableEdges = CustomizableEdges16
-        Guna2GradientButton13.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton13.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton13.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton13.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton13.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton13.FillColor = Color.Black
-        Guna2GradientButton13.FillColor2 = Color.Black
-        Guna2GradientButton13.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton13.ForeColor = Color.White
-        Guna2GradientButton13.HoverState.FillColor = Color.Green
-        Guna2GradientButton13.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton13.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton13.HoverState.ForeColor = Color.White
-        Guna2GradientButton13.HoverState.Image = My.Resources.Resources.icons8_lock_orientation_40
-        Guna2GradientButton13.Image = CType(resources.GetObject("Guna2GradientButton13.Image"), Image)
-        Guna2GradientButton13.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton13.Location = New Point(3, 188)
-        Guna2GradientButton13.Margin = New Padding(0)
-        Guna2GradientButton13.Name = "Guna2GradientButton13"
-        Guna2GradientButton13.ShadowDecoration.CustomizableEdges = CustomizableEdges17
-        Guna2GradientButton13.Size = New Size(316, 45)
-        Guna2GradientButton13.TabIndex = 33
-        Guna2GradientButton13.Text = "CHANGE PASSWORD"
-        Guna2GradientButton13.TextAlign = HorizontalAlignment.Left
+        CHANGE_PASS_BTN.Animated = True
+        CHANGE_PASS_BTN.BorderRadius = 10
+        CHANGE_PASS_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        CHANGE_PASS_BTN.Cursor = Cursors.Hand
+        CHANGE_PASS_BTN.CustomizableEdges = CustomizableEdges16
+        CHANGE_PASS_BTN.DisabledState.BorderColor = Color.DarkGray
+        CHANGE_PASS_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        CHANGE_PASS_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CHANGE_PASS_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CHANGE_PASS_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        CHANGE_PASS_BTN.FillColor = Color.Black
+        CHANGE_PASS_BTN.FillColor2 = Color.Black
+        CHANGE_PASS_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        CHANGE_PASS_BTN.ForeColor = Color.White
+        CHANGE_PASS_BTN.HoverState.FillColor = Color.Green
+        CHANGE_PASS_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        CHANGE_PASS_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        CHANGE_PASS_BTN.HoverState.ForeColor = Color.White
+        CHANGE_PASS_BTN.HoverState.Image = My.Resources.Resources.icons8_lock_orientation_40
+        CHANGE_PASS_BTN.Image = CType(resources.GetObject("CHANGE_PASS_BTN.Image"), Image)
+        CHANGE_PASS_BTN.ImageAlign = HorizontalAlignment.Left
+        CHANGE_PASS_BTN.Location = New Point(3, 188)
+        CHANGE_PASS_BTN.Margin = New Padding(0)
+        CHANGE_PASS_BTN.Name = "CHANGE_PASS_BTN"
+        CHANGE_PASS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges17
+        CHANGE_PASS_BTN.Size = New Size(316, 45)
+        CHANGE_PASS_BTN.TabIndex = 33
+        CHANGE_PASS_BTN.Text = "CHANGE PASSWORD"
+        CHANGE_PASS_BTN.TextAlign = HorizontalAlignment.Left
         ' 
         ' version_name
         ' 
@@ -408,37 +408,37 @@ Partial Class Admin_Dashboard
         Label10.Text = "© COPYRIGHT 2023"
         Label10.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Guna2GradientButton12
+        ' LOGOUT_BTN
         ' 
-        Guna2GradientButton12.Animated = True
-        Guna2GradientButton12.BorderRadius = 10
-        Guna2GradientButton12.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton12.Cursor = Cursors.Hand
-        Guna2GradientButton12.CustomizableEdges = CustomizableEdges18
-        Guna2GradientButton12.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton12.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton12.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton12.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton12.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton12.FillColor = Color.FromArgb(CByte(179), CByte(0), CByte(0))
-        Guna2GradientButton12.FillColor2 = Color.FromArgb(CByte(179), CByte(0), CByte(0))
-        Guna2GradientButton12.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton12.ForeColor = Color.White
-        Guna2GradientButton12.HoverState.FillColor = Color.FromArgb(CByte(230), CByte(5), CByte(5))
-        Guna2GradientButton12.HoverState.FillColor2 = Color.FromArgb(CByte(230), CByte(5), CByte(5))
-        Guna2GradientButton12.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton12.HoverState.ForeColor = Color.White
-        Guna2GradientButton12.HoverState.Image = CType(resources.GetObject("resource.Image2"), Image)
-        Guna2GradientButton12.Image = CType(resources.GetObject("Guna2GradientButton12.Image"), Image)
-        Guna2GradientButton12.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton12.Location = New Point(1, 897)
-        Guna2GradientButton12.Margin = New Padding(0)
-        Guna2GradientButton12.Name = "Guna2GradientButton12"
-        Guna2GradientButton12.ShadowDecoration.CustomizableEdges = CustomizableEdges19
-        Guna2GradientButton12.Size = New Size(316, 45)
-        Guna2GradientButton12.TabIndex = 29
-        Guna2GradientButton12.Text = "LOGOUT"
-        Guna2GradientButton12.TextAlign = HorizontalAlignment.Left
+        LOGOUT_BTN.Animated = True
+        LOGOUT_BTN.BorderRadius = 10
+        LOGOUT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        LOGOUT_BTN.Cursor = Cursors.Hand
+        LOGOUT_BTN.CustomizableEdges = CustomizableEdges18
+        LOGOUT_BTN.DisabledState.BorderColor = Color.DarkGray
+        LOGOUT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        LOGOUT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        LOGOUT_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        LOGOUT_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        LOGOUT_BTN.FillColor = Color.FromArgb(CByte(179), CByte(0), CByte(0))
+        LOGOUT_BTN.FillColor2 = Color.FromArgb(CByte(179), CByte(0), CByte(0))
+        LOGOUT_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        LOGOUT_BTN.ForeColor = Color.White
+        LOGOUT_BTN.HoverState.FillColor = Color.FromArgb(CByte(230), CByte(5), CByte(5))
+        LOGOUT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(230), CByte(5), CByte(5))
+        LOGOUT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        LOGOUT_BTN.HoverState.ForeColor = Color.White
+        LOGOUT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image2"), Image)
+        LOGOUT_BTN.Image = CType(resources.GetObject("LOGOUT_BTN.Image"), Image)
+        LOGOUT_BTN.ImageAlign = HorizontalAlignment.Left
+        LOGOUT_BTN.Location = New Point(1, 897)
+        LOGOUT_BTN.Margin = New Padding(0)
+        LOGOUT_BTN.Name = "LOGOUT_BTN"
+        LOGOUT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges19
+        LOGOUT_BTN.Size = New Size(316, 45)
+        LOGOUT_BTN.TabIndex = 29
+        LOGOUT_BTN.Text = "LOGOUT"
+        LOGOUT_BTN.TextAlign = HorizontalAlignment.Left
         ' 
         ' Guna2Separator1
         ' 
@@ -456,166 +456,166 @@ Partial Class Admin_Dashboard
         Label8.Size = New Size(41, 15)
         Label8.TabIndex = 25
         Label8.Text = "Label8"' 
-        ' Guna2GradientButton8
+        ' REMINDER_BTN
         ' 
-        Guna2GradientButton8.Animated = True
-        Guna2GradientButton8.AnimatedGIF = True
-        Guna2GradientButton8.BorderRadius = 10
-        Guna2GradientButton8.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton8.Cursor = Cursors.Hand
-        Guna2GradientButton8.CustomizableEdges = CustomizableEdges20
-        Guna2GradientButton8.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton8.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton8.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton8.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton8.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton8.FillColor = Color.Black
-        Guna2GradientButton8.FillColor2 = Color.Black
-        Guna2GradientButton8.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton8.ForeColor = Color.White
-        Guna2GradientButton8.HoverState.FillColor = Color.Green
-        Guna2GradientButton8.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton8.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton8.HoverState.ForeColor = Color.White
-        Guna2GradientButton8.HoverState.Image = CType(resources.GetObject("resource.Image3"), Image)
-        Guna2GradientButton8.Image = My.Resources.Resources.icons8_add_reminder_40__1_1
-        Guna2GradientButton8.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton8.Location = New Point(-3, 554)
-        Guna2GradientButton8.Margin = New Padding(0)
-        Guna2GradientButton8.Name = "Guna2GradientButton8"
-        Guna2GradientButton8.ShadowDecoration.CustomizableEdges = CustomizableEdges21
-        Guna2GradientButton8.Size = New Size(316, 45)
-        Guna2GradientButton8.TabIndex = 23
-        Guna2GradientButton8.Text = "REMINDERS"
-        Guna2GradientButton8.TextAlign = HorizontalAlignment.Left
+        REMINDER_BTN.Animated = True
+        REMINDER_BTN.AnimatedGIF = True
+        REMINDER_BTN.BorderRadius = 10
+        REMINDER_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        REMINDER_BTN.Cursor = Cursors.Hand
+        REMINDER_BTN.CustomizableEdges = CustomizableEdges20
+        REMINDER_BTN.DisabledState.BorderColor = Color.DarkGray
+        REMINDER_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        REMINDER_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        REMINDER_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        REMINDER_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        REMINDER_BTN.FillColor = Color.Black
+        REMINDER_BTN.FillColor2 = Color.Black
+        REMINDER_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        REMINDER_BTN.ForeColor = Color.White
+        REMINDER_BTN.HoverState.FillColor = Color.Green
+        REMINDER_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        REMINDER_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        REMINDER_BTN.HoverState.ForeColor = Color.White
+        REMINDER_BTN.HoverState.Image = CType(resources.GetObject("resource.Image3"), Image)
+        REMINDER_BTN.Image = My.Resources.Resources.icons8_add_reminder_40__1_1
+        REMINDER_BTN.ImageAlign = HorizontalAlignment.Left
+        REMINDER_BTN.Location = New Point(-3, 554)
+        REMINDER_BTN.Margin = New Padding(0)
+        REMINDER_BTN.Name = "REMINDER_BTN"
+        REMINDER_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges21
+        REMINDER_BTN.Size = New Size(316, 45)
+        REMINDER_BTN.TabIndex = 23
+        REMINDER_BTN.Text = "REMINDERS"
+        REMINDER_BTN.TextAlign = HorizontalAlignment.Left
         ' 
-        ' Guna2GradientButton9
+        ' PAYMENT_DETAILS_BTN
         ' 
-        Guna2GradientButton9.Animated = True
-        Guna2GradientButton9.BorderRadius = 10
-        Guna2GradientButton9.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton9.Cursor = Cursors.Hand
-        Guna2GradientButton9.CustomizableEdges = CustomizableEdges22
-        Guna2GradientButton9.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton9.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton9.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton9.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton9.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton9.FillColor = Color.Black
-        Guna2GradientButton9.FillColor2 = Color.Black
-        Guna2GradientButton9.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton9.ForeColor = Color.White
-        Guna2GradientButton9.HoverState.FillColor = Color.Green
-        Guna2GradientButton9.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton9.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton9.HoverState.ForeColor = Color.White
-        Guna2GradientButton9.HoverState.Image = CType(resources.GetObject("resource.Image4"), Image)
-        Guna2GradientButton9.Image = CType(resources.GetObject("Guna2GradientButton9.Image"), Image)
-        Guna2GradientButton9.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton9.Location = New Point(-3, 509)
-        Guna2GradientButton9.Margin = New Padding(0)
-        Guna2GradientButton9.Name = "Guna2GradientButton9"
-        Guna2GradientButton9.ShadowDecoration.CustomizableEdges = CustomizableEdges23
-        Guna2GradientButton9.Size = New Size(316, 45)
-        Guna2GradientButton9.TabIndex = 22
-        Guna2GradientButton9.Text = "PAYMENT DETAILS"
-        Guna2GradientButton9.TextAlign = HorizontalAlignment.Left
+        PAYMENT_DETAILS_BTN.Animated = True
+        PAYMENT_DETAILS_BTN.BorderRadius = 10
+        PAYMENT_DETAILS_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        PAYMENT_DETAILS_BTN.Cursor = Cursors.Hand
+        PAYMENT_DETAILS_BTN.CustomizableEdges = CustomizableEdges22
+        PAYMENT_DETAILS_BTN.DisabledState.BorderColor = Color.DarkGray
+        PAYMENT_DETAILS_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        PAYMENT_DETAILS_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        PAYMENT_DETAILS_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        PAYMENT_DETAILS_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        PAYMENT_DETAILS_BTN.FillColor = Color.Black
+        PAYMENT_DETAILS_BTN.FillColor2 = Color.Black
+        PAYMENT_DETAILS_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        PAYMENT_DETAILS_BTN.ForeColor = Color.White
+        PAYMENT_DETAILS_BTN.HoverState.FillColor = Color.Green
+        PAYMENT_DETAILS_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        PAYMENT_DETAILS_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        PAYMENT_DETAILS_BTN.HoverState.ForeColor = Color.White
+        PAYMENT_DETAILS_BTN.HoverState.Image = CType(resources.GetObject("resource.Image4"), Image)
+        PAYMENT_DETAILS_BTN.Image = CType(resources.GetObject("PAYMENT_DETAILS_BTN.Image"), Image)
+        PAYMENT_DETAILS_BTN.ImageAlign = HorizontalAlignment.Left
+        PAYMENT_DETAILS_BTN.Location = New Point(-3, 509)
+        PAYMENT_DETAILS_BTN.Margin = New Padding(0)
+        PAYMENT_DETAILS_BTN.Name = "PAYMENT_DETAILS_BTN"
+        PAYMENT_DETAILS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges23
+        PAYMENT_DETAILS_BTN.Size = New Size(316, 45)
+        PAYMENT_DETAILS_BTN.TabIndex = 22
+        PAYMENT_DETAILS_BTN.Text = "PAYMENT DETAILS"
+        PAYMENT_DETAILS_BTN.TextAlign = HorizontalAlignment.Left
         ' 
-        ' Guna2GradientButton5
+        ' CUST_DETAILS_BTN
         ' 
-        Guna2GradientButton5.Animated = True
-        Guna2GradientButton5.BorderRadius = 10
-        Guna2GradientButton5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton5.Cursor = Cursors.Hand
-        Guna2GradientButton5.CustomizableEdges = CustomizableEdges24
-        Guna2GradientButton5.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton5.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton5.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton5.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton5.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton5.FillColor = Color.Black
-        Guna2GradientButton5.FillColor2 = Color.Black
-        Guna2GradientButton5.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton5.ForeColor = Color.White
-        Guna2GradientButton5.HoverState.FillColor = Color.Green
-        Guna2GradientButton5.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton5.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton5.HoverState.ForeColor = Color.White
-        Guna2GradientButton5.HoverState.Image = CType(resources.GetObject("resource.Image5"), Image)
-        Guna2GradientButton5.Image = CType(resources.GetObject("Guna2GradientButton5.Image"), Image)
-        Guna2GradientButton5.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton5.Location = New Point(-3, 419)
-        Guna2GradientButton5.Margin = New Padding(0)
-        Guna2GradientButton5.Name = "Guna2GradientButton5"
-        Guna2GradientButton5.ShadowDecoration.CustomizableEdges = CustomizableEdges25
-        Guna2GradientButton5.Size = New Size(316, 45)
-        Guna2GradientButton5.TabIndex = 21
-        Guna2GradientButton5.Text = "CUSTOMER DETAILS"
-        Guna2GradientButton5.TextAlign = HorizontalAlignment.Left
+        CUST_DETAILS_BTN.Animated = True
+        CUST_DETAILS_BTN.BorderRadius = 10
+        CUST_DETAILS_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        CUST_DETAILS_BTN.Cursor = Cursors.Hand
+        CUST_DETAILS_BTN.CustomizableEdges = CustomizableEdges24
+        CUST_DETAILS_BTN.DisabledState.BorderColor = Color.DarkGray
+        CUST_DETAILS_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        CUST_DETAILS_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CUST_DETAILS_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        CUST_DETAILS_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        CUST_DETAILS_BTN.FillColor = Color.Black
+        CUST_DETAILS_BTN.FillColor2 = Color.Black
+        CUST_DETAILS_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        CUST_DETAILS_BTN.ForeColor = Color.White
+        CUST_DETAILS_BTN.HoverState.FillColor = Color.Green
+        CUST_DETAILS_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        CUST_DETAILS_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        CUST_DETAILS_BTN.HoverState.ForeColor = Color.White
+        CUST_DETAILS_BTN.HoverState.Image = CType(resources.GetObject("resource.Image5"), Image)
+        CUST_DETAILS_BTN.Image = CType(resources.GetObject("CUST_DETAILS_BTN.Image"), Image)
+        CUST_DETAILS_BTN.ImageAlign = HorizontalAlignment.Left
+        CUST_DETAILS_BTN.Location = New Point(-3, 419)
+        CUST_DETAILS_BTN.Margin = New Padding(0)
+        CUST_DETAILS_BTN.Name = "CUST_DETAILS_BTN"
+        CUST_DETAILS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges25
+        CUST_DETAILS_BTN.Size = New Size(316, 45)
+        CUST_DETAILS_BTN.TabIndex = 21
+        CUST_DETAILS_BTN.Text = "CUSTOMER DETAILS"
+        CUST_DETAILS_BTN.TextAlign = HorizontalAlignment.Left
         ' 
-        ' REMOVE_CUSTOMER_BTN
+        ' REMOVE_CUST_BTN
         ' 
-        REMOVE_CUSTOMER_BTN.Animated = True
-        REMOVE_CUSTOMER_BTN.BorderRadius = 10
-        REMOVE_CUSTOMER_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        REMOVE_CUSTOMER_BTN.Cursor = Cursors.Hand
-        REMOVE_CUSTOMER_BTN.CustomizableEdges = CustomizableEdges26
-        REMOVE_CUSTOMER_BTN.DisabledState.BorderColor = Color.DarkGray
-        REMOVE_CUSTOMER_BTN.DisabledState.CustomBorderColor = Color.DarkGray
-        REMOVE_CUSTOMER_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        REMOVE_CUSTOMER_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        REMOVE_CUSTOMER_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        REMOVE_CUSTOMER_BTN.FillColor = Color.Black
-        REMOVE_CUSTOMER_BTN.FillColor2 = Color.Black
-        REMOVE_CUSTOMER_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        REMOVE_CUSTOMER_BTN.ForeColor = Color.White
-        REMOVE_CUSTOMER_BTN.HoverState.FillColor = Color.Green
-        REMOVE_CUSTOMER_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        REMOVE_CUSTOMER_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        REMOVE_CUSTOMER_BTN.HoverState.ForeColor = Color.White
-        REMOVE_CUSTOMER_BTN.HoverState.Image = CType(resources.GetObject("resource.Image6"), Image)
-        REMOVE_CUSTOMER_BTN.Image = CType(resources.GetObject("REMOVE_CUSTOMER_BTN.Image"), Image)
-        REMOVE_CUSTOMER_BTN.ImageAlign = HorizontalAlignment.Left
-        REMOVE_CUSTOMER_BTN.Location = New Point(-3, 374)
-        REMOVE_CUSTOMER_BTN.Margin = New Padding(0)
-        REMOVE_CUSTOMER_BTN.Name = "REMOVE_CUSTOMER_BTN"
-        REMOVE_CUSTOMER_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges27
-        REMOVE_CUSTOMER_BTN.Size = New Size(316, 45)
-        REMOVE_CUSTOMER_BTN.TabIndex = 20
-        REMOVE_CUSTOMER_BTN.Text = "REMOVE CUSTOMER"
-        REMOVE_CUSTOMER_BTN.TextAlign = HorizontalAlignment.Left
+        REMOVE_CUST_BTN.Animated = True
+        REMOVE_CUST_BTN.BorderRadius = 10
+        REMOVE_CUST_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        REMOVE_CUST_BTN.Cursor = Cursors.Hand
+        REMOVE_CUST_BTN.CustomizableEdges = CustomizableEdges26
+        REMOVE_CUST_BTN.DisabledState.BorderColor = Color.DarkGray
+        REMOVE_CUST_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        REMOVE_CUST_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        REMOVE_CUST_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        REMOVE_CUST_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        REMOVE_CUST_BTN.FillColor = Color.Black
+        REMOVE_CUST_BTN.FillColor2 = Color.Black
+        REMOVE_CUST_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        REMOVE_CUST_BTN.ForeColor = Color.White
+        REMOVE_CUST_BTN.HoverState.FillColor = Color.Green
+        REMOVE_CUST_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        REMOVE_CUST_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        REMOVE_CUST_BTN.HoverState.ForeColor = Color.White
+        REMOVE_CUST_BTN.HoverState.Image = CType(resources.GetObject("resource.Image6"), Image)
+        REMOVE_CUST_BTN.Image = CType(resources.GetObject("REMOVE_CUST_BTN.Image"), Image)
+        REMOVE_CUST_BTN.ImageAlign = HorizontalAlignment.Left
+        REMOVE_CUST_BTN.Location = New Point(-3, 374)
+        REMOVE_CUST_BTN.Margin = New Padding(0)
+        REMOVE_CUST_BTN.Name = "REMOVE_CUST_BTN"
+        REMOVE_CUST_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges27
+        REMOVE_CUST_BTN.Size = New Size(316, 45)
+        REMOVE_CUST_BTN.TabIndex = 20
+        REMOVE_CUST_BTN.Text = "REMOVE CUSTOMER"
+        REMOVE_CUST_BTN.TextAlign = HorizontalAlignment.Left
         ' 
-        ' Guna2GradientButton7
+        ' ADD_CUST_BTN
         ' 
-        Guna2GradientButton7.Animated = True
-        Guna2GradientButton7.BorderRadius = 10
-        Guna2GradientButton7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton7.Cursor = Cursors.Hand
-        Guna2GradientButton7.CustomizableEdges = CustomizableEdges28
-        Guna2GradientButton7.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton7.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton7.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton7.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton7.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton7.FillColor = Color.Black
-        Guna2GradientButton7.FillColor2 = Color.Black
-        Guna2GradientButton7.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton7.ForeColor = Color.White
-        Guna2GradientButton7.HoverState.FillColor = Color.Green
-        Guna2GradientButton7.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton7.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton7.HoverState.ForeColor = Color.White
-        Guna2GradientButton7.HoverState.Image = CType(resources.GetObject("resource.Image7"), Image)
-        Guna2GradientButton7.Image = CType(resources.GetObject("Guna2GradientButton7.Image"), Image)
-        Guna2GradientButton7.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton7.Location = New Point(0, 329)
-        Guna2GradientButton7.Margin = New Padding(0)
-        Guna2GradientButton7.Name = "Guna2GradientButton7"
-        Guna2GradientButton7.ShadowDecoration.CustomizableEdges = CustomizableEdges29
-        Guna2GradientButton7.Size = New Size(316, 45)
-        Guna2GradientButton7.TabIndex = 19
-        Guna2GradientButton7.Text = "ADD CUSTOMER"
-        Guna2GradientButton7.TextAlign = HorizontalAlignment.Left
+        ADD_CUST_BTN.Animated = True
+        ADD_CUST_BTN.BorderRadius = 10
+        ADD_CUST_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        ADD_CUST_BTN.Cursor = Cursors.Hand
+        ADD_CUST_BTN.CustomizableEdges = CustomizableEdges28
+        ADD_CUST_BTN.DisabledState.BorderColor = Color.DarkGray
+        ADD_CUST_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        ADD_CUST_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ADD_CUST_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        ADD_CUST_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        ADD_CUST_BTN.FillColor = Color.Black
+        ADD_CUST_BTN.FillColor2 = Color.Black
+        ADD_CUST_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        ADD_CUST_BTN.ForeColor = Color.White
+        ADD_CUST_BTN.HoverState.FillColor = Color.Green
+        ADD_CUST_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        ADD_CUST_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        ADD_CUST_BTN.HoverState.ForeColor = Color.White
+        ADD_CUST_BTN.HoverState.Image = CType(resources.GetObject("resource.Image7"), Image)
+        ADD_CUST_BTN.Image = CType(resources.GetObject("ADD_CUST_BTN.Image"), Image)
+        ADD_CUST_BTN.ImageAlign = HorizontalAlignment.Left
+        ADD_CUST_BTN.Location = New Point(0, 329)
+        ADD_CUST_BTN.Margin = New Padding(0)
+        ADD_CUST_BTN.Name = "ADD_CUST_BTN"
+        ADD_CUST_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges29
+        ADD_CUST_BTN.Size = New Size(316, 45)
+        ADD_CUST_BTN.TabIndex = 19
+        ADD_CUST_BTN.Text = "ADD CUSTOMER"
+        ADD_CUST_BTN.TextAlign = HorizontalAlignment.Left
         ' 
         ' Label5
         ' 
@@ -627,38 +627,38 @@ Partial Class Admin_Dashboard
         Label5.Size = New Size(113, 25)
         Label5.TabIndex = 18
         Label5.Text = "CUSTOMER"' 
-        ' Guna2GradientButton1
+        ' DASHBOARD_BTN
         ' 
-        Guna2GradientButton1.Animated = True
-        Guna2GradientButton1.BorderRadius = 10
-        Guna2GradientButton1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
-        Guna2GradientButton1.Checked = True
-        Guna2GradientButton1.Cursor = Cursors.Hand
-        Guna2GradientButton1.CustomizableEdges = CustomizableEdges30
-        Guna2GradientButton1.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton1.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton1.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton1.FillColor = Color.Black
-        Guna2GradientButton1.FillColor2 = Color.Black
-        Guna2GradientButton1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton1.ForeColor = Color.White
-        Guna2GradientButton1.HoverState.FillColor = Color.Green
-        Guna2GradientButton1.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton1.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton1.HoverState.ForeColor = Color.White
-        Guna2GradientButton1.HoverState.Image = My.Resources.Resources.icons8_dashboard_layout_40__1_1
-        Guna2GradientButton1.Image = My.Resources.Resources.icons8_dashboard_layout_40__1_
-        Guna2GradientButton1.ImageAlign = HorizontalAlignment.Left
-        Guna2GradientButton1.Location = New Point(3, 143)
-        Guna2GradientButton1.Margin = New Padding(0)
-        Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Guna2GradientButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges31
-        Guna2GradientButton1.Size = New Size(316, 45)
-        Guna2GradientButton1.TabIndex = 13
-        Guna2GradientButton1.Text = "DASHBOARD"
-        Guna2GradientButton1.TextAlign = HorizontalAlignment.Left
+        DASHBOARD_BTN.Animated = True
+        DASHBOARD_BTN.BorderRadius = 10
+        DASHBOARD_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        DASHBOARD_BTN.Checked = True
+        DASHBOARD_BTN.Cursor = Cursors.Hand
+        DASHBOARD_BTN.CustomizableEdges = CustomizableEdges30
+        DASHBOARD_BTN.DisabledState.BorderColor = Color.DarkGray
+        DASHBOARD_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        DASHBOARD_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        DASHBOARD_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        DASHBOARD_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        DASHBOARD_BTN.FillColor = Color.Black
+        DASHBOARD_BTN.FillColor2 = Color.Black
+        DASHBOARD_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        DASHBOARD_BTN.ForeColor = Color.White
+        DASHBOARD_BTN.HoverState.FillColor = Color.Green
+        DASHBOARD_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        DASHBOARD_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        DASHBOARD_BTN.HoverState.ForeColor = Color.White
+        DASHBOARD_BTN.HoverState.Image = My.Resources.Resources.icons8_dashboard_layout_40__1_1
+        DASHBOARD_BTN.Image = My.Resources.Resources.icons8_dashboard_layout_40__1_
+        DASHBOARD_BTN.ImageAlign = HorizontalAlignment.Left
+        DASHBOARD_BTN.Location = New Point(3, 143)
+        DASHBOARD_BTN.Margin = New Padding(0)
+        DASHBOARD_BTN.Name = "DASHBOARD_BTN"
+        DASHBOARD_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges31
+        DASHBOARD_BTN.Size = New Size(316, 45)
+        DASHBOARD_BTN.TabIndex = 13
+        DASHBOARD_BTN.Text = "DASHBOARD"
+        DASHBOARD_BTN.TextAlign = HorizontalAlignment.Left
         ' 
         ' Guna2PictureBox2
         ' 
@@ -730,9 +730,9 @@ Partial Class Admin_Dashboard
         PanelDesktop.AutoSizeMode = AutoSizeMode.GrowAndShrink
         PanelDesktop.BackColor = Color.Black
         PanelDesktop.Controls.Add(Progress)
-        PanelDesktop.Location = New Point(322, 51)
+        PanelDesktop.Location = New Point(322, 54)
         PanelDesktop.Name = "PanelDesktop"
-        PanelDesktop.Size = New Size(1378, 1012)
+        PanelDesktop.Size = New Size(1378, 1009)
         PanelDesktop.TabIndex = 3
         ' 
         ' Progress
@@ -772,19 +772,19 @@ Partial Class Admin_Dashboard
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents CLOSE_CONTROL As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents App_Name As Label
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents MessageBox1 As Guna.UI2.WinForms.Guna2MessageDialog
-    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton8 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton9 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton5 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents REMOVE_CUSTOMER_BTN As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton7 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents DASHBOARD_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents REMINDER_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents PAYMENT_DETAILS_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents CUST_DETAILS_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents REMOVE_CUST_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents ADD_CUST_BTN As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label5 As Label
     Friend WithEvents Guna2GradientButton4 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label4 As Label
@@ -792,20 +792,20 @@ Partial Class Admin_Dashboard
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Label6 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Guna2GradientButton11 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents CUST_EDIT_BTN As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2GradientButton10 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Guna2Separator1 As Guna.UI2.WinForms.Guna2Separator
     Friend WithEvents Guna2NotificationPaint1 As Guna.UI2.WinForms.Guna2NotificationPaint
-    Friend WithEvents Guna2GradientButton12 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents LOGOUT_BTN As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents version_name As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents Guna2GradientButton13 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents CHANGE_PASS_BTN As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents MessageBox2 As Guna.UI2.WinForms.Guna2MessageDialog
     Friend WithEvents PanelDesktop As Panel
     Friend WithEvents Guna2GradientButton14 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents Guna2GradientButton15 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents COLLECT_PAYMENT_BTN As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents Progress As Guna.UI2.WinForms.Guna2ProgressIndicator
-    Friend WithEvents BROADBAND_CONNECTION_REPORT As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents TV_CONNECTION_REPORT As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents BROADBAND_CONNECTION_REPORT_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents TV_CONNECTION_REPORT_BTN As Guna.UI2.WinForms.Guna2GradientButton
 End Class

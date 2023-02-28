@@ -181,3 +181,48 @@ Actual value was 2023.
 [2023-02-25 23:03:14] An Error Occured While Fetching Payment Details: ExecuteReader requires an open and available Connection. The connection's current state is closed.
 [2023-02-25 23:06:29] An Error Occured While Fetching Payment Details: ExecuteReader requires an open and available Connection. The connection's current state is closed.
 [2023-02-26 11:59:21] C:\Users\abyjo\source\repos\CABLE TV MANAGEMENT SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-26 14:01:09] C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-26 14:01:17] C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-26 14:01:18] C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-26 14:04:24] C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-26 14:04:27] C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-26 14:04:34] C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\bin\Debug\net6.0-windows\
+[2023-02-26 18:37:49] An Error Occured: Syntax error in JOIN operation.
+[2023-02-26 18:39:48] An Error Occured: Syntax error in JOIN operation.
+[2023-02-26 18:41:48] An Error Occured: Syntax error in JOIN operation.
+[2023-02-26 19:07:33] An Error Occured: Unrecognized keyword WHEN.
+[2023-02-26 19:10:31] An Error Occured: Unrecognized keyword WHEN.
+[2023-02-26 19:12:08] An Error Occured: Unrecognized keyword WHEN.
+[2023-02-26 19:14:00] An Error Occured: Syntax error (missing operator) in query expression 'CUSTOMER_DETAILS.CRF = TV_CONNECTION_DETAILS.CRF 
+                            LEFT JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
+[2023-02-26 19:17:20] An Error Occured: Syntax error (missing operator) in query expression 'CUSTOMER_DETAILS.CRF = TV_CONNECTION_DETAILS.CRF 
+                            LEFT JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
+[2023-02-26 19:17:48] An Error Occured: Syntax error (missing operator) in query expression 'CUSTOMER_DETAILS.CRF = TV_CONNECTION_DETAILS.CRF 
+                            LEFT JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
+[2023-02-26 19:20:39] An Error Occured: Syntax error (missing operator) in query expression 'CUSTOMER_DETAILS.CRF = TV_CONNECTION_DETAILS.CRF 
+                            LEFT JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CRF 
+                            ON TV_CONNECTION_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
+[2023-02-26 19:23:03] An Error Occured: Syntax error (missing operator) in query expression 'CUSTOMER_DETAILS.CRF = TV_CONNECTION_DETAILS.CRF 
+                            LEFT JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CRF 
+                            ON TV_CONNECTION_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
+[2023-02-26 19:24:46] An Error Occured: Parameter TV_PAYMENT_DETAILS.CURRENT_YEAR has no default value.
+[2023-02-26 19:25:43] An Error Occured: Parameter @YEAR has no default value.
+[2023-02-26 19:26:39] An Error Occured: Data type mismatch in criteria expression.
+[2023-02-26 19:27:28] An Error Occured: Data type mismatch in criteria expression.
+[2023-02-26 19:28:15] An Error Occured: Data type mismatch in criteria expression.
+[2023-02-26 19:29:24] An Error Occured: Data type mismatch in criteria expression.
+[2023-02-26 20:49:29] An Error Occured: Data type mismatch in criteria expression.
+[2023-02-26 20:49:34] An Error Occured: Data type mismatch in criteria expression.
+[2023-02-26 21:50:51] An Error Occured: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+[2023-02-26 21:50:56] An Error Occured: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+[2023-02-26 21:52:44] An Error Occured: Syntax error (missing operator) in query expression 'CUSTOMER_DETAILS.CRF = TV_CONNECTION_DETAILS.CRF 
+INNER JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
+[2023-02-26 21:53:29] An Error Occured: Syntax error (missing operator) in query expression 'CUSTOMER_DETAILS.CRF = TV_CONNECTION_DETAILS.CRF 
+INNER JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
+[2023-02-26 22:09:31] An Error Occured: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+[2023-02-26 22:10:49] An Error Occured: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+[2023-02-26 22:10:58] An Error Occured: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+[2023-02-26 22:14:52] An Error Occured: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+[2023-02-27 15:43:27] An Error Occured While Updating Broadband Pending PaymentsNo value given for one or more required parameters.
+[2023-02-27 15:43:35] An Error Occured While Updating Broadband Pending PaymentsNo value given for one or more required parameters.
+[2023-02-28 11:22:52] An Error Occured While Payment Sync: The table 'BROADBAND_PAYMENT_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
