@@ -8,7 +8,6 @@
         Progress.Start()
         If CurrentChildFrom IsNot Nothing Then
             CurrentChildFrom.Close()
-
         End If
         CurrentChildFrom = ChildForm
         ChildForm.TopLevel = False
@@ -60,6 +59,7 @@
         OpenChildForm(New Payment_Details)
     End Sub
     Private Sub BROADBAND_CONNECTION_REPORT_BTN_Click(sender As Object, e As EventArgs) Handles BROADBAND_CONNECTION_REPORT_BTN.Click
+        OpenChildForm(New BROADBAND_CONNECTION_REPORT)
     End Sub
     Private Sub Admin_Dashboard_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
         App_Name.Text = app_name_text
