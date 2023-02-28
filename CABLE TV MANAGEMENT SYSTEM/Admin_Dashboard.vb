@@ -8,7 +8,6 @@
         Progress.Start()
         If CurrentChildFrom IsNot Nothing Then
             CurrentChildFrom.Close()
-
         End If
         CurrentChildFrom = ChildForm
         ChildForm.TopLevel = False
@@ -28,11 +27,17 @@
     Private Sub CHANGE_PASS_BTN_Click_1(sender As Object, e As EventArgs)
         OpenChildForm(New Change_Password)
     End Sub
+<<<<<<< HEAD
 
     Private Sub COLLECT_PAYMENT_BTN_Click_1(sender As Object, e As EventArgs)
         OpenChildForm(New Collect_Payment_Admin)
     End Sub
 
+=======
+    Private Sub COLLECT_PAYMENT_BTN_Click_1(sender As Object, e As EventArgs)
+        OpenChildForm(New Collect_Payment_Admin)
+    End Sub
+>>>>>>> 3a83c465034fc9331d67fabb34f7a0db1ec24a27
     Private Sub ADD_CUST_BTN_Click_1(sender As Object, e As EventArgs)
         OpenChildForm(New add_customer)
     End Sub
@@ -42,7 +47,11 @@
     End Sub
 
     Private Sub CUST_DETAILS_BTN_Click_1(sender As Object, e As EventArgs)
+<<<<<<< HEAD
         OpenChildForm(New Customer_Details)
+=======
+        OpenChildForm(New CUSTOMER_DETAILS_NEW)
+>>>>>>> 3a83c465034fc9331d67fabb34f7a0db1ec24a27
     End Sub
 
     Private Sub CUST_EDIT_BTN_Click_1(sender As Object, e As EventArgs)
@@ -60,6 +69,10 @@
         OpenChildForm(New Payment_Details)
     End Sub
     Private Sub BROADBAND_CONNECTION_REPORT_BTN_Click(sender As Object, e As EventArgs)
+<<<<<<< HEAD
+=======
+        OpenChildForm(New BROADBAND_CONNECTION_REPORT)
+>>>>>>> 3a83c465034fc9331d67fabb34f7a0db1ec24a27
     End Sub
     Private Sub Admin_Dashboard_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
         App_Name.Text = app_name_text

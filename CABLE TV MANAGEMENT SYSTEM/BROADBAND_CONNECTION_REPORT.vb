@@ -254,8 +254,11 @@ Public Class BROADBAND_CONNECTION_REPORT
         If FILETYPE_COMBOBOX.SelectedItem = "PDF" Then
             ExportToPDF()
         End If
+<<<<<<< HEAD
         If FILETYPE_COMBOBOX.SelectedItem = "EXCEL" Then
             ExportToExcel.ExportToExcel(CUST_DATA_GRID)
         End If
+=======
+>>>>>>> 3a83c465034fc9331d67fabb34f7a0db1ec24a27
     End Sub
 End Class
