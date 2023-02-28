@@ -206,12 +206,26 @@ Public Class Payment_Details
     End Sub
 
     Private Sub CUST_CRF_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_CRF_TEXTBOX.TextChanged
+        clearALl()
+
         If CUST_CRF_TEXTBOX.Text = "" Then
             clearALl()
         End If
     End Sub
 
     Private Sub SERVICE_COMBOBOX_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SERVICE_COMBOBOX.SelectedIndexChanged
+        JANUARY_TEXTBOX.Clear()
+        FEBRUARY_TEXTBOX.Clear()
+        MARCH_TEXTBOX.Clear()
+        APRIL_TEXTBOX.Clear()
+        MAY_TEXTBOX.Clear()
+        JUNE_TEXTBOX.Clear()
+        JULY_TEXTBOX.Clear()
+        AUGUST_TEXTBOX.Clear()
+        SEPTEMBER_TEXTBOX.Clear()
+        OCTOBER_TEXTBOX.Clear()
+        NOVEMBER_TEXTBOX.Clear()
+        DECEMBER_TEXTBOX.Clear()
         YEAR_COMBOBOX.Items.Clear()
         If SERVICE_COMBOBOX.SelectedItem = "" Then
             clearALl()

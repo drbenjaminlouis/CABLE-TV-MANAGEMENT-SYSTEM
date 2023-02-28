@@ -98,7 +98,7 @@ Public Class REMINDER
                                             "IIF([november]='Not Paid',1,0) AS november, " &
                                             "IIF([december]='Not Paid',1,0) AS december " &
                                             "FROM TV_PAYMENT_DETAILS " &
-                                            "WHERE CRF=@CRF AND CURRENT_YEAR=@YEAR"
+                                            "WHERE CRF=@CRF AND PAYMENT_YEAR=@YEAR"
 
                     Using command As New OleDbCommand(query, con)
                         command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -184,7 +184,7 @@ Public Class REMINDER
                                             "IIF([november]='Not Paid',1,0) AS november, " &
                                             "IIF([december]='Not Paid',1,0) AS december " &
                                             "FROM BROADBAND_PAYMENT_DETAILS " &
-                                            "WHERE CRF=@CRF AND CURRENT_YEAR=@YEAR"
+                                            "WHERE CRF=@CRF AND PAYMENT_YEAR=@YEAR"
 
                     Using command As New OleDbCommand(query, con)
                         command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)

@@ -10,7 +10,7 @@ Imports CABLE_TV_MANAGEMENT_SYSTEM.Payment_Sync
 Imports Guna.UI2.WinForms
 
 Public Class add_customer
-    Dim months As New List(Of String)
+    ReadOnly months As New List(Of String)
     'Function for clearing all inputs'
     Public Function ClearAll()
         CUST_CRF_TEXTBOX.Clear()
@@ -41,7 +41,7 @@ Public Class add_customer
         Return 0
     End Function
     'For Storing Current Year'
-    Dim currentYear As Integer = CInt(DateTime.Now.Year)
+    ReadOnly currentYear As Integer = CInt(DateTime.Now.Year)
 
     'Function For Generating Unique CRF Number'
     Public Function GenerateCRF() As Integer
@@ -155,10 +155,10 @@ Public Class add_customer
                         Dim cmd As New OleDbCommand("INSERT INTO CUSTOMER_DETAILS (CRF,CUST_NAME,CUST_DOB,CUST_HOUSE_NAME,CUST_AREA,CUST_DISTRICT,CUST_STATE,CUST_COUNTRY,CUST_PINCODE,CUST_IDTYPE,CUST_ID_NUMBER,CUST_MOBILE,CUST_EMAIL) VALUES (@CRF,@NAME,@DOB,@HOUSE_NAME,@AREA,@DISTRICT,@STATE,@COUNTRY,@PINCODE,@IDTYPE,@ID_NUMBER,@MOBILE,@EMAIL)", con)
                         Dim cmd2 As New OleDbCommand("INSERT INTO CUSTOMER_LOGIN_DETAILS (CRF,CUST_USERNAME,CUST_PASSWORD) VALUES (@CRF,@CUST_USERNAME,@CUST_PASSWORD)", con)
                         Dim cmd3 As New OleDbCommand("INSERT INTO TV_CONNECTION_DETAILS (CRF,TV_CONNECTION_ID,CUST_TV_CONNECTION,CUST_TV_PLAN,CHIP_ID,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,TV_CONNECTION_STATUS) VALUES (@CRF,@TV_CONNECTION_ID,@CUST_TV_CONNECTION,@CUST_TV_PLAN,@CHIP_ID,@TV_REGISTRATION_DATE,@TV_LAST_RENEWAL_DATE,@EXPIRY_DATE,@TV_CONNECTION_STATUS)", con)
-                        Dim cmd4 As New OleDbCommand("INSERT INTO TV_PAYMENT_DETAILS (CRF,CURRENT_YEAR) VALUES (@CRF,@YEAR)", con)
+                        Dim cmd4 As New OleDbCommand("INSERT INTO TV_PAYMENT_DETAILS (CRF,PAYMENT_YEAR) VALUES (@CRF,@YEAR)", con)
                         Dim cmd5 As New OleDbCommand("INSERT INTO BROADBAND_CONNECTION_DETAILS (CRF,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,STATUS,RECHARGED_BY,CURRENT_PLAN,BROADBAND_CONNECTION) VALUES (@CRF,@REGISTRATION_DATE,@LAST_RENEWAL_DATE,@EXPIRY_DATE,@STATUS,@RECHARGED_BY,@CURRENT_PLAN,@BROADBAND_CONNECTION)", con)
                         Dim cmd6 As New OleDbCommand("INSERT INTO BROADBAND_LOGIN (CRF,CUST_BROADBAND_USERNAME,CUST_BROADBAND_PASSWORD) VALUES (@CRF,@CUST_BROADBAND_USERNAME,@CUST_BROADBAND_PASSWORD)", con)
-                        Dim cmd7 As New OleDbCommand("INSERT INTO BROADBAND_PAYMENT_DETAILS (CRF,BROADBAND_ID,CURRENT_YEAR) VALUES (@CRF,@BROADBAND_ID,@YEAR)", con)
+                        Dim cmd7 As New OleDbCommand("INSERT INTO BROADBAND_PAYMENT_DETAILS (CRF,BROADBAND_ID,PAYMENT_YEAR) VALUES (@CRF,@BROADBAND_ID,@YEAR)", con)
 
                         cmd.Transaction = transaction
                         cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)

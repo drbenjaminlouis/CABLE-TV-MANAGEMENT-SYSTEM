@@ -127,6 +127,7 @@ Public Class CUSTOMER_DETAILS_NEW
             CUST_DATA_GRID.Columns(8).Width = 130
             CUST_DATA_GRID.Columns(9).Width = 100
             CUST_DATA_GRID.Columns(10).Width = 230
+            CUST_DATA_GRID.Sort(CUST_DATA_GRID.Columns(0), System.ComponentModel.ListSortDirection.Ascending)
         Catch ex As Exception
             ErrorAlert.Play()
             LogError("An Error Occured While Fetching Details: " & ex.Message)

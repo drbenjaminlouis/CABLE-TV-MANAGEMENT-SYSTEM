@@ -310,7 +310,7 @@ Public Class Collect_Payment_Admin
         e.HasMorePages = False
     End Sub
     'Printing Invoice
-    Private Sub PRINT_BTN_Click(sender As Object, e As EventArgs) Handles PRINT_BTN.Click
+    Private Sub PRINT_BTN_Click(sender As Object, e As EventArgs)
         Dim printDoc As New PrintDocument()
         AddHandler printDoc.PrintPage, AddressOf PrintPageHandler
         Dim printDialog As New PrintDialog()

@@ -617,6 +617,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property ezgif_com_gif_maker() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ezgif.com-gif-maker", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property f15e0fdc3c87c48847f76b02adb9c9a4() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("f15e0fdc3c87c48847f76b02adb9c9a4", resourceCulture)
@@ -1417,6 +1427,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property icons8_printer_50() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8-printer-50", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icons8_printer_501() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icons8-printer-501", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property icons8_remove_40() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icons8-remove-40", resourceCulture)
@@ -1850,6 +1880,26 @@ Namespace My.Resources
         Friend ReadOnly Property toppng_com_and_blank_effect_transparent_600x458() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("toppng.com-and-blank-effect-transparent-600x458", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property TV_WATCHING() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TV WATCHING", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property TV_WATCHING1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TV WATCHING1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

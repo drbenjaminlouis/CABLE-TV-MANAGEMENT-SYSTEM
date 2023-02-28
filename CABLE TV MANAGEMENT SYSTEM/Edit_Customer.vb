@@ -1,6 +1,8 @@
 ﻿Imports System.Data.OleDb
 Public Class Edit_Customer
     Private Sub Edit_Customer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DOB_PICKER.MinDate = Date.Now.AddYears(-80)
+        DOB_PICKER.MaxDate = Date.Now.AddYears(-18)
         EDIT_BTN.Visible = False
     End Sub
     Private Sub CUST_CRF_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_CRF_TEXTBOX.Leave
@@ -204,6 +206,7 @@ Public Class Edit_Customer
                     End If
                     transaction.Commit()
                     MessageBox.Show("Customer Details Updated Successfully.", "ALERT")
+                    My.Forms.Admin_Dashboard.CUST_DETAILS_BTN.PerformClick()
                 Catch ex As Exception
                     transaction.Rollback()
                     ErrorAlert.Play()

@@ -43,8 +43,7 @@ Public Class Admin_Login
     End Sub
     Private Sub Guna2GradientButton2_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton2.Click
         Me.Hide()
-        Dim log_selector As New Login_Selector
-        log_selector.Show()
+        USER_LOGIN.Show()
     End Sub
     Private Sub Guna2ToggleSwitch1_CheckedChanged(sender As Object, e As EventArgs) Handles Guna2ToggleSwitch1.CheckedChanged
         If Guna2ToggleSwitch1.Checked Then textbox2.PasswordChar = Convert.ToChar(0) Else textbox2.PasswordChar = Convert.ToChar("*")
