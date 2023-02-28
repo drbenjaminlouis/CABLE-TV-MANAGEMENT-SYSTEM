@@ -70,7 +70,7 @@ Public Class BROADBAND_CONNECTION_REPORT
 
         If saveFileDialog1.FileName <> "" Then
             Dim pdfDoc As New Document(PageSize.A4, 10.0F, 10.0F, 10.0F, 0.0F)
-            Dim pdfWriter As PdfWriter = PdfWriter.GetInstance(pdfDoc, New FileStream(saveFileDialog1.FileName, FileMode.Create))
+            Dim pdfWriter As PdfWriter = pdfWriter.GetInstance(pdfDoc, New FileStream(saveFileDialog1.FileName, FileMode.Create))
             pdfDoc.Open()
             pdfWriter.PageEvent = New BlackBackground()
             Dim fontTopText As New iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 35, iTextSharp.text.Font.BOLD, BaseColor.WHITE)
@@ -254,17 +254,8 @@ Public Class BROADBAND_CONNECTION_REPORT
         If FILETYPE_COMBOBOX.SelectedItem = "PDF" Then
             ExportToPDF()
         End If
-<<<<<<< Updated upstream
-<<<<<<< HEAD
         If FILETYPE_COMBOBOX.SelectedItem = "EXCEL" Then
             ExportToExcel.ExportToExcel(CUST_DATA_GRID)
         End If
-=======
->>>>>>> 3a83c465034fc9331d67fabb34f7a0db1ec24a27
-=======
-        If FILETYPE_COMBOBOX.SelectedItem = "EXCEL" Then
-            ExportToExcel.ExportToExcel(CUST_DATA_GRID)
-        End If
->>>>>>> Stashed changes
     End Sub
 End Class
