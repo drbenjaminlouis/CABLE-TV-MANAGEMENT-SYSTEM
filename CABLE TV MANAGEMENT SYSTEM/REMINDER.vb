@@ -1,10 +1,14 @@
 ﻿Imports System.Data.OleDb
 Imports System.Net.Mail
+Imports System.Reflection
 Imports System.Reflection.Metadata
 Imports System.Security.Policy
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Tab
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify
 Imports CABLE_TV_MANAGEMENT_SYSTEM.Email
+Imports Microsoft.Office.Interop.Excel
 Imports Microsoft.VisualBasic.Devices
+Imports PdfSharp.Pdf
 Imports TheArtOfDevHtmlRenderer.Adapters.Entities
 
 Public Class REMINDER
@@ -19,7 +23,7 @@ Public Class REMINDER
         If CUST_CRF_TEXTBOX.Text = "" Then
         Else
             Try
-                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+                Using con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                     con.Open()
                     Dim sqlCheck As String = "SELECT * FROM [CUSTOMER_DETAILS] WHERE [CRF] =@CRF"
                     Dim sqlFetch As String = "SELECT CUST_NAME,CUST_EMAIL FROM CUSTOMER_DETAILS WHERE CRF=@CRF"
@@ -83,7 +87,7 @@ Public Class REMINDER
             If PAYMENT_YEAR.SelectedItem = Nothing Then
                 MessageBox.Show("Please Select Year", "ALERT")
             Else
-                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+                Using con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                     con.Open()
                     Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
                                            "IIF([february]='Not Paid',1,0) AS february, " &
@@ -169,7 +173,7 @@ Public Class REMINDER
             If PAYMENT_YEAR.SelectedItem = Nothing Then
                 MessageBox.Show("Please Select Year", "ALERT")
             Else
-                Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+                Using con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                     con.Open()
                     Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
                                            "IIF([february]='Not Paid',1,0) AS february, " &
@@ -276,74 +280,86 @@ Public Class REMINDER
 
             messageHtml = $"<html>
                                 <head>
-                                    <style>
-                                        #container 
-                                        {{
-                                            width:100%;
-                                            height:600px;
+                                   <style>
+                                        body{{
                                             background-color: black;
                                         }}
-                                        #header 
-                                        {{
-                                              display: flex;
-                                              flex-direction: column;
-                                              align-items: center;
-                                              justify-content: center;
-                                              background-color: black;
-                                              color:white;
-                                              border-top-left-radius: 10px;
-                                              border-top-right-radius: 10px;
-                                              padding: 20px;
-                                              font-size: 24px;
+                                        #cust_name{{
+                                            font-size: 30px;
+                                            font-weight: bold;
+                                            color: #10af04;
+                                            margin-top:  40px;
                                         }}
-                                        #header img 
-                                        {{
-                                            margin-bottom: 10px;
-                                        }}
-                                        #header h1  
-                                        {{
-                                            margin-top:20px;
-                                        }}
-                                        #message {{
-                                            text-align: justify;
-                                            background-color: black;
-                                            color:white;
-                                            border-bottom-left-radius: 10px;
-                                            border-bottom-right-radius: 10px;
-                                            padding: 20px;
-                                        }}
-                                        #message p 
-                                        {{
-                                            margin: 0;
-                                            font-size: 16px;
-                                        }}
-                                       #button 
-                                       {{
-                                            display: flex;
+		                                .container {{
+                                             border: 5px solid #10af04;
+			                                padding: 30px;
+			                                max-width: 700px;
+			                                margin: 0 auto;
+                                            border-radius:  10px;
+		                                }}
+		                                .header {{
+			                                display: flex;
+			                                align-items: center;
+			                                justify-content: center;
+			                                margin-bottom:  20px;
+		                                }}
+		                                .header img {{
                                             align-items: center;
-                                            justify-content: center;
-                                            margin: 20px;
-                                       }}
-                                        #button a 
-                                        {{
-                                            display: block;
-                                            background-color: black;
-                                            color: white;
-                                            padding: 10px 20px;
-                                            border-radius: 5px;
-                                            text-decoration: none;
+                                            max-width: 150px;
+			                                height: 150px;
+                                            margin-right: 15px;
+		                                }}
+		                                .title {{
+			                               text-align: center;
+			                                font-size:  36px;
+			                                margin-bottom: 20px;
+                                            color: green;
+		
                                         }}
-                                </style>
+                                        .message{{
+            
+                                        }}
+		                                .message p{{
+			                                text-align: justify;
+			                                margin-bottom: 40px;
+                                            color: black;
+                                            margin-top: 40px;
+                                            font-family:  'Times New Roman', Times, serif;
+		                                }}
+		                                .button {{
+                                            display: block;
+			                                margin: 0 auto;
+                                            margin-top:  50px;
+			                                padding: 10px 20px;
+			                                background-color: #4CAF50;
+			                                color: #fff;
+			                                border: none;
+			                                border-radius:  5px;
+			                                font-size:  16px;
+                                            font-weight: bold;
+			                                cursor: pointer;
+			                                transition: all 0.3s ease;
+		                                }}
+		                                .button:hover {{
+			                                background-color: #3e8e41;
+		                                }}
+		                                .footer {{
+			                                margin-top:  40px;
+		                                }}
+		                                .footer img {{
+                                            max-width: 100%;
+			                                height: auto;
+		                                }}
+	                                </style>
                             </head>
                         <body>
                             <div id='container'>
-                                <div id='header'>
-                                    <img src='https://www.linkpicture.com/q/LOGO.gif' alt='Logo' width='100' height='100'><br>
-                                    <br>
-                                    <h1>BHARATH CABLE NETWORK</h1>
+                            <div id='header'>
+                            <img src='https://www.linkpicture.com/q/360_F_76147505_eXZ7ed7u7ZN3X352MX42B9Q6xabQ0HdU-removebg-preview.png' alt='Logo' width='170px' height='150px' style='display: block; margin: 0 auto;'>
+                                    <h1 class='title'>BHARATH CABLE NETWORK</h1>
                                 </div>
-                                <div id='message'>
-                                        <p><strong>Dear {name},</strong>,</p>
+                                <div id='message'style='color: black;'>
+                                        <pid='cust_name'><strong>Dear {name},</strong>,</p>
                                         <p>I hope this email finds you well. This is a gentle reminder that your payment for {service} is pending. The due amount is {amount}.</p>"
             If pendingMonths.Count > 1 Then
                 messageHtml &= "<p>Please note that your payments for the following months are pending: " & String.Join(", ", pendingMonths) & ".</p>
@@ -357,8 +373,11 @@ Public Class REMINDER
             messageHtml &= "<p>If you have already made the payment, please ignore this email. If you need assistance with your payment or have any questions, please do not hesitate to contact us.</p>
                 <p>We value your business and appreciate your timely attention to this matter. Thank you for choosing our services.</p>
                                     
-                                    <a href='mailto:your_email_address@example.com' style='background-color: #f7f7f7; border-radius: 5px; color: #333; display: inline-block; font-size: 16px; font-weight: bold; padding: 10px 20px; text-decoration: none;'>Contact Us</a>" &
-    "</div></div></div></div></body></html>"
+            <button class='button'><a href='mailto:marymathacabletv@gmail.com' style='text-decoration: none; color: white;'>CONTACT US</a></button>
+		<div class='footer'>
+            <p style='color: grey; text-align: center; font-size:12px'>**Please do not reply to this mail as it is an auto generated mail**</p>
+			<img src='https://content3.jdmagicbox.com/comp/lucknow/w4/0522px522.x522.180411092220.d3w4/catalogue/maurya-cable-network-lda-colony-lucknow-cable-tv-operators-44iv1qoz5l.jpg?clr=3e3328' alt='Footer Image'>
+		</div></div></div></div></div></body></html>"
         End If
     End Sub
 
