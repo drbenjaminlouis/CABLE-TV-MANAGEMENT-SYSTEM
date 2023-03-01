@@ -16,11 +16,41 @@ Public Class Collect_Payment_Admin
     Dim last_renewal_date_tv As Date
     'Variable for last_renewal date  of broadband
     Dim last_renewal_date_broadband As Date
+    Dim LOGTYPE As String = LoginType
+    Dim cust_crf As Integer
     Private Sub Collect_Payment_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'storing current year and previous year to payment_year combobox
         Dim currentYear As Integer = DateTime.Now.Year
         PAYMENT_YEAR.Items.Add(currentYear)
         PAYMENT_YEAR.Items.Add(currentYear - 1)
+        If LOGTYPE = "CUSTOMER" Then
+            CASH_LABEL.Visible = False
+            CASH_RADIO.Visible = False
+            CASH_RADIO.Checked = False
+            HEADER_LABEL.Text = "MAKE PAYMENT"
+            CUST_CRF_TEXTBOX.ReadOnly = True
+            Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+            Try
+                connection.Open()
+                Dim crfpicker As New OleDbCommand("SELECT CRF FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@USERNAME", connection)
+                Dim username As String = Module1.UserName
+                crfpicker.Parameters.AddWithValue("@USERNAME", username)
+                Dim crfreader As OleDbDataReader = crfpicker.ExecuteReader
+                If crfreader.HasRows Then
+                    While crfreader.Read
+                        cust_crf = crfreader.GetInt32(0)
+                    End While
+                End If
+                CUST_CRF_TEXTBOX.Text = cust_crf
+                SEARCH_BTN.PerformClick()
+            Catch ex As Exception
+                ErrorAlert.Play()
+                LogError("An Error Occured While Fetching CRF: " & ex.Message)
+                MessageBox.Show("An Error Occured While Fetching CRF: Please Contact Administrator", "ALERT")
+            End Try
+        Else
+            HEADER_LABEL.Text = "COLLECT PAYMENT"
+        End If
         QR_RADIO.Checked = True
         QR_CODE.Visible = True
         REFERANCE_NO.Visible = True
