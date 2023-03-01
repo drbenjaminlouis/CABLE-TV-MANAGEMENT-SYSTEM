@@ -41,7 +41,7 @@
     End Sub
 
     Private Sub CUST_DETAILS_BTN_Click_1(sender As Object, e As EventArgs) Handles CUST_DETAILS_BTN.Click
-        OpenChildForm(New Customer_Details)
+        OpenChildForm(New CUSTOMER_DETAILS_NEW)
     End Sub
 
     Private Sub CUST_EDIT_BTN_Click_1(sender As Object, e As EventArgs)
@@ -59,6 +59,7 @@
         OpenChildForm(New Payment_Details)
     End Sub
     Private Sub BROADBAND_CONNECTION_REPORT_BTN_Click(sender As Object, e As EventArgs) Handles BROADBAND_CONNECTION_REPORT_BTN.Click
+        OpenChildForm(New BROADBAND_CONNECTION_REPORT)
     End Sub
     Private Sub Admin_Dashboard_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
         App_Name.Text = app_name_text
@@ -88,7 +89,7 @@
         Dim result = MessageBox1.Show("Are You Sure You Want To Logout?", "ALERT")
         If result = DialogResult.Yes Then
             Dim Admin_log As New Admin_Login
-            USER_LOGIN.Show()
+            Admin_Login.Show()
             Me.Hide()
         End If
     End Sub

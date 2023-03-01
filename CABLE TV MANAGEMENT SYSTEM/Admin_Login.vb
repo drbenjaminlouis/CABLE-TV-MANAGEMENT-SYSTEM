@@ -1,7 +1,5 @@
 ﻿Imports System.Data.OleDb
-Module Module1
-    Public UserName As String
-End Module
+
 Public Class Admin_Login
     Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
     Dim dr As OleDbDataReader
@@ -19,6 +17,7 @@ Public Class Admin_Login
                 dr = cmd.ExecuteReader
                 If dr.HasRows = True Then
                     Module1.UserName = textbox1.Text
+                    Module1.LoginType = "ADMIN"
                     Me.Hide()
                     Dim admin_dash As New Admin_Dashboard
                     admin_dash.Show()
