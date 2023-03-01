@@ -24,6 +24,10 @@ Partial Class USER_LOGIN
     Private Sub InitializeComponent()
         Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -40,11 +44,9 @@ Partial Class USER_LOGIN
         Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
+        Guna2ControlBox3 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Guna2ControlBox4 = New Guna.UI2.WinForms.Guna2ControlBox()
         Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Label3 = New Label()
@@ -52,12 +54,11 @@ Partial Class USER_LOGIN
         Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Label4 = New Label()
-        Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
+        LOGIN_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         textbox2 = New Guna.UI2.WinForms.Guna2TextBox()
         textbox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Label5 = New Label()
-        Guna2ControlBox3 = New Guna.UI2.WinForms.Guna2ControlBox()
-        Guna2ControlBox4 = New Guna.UI2.WinForms.Guna2ControlBox()
+        MessageBox1 = New Guna.UI2.WinForms.Guna2MessageDialog()
         Guna2GradientPanel1.SuspendLayout()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -73,7 +74,7 @@ Partial Class USER_LOGIN
         Guna2GradientPanel1.Controls.Add(Guna2ControlBox2)
         Guna2GradientPanel1.Controls.Add(Guna2ControlBox1)
         Guna2GradientPanel1.Controls.Add(Label4)
-        Guna2GradientPanel1.Controls.Add(Guna2GradientButton1)
+        Guna2GradientPanel1.Controls.Add(LOGIN_BTN)
         Guna2GradientPanel1.Controls.Add(textbox2)
         Guna2GradientPanel1.Controls.Add(textbox1)
         Guna2GradientPanel1.Controls.Add(Label5)
@@ -84,6 +85,33 @@ Partial Class USER_LOGIN
         Guna2GradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges22
         Guna2GradientPanel1.Size = New Size(1050, 505)
         Guna2GradientPanel1.TabIndex = 3
+        ' 
+        ' Guna2ControlBox3
+        ' 
+        Guna2ControlBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Guna2ControlBox3.CustomizableEdges = CustomizableEdges1
+        Guna2ControlBox3.FillColor = Color.Transparent
+        Guna2ControlBox3.HoverState.FillColor = Color.Red
+        Guna2ControlBox3.IconColor = Color.White
+        Guna2ControlBox3.Location = New Point(996, 12)
+        Guna2ControlBox3.Name = "Guna2ControlBox3"
+        Guna2ControlBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        Guna2ControlBox3.Size = New Size(45, 29)
+        Guna2ControlBox3.TabIndex = 18
+        ' 
+        ' Guna2ControlBox4
+        ' 
+        Guna2ControlBox4.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Guna2ControlBox4.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
+        Guna2ControlBox4.CustomizableEdges = CustomizableEdges3
+        Guna2ControlBox4.FillColor = Color.Transparent
+        Guna2ControlBox4.HoverState.FillColor = Color.Silver
+        Guna2ControlBox4.IconColor = Color.White
+        Guna2ControlBox4.Location = New Point(945, 12)
+        Guna2ControlBox4.Name = "Guna2ControlBox4"
+        Guna2ControlBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        Guna2ControlBox4.Size = New Size(45, 29)
+        Guna2ControlBox4.TabIndex = 17
         ' 
         ' Guna2GradientButton2
         ' 
@@ -184,26 +212,26 @@ Partial Class USER_LOGIN
         Label4.Size = New Size(625, 45)
         Label4.TabIndex = 9
         Label4.Text = "CABLE TV MANAGEMENT SYSTEM"' 
-        ' Guna2GradientButton1
+        ' LOGIN_BTN
         ' 
-        Guna2GradientButton1.BorderRadius = 10
-        Guna2GradientButton1.Cursor = Cursors.Hand
-        Guna2GradientButton1.CustomizableEdges = CustomizableEdges15
-        Guna2GradientButton1.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton1.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton1.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton1.FillColor = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton1.FillColor2 = Color.Green
-        Guna2GradientButton1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton1.ForeColor = Color.White
-        Guna2GradientButton1.Location = New Point(564, 358)
-        Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Guna2GradientButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        Guna2GradientButton1.Size = New Size(325, 45)
-        Guna2GradientButton1.TabIndex = 12
-        Guna2GradientButton1.Text = "LOGIN"' 
+        LOGIN_BTN.BorderRadius = 10
+        LOGIN_BTN.Cursor = Cursors.Hand
+        LOGIN_BTN.CustomizableEdges = CustomizableEdges15
+        LOGIN_BTN.DisabledState.BorderColor = Color.DarkGray
+        LOGIN_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        LOGIN_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        LOGIN_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        LOGIN_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        LOGIN_BTN.FillColor = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        LOGIN_BTN.FillColor2 = Color.Green
+        LOGIN_BTN.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        LOGIN_BTN.ForeColor = Color.White
+        LOGIN_BTN.Location = New Point(564, 358)
+        LOGIN_BTN.Name = "LOGIN_BTN"
+        LOGIN_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        LOGIN_BTN.Size = New Size(325, 45)
+        LOGIN_BTN.TabIndex = 12
+        LOGIN_BTN.Text = "LOGIN"' 
         ' textbox2
         ' 
         textbox2.BorderRadius = 5
@@ -266,32 +294,14 @@ Partial Class USER_LOGIN
         Label5.Size = New Size(222, 32)
         Label5.TabIndex = 8
         Label5.Text = "CUSTOMER LOGIN"' 
-        ' Guna2ControlBox3
+        ' MessageBox1
         ' 
-        Guna2ControlBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Guna2ControlBox3.CustomizableEdges = CustomizableEdges1
-        Guna2ControlBox3.FillColor = Color.Transparent
-        Guna2ControlBox3.HoverState.FillColor = Color.Red
-        Guna2ControlBox3.IconColor = Color.White
-        Guna2ControlBox3.Location = New Point(996, 12)
-        Guna2ControlBox3.Name = "Guna2ControlBox3"
-        Guna2ControlBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2ControlBox3.Size = New Size(45, 29)
-        Guna2ControlBox3.TabIndex = 18
-        ' 
-        ' Guna2ControlBox4
-        ' 
-        Guna2ControlBox4.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Guna2ControlBox4.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
-        Guna2ControlBox4.CustomizableEdges = CustomizableEdges3
-        Guna2ControlBox4.FillColor = Color.Transparent
-        Guna2ControlBox4.HoverState.FillColor = Color.Silver
-        Guna2ControlBox4.IconColor = Color.White
-        Guna2ControlBox4.Location = New Point(945, 12)
-        Guna2ControlBox4.Name = "Guna2ControlBox4"
-        Guna2ControlBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2ControlBox4.Size = New Size(45, 29)
-        Guna2ControlBox4.TabIndex = 17
+        MessageBox1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK
+        MessageBox1.Caption = Nothing
+        MessageBox1.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
+        MessageBox1.Parent = Nothing
+        MessageBox1.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
+        MessageBox1.Text = Nothing
         ' 
         ' USER_LOGIN
         ' 
@@ -318,10 +328,11 @@ Partial Class USER_LOGIN
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents LOGIN_BTN As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents textbox2 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents textbox1 As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Guna2ControlBox3 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox4 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents MessageBox1 As Guna.UI2.WinForms.Guna2MessageDialog
 End Class
