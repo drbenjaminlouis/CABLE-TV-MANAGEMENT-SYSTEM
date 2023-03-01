@@ -228,3 +228,4 @@ INNER JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
 [2023-02-28 11:22:52] An Error Occured While Payment Sync: The table 'BROADBAND_PAYMENT_DETAILS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
 [2023-02-28 16:55:18] An Error Occured While Exporting As Excel: Cannot access '2.xlsx'.
 [2023-02-28 19:05:01] An error occurred: The INSERT INTO statement contains the following unknown field name: 'CURRENT_YEAR'. Make sure you have typed the name correctly, and try the operation again.
+[2023-03-01 13:53:24] An Error Occured While Fetching CRF: The ConnectionString property has not been initialized.
