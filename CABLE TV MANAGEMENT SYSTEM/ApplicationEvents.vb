@@ -24,6 +24,6 @@ Namespace My
     ' End Sub
 
     Partial Friend Class MyApplication
-
+        Friend StartupPath As String
     End Class
 End Namespace
