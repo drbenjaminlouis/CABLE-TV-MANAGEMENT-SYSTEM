@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>CABLE_TV_MANAGEMENT_SYSTEM</RootNamespace>
-    <StartupObject>CABLE_TV_MANAGEMENT_SYSTEM.CUSTOMER_DASHBOARD</StartupObject>
+    <StartupObject>CABLE_TV_MANAGEMENT_SYSTEM.Loading</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <Platforms>AnyCPU;x64</Platforms>
@@ -31,6 +31,7 @@
   <ItemGroup>
     <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.2" />
     <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1587.40" />
     <PackageReference Include="PdfSharp" Version="1.50.5147" />
     <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
   </ItemGroup>

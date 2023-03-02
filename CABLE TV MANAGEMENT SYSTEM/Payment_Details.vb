@@ -4,17 +4,46 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports Guna.UI2.WinForms
 
 Public Class Payment_Details
+    Dim crfno As Integer
     Dim yearList As New List(Of Integer)
     Private Sub Payment_Details_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Payment_Sync.Payment_Sync()
-        SERVICE_COMBOBOX.Items.Clear()
-        YEAR_COMBOBOX.Items.Clear()
+        '.Items.Clear()
+        ' YEAR_COMBOBOX.Items.Clear()
+        If LoginType = "ADMIN" Then
+            AddHandler CUST_CRF_TEXTBOX.LostFocus, AddressOf CUST_CRF_TEXTBOX_TEXTCHANGE
+        End If
         ' TV_Reg_Picker.MaxDate = Date.Today
         'BROADBAND_REG_DATE.MaxDate = Date.Today
         DOB_PICKER.MinDate = DateTime.Today.AddYears(-80)
         DOB_PICKER.MaxDate = DateTime.Today.AddYears(-18)
-        SERVICE_COMBOBOX.Enabled = False
-        YEAR_COMBOBOX.Enabled = False
+        If Not LoginType = "CUSTOMER" Then
+            SERVICE_COMBOBOX.Enabled = False
+            YEAR_COMBOBOX.Enabled = False
+        End If
+        If LoginType = "CUSTOMER" Then
+            AddHandler CUST_CRF_TEXTBOX.TextChanged, AddressOf CUST_CRF_TEXTBOX_TEXTCHANGE
+            Dim connection As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+            Try
+                connection.Open()
+                Dim checker As New OleDbCommand("SELECT CRF FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@USERNAME", connection)
+                checker.Parameters.AddWithValue("@USERNAME", UserName)
+                Dim reader As OleDbDataReader = checker.ExecuteReader
+                If reader.HasRows = True Then
+                    While reader.Read
+                        crfno = reader.GetInt32(0)
+                    End While
+                End If
+                reader.Close()
+                CUST_CRF_TEXTBOX.ReadOnly = True
+                CUST_CRF_TEXTBOX.Text = crfno
+            Catch EX As Exception
+
+            Finally
+                connection.Close()
+            End Try
+        End If
+
     End Sub
     Private Sub CheckTextBoxValues()
         Dim monthNames() As Guna2TextBox = {JANUARY_TEXTBOX, FEBRUARY_TEXTBOX, MARCH_TEXTBOX, APRIL_TEXTBOX, MAY_TEXTBOX, JUNE_TEXTBOX, JULY_TEXTBOX, AUGUST_TEXTBOX, SEPTEMBER_TEXTBOX, OCTOBER_TEXTBOX, NOVEMBER_TEXTBOX, DECEMBER_TEXTBOX}
@@ -146,62 +175,65 @@ Public Class Payment_Details
         clearALl()
     End Sub
 
-    Private Sub CUST_CRF_TEXTBOX_Leave(sender As Object, e As KeyEventArgs) Handles CUST_CRF_TEXTBOX.KeyDown
-        If e.KeyCode = Keys.Enter AndAlso Not String.IsNullOrEmpty(CUST_CRF_TEXTBOX.Text) Then
-
-            yearList.Clear()
-
-            If CUST_CRF_TEXTBOX.Text = "" Then
-                SERVICE_COMBOBOX.Items.Clear()
-                YEAR_COMBOBOX.Items.Clear()
-            Else
-                SERVICE_COMBOBOX.Items.Clear()
-                YEAR_COMBOBOX.Items.Clear()
-                Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-                Try
-                    connection.Open()
-                    Dim checker As New OleDbCommand("SELECT CRF FROM CUSTOMER_DETAILS WHERE CRF=@CRF", connection)
-                    checker.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                    Dim reader As OleDbDataReader = checker.ExecuteReader
-                    If Not reader.HasRows Then
-                        MessageBox.Show("CRF Not Exist.", "ALERT")
-                        CUST_CRF_TEXTBOX.Clear()
-                        SERVICE_COMBOBOX.Enabled = False
-                        YEAR_COMBOBOX.Enabled = False
-                    Else
-                        Dim command3 As New OleDbCommand("SELECT CUST_TV_CONNECTION FROM TV_CONNECTION_DETAILS WHERE CRF=@CRF", connection)
-                        command3.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                        Dim command4 As New OleDbCommand("SELECT BROADBAND_CONNECTION FROM BROADBAND_CONNECTION_DETAILS WHERE CRF=@CRF", connection)
-                        command4.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                        Dim reader3 As OleDbDataReader = command3.ExecuteReader
-                        If reader3.HasRows Then
-                            While reader3.Read
-                                If reader3.GetString(0) = "YES" Then
-                                    SERVICE_COMBOBOX.Items.Add("CABLE TV")
-                                Else
-                                End If
-                            End While
-                        End If
-                        Dim reader4 As OleDbDataReader = command4.ExecuteReader
-                        If reader4.HasRows Then
-                            While reader4.Read
-                                If reader4.GetString(0) = "YES" Then
-                                    SERVICE_COMBOBOX.Items.Add("BROADBAND")
-                                Else
-
-                                End If
-                            End While
-                        End If
-                        SERVICE_COMBOBOX.Enabled = True
-                        YEAR_COMBOBOX.Enabled = True
-                    End If
-
-                Catch ex As Exception
-                    ErrorAlert.Play()
-                    LogError("An Error Occured While Fetching Payment Details: " & ex.Message)
-                    MessageBox.Show("An Error Occured While Fetching Payment: Check Log For More Details.")
-                End Try
+    Private Sub CUST_CRF_TEXTBOX_KeyEventArgs(sender As Object, e As KeyEventArgs) Handles CUST_CRF_TEXTBOX.KeyDown
+        If LoginType = "ADMIN" Then
+            If e.KeyCode = Keys.Enter AndAlso Not String.IsNullOrEmpty(CUST_CRF_TEXTBOX.Text) Then
+                CUST_NAME_TEXTBOX.Focus()
             End If
+        End If
+    End Sub
+
+    Private Sub CUST_CRF_TEXTBOX_TEXTCHANGE(sender As Object, e As EventArgs)
+        If CUST_CRF_TEXTBOX.Text = "" Then
+            SERVICE_COMBOBOX.Items.Clear()
+            YEAR_COMBOBOX.Items.Clear()
+        Else
+            SERVICE_COMBOBOX.Items.Clear()
+            YEAR_COMBOBOX.Items.Clear()
+            Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+            Try
+                connection.Open()
+                Dim checker As New OleDbCommand("SELECT CRF FROM CUSTOMER_DETAILS WHERE CRF=@CRF", connection)
+                checker.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                Dim reader As OleDbDataReader = checker.ExecuteReader
+                If Not reader.HasRows = True Then
+                    MessageBox.Show("CRF Not Exist.", "ALERT")
+                    CUST_CRF_TEXTBOX.Clear()
+                    SERVICE_COMBOBOX.Enabled = False
+                    YEAR_COMBOBOX.Enabled = False
+                Else
+                    Dim command3 As New OleDbCommand("SELECT CUST_TV_CONNECTION FROM TV_CONNECTION_DETAILS WHERE CRF=@CRF", connection)
+                    command3.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                    Dim command4 As New OleDbCommand("SELECT BROADBAND_CONNECTION FROM BROADBAND_CONNECTION_DETAILS WHERE CRF=@CRF", connection)
+                    command4.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                    Dim reader3 As OleDbDataReader = command3.ExecuteReader
+                    If reader3.HasRows Then
+                        While reader3.Read
+                            If reader3.GetString(0) = "YES" Then
+                                SERVICE_COMBOBOX.Items.Add("CABLE TV")
+                            Else
+                            End If
+                        End While
+                    End If
+                    Dim reader4 As OleDbDataReader = command4.ExecuteReader
+                    If reader4.HasRows Then
+                        While reader4.Read
+                            If reader4.GetString(0) = "YES" Then
+                                SERVICE_COMBOBOX.Items.Add("BROADBAND")
+                            Else
+
+                            End If
+                        End While
+                    End If
+                    SERVICE_COMBOBOX.Enabled = True
+                    YEAR_COMBOBOX.Enabled = True
+                End If
+
+            Catch ex As Exception
+                ErrorAlert.Play()
+                LogError("An Error Occured While Fetching Payment Details: " & ex.Message)
+                MessageBox.Show("An Error Occured While Fetching Payment: Check Log For More Details.")
+            End Try
         End If
     End Sub
 
@@ -246,11 +278,11 @@ Public Class Payment_Details
                     End While
                 End If
                 For Each year As Integer In yearList
-                        YEAR_COMBOBOX.Items.Add(year)
-                    Next
-                    reader5.Close()
-                End If
-                If SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
+                    YEAR_COMBOBOX.Items.Add(year)
+                Next
+                reader5.Close()
+            End If
+            If SERVICE_COMBOBOX.SelectedItem = "BROADBAND" Then
                 Dim command6 As New OleDbCommand("SELECT DISTINCT(PAYMENT_YEAR) FROM BROADBAND_PAYMENT_DETAILS WHERE CRF=@CRF", connection)
                 command6.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
                 Dim reader6 As OleDbDataReader = command6.ExecuteReader

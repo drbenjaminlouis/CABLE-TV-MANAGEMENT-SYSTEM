@@ -1,11 +1,47 @@
 ﻿Imports System.Data.OleDb
 Public Class Edit_Customer
     Private Sub Edit_Customer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Dim cust_crf As Integer
         DOB_PICKER.MinDate = Date.Now.AddYears(-80)
         DOB_PICKER.MaxDate = Date.Now.AddYears(-18)
         EDIT_BTN.Visible = False
+        If LoginType = "CUSTOMER" Then
+            Label9.Text = "EDIT DETAILS"
+            CUST_CRF_TEXTBOX.ReadOnly = True
+            AddHandler CUST_CRF_TEXTBOX.TextChanged, AddressOf CUST_CRF_TEXTBOX_TextChanged
+            AddHandler CUST_CRF_TEXTBOX.Leave, AddressOf CUST_CRF_TEXTBOX_TextChanged
+            AddHandler CUST_NAME_TEXTBOX.Click, AddressOf NotAllowed
+            AddHandler CUST_IDNUMBER_TEXTBOX.Click, AddressOf NotAllowed
+            AddHandler CUST_IDTYPE_COMBOBOX.MouseClick, AddressOf NotAllowed
+            AddHandler CUST_CHIP_ID_TEXTBOX.Click, AddressOf NotAllowed
+            AddHandler CUST_CABLE_PLAN_COMBOBOX.Click, AddressOf NotAllowed
+            AddHandler CUST_BROADBAND_PLAN_COMBOBOX.Click, AddressOf NotAllowed
+            AddHandler CUST_USERNAME_TEXTBOX.Click, AddressOf NotAllowed
+            Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+            Try
+                connection.Open()
+                Dim crfpicker As New OleDbCommand("SELECT CRF FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@USERNAME", connection)
+                Dim username As String = Module1.UserName
+                crfpicker.Parameters.AddWithValue("@USERNAME", username)
+                Dim crfreader As OleDbDataReader = crfpicker.ExecuteReader
+                If crfreader.HasRows Then
+                    While crfreader.Read
+                        cust_crf = crfreader.GetInt32(0)
+                    End While
+                End If
+                CUST_CRF_TEXTBOX.Text = cust_crf
+            Catch ex As Exception
+                ErrorAlert.Play()
+                LogError("An Error Occured While Fetching CRF: " & ex.Message)
+                MessageBox.Show("An Error Occured While Fetching CRF: Please Contact Administrator", "ALERT")
+            End Try
+        End If
+        If LoginType = "ADMIN" Then
+            Label9.Text = "EDIT CUSTOMER DETAILS"
+        End If
     End Sub
-    Private Sub CUST_CRF_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_CRF_TEXTBOX.Leave
+    Private Sub CUST_CRF_TEXTBOX_TextChanged(sender As Object, e As EventArgs)
         If CUST_CRF_TEXTBOX.Text = "" Then
             EDIT_BTN.Visible = False
             clearAll()
@@ -111,9 +147,13 @@ Public Class Edit_Customer
         CUST_USERNAME_TEXTBOX.Clear()
         CUST_PASSWORD_TEXTBOX.Clear()
     End Sub
+    Private Sub NotAllowed(sender As Object, e As EventArgs)
+        If LoginType = "CUSTOMER" Then
+            MessageBox.Show("Not Allowed. Contact Admin", "ALERT")
+        End If
+    End Sub
 
     Private Sub EDIT_BTN_Click(sender As Object, e As EventArgs) Handles EDIT_BTN.Click
-        CUST_NAME_TEXTBOX.ReadOnly = False
         DOB_PICKER.Enabled = True
         CUST_HOUSENAME_TEXTBOX.ReadOnly = False
         CUST_AREA_TEXTBOX.ReadOnly = False
@@ -121,21 +161,24 @@ Public Class Edit_Customer
         CUST_STATE_COMBOBOX.Enabled = True
         CUST_COUNTRY_COMBOBOX.Enabled = True
         CUST_PINCODE_TEXTBOX.ReadOnly = False
-        CUST_IDTYPE_COMBOBOX.Enabled = True
-        CUST_IDNUMBER_TEXTBOX.ReadOnly = False
         CUST_MOBILE_TEXTBOX.ReadOnly = False
         CUST_EMAIL_TEXTBOX.ReadOnly = False
-        CUST_TV_CONNECTION_COMBOBOX.Enabled = True
-        CUST_CABLE_PLAN_COMBOBOX.Enabled = True
-        CUST_CHIP_ID_TEXTBOX.ReadOnly = False
-        CUST_BROADBAND_COMBOBOX.Enabled = True
-        CUST_BROADBAND_PLAN_COMBOBOX.Enabled = True
-        CUST_BROADBAND_USERNAME_TEXTBOX.ReadOnly = False
-        CUST_BROADBAND_PASSWORD_TEXTBOX.ReadOnly = False
-        CUST_USERNAME_TEXTBOX.ReadOnly = False
+        If LoginType = "ADMIN" Then
+
+            CUST_NAME_TEXTBOX.ReadOnly = False
+            CUST_IDTYPE_COMBOBOX.Enabled = True
+            CUST_IDNUMBER_TEXTBOX.ReadOnly = False
+            CUST_TV_CONNECTION_COMBOBOX.Enabled = True
+            CUST_CHIP_ID_TEXTBOX.ReadOnly = False
+            CUST_CABLE_PLAN_COMBOBOX.Enabled = True
+            CUST_BROADBAND_COMBOBOX.Enabled = True
+            CUST_BROADBAND_PLAN_COMBOBOX.Enabled = True
+            CUST_BROADBAND_USERNAME_TEXTBOX.ReadOnly = False
+            CUST_BROADBAND_PASSWORD_TEXTBOX.ReadOnly = False
+            CUST_USERNAME_TEXTBOX.ReadOnly = False
+        End If
         CUST_PASSWORD_TEXTBOX.ReadOnly = False
     End Sub
-
     Private Sub SAVE_BTN_Click(sender As Object, e As EventArgs) Handles SAVE_BTN.Click
         If CUST_BROADBAND_COMBOBOX.SelectedItem = "NO" And CUST_TV_CONNECTION_COMBOBOX.SelectedItem = "NO" Then
             ErrorAlert.Play()

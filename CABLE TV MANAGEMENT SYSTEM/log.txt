@@ -229,3 +229,9 @@ INNER JOIN TV_PAYMENT_DETAILS ON CUSTOMER_DETAILS.CRF = TV_PAYMENT_DETAILS.CR'.
 [2023-02-28 16:55:18] An Error Occured While Exporting As Excel: Cannot access '2.xlsx'.
 [2023-02-28 19:05:01] An error occurred: The INSERT INTO statement contains the following unknown field name: 'CURRENT_YEAR'. Make sure you have typed the name correctly, and try the operation again.
 [2023-03-01 13:53:24] An Error Occured While Fetching CRF: The ConnectionString property has not been initialized.
+[2023-03-01 16:31:39] An Error Occoured During Payment: InvalidArgument=Value of '0' is not valid for 'index'. (Parameter 'index')
+Actual value was 0.
+[2023-03-01 17:53:09] An Error Occured While Updating Cable TV Pending PaymentsConversion from string "" to type 'Integer' is not valid.
+[2023-03-01 17:53:19] An Error Occured While Updating Cable TV Pending PaymentsConversion from string "" to type 'Integer' is not valid.
+[2023-03-01 17:56:16] An Error Occured While Updating Cable TV Pending PaymentsConversion from string "" to type 'Integer' is not valid.
+[2023-03-03 01:09:00] Error Downloading File: File name cannot be null. (Parameter 'sourceFileName')

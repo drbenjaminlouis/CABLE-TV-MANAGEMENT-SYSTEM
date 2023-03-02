@@ -25,6 +25,8 @@ Partial Class Collect_Payment_Admin
         components = New ComponentModel.Container()
         Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -69,9 +71,8 @@ Partial Class Collect_Payment_Admin
         Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
+        PRINT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         INVOICE_NUMBER_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         INVOICE_NUMBER_LABEL = New Label()
         SEARCH_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -119,7 +120,6 @@ Partial Class Collect_Payment_Admin
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         PrintDocument1 = New Printing.PrintDocument()
         PrintDialog1 = New PrintDialog()
-        PRINT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         Guna2CustomGradientPanel1.SuspendLayout()
         Guna2GroupBox2.SuspendLayout()
         CType(QR_CODE, ComponentModel.ISupportInitialize).BeginInit()
@@ -152,6 +152,29 @@ Partial Class Collect_Payment_Admin
         Guna2CustomGradientPanel1.Size = New Size(1378, 1100)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
+        ' PRINT_BTN
+        ' 
+        PRINT_BTN.Animated = True
+        PRINT_BTN.CustomizableEdges = CustomizableEdges1
+        PRINT_BTN.DisabledState.BorderColor = Color.DarkGray
+        PRINT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        PRINT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        PRINT_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        PRINT_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        PRINT_BTN.FillColor = Color.Black
+        PRINT_BTN.FillColor2 = Color.Green
+        PRINT_BTN.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        PRINT_BTN.ForeColor = Color.White
+        PRINT_BTN.GradientMode = Drawing2D.LinearGradientMode.ForwardDiagonal
+        PRINT_BTN.HoverState.FillColor = Color.Green
+        PRINT_BTN.HoverState.FillColor2 = Color.Black
+        PRINT_BTN.Image = My.Resources.Resources.icons8_printer_501
+        PRINT_BTN.Location = New Point(1241, 168)
+        PRINT_BTN.Name = "PRINT_BTN"
+        PRINT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        PRINT_BTN.Size = New Size(130, 36)
+        PRINT_BTN.TabIndex = 91
+        PRINT_BTN.Text = "PRINT"' 
         ' INVOICE_NUMBER_TEXTBOX
         ' 
         INVOICE_NUMBER_TEXTBOX.Anchor = AnchorStyles.None
@@ -1032,29 +1055,6 @@ Partial Class Collect_Payment_Admin
         ' 
         PrintDialog1.UseEXDialog = True
         ' 
-        ' PRINT_BTN
-        ' 
-        PRINT_BTN.Animated = True
-        PRINT_BTN.CustomizableEdges = CustomizableEdges1
-        PRINT_BTN.DisabledState.BorderColor = Color.DarkGray
-        PRINT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
-        PRINT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        PRINT_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        PRINT_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        PRINT_BTN.FillColor = Color.Black
-        PRINT_BTN.FillColor2 = Color.Green
-        PRINT_BTN.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        PRINT_BTN.ForeColor = Color.White
-        PRINT_BTN.GradientMode = Drawing2D.LinearGradientMode.ForwardDiagonal
-        PRINT_BTN.HoverState.FillColor = Color.Green
-        PRINT_BTN.HoverState.FillColor2 = Color.Black
-        PRINT_BTN.Image = My.Resources.Resources.icons8_printer_501
-        PRINT_BTN.Location = New Point(1241, 168)
-        PRINT_BTN.Name = "PRINT_BTN"
-        PRINT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        PRINT_BTN.Size = New Size(130, 36)
-        PRINT_BTN.TabIndex = 91
-        PRINT_BTN.Text = "PRINT"' 
         ' Collect_Payment_Admin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
