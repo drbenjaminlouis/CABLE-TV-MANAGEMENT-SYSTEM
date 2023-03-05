@@ -1,9 +1,12 @@
-﻿Imports iTextSharp.text
+﻿Imports Guna.UI2.WinForms
+Imports iTextSharp.text
 Imports iTextSharp.text.pdf
 Imports System.IO
 
 Module ExportToPDF
     Public Sub ExportAsPDF(ByVal CUST_DATA_GRID As DataGridView)
+        Dim MessageBox As New Guna2MessageDialog
+        MessageBox.Style = MessageDialogStyle.Dark
         Dim saveFileDialog1 As New SaveFileDialog()
         saveFileDialog1.Filter = "PDF Files|*.pdf"
         saveFileDialog1.Title = "Save PDF File"
