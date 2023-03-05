@@ -1,18 +1,13 @@
 ﻿Imports System.Data.OleDb
-Imports System.Net.Mail
-Imports System.Reflection
-Imports System.Reflection.Metadata
-Imports System.Security.Policy
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Tab
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TrayNotify
-Imports CABLE_TV_MANAGEMENT_SYSTEM.Email
-Imports Microsoft.Office.Interop.Excel
-Imports Microsoft.VisualBasic.Devices
-Imports PdfSharp.Pdf
-Imports TheArtOfDevHtmlRenderer.Adapters.Entities
-
+Imports System.Text.RegularExpressions
 Public Class REMINDER
     Dim messageHtml As String
+    Private Sub REMINDER_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            ' Simulate a button click
+            SEND_BTN.PerformClick()
+        End If
+    End Sub
     Private Sub REMINDER_LOAD(SENDER As Object, e As EventArgs) Handles MyBase.Load
         Payment_Sync.Payment_Sync()
         Dim currentYear As Integer = DateTime.Now.Year
@@ -265,7 +260,7 @@ Public Class REMINDER
     Private Sub SERVICE_COMBOBOX_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles SERVICE_COMBOBOX.SelectedIndexChanged
         CUST_PENDING_AMOUNT_TEXTBOX.Clear()
         PAYMENT_MONTH_LISTBOX.Items.Clear()
-        Message.Clear()
+        MessageText.Clear()
         CUST_PENDING_AMOUNT_TEXTBOX.Clear()
         updatepending()
         If Not CUST_PENDING_AMOUNT_TEXTBOX.Text = "0" Then
@@ -277,6 +272,20 @@ Public Class REMINDER
             For Each item As Object In PAYMENT_MONTH_LISTBOX.Items
                 pendingMonths.Add(item.ToString())
             Next
+            MessageText.Padding = New Padding(10)
+            Dim message As String = "Dear " & name & "," & vbCrLf & vbCrLf &
+                            "I hope this email finds you well. This is a gentle reminder that your payment for " & service & " is pending. The due amount is " & amount & "." & vbCrLf
+            If pendingMonths.Count > 1 Then
+                message &= "Please note that your payments for the following months are pending: " & String.Join(", ", pendingMonths) & vbCrLf & vbCrLf &
+                    "We kindly request that you make the payment for these pending months as soon as possible to avoid any late fees or service interruptions. If you are unable to make the payment in full at this time, please contact us to discuss payment options." & vbCrLf
+            ElseIf pendingMonths.Count = 1 Then
+                message &= "Please note that your payment for the following month is pending: " & pendingMonths(0) & vbCrLf & vbCrLf &
+                    "We kindly request that you make the payment for this pending month as soon as possible to avoid any late fees or service interruptions." & vbCrLf &
+                    "If you are unable to make the payment in full at this time, please contact us to discuss payment options." & vbCrLf & vbCrLf
+            End If
+            message &= vbCrLf & "If you have already made the payment, please ignore this email. If you need assistance with your payment or have any questions, please do not hesitate to contact us." & vbCrLf & vbCrLf &
+                "We value your business and appreciate your timely attention to this matter." & vbCrLf & "Thank you for choosing our services."
+            MessageText.Text = message
 
             messageHtml = $"<html>
                                 <head>
@@ -359,7 +368,7 @@ Public Class REMINDER
                                     <h1 class='title'>BHARATH CABLE NETWORK</h1>
                                 </div>
                                 <div id='message'style='color: black;'>
-                                        <pid='cust_name'><strong>Dear {name},</strong>,</p>
+                                        <pid='cust_name'><strong>Dear {name},</strong></p>
                                         <p>I hope this email finds you well. This is a gentle reminder that your payment for {service} is pending. The due amount is {amount}.</p>"
             If pendingMonths.Count > 1 Then
                 messageHtml &= "<p>Please note that your payments for the following months are pending: " & String.Join(", ", pendingMonths) & ".</p>
@@ -381,8 +390,13 @@ Public Class REMINDER
         End If
     End Sub
 
-    Private Sub COLLECT_BTN_Click(sender As Object, e As EventArgs) Handles COLLECT_BTN.Click
-        Email.Email(CUST_EMAIL_TEXTBOX.Text, "Payment Reminder", messageHtml)
+    Private Sub SEND_BTN_Click(sender As Object, e As EventArgs) Handles SEND_BTN.Click
+        If Not CUST_CRF_LABEL.Text = "" And Not CUST_NAME_TEXTBOX.Text = "" And Not CUST_EMAIL_TEXTBOX.Text = "" And Not SERVICE_COMBOBOX.SelectedItem = "" And Not CUST_PENDING_AMOUNT_TEXTBOX.Text = "" Then
+            Email.Email(CUST_EMAIL_TEXTBOX.Text, "Payment Reminder", messageHtml)
+        Else
+            MessageBox.Show("Please Enter All The Details.", "ALERT")
+        End If
+
     End Sub
     Private Sub ClearAll()
         CUST_NAME_TEXTBOX.Clear()
@@ -390,7 +404,7 @@ Public Class REMINDER
         PAYMENT_YEAR.SelectedIndex = -1
         PAYMENT_MONTH_LISTBOX.Items.Clear()
         CUST_PENDING_AMOUNT_TEXTBOX.Clear()
-        Message.Clear()
+        MessageText.Clear()
         SERVICE_COMBOBOX.SelectedIndex = -1
     End Sub
     Private Sub RESET_BTN_Click(sender As Object, e As EventArgs) Handles RESET_BTN.Click
@@ -399,6 +413,16 @@ Public Class REMINDER
     End Sub
     Private Sub CUST_CRF_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_CRF_TEXTBOX.TextChanged
         ClearAll()
-        Message.Clear()
+        MessageText.Clear()
+    End Sub
+    Private Sub CUST_EMAIL_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_EMAIL_TEXTBOX.Leave
+        If CUST_EMAIL_TEXTBOX.Text = "" Then
+        Else
+            Dim emailRegex As New Regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+            If Not emailRegex.IsMatch(CUST_EMAIL_TEXTBOX.Text) Then
+                MessageBox.Show("Invalid email address. Please enter a valid email address.", "ALERT")
+                CUST_EMAIL_TEXTBOX.Clear()
+            End If
+        End If
     End Sub
 End Class
