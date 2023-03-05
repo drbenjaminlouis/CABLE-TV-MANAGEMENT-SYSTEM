@@ -3,28 +3,32 @@
 Public Class Admin_Login
     Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
     Dim dr As OleDbDataReader
-    Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
-        If textbox1.Text = "" Or textbox2.Text = "" Then
+    Private Sub Admin_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Module1.LoginType = "ADMIN"
+        Year_Updater.TV_Year_Updater()
+        Year_Updater.BroadBand_Year_Updater()
+    End Sub
+    Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles LOGIN_BTN.Click
+        If USERNAME_TEXTBOX.Text = "" Or PASSWORD_TEXTBOX.Text = "" Then
             MessageBox1.Show("", "Please Enter The Credentials")
-            textbox1.Clear()
-            textbox2.Clear()
+            USERNAME_TEXTBOX.Clear()
+            PASSWORD_TEXTBOX.Clear()
         Else
             Try
                 conn.Open()
                 Dim cmd As New OleDbCommand("SELECT * FROM ADMIN_LOGIN_DETAILS WHERE username=@USERNAME AND password=@PASSWORD", conn)
-                cmd.Parameters.AddWithValue("@USERNAME", textbox1.Text)
-                cmd.Parameters.AddWithValue("@PASSWORD", textbox2.Text)
+                cmd.Parameters.AddWithValue("@USERNAME", USERNAME_TEXTBOX.Text)
+                cmd.Parameters.AddWithValue("@PASSWORD", PASSWORD_TEXTBOX.Text)
                 dr = cmd.ExecuteReader
                 If dr.HasRows = True Then
-                    Module1.UserName = textbox1.Text
+                    Module1.UserName = USERNAME_TEXTBOX.Text
                     Module1.LoginType = "ADMIN"
                     Me.Hide()
-                    Dim admin_dash As New Admin_Dashboard
-                    admin_dash.Show()
+                    Admin_Dashboard.Show()
                 Else
                     MessageBox1.Show("", "Invalid Username Or Password")
-                    textbox1.Clear()
-                    textbox2.Clear()
+                    USERNAME_TEXTBOX.Clear()
+                    PASSWORD_TEXTBOX.Clear()
                 End If
             Catch ex As Exception
 
@@ -44,8 +48,9 @@ Public Class Admin_Login
         Me.Hide()
         USER_LOGIN.Show()
     End Sub
-    Private Sub Guna2ToggleSwitch1_CheckedChanged(sender As Object, e As EventArgs) Handles Guna2ToggleSwitch1.CheckedChanged
-        If Guna2ToggleSwitch1.Checked Then textbox2.PasswordChar = Convert.ToChar(0) Else textbox2.PasswordChar = Convert.ToChar("*")
-        textbox2.UseSystemPasswordChar = Not Guna2ToggleSwitch1.Checked
+    Private Sub Guna2ToggleSwitch1_CheckedChanged(sender As Object, e As EventArgs) Handles SHOW_PASSWORD_TOOGLE.CheckedChanged, SHOW_PASSWORD_TOOGLE.CheckedChanged
+        If SHOW_PASSWORD_TOOGLE.Checked Then PASSWORD_TEXTBOX.PasswordChar = Convert.ToChar(0) Else PASSWORD_TEXTBOX.PasswordChar = Convert.ToChar("*")
+        PASSWORD_TEXTBOX.UseSystemPasswordChar = Not SHOW_PASSWORD_TOOGLE.Checked
     End Sub
+
 End Class
