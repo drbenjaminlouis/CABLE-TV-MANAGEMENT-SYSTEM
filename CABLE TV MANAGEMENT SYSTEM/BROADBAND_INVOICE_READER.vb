@@ -17,7 +17,7 @@ Public Class BROADBAND_INVOICE_READER
         ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private Sub BROADBAND_INVOICE_READER_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        PDF_VIEWER.Source = New Uri("file:///C:/Users/abyjo/Desktop/SA.HTML")
+        PDF_VIEWER.Source = New Uri("file:///" & FileNotFound)
         If Not UserName = Nothing Then
             Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
             connection.Open()
@@ -159,9 +159,8 @@ Public Class BROADBAND_INVOICE_READER
     End Sub
 
     Private Sub MONTH_COMBOBOX_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MONTH_COMBOBOX.SelectedIndexChanged
-        PDF_VIEWER.Source = New Uri("file:///C:/Users/abyjo/Desktop/SA.HTML")
+        PDF_VIEWER.Source = New Uri("file:///" & FileNotFound)
     End Sub
-
     Private Sub DOWNLOAD_BTN_Click_1(sender As Object, e As EventArgs)
         Dim fileName As String = FILE_PATH
         SaveFileDialog1.FileName = fileName

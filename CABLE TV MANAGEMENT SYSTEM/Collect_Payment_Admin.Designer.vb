@@ -120,6 +120,7 @@ Partial Class Collect_Payment_Admin
         Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(components)
         PrintDocument1 = New Printing.PrintDocument()
         PrintDialog1 = New PrintDialog()
+        MessageBox2 = New Guna.UI2.WinForms.Guna2MessageDialog()
         Guna2CustomGradientPanel1.SuspendLayout()
         Guna2GroupBox2.SuspendLayout()
         CType(QR_CODE, ComponentModel.ISupportInitialize).BeginInit()
@@ -1055,6 +1056,15 @@ Partial Class Collect_Payment_Admin
         ' 
         PrintDialog1.UseEXDialog = True
         ' 
+        ' MessageBox2
+        ' 
+        MessageBox2.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo
+        MessageBox2.Caption = Nothing
+        MessageBox2.Icon = Guna.UI2.WinForms.MessageDialogIcon.None
+        MessageBox2.Parent = Nothing
+        MessageBox2.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark
+        MessageBox2.Text = Nothing
+        ' 
         ' Collect_Payment_Admin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1127,4 +1137,5 @@ Partial Class Collect_Payment_Admin
     Friend WithEvents INVOICE_NUMBER_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents INVOICE_NUMBER_LABEL As Label
     Friend WithEvents PRINT_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents MessageBox2 As Guna.UI2.WinForms.Guna2MessageDialog
 End Class

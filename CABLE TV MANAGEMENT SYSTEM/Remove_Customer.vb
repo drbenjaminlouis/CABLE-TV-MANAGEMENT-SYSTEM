@@ -9,7 +9,14 @@ Public Class Remove_Customer
         DOB_PICKER.MinDate = DateTime.Today.AddYears(-80)
         DOB_PICKER.MaxDate = DateTime.Today.AddYears(-18)
     End Sub
-
+    Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If Not CUST_CRF_TEXTBOX.Text = "" Then
+            If e.KeyCode = Keys.Enter Then
+                ' Simulate a button click
+                SEARCH_BTN.PerformClick()
+            End If
+        End If
+    End Sub
     Private Sub SEARCH_BTN_Click(sender As Object, e As EventArgs) Handles SEARCH_BTN.Click
         If CUST_CRF_TEXTBOX.Text = "" Then
             REMOVEBTN.Enabled = False
@@ -40,6 +47,8 @@ Public Class Remove_Customer
                 If Reader.HasRows Then
                     REMOVEBTN.Enabled = True
                     EDITID_BTN.Enabled = True
+                    REMOVEBTN.Visible = True
+                    EDITID_BTN.Visible = True
                     While Reader.Read
                         CUST_NAME_TEXTBOX.Text = Reader.GetString(0)
                         DOB_PICKER.Value = Reader.GetDateTime(1)
@@ -74,7 +83,7 @@ Public Class Remove_Customer
                                             "IIF([november]='Not Paid',1,0) AS november, " &
                                             "IIF([december]='Not Paid',1,0) AS december " &
                                             "FROM TV_PAYMENT_DETAILS " &
-                                            "WHERE CRF=@CRF AND CURRENT_YEAR=@YEAR"
+                                            "WHERE CRF=@CRF AND PAYMENT_YEAR=@YEAR"
 
                                 Dim command5 As New OleDbCommand(query, connection)
                                 command5.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -165,7 +174,7 @@ Public Class Remove_Customer
                                             "IIF([november]='Not Paid',1,0) AS november, " &
                                             "IIF([december]='Not Paid',1,0) AS december " &
                                             "FROM BROADBAND_PAYMENT_DETAILS " &
-                                            "WHERE CRF=@CRF AND CURRENT_YEAR=@YEAR"
+                                            "WHERE CRF=@CRF AND PAYMENT_YEAR=@YEAR"
 
                                 Dim command5 As New OleDbCommand(query, connection)
                                 command5.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -234,6 +243,8 @@ Public Class Remove_Customer
                 Else
                     ErrorAlert.Play()
                     MessageBox.Show("CRF Not Exist", "ALERT")
+                    REMOVEBTN.Visible = False
+                    EDITID_BTN.Visible = False
                 End If
             Catch ex As Exception
                 LogError("An Error Occured While Fetching Data: " & ex.Message)
@@ -320,8 +331,7 @@ Public Class Remove_Customer
             EDITID_BTN.Visible = False
             clearAll()
         Else
-            REMOVEBTN.Visible = True
-            EDITID_BTN.Visible = True
+
         End If
     End Sub
 

@@ -94,9 +94,10 @@ Public Class add_customer
         CUST_CRF_TEXTBOX.Text = GenerateCRF()
 
         'ROADBAND_REG_DATE.MinDate = DateTime.Now.Date
-        BROADBAND_REG_DATE.MaxDate = Date.Today
         TV_Reg_Picker.MaxDate = Date.Today
         TV_Reg_Picker.MinDate = Date.Today
+        BROADBAND_REG_DATE.MaxDate = Date.Today
+        BROADBAND_REG_DATE.MinDate = Date.Today
         DOB_PICKER.MinDate = DateTime.Today.AddYears(-80)
         DOB_PICKER.MaxDate = DateTime.Today.AddYears(-18)
         DOB_PICKER.Value = DateTime.Today.AddYears(-18)
@@ -154,11 +155,11 @@ Public Class add_customer
                     Try
                         Dim cmd As New OleDbCommand("INSERT INTO CUSTOMER_DETAILS (CRF,CUST_NAME,CUST_DOB,CUST_HOUSE_NAME,CUST_AREA,CUST_DISTRICT,CUST_STATE,CUST_COUNTRY,CUST_PINCODE,CUST_IDTYPE,CUST_ID_NUMBER,CUST_MOBILE,CUST_EMAIL) VALUES (@CRF,@NAME,@DOB,@HOUSE_NAME,@AREA,@DISTRICT,@STATE,@COUNTRY,@PINCODE,@IDTYPE,@ID_NUMBER,@MOBILE,@EMAIL)", con)
                         Dim cmd2 As New OleDbCommand("INSERT INTO CUSTOMER_LOGIN_DETAILS (CRF,CUST_USERNAME,CUST_PASSWORD) VALUES (@CRF,@CUST_USERNAME,@CUST_PASSWORD)", con)
-                        Dim cmd3 As New OleDbCommand("INSERT INTO TV_CONNECTION_DETAILS (CRF,TV_CONNECTION_ID,CUST_TV_CONNECTION,CUST_TV_PLAN,CHIP_ID,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,TV_CONNECTION_STATUS) VALUES (@CRF,@TV_CONNECTION_ID,@CUST_TV_CONNECTION,@CUST_TV_PLAN,@CHIP_ID,@TV_REGISTRATION_DATE,@TV_LAST_RENEWAL_DATE,@EXPIRY_DATE,@TV_CONNECTION_STATUS)", con)
+                        Dim cmd3 As New OleDbCommand("INSERT INTO TV_CONNECTION_DETAILS (CRF,CUST_TV_CONNECTION,CUST_TV_PLAN,CHIP_ID,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,TV_CONNECTION_STATUS) VALUES (@CRF,@CUST_TV_CONNECTION,@CUST_TV_PLAN,@CHIP_ID,@TV_REGISTRATION_DATE,@TV_LAST_RENEWAL_DATE,@EXPIRY_DATE,@TV_CONNECTION_STATUS)", con)
                         Dim cmd4 As New OleDbCommand("INSERT INTO TV_PAYMENT_DETAILS (CRF,PAYMENT_YEAR) VALUES (@CRF,@YEAR)", con)
                         Dim cmd5 As New OleDbCommand("INSERT INTO BROADBAND_CONNECTION_DETAILS (CRF,REGISTRATION_DATE,LAST_RENEWAL_DATE,EXPIRY_DATE,STATUS,RECHARGED_BY,CURRENT_PLAN,BROADBAND_CONNECTION) VALUES (@CRF,@REGISTRATION_DATE,@LAST_RENEWAL_DATE,@EXPIRY_DATE,@STATUS,@RECHARGED_BY,@CURRENT_PLAN,@BROADBAND_CONNECTION)", con)
                         Dim cmd6 As New OleDbCommand("INSERT INTO BROADBAND_LOGIN (CRF,CUST_BROADBAND_USERNAME,CUST_BROADBAND_PASSWORD) VALUES (@CRF,@CUST_BROADBAND_USERNAME,@CUST_BROADBAND_PASSWORD)", con)
-                        Dim cmd7 As New OleDbCommand("INSERT INTO BROADBAND_PAYMENT_DETAILS (CRF,BROADBAND_ID,PAYMENT_YEAR) VALUES (@CRF,@BROADBAND_ID,@YEAR)", con)
+                        Dim cmd7 As New OleDbCommand("INSERT INTO BROADBAND_PAYMENT_DETAILS (CRF,PAYMENT_YEAR) VALUES (@CRF,@YEAR)", con)
 
                         cmd.Transaction = transaction
                         cmd.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
@@ -167,8 +168,8 @@ Public Class add_customer
                         cmd.Parameters.AddWithValue("@HOUSE_NAME", CUST_HOUSENAME_TEXTBOX.Text)
                         cmd.Parameters.AddWithValue("@AREA", CUST_AREA_TEXTBOX.Text)
                         cmd.Parameters.AddWithValue("@DISTRICT", CUST_DISTRICT_TEXTBOX.Text)
-                        cmd.Parameters.AddWithValue("@STATE", CUST_STATE_COMBOBOX.SelectedItem)
-                        cmd.Parameters.AddWithValue("@COUNTRY", CUST_COUNTRY_COMBOBOX.SelectedItem)
+                        cmd.Parameters.AddWithValue("@STATE", CUST_STATE_COMBOBOX.SelectedItem.ToString.ToUpper)
+                        cmd.Parameters.AddWithValue("@COUNTRY", CUST_COUNTRY_COMBOBOX.SelectedItem.ToString.ToUpper)
                         cmd.Parameters.AddWithValue("@PINCODE", CUST_PINCODE_TEXTBOX.Text)
                         cmd.Parameters.AddWithValue("@IDTYPE", CUST_IDTYPE_COMBOBOX.SelectedItem)
                         cmd.Parameters.AddWithValue("@ID_NUMBER", CUST_IDNUMBER_TEXTBOX.Text)
@@ -183,7 +184,6 @@ Public Class add_customer
                         cmd3.Transaction = transaction
                         cmd3.Parameters.Clear()
                         cmd3.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                        cmd3.Parameters.AddWithValue("@TV_CONNECTION_ID", CUST_CRF_TEXTBOX.Text)
                         cmd3.Parameters.AddWithValue("@CUST_TV_CONNECTION", CUST_TV_CONNECTION_COMBOBOX.SelectedItem)
                         cmd3.Parameters.AddWithValue("@CUST_TV_PLAN", CUST_CABLE_PLAN_COMBOBOX.SelectedItem)
                         cmd3.Parameters.AddWithValue("@CHIP_ID", CUST_CHIP_ID_TEXTBOX.Text)
@@ -213,7 +213,6 @@ Public Class add_customer
                         cmd7.Parameters.Clear()
                         cmd7.Transaction = transaction
                         cmd7.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                        cmd7.Parameters.AddWithValue("@BROADBAND_ID", CUST_CRF_TEXTBOX.Text)
                         cmd7.Parameters.AddWithValue("@YEAR", currentYear)
                         If CUST_TV_CONNECTION_COMBOBOX.SelectedItem = "YES" Then
                             cmd3.ExecuteNonQuery()
@@ -265,8 +264,8 @@ Public Class add_customer
                             cmd6.Parameters.Clear()
                             cmd7.Parameters.Clear()
                         End If
-
                         transaction.Commit()
+                        Email.WelcomeEmail(CUST_EMAIL_TEXTBOX.Text, CUST_USERNAME_TEXTBOX.Text, CUST_PASSWORD_TEXTBOX.Text, CUST_NAME_TEXTBOX.Text)
                         MessageBox2.Show("Registration Sucessfull", "ALERT")
                         Payment_Sync.Payment_Sync()
                         ADD_CUSTOMER_PROGRESS.Stop()
@@ -453,6 +452,24 @@ Public Class add_customer
         If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
             e.Handled = True
             MessageBox2.Show("Only Number Are Allowed.", "ALERT")
+        End If
+    End Sub
+    Private Sub CUST_NAME_TEXTBOX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CUST_NAME_TEXTBOX.KeyPress
+        If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsWhiteSpace(e.KeyChar) Then
+            e.Handled = True
+            MessageBox2.Show("Only Letters Are Allowed.", "ALERT")
+        End If
+    End Sub
+    Private Sub CUST_AREA_TEXTBOX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CUST_AREA_TEXTBOX.KeyPress
+        If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsWhiteSpace(e.KeyChar) Then
+            e.Handled = True
+            MessageBox2.Show("Only Letters Are Allowed.", "ALERT")
+        End If
+    End Sub
+    Private Sub CUST_DISTRICT_TEXTBOX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CUST_DISTRICT_TEXTBOX.KeyPress
+        If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsWhiteSpace(e.KeyChar) Then
+            e.Handled = True
+            MessageBox2.Show("Only Letters Are Allowed.", "ALERT")
         End If
     End Sub
 End Class

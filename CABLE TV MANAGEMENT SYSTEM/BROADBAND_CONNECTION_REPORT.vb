@@ -171,7 +171,7 @@ Public Class BROADBAND_CONNECTION_REPORT
 
 
         If GetCableTVData.Rows.Count = 0 Then
-            MessageBox.Show("No Data Found.", "ALERT")
+
         Else
             CUST_DATA_GRID.DataSource = GetCableTVData()
             FILETYPE_COMBOBOX.Items.Clear()
@@ -243,6 +243,30 @@ Public Class BROADBAND_CONNECTION_REPORT
                 MessageBox.Show("No Data Found.", "ALERT")
             Else
                 CUST_DATA_GRID.DataSource = GetCableTVData()
+                CUST_DATA_GRID.Columns(0).Width = 100
+                CUST_DATA_GRID.Columns(0).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(0).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(1).Width = 150
+                CUST_DATA_GRID.Columns(1).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(2).Width = 150
+                CUST_DATA_GRID.Columns(2).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(2).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(3).Width = 120
+                CUST_DATA_GRID.Columns(3).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(3).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(4).Width = 190
+                CUST_DATA_GRID.Columns(4).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(4).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(5).Width = 150
+                CUST_DATA_GRID.Columns(5).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(5).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+                CUST_DATA_GRID.Columns(6).Width = 120
+                CUST_DATA_GRID.Columns(6).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(6).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(7).Width = 100
+                CUST_DATA_GRID.Columns(7).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
+                CUST_DATA_GRID.Columns(7).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
                 FILETYPE_COMBOBOX.Items.Clear()
                 FILETYPE_COMBOBOX.Items.Add("PDF")
                 FILETYPE_COMBOBOX.Items.Add("EXCEL")
@@ -251,6 +275,10 @@ Public Class BROADBAND_CONNECTION_REPORT
     End Sub
 
     Private Sub GENERATE_BTN_Click(sender As Object, e As EventArgs) Handles GENERATE_BTN.Click
+        If FILETYPE_COMBOBOX.SelectedItem = "" Then
+            ErrorAlert.Play()
+            MessageBox.Show("Please Select File Type.", "ALERT")
+        End If
         If FILETYPE_COMBOBOX.SelectedItem = "PDF" Then
             ExportToPDF()
         End If

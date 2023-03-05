@@ -12,8 +12,5 @@ Public Class Loading
             Timer1.Enabled = False
             Guna2ProgressIndicator1.Stop()
         End If
-
     End Sub
-
-
 End Class

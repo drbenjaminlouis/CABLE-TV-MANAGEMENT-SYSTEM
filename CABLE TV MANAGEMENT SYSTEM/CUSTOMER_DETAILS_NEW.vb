@@ -12,7 +12,7 @@ Public Class CUSTOMER_DETAILS_NEW
     Private Sub SEARCH_BTN_Click(sender As Object, e As EventArgs) Handles SEARCH_BTN.Click
         If CUST_CRF_TEXTBOX.Text = "" And CUST_MOBILE_TEXTBOX.Text = "" And CUST_NAME_TEXTBOX.Text = "" Then
             ErrorAlert.Play()
-            MessageBox.Show("Please Any Search Parameters.", "ALERT")
+            MessageBox.Show("Please Enter Any Search Parameters.", "ALERT")
         Else
             If Not CUST_NAME_TEXTBOX.Text = "" Then
                 Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
@@ -141,6 +141,7 @@ Public Class CUSTOMER_DETAILS_NEW
         CUST_CRF_TEXTBOX.Clear()
         CUST_NAME_TEXTBOX.Clear()
         CUST_MOBILE_TEXTBOX.Clear()
+
         DataLoder()
         flag = 1
     End Sub
@@ -175,6 +176,18 @@ Public Class CUSTOMER_DETAILS_NEW
         Else
             CUST_CRF_TEXTBOX.Clear()
             CUST_NAME_TEXTBOX.Clear()
+        End If
+    End Sub
+    Private Sub CUST_NAME_TEXTBOX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CUST_NAME_TEXTBOX.KeyPress
+        If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsWhiteSpace(e.KeyChar) Then
+            e.Handled = True
+            MessageBox.Show("Only Letters Are Allowed.", "ALERT")
+        End If
+    End Sub
+    Private Sub CUST_MOBILE_TEXTBOX_KeyPress(sender As Object, e As KeyPressEventArgs) Handles CUST_MOBILE_TEXTBOX.KeyPress
+        If Not Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) Then
+            e.Handled = True
+            MessageBox.Show("Only Number Are Allowed.", "ALERT")
         End If
     End Sub
 End Class

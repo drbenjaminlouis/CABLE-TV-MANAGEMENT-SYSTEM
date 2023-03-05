@@ -98,7 +98,7 @@ Public Class TV_CONNECTION_REPORT
 
 
         If GetCableTVData.Rows.Count = 0 Then
-            MessageBox.Show("No Data Found.", "ALERT")
+
         Else
             CUST_DATA_GRID.DataSource = GetCableTVData()
             FILETYPE_COMBOBOX.Items.Clear()
@@ -151,6 +151,10 @@ Public Class TV_CONNECTION_REPORT
     End Sub
 
     Private Sub GENERATE_BTN_Click(sender As Object, e As EventArgs) Handles GENERATE_BTN.Click
+        If FILETYPE_COMBOBOX.SelectedItem = "" Then
+            ErrorAlert.Play()
+            MessageBox.Show("Please Select File Type.", "ALERT")
+        End If
         If FILETYPE_COMBOBOX.SelectedItem = "PDF" Then
             ExportToPDF.ExportAsPDF(CUST_DATA_GRID)
         Else

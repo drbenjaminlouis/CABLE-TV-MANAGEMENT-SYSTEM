@@ -83,7 +83,7 @@ Partial Class BROADBAND_CONNECTION_REPORT
         Label9.Name = "Label9"
         Label9.Size = New Size(1346, 84)
         Label9.TabIndex = 42
-        Label9.Text = "TV CONNECTION REPORT"
+        Label9.Text = "BROADBAND  CONNECTION REPORT"
         Label9.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Guna2GradientPanel2

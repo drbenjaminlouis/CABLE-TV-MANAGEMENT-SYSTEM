@@ -47,13 +47,13 @@ Partial Class Admin_Login
         Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Guna2GradientButton2 = New Guna.UI2.WinForms.Guna2GradientButton()
         Label3 = New Label()
-        Guna2ToggleSwitch1 = New Guna.UI2.WinForms.Guna2ToggleSwitch()
+        SHOW_PASSWORD_TOOGLE = New Guna.UI2.WinForms.Guna2ToggleSwitch()
         Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
         Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Label4 = New Label()
-        Guna2GradientButton1 = New Guna.UI2.WinForms.Guna2GradientButton()
-        textbox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        textbox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        LOGIN_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
+        PASSWORD_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
+        USERNAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         Label5 = New Label()
         MessageBox1 = New Guna.UI2.WinForms.Guna2MessageDialog()
         CType(Guna2PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -89,13 +89,13 @@ Partial Class Admin_Login
         Guna2GradientPanel1.Controls.Add(Guna2GradientButton2)
         Guna2GradientPanel1.Controls.Add(Guna2PictureBox1)
         Guna2GradientPanel1.Controls.Add(Label3)
-        Guna2GradientPanel1.Controls.Add(Guna2ToggleSwitch1)
+        Guna2GradientPanel1.Controls.Add(SHOW_PASSWORD_TOOGLE)
         Guna2GradientPanel1.Controls.Add(Guna2ControlBox2)
         Guna2GradientPanel1.Controls.Add(Guna2ControlBox1)
         Guna2GradientPanel1.Controls.Add(Label4)
-        Guna2GradientPanel1.Controls.Add(Guna2GradientButton1)
-        Guna2GradientPanel1.Controls.Add(textbox2)
-        Guna2GradientPanel1.Controls.Add(textbox1)
+        Guna2GradientPanel1.Controls.Add(LOGIN_BTN)
+        Guna2GradientPanel1.Controls.Add(PASSWORD_TEXTBOX)
+        Guna2GradientPanel1.Controls.Add(USERNAME_TEXTBOX)
         Guna2GradientPanel1.Controls.Add(Label5)
         Guna2GradientPanel1.CustomizableEdges = CustomizableEdges17
         Guna2GradientPanel1.Dock = DockStyle.Fill
@@ -134,23 +134,23 @@ Partial Class Admin_Login
         Label3.Size = New Size(103, 17)
         Label3.TabIndex = 7
         Label3.Text = "Show Password"' 
-        ' Guna2ToggleSwitch1
+        ' SHOW_PASSWORD_TOOGLE
         ' 
-        Guna2ToggleSwitch1.CheckedState.BorderColor = Color.Green
-        Guna2ToggleSwitch1.CheckedState.FillColor = Color.Green
-        Guna2ToggleSwitch1.CheckedState.InnerBorderColor = Color.White
-        Guna2ToggleSwitch1.CheckedState.InnerColor = Color.White
-        Guna2ToggleSwitch1.Cursor = Cursors.Hand
-        Guna2ToggleSwitch1.CustomizableEdges = CustomizableEdges5
-        Guna2ToggleSwitch1.Location = New Point(564, 313)
-        Guna2ToggleSwitch1.Name = "Guna2ToggleSwitch1"
-        Guna2ToggleSwitch1.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        Guna2ToggleSwitch1.Size = New Size(40, 20)
-        Guna2ToggleSwitch1.TabIndex = 15
-        Guna2ToggleSwitch1.UncheckedState.BorderColor = Color.FromArgb(CByte(125), CByte(137), CByte(149))
-        Guna2ToggleSwitch1.UncheckedState.FillColor = Color.FromArgb(CByte(125), CByte(137), CByte(149))
-        Guna2ToggleSwitch1.UncheckedState.InnerBorderColor = Color.White
-        Guna2ToggleSwitch1.UncheckedState.InnerColor = Color.White
+        SHOW_PASSWORD_TOOGLE.CheckedState.BorderColor = Color.Green
+        SHOW_PASSWORD_TOOGLE.CheckedState.FillColor = Color.Green
+        SHOW_PASSWORD_TOOGLE.CheckedState.InnerBorderColor = Color.White
+        SHOW_PASSWORD_TOOGLE.CheckedState.InnerColor = Color.White
+        SHOW_PASSWORD_TOOGLE.Cursor = Cursors.Hand
+        SHOW_PASSWORD_TOOGLE.CustomizableEdges = CustomizableEdges5
+        SHOW_PASSWORD_TOOGLE.Location = New Point(564, 313)
+        SHOW_PASSWORD_TOOGLE.Name = "SHOW_PASSWORD_TOOGLE"
+        SHOW_PASSWORD_TOOGLE.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        SHOW_PASSWORD_TOOGLE.Size = New Size(40, 20)
+        SHOW_PASSWORD_TOOGLE.TabIndex = 15
+        SHOW_PASSWORD_TOOGLE.UncheckedState.BorderColor = Color.FromArgb(CByte(125), CByte(137), CByte(149))
+        SHOW_PASSWORD_TOOGLE.UncheckedState.FillColor = Color.FromArgb(CByte(125), CByte(137), CByte(149))
+        SHOW_PASSWORD_TOOGLE.UncheckedState.InnerBorderColor = Color.White
+        SHOW_PASSWORD_TOOGLE.UncheckedState.InnerColor = Color.White
         ' 
         ' Guna2ControlBox2
         ' 
@@ -189,77 +189,77 @@ Partial Class Admin_Login
         Label4.Size = New Size(625, 45)
         Label4.TabIndex = 9
         Label4.Text = "CABLE TV MANAGEMENT SYSTEM"' 
-        ' Guna2GradientButton1
+        ' LOGIN_BTN
         ' 
-        Guna2GradientButton1.BorderRadius = 10
-        Guna2GradientButton1.Cursor = Cursors.Hand
-        Guna2GradientButton1.CustomizableEdges = CustomizableEdges11
-        Guna2GradientButton1.DisabledState.BorderColor = Color.DarkGray
-        Guna2GradientButton1.DisabledState.CustomBorderColor = Color.DarkGray
-        Guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton1.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Guna2GradientButton1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Guna2GradientButton1.FillColor = Color.FromArgb(CByte(7), CByte(25), CByte(4))
-        Guna2GradientButton1.FillColor2 = Color.Green
-        Guna2GradientButton1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Guna2GradientButton1.ForeColor = Color.White
-        Guna2GradientButton1.Location = New Point(564, 358)
-        Guna2GradientButton1.Name = "Guna2GradientButton1"
-        Guna2GradientButton1.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        Guna2GradientButton1.Size = New Size(325, 45)
-        Guna2GradientButton1.TabIndex = 12
-        Guna2GradientButton1.Text = "LOGIN"' 
-        ' textbox2
+        LOGIN_BTN.BorderRadius = 10
+        LOGIN_BTN.Cursor = Cursors.Hand
+        LOGIN_BTN.CustomizableEdges = CustomizableEdges11
+        LOGIN_BTN.DisabledState.BorderColor = Color.DarkGray
+        LOGIN_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        LOGIN_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        LOGIN_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        LOGIN_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        LOGIN_BTN.FillColor = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        LOGIN_BTN.FillColor2 = Color.Green
+        LOGIN_BTN.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        LOGIN_BTN.ForeColor = Color.White
+        LOGIN_BTN.Location = New Point(564, 358)
+        LOGIN_BTN.Name = "LOGIN_BTN"
+        LOGIN_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        LOGIN_BTN.Size = New Size(325, 45)
+        LOGIN_BTN.TabIndex = 12
+        LOGIN_BTN.Text = "LOGIN"' 
+        ' PASSWORD_TEXTBOX
         ' 
-        textbox2.BorderRadius = 5
-        textbox2.BorderThickness = 0
-        textbox2.Cursor = Cursors.IBeam
-        textbox2.CustomizableEdges = CustomizableEdges13
-        textbox2.DefaultText = ""
-        textbox2.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        textbox2.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        textbox2.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        textbox2.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        textbox2.FillColor = Color.FromArgb(CByte(46), CByte(44), CByte(44))
-        textbox2.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        textbox2.Font = New Font("Open Sans Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        textbox2.ForeColor = Color.White
-        textbox2.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        textbox2.Location = New Point(564, 249)
-        textbox2.Name = "textbox2"
-        textbox2.PasswordChar = "●"c
-        textbox2.PlaceholderForeColor = Color.White
-        textbox2.PlaceholderText = "Password"
-        textbox2.SelectedText = ""
-        textbox2.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        textbox2.Size = New Size(325, 41)
-        textbox2.TabIndex = 11
+        PASSWORD_TEXTBOX.BorderRadius = 5
+        PASSWORD_TEXTBOX.BorderThickness = 0
+        PASSWORD_TEXTBOX.Cursor = Cursors.IBeam
+        PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges13
+        PASSWORD_TEXTBOX.DefaultText = ""
+        PASSWORD_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        PASSWORD_TEXTBOX.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        PASSWORD_TEXTBOX.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        PASSWORD_TEXTBOX.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        PASSWORD_TEXTBOX.FillColor = Color.FromArgb(CByte(46), CByte(44), CByte(44))
+        PASSWORD_TEXTBOX.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        PASSWORD_TEXTBOX.Font = New Font("Open Sans Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        PASSWORD_TEXTBOX.ForeColor = Color.White
+        PASSWORD_TEXTBOX.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        PASSWORD_TEXTBOX.Location = New Point(564, 249)
+        PASSWORD_TEXTBOX.Name = "PASSWORD_TEXTBOX"
+        PASSWORD_TEXTBOX.PasswordChar = "●"c
+        PASSWORD_TEXTBOX.PlaceholderForeColor = Color.White
+        PASSWORD_TEXTBOX.PlaceholderText = "Password"
+        PASSWORD_TEXTBOX.SelectedText = ""
+        PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        PASSWORD_TEXTBOX.Size = New Size(325, 41)
+        PASSWORD_TEXTBOX.TabIndex = 11
         ' 
-        ' textbox1
+        ' USERNAME_TEXTBOX
         ' 
-        textbox1.BorderRadius = 5
-        textbox1.BorderThickness = 0
-        textbox1.Cursor = Cursors.IBeam
-        textbox1.CustomizableEdges = CustomizableEdges15
-        textbox1.DefaultText = ""
-        textbox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        textbox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        textbox1.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        textbox1.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        textbox1.FillColor = Color.FromArgb(CByte(46), CByte(44), CByte(44))
-        textbox1.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        textbox1.Font = New Font("Open Sans Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        textbox1.ForeColor = Color.White
-        textbox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        textbox1.Location = New Point(564, 181)
-        textbox1.Name = "textbox1"
-        textbox1.PasswordChar = ChrW(0)
-        textbox1.PlaceholderForeColor = Color.White
-        textbox1.PlaceholderText = "User Name"
-        textbox1.SelectedText = ""
-        textbox1.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        textbox1.Size = New Size(325, 41)
-        textbox1.TabIndex = 10
+        USERNAME_TEXTBOX.BorderRadius = 5
+        USERNAME_TEXTBOX.BorderThickness = 0
+        USERNAME_TEXTBOX.Cursor = Cursors.IBeam
+        USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges15
+        USERNAME_TEXTBOX.DefaultText = ""
+        USERNAME_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        USERNAME_TEXTBOX.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        USERNAME_TEXTBOX.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        USERNAME_TEXTBOX.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        USERNAME_TEXTBOX.FillColor = Color.FromArgb(CByte(46), CByte(44), CByte(44))
+        USERNAME_TEXTBOX.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        USERNAME_TEXTBOX.Font = New Font("Open Sans Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        USERNAME_TEXTBOX.ForeColor = Color.White
+        USERNAME_TEXTBOX.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        USERNAME_TEXTBOX.Location = New Point(564, 181)
+        USERNAME_TEXTBOX.Name = "USERNAME_TEXTBOX"
+        USERNAME_TEXTBOX.PasswordChar = ChrW(0)
+        USERNAME_TEXTBOX.PlaceholderForeColor = Color.White
+        USERNAME_TEXTBOX.PlaceholderText = "User Name"
+        USERNAME_TEXTBOX.SelectedText = ""
+        USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        USERNAME_TEXTBOX.Size = New Size(325, 41)
+        USERNAME_TEXTBOX.TabIndex = 10
         ' 
         ' Label5
         ' 
@@ -304,13 +304,13 @@ Partial Class Admin_Login
     Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
     Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
     Friend WithEvents Label3 As Label
-    Friend WithEvents Guna2ToggleSwitch1 As Guna.UI2.WinForms.Guna2ToggleSwitch
+    Friend WithEvents SHOW_PASSWORD_TOOGLE As Guna.UI2.WinForms.Guna2ToggleSwitch
     Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton
-    Friend WithEvents textbox2 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents textbox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents LOGIN_BTN As Guna.UI2.WinForms.Guna2GradientButton
+    Friend WithEvents PASSWORD_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents USERNAME_TEXTBOX As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Guna2GradientButton2 As Guna.UI2.WinForms.Guna2GradientButton
     Friend WithEvents MessageBox1 As Guna.UI2.WinForms.Guna2MessageDialog

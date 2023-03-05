@@ -11,6 +11,9 @@ Public Class Customer_Details
         ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private Sub Customer_Details_Load(sender As Object, e As EventArgs)
+        DOB_PICKER.MinDate = DateTime.Today.AddYears(-80)
+        DOB_PICKER.MaxDate = DateTime.Today.AddYears(-18)
+        DOB_PICKER.Value = DateTime.Today.AddYears(-18)
         Dim cust_crf As Integer
         If LoginType = "CUSTOMER" Then
             CUST_CRF_TEXTBOX.ReadOnly = True

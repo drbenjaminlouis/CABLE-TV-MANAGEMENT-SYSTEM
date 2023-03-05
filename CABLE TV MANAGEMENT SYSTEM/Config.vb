@@ -11,5 +11,5 @@ Module Config
     Public app_name_text As String = "CABLE TV MANAGEMENT SYSTEM"
     Public ErrorAlert As New System.Media.SoundPlayer("C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\Error.wav")
     Public SuccessAlert As New System.Media.SoundPlayer("C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\Gpay.wav")
-
+    Public FileNotFound As String = "C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\FileNotFound.html"
 End Module

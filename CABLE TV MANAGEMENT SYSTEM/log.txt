@@ -235,3 +235,15 @@ Actual value was 0.
 [2023-03-01 17:53:19] An Error Occured While Updating Cable TV Pending PaymentsConversion from string "" to type 'Integer' is not valid.
 [2023-03-01 17:56:16] An Error Occured While Updating Cable TV Pending PaymentsConversion from string "" to type 'Integer' is not valid.
 [2023-03-03 01:09:00] Error Downloading File: File name cannot be null. (Parameter 'sourceFileName')
+[2023-03-04 19:13:47] An Error Occured While Updating Data: ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+[2023-03-04 19:13:55] An Error Occured While Updating Data: ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+[2023-03-04 19:16:00] An Error Occured While Updating Data: Parameter @CUST_TV_PLAN has no default value.
+[2023-03-04 20:23:49] An Error Occured While Updating Data: Syntax error in INSERT INTO statement.
+[2023-03-04 20:23:53] An Error Occured While Updating Data: Syntax error in INSERT INTO statement.
+[2023-03-04 20:38:03] An Error Occured While Updating Data: Syntax error in INSERT INTO statement.
+[2023-03-05 11:32:18] An Error Occured During Updating Broadband Payment Year: The changes you requested to the table were not successful because they would create duplicate values in the index, primary key, or relationship. Change the data in the field or fields that contain duplicate data, remove the index, or redefine the index to permit duplicate entries and try again.
+[2023-03-05 12:05:32] An error occurred: The INSERT INTO statement contains the following unknown field name: 'TV_CONNECTION_ID'. Make sure you have typed the name correctly, and try the operation again.
+[2023-03-05 14:22:39] An Error Occoured During Payment: InvalidArgument=Value of '0' is not valid for 'index'. (Parameter 'index')
+Actual value was 0.
+[2023-03-05 14:33:24] An Error Occured While Fetching Data: No value given for one or more required parameters.
+[2023-03-05 20:33:43] An Error Occured While Fetching CRF or Email: No data exists for the row/column.

@@ -307,7 +307,7 @@ Public Class CUSTOMER_DASHBOARD_PANEL
         Dim myFont2 As System.Drawing.Font
         myFont2 = New System.Drawing.Font("Arial", 12, FontStyle.Bold Or FontStyle.Bold)
         BROADBAND_EXPIRY.Font = myFont2
-        BROADBAND_EXPIRY.Text = "BROADBAND_EXPIRY DATE"
+        BROADBAND_EXPIRY.Text = "BROADBAND EXPIRY DATE"
     End Sub
     Private Sub BROADBAND_DUE_AMOUNT_MOUSEHOVER(sender As Object, e As EventArgs) Handles BROADBAND_DUE_AMOUNT.MouseHover
         BROADBAND_DUE_AMOUNT.Image = Nothing

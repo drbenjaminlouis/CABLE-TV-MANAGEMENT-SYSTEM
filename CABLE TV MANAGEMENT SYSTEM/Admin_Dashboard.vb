@@ -1,4 +1,10 @@
 ﻿Public Class Admin_Dashboard
+    Public Sub New()
+        ' This call is required by the designer.
+        InitializeComponent()
+        AddHandler MyBase.Load, AddressOf Admin_Dashboard_Load_1
+        ' Add any initialization after the InitializeComponent() call.
+    End Sub
     Public flag As Integer
     'Declaration for ChildForm'
     Private CurrentChildFrom As Form
@@ -28,11 +34,11 @@
         OpenChildForm(New Change_Password)
     End Sub
 
-    Private Sub COLLECT_PAYMENT_BTN_Click_1(sender As Object, e As EventArgs) Handles COLLECT_PAYMENT_BTN.Click
+    Public Sub COLLECT_PAYMENT_BTN_Click_1(sender As Object, e As EventArgs)
         OpenChildForm(New Collect_Payment_Admin)
     End Sub
 
-    Private Sub ADD_CUST_BTN_Click_1(sender As Object, e As EventArgs) Handles ADD_CUST_BTN.Click
+    Private Sub ADD_CUST_BTN_Click_1(sender As Object, e As EventArgs)
         OpenChildForm(New add_customer)
     End Sub
 
@@ -40,7 +46,7 @@
         OpenChildForm(New Remove_Customer)
     End Sub
 
-    Private Sub CUST_DETAILS_BTN_Click_1(sender As Object, e As EventArgs) Handles CUST_DETAILS_BTN.Click
+    Private Sub CUST_DETAILS_BTN_Click_1(sender As Object, e As EventArgs)
         OpenChildForm(New CUSTOMER_DETAILS_NEW)
     End Sub
 
@@ -58,10 +64,10 @@
     Private Sub PAYMENT_DETAILS_BTN_Click_1(sender As Object, e As EventArgs)
         OpenChildForm(New Payment_Details)
     End Sub
-    Private Sub BROADBAND_CONNECTION_REPORT_BTN_Click(sender As Object, e As EventArgs) Handles BROADBAND_CONNECTION_REPORT_BTN.Click
+    Private Sub BROADBAND_CONNECTION_REPORT_BTN_Click(sender As Object, e As EventArgs)
         OpenChildForm(New BROADBAND_CONNECTION_REPORT)
     End Sub
-    Private Sub Admin_Dashboard_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Admin_Dashboard_Load_1(sender As Object, e As EventArgs)
         App_Name.Text = app_name_text
         OpenChildForm(New Admin_Dashboard_Panel)
         Payment_Sync.Payment_Sync()

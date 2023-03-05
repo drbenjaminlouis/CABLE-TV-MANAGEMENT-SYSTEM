@@ -1,9 +1,7 @@
 ﻿Imports System.Data.OleDb
 Imports System.Drawing.Printing
 Imports System.IO
-Imports System.Security.Cryptography
-Imports System.Media
-Imports System.Security.Policy
+Imports System.Text.RegularExpressions
 
 Public Class Collect_Payment_Admin
 
@@ -58,6 +56,7 @@ Public Class Collect_Payment_Admin
         REFERANCE_NO_LABEL.Visible = True
         PRINT_BTN.Visible = False
         INVOICE_NUMBER_TEXTBOX.Text = invoice_no
+        AddHandler PRINT_BTN.Click, AddressOf PRINT_BTN_Click
     End Sub
 
     'Method For Updating Pending Amounts 
@@ -175,86 +174,86 @@ Public Class Collect_Payment_Admin
                 CUST_PENDING_AMOUNT_TEXTBOX.Clear()
                 'Try
                 Using con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-                        con.Open()
-                        'Query for selecting months which are not paid 
-                        Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
-                                           "IIF([february]='Not Paid',1,0) AS february, " &
-                                           "IIF([march]='Not Paid',1,0) AS march, " &
-                                           "IIF([april]='Not Paid',1,0) AS april, " &
-                                           "IIF([may]='Not Paid',1,0) AS may, " &
-                                           "IIF([june]='Not Paid',1,0) AS june, " &
-                                           "IIF([july]='Not Paid',1,0) AS july, " &
-                                           "IIF([august]='Not Paid',1,0) AS august, " &
-                                           "IIF([september]='Not Paid',1,0) AS september, " &
-                                           "IIF([october]='Not Paid',1,0) AS october, " &
-                                            "IIF([november]='Not Paid',1,0) AS november, " &
-                                            "IIF([december]='Not Paid',1,0) AS december " &
+                    con.Open()
+                    'Query for selecting months which are not paid 
+                    Dim query As String = "SELECT IIF([january]='Not Paid',1,0) AS january, " &
+"IIF([february]='Not Paid',1,0) AS february, " &
+"IIF([march]='Not Paid',1,0) AS march, " &
+"IIF([april]='Not Paid',1,0) AS april, " &
+"IIF([may]='Not Paid',1,0) AS may, " &
+"IIF([june]='Not Paid',1,0) AS june, " &
+"IIF([july]='Not Paid',1,0) AS july, " &
+"IIF([august]='Not Paid',1,0) AS august, " &
+"IIF([september]='Not Paid',1,0) AS september, " &
+"IIF([october]='Not Paid',1,0) AS october, " &
+"IIF([november]='Not Paid',1,0) AS november, " &
+"IIF([december]='Not Paid',1,0) AS december " &
                                             "FROM BROADBAND_PAYMENT_DETAILS " &
                                             "WHERE CRF=@CRF AND PAYMENT_YEAR=@YEAR"
 
-                        Using command As New OleDbCommand(query, con)
-                            command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
-                            command.Parameters.AddWithValue("@YEAR", PAYMENT_YEAR.SelectedItem)
-                            Dim reader As OleDbDataReader = command.ExecuteReader()
-                            Dim pendingPayments As Integer = 0
-                            ' Check the value of each month and add the corresponding month name to the ComboBox if it's not paid and update pending amount.
-                            If reader.HasRows Then
-                                reader.Read()
-                                If reader("january") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("JANUARY")
-                                    pendingPayments += 250
-                                End If
-                                If reader("february") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("FEBRUARY")
-                                    pendingPayments += 250
-                                End If
-                                If reader("march") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("MARCH")
-                                    pendingPayments += 250
-                                End If
-                                If reader("april") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("APRIL")
-                                    pendingPayments += 250
-                                End If
-                                If reader("may") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("MAY")
-                                    pendingPayments += 250
-                                End If
-                                If reader("june") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("JUNE")
-                                    pendingPayments += 250
-                                End If
-                                If reader("july") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("JULY")
-                                    pendingPayments += 250
-                                End If
-                                If reader("august") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("AUGUST")
-                                    pendingPayments += 250
-                                End If
-                                If reader("september") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("SEPTEMBER")
-                                    pendingPayments += 250
-                                End If
-                                If reader("october") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("OCTOBER")
-                                    pendingPayments += 250
-                                End If
-                                If reader("november") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("NOVEMBER")
-                                    pendingPayments += 250
-                                End If
-                                If reader("december") = 1 Then
-                                    PAYMENT_MONTH_LISTBOX.Items.Add("DECEMBER")
-                                    pendingPayments += 250
-                                End If
+                    Using command As New OleDbCommand(query, con)
+                        command.Parameters.AddWithValue("@CRF", CUST_CRF_TEXTBOX.Text)
+                        command.Parameters.AddWithValue("@YEAR", PAYMENT_YEAR.SelectedItem)
+                        Dim reader As OleDbDataReader = command.ExecuteReader()
+                        Dim pendingPayments As Integer = 0
+                        ' Check the value of each month and add the corresponding month name to the ComboBox if it's not paid and update pending amount.
+                        If reader.HasRows Then
+                            reader.Read()
+                            If reader("january") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("JANUARY")
+                                pendingPayments += 250
                             End If
-                            'Assigning value pendingpayments to pending amount textbox
-                            CUST_PENDING_AMOUNT_TEXTBOX.Text = pendingPayments
-                        End Using
-                        con.Close()
+                            If reader("february") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("FEBRUARY")
+                                pendingPayments += 250
+                            End If
+                            If reader("march") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("MARCH")
+                                pendingPayments += 250
+                            End If
+                            If reader("april") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("APRIL")
+                                pendingPayments += 250
+                            End If
+                            If reader("may") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("MAY")
+                                pendingPayments += 250
+                            End If
+                            If reader("june") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("JUNE")
+                                pendingPayments += 250
+                            End If
+                            If reader("july") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("JULY")
+                                pendingPayments += 250
+                            End If
+                            If reader("august") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("AUGUST")
+                                pendingPayments += 250
+                            End If
+                            If reader("september") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("SEPTEMBER")
+                                pendingPayments += 250
+                            End If
+                            If reader("october") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("OCTOBER")
+                                pendingPayments += 250
+                            End If
+                            If reader("november") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("NOVEMBER")
+                                pendingPayments += 250
+                            End If
+                            If reader("december") = 1 Then
+                                PAYMENT_MONTH_LISTBOX.Items.Add("DECEMBER")
+                                pendingPayments += 250
+                            End If
+                        End If
+                        'Assigning value pendingpayments to pending amount textbox
+                        CUST_PENDING_AMOUNT_TEXTBOX.Text = pendingPayments
                     End Using
-                    'Catch ex As Exception
+                    con.Close()
+                End Using
+                'Catch ex As Exception
                 'If An Exception Occured, Updating It In Log File And Showing A Message
                 ' LogError("An Error Occured While Updating Broadband Pending Payments" & ex.Message)
                 ' MessageBox.Show("An Error Occured : Check Log For More Details", "ALERT")
@@ -348,6 +347,10 @@ Public Class Collect_Payment_Admin
         printDialog.Document = printDoc
         If printDialog.ShowDialog() = DialogResult.OK Then
             printDoc.Print()
+        Else
+            If DialogResult.Cancel Then
+                PRINT_BTN.Visible = False
+            End If
         End If
     End Sub
     'Method For Clearing All Values
@@ -511,12 +514,26 @@ Public Class Collect_Payment_Admin
         'Clearing All Values
         CUST_CRF_TEXTBOX.Clear()
         clearAll()
+        generateInvoice()
     End Sub
     Private Sub COLLECT_BTN_Click(sender As Object, e As EventArgs) Handles COLLECT_BTN.Click
         If AMOUNT.Text = "" Then
             ErrorAlert.Play()
             MessageBox.Show("Enter Amount.", "ALERT")
             AMOUNT.Focus()
+        ElseIf PAYMENT_YEAR.SelectedIndex = -1 Then
+            ErrorAlert.Play()
+            MessageBox.Show("Select Year.", "ALERT")
+        ElseIf SERVICE_COMBOBOX.SelectedIndex = -1 Then
+            ErrorAlert.Play()
+            MessageBox.Show("Select Service.", "ALERT")
+        ElseIf CUST_PENDING_AMOUNT_TEXTBOX.Text = "" Then
+
+        ElseIf CUST_PENDING_AMOUNT_TEXTBOX.Text = "0" And PAYMENT_MONTH_LISTBOX.Items.Count = 0 And AMOUNT.Text = "250" Then
+            ErrorAlert.Play()
+            MessageBox.Show("You Don't Have Any Pending Amount.", "ALERT")
+            AMOUNT.Clear()
+            REFERANCE_NO.Clear()
         ElseIf CUST_PENDING_AMOUNT_TEXTBOX.Text = "0" And AMOUNT.Text = "" Then
             ErrorAlert.Play()
             MessageBox.Show("Please Choose Correct Payment Year.", "ALERT")
@@ -646,7 +663,7 @@ Public Class Collect_Payment_Admin
                                         Dim invoiceNumber As String = invoice_no
                                         Dim invoicesFolder As String = invoicepath
                                         Dim filePath As String = Path.Combine(invoicesFolder, invoiceNumber & ".pdf")
-                                        Invoice_Sender.Email(email_to, "PAYMENT CONFIRMATION", filePath, cust_name, pending_amt)
+                                        Invoice_Sender.Email(email_to, "PAYMENT CONFIRMATION", filePath, cust_name, pending_amt, AMOUNT.Text, service, payment_mode)
                                     End If
                                     'COMMITTING ALL THE TRANSACTIONS
                                     transaction.Commit()
@@ -655,7 +672,20 @@ Public Class Collect_Payment_Admin
                                     SuccessAlert.Play()
                                     MessageBox.Show("Payment Successful", "ALERT")
                                     'AFTER SUCCESSFULL PAYMENT, PRINT BUTTON BECOMES VISIBLE
-                                    PRINT_BTN.Visible = True
+                                    Dim result As DialogResult = MessageBox2.Show("Do You Want To Print The Bill?", "Print Bill")
+                                    If result = DialogResult.Yes Then
+                                        PRINT_BTN.Visible = True
+                                        PRINT_BTN.PerformClick()
+                                        INVOICE_NUMBER_TEXTBOX.Text = generateInvoice()
+                                        SEARCH_BTN.PerformClick()
+                                    Else
+                                        If result = DialogResult.No Then
+                                            INVOICE_NUMBER_TEXTBOX.Text = generateInvoice()
+                                            PRINT_BTN.Visible = False
+                                            SEARCH_BTN.PerformClick()
+                                        End If
+                                    End If
+
                                 Catch ex As Exception
                                     'IF ANY ERROR OCCURED TRANSACTION IS ROLLBACKED AND ADD THE ERROR MESSAGE TO LOG
                                     transaction.Rollback()
@@ -677,7 +707,10 @@ Public Class Collect_Payment_Admin
 
     Private Sub CUST_CRF_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_CRF_TEXTBOX.TextChanged
         If CUST_CRF_TEXTBOX.Text = "" Then
+            AMOUNT.ReadOnly = True
             clearAll()
+        Else
+            AMOUNT.ReadOnly = False
         End If
     End Sub
     Private Sub CUST_PENDING_AMOUNT_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_PENDING_AMOUNT_TEXTBOX.TextChanged
@@ -699,7 +732,7 @@ Public Class Collect_Payment_Admin
     End Sub
     'Code For Automatically Changing Pending Amount Based On Amount Paying
     Private Sub AMOUNT_LOSTFOCUS(sender As Object, e As EventArgs) Handles AMOUNT.LostFocus
-        If Not AMOUNT.Text = "" Then
+        If Not AMOUNT.Text = "" And Not CUST_PENDING_AMOUNT_TEXTBOX.Text = "" Then
             If Not (CInt(AMOUNT.Text) < 250) And Not CUST_PENDING_AMOUNT_TEXTBOX.Text = "0" And Not AMOUNT.Text = "" And Not (CInt(AMOUNT.Text) > CInt(CUST_PENDING_AMOUNT_TEXTBOX.Text)) Then
                 CUST_PENDING_AMOUNT_TEXTBOX.Text = CUST_PENDING_AMOUNT_TEXTBOX.Text - AMOUNT.Text
             ElseIf CUST_PENDING_AMOUNT_TEXTBOX.Text < AMOUNT.Text And Not (AMOUNT.Text = "250" And CUST_PENDING_AMOUNT_TEXTBOX.Text = "0") Then
@@ -717,6 +750,16 @@ Public Class Collect_Payment_Admin
         ' Allow only numbers, the Backspace key, and the Tab key
         If (Not Char.IsDigit(e.KeyChar)) AndAlso (e.KeyChar <> ChrW(Keys.Back)) AndAlso (e.KeyChar <> ChrW(Keys.Tab)) Then
             e.Handled = True
+        End If
+    End Sub
+    Private Sub CUST_EMAIL_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_EMAIL_TEXTBOX.Leave
+        If CUST_EMAIL_TEXTBOX.Text = "" Then
+        Else
+            Dim emailRegex As New Regex("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+            If Not emailRegex.IsMatch(CUST_EMAIL_TEXTBOX.Text) Then
+                MessageBox.Show("Invalid email address. Please enter a valid email address.", "ALERT")
+                CUST_EMAIL_TEXTBOX.Clear()
+            End If
         End If
     End Sub
 End Class

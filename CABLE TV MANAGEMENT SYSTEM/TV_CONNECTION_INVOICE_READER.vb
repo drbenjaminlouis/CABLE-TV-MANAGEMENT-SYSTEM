@@ -29,7 +29,7 @@ Public Class TV_CONNECTION_INVOICE_READER
         ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private Sub TV_CONNECTION_INVOICE_READER_Load(sender As Object, e As EventArgs)
-        PDF_VIEWER.Source = New Uri("file:///C:/Users/abyjo/Desktop/SA.HTML")
+        PDF_VIEWER.Source = New Uri("file:///" & FileNotFound)
         If Not UserName = Nothing Then
             Dim connection As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
             connection.Open()
@@ -192,6 +192,6 @@ Public Class TV_CONNECTION_INVOICE_READER
     End Sub
 
     Private Sub MONTH_COMBOBOX_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MONTH_COMBOBOX.SelectedIndexChanged
-        PDF_VIEWER.Source = New Uri("file:///C:/Users/abyjo/Desktop/SA.HTML")
+        PDF_VIEWER.Source = New Uri("file:///" & FileNotFound)
     End Sub
 End Class
