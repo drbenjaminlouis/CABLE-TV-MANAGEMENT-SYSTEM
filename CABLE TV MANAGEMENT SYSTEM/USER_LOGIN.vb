@@ -3,14 +3,19 @@
 Public Class USER_LOGIN
     Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
     Dim dr As OleDbDataReader
+    Private Sub USER_LOGIN_LOAD(sender As Object, e As EventArgs) Handles MyBase.Load
+        Module1.LoginType = "CUSTOMER"
+        TV_Year_Updater()
+        BroadBand_Year_Updater()
+    End Sub
     Private Sub Guna2GradientButton2_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton2.Click
         Me.Hide()
         Admin_Login.Show()
     End Sub
-    Private Sub Guna2ControlBox2_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox2.Click
+    Private Sub Guna2ControlBox3_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox3.Click
         Application.Exit()
     End Sub
-    Private Sub Guna2ControlBox1_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox1.Click
+    Private Sub Guna2ControlBox4_Click(sender As Object, e As EventArgs) Handles Guna2ControlBox4.Click
         Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
     End Sub
 
