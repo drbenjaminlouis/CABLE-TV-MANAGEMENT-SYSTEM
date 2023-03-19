@@ -155,14 +155,14 @@ Partial Class Admin_Dashboard_Panel
         Complaints.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
         Complaints.HoverState.FillColor2 = Color.SaddleBrown
         Complaints.HoverState.ForeColor = Color.White
-        Complaints.Image = My.Resources.Resources.CASH_ICON
+        Complaints.Image = My.Resources.Resources.CASH_ICON1
         Complaints.ImageSize = New Size(50, 50)
         Complaints.Location = New Point(1029, 410)
         Complaints.Name = "Complaints"
         Complaints.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Complaints.Size = New Size(330, 153)
         Complaints.TabIndex = 35
-        Complaints.Text = "BROADBAND RECEIVED PAYMENTS"' 
+        Complaints.Text = "BROADBAND RECEIVED PAYMENTS" ' 
         ' FeedBacks
         ' 
         FeedBacks.Anchor = AnchorStyles.Bottom
@@ -180,7 +180,7 @@ Partial Class Admin_Dashboard_Panel
         FeedBacks.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         FeedBacks.FillColor = SystemColors.AppWorkspace
         FeedBacks.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        FeedBacks.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        FeedBacks.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
         FeedBacks.ForeColor = Color.White
         FeedBacks.GradientMode = Drawing2D.LinearGradientMode.Vertical
         FeedBacks.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))

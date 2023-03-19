@@ -105,7 +105,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         Pending_Payments.Font = myFont
-        Pending_Payments.Text = "₹" & PENDING_VS_RECEIVED.TV_PENDING_AMT
+        Pending_Payments.Text = "₹" & PENDING_VS_RECEIVED.TV_PENDING
     End Sub
     Private Sub Guna2GradientTileButton7_MouseLeave(sender As Object, e As EventArgs) Handles Pending_Payments.MouseLeave
         Pending_Payments.Image = My.Resources.icons8_hourglass_50
@@ -119,7 +119,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         Received_Payments.Font = myFont
-        Received_Payments.Text = "₹" & PENDING_VS_RECEIVED.TV_RECEIVED_AMT
+        Received_Payments.Text = "₹" & PENDING_VS_RECEIVED.TV_RECEIVED
     End Sub
     Private Sub Guna2GradientTileButton8_MouseLeave(sender As Object, e As EventArgs) Handles Received_Payments.MouseLeave
 
@@ -134,7 +134,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         Complaints.Font = myFont
-        Complaints.Text = "₹" & PENDING_VS_RECEIVED.BROADBAND_RECEIVED_AMT
+        Complaints.Text = "₹" & PENDING_VS_RECEIVED.BROADBAND_RECEIVED
     End Sub
     Private Sub Guna2GradientTileButton9_MouseLeave(sender As Object, e As EventArgs) Handles Complaints.MouseLeave
         Complaints.Image = My.Resources.CASH_ICON
@@ -148,7 +148,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         FeedBacks.Font = myFont
-        FeedBacks.Text = "₹" & PENDING_VS_RECEIVED.BROADBAND_PENDING_AMT
+        FeedBacks.Text = "₹" & PENDING_VS_RECEIVED.BROADBAND_PENDING
     End Sub
     Private Sub Guna2GradientTileButton10_MouseLeave(sender As Object, e As EventArgs) Handles FeedBacks.MouseLeave
         FeedBacks.Image = My.Resources.PENDING_ICON
@@ -187,11 +187,7 @@ Public Class Admin_Dashboard_Panel
 
     Private Sub Admin_Dashboard_Panel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Admin_Dashboard.Progress.Start()
-        ''Payment_Sync.Payment_Sync()
-        ''Payment_Sync.Suspender()
-        ''ACTIVATOR_BROADBAND()
-        ''Suspender_Broadband()
-        ''ACTIVATOR_TV()
+
         'Admin_Dashboard.Progress.Stop()
 
         Try
