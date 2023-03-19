@@ -54,7 +54,7 @@ Public Class TV_CONNECTION_REPORT
                             "FROM ((TV_PAYMENT_DETAILS " &
                             "LEFT JOIN TV_CONNECTION_DETAILS ON TV_PAYMENT_DETAILS.CRF = TV_CONNECTION_DETAILS.CRF)" &
                             "LEFT JOIN CUSTOMER_DETAILS ON TV_PAYMENT_DETAILS.CRF = CUSTOMER_DETAILS.CRF)" &
-                            "WHERE TV_PAYMENT_DETAILS.PAYMENT_YEAR = @YEAR AND TV_PAYMENT_DETAILS.[" & MONTH_NAME & "]=@STATUS;"
+                            "WHERE TV_PAYMENT_DETAILS.PAYMENT_YEAR = @YEAR AND TV_PAYMENT_DETAILS.[" & MONTH_NAME & "]=@STATUS ORDER BY CUSTOMER_DETAILS.CRF ASC;"
         Dim adapter As New OleDbDataAdapter(query, connection)
         adapter.SelectCommand.Parameters.AddWithValue("@YEAR", YEAR_COMBOBOX.SelectedItem)
         adapter.SelectCommand.Parameters.AddWithValue("@STATUS", SORT_COMBOBOX.SelectedItem)
