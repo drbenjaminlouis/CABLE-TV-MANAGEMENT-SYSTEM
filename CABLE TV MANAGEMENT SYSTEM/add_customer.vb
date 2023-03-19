@@ -472,4 +472,12 @@ Public Class add_customer
             MessageBox2.Show("Only Letters Are Allowed.", "ALERT")
         End If
     End Sub
+
+    Private Sub CUST_MOBILE_TEXTBOX_TextChanged(sender As Object, e As EventArgs) Handles CUST_MOBILE_TEXTBOX.Leave
+        If Not CUST_MOBILE_TEXTBOX.Text = "" Then
+            If CUST_MOBILE_TEXTBOX.Text.Count < 10 Then
+                MessageBox2.Show("Enter Correct Mobile Number.", "ALERT")
+            End If
+        End If
+    End Sub
 End Class
