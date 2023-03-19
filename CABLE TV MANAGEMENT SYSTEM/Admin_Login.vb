@@ -25,6 +25,17 @@ Public Class Admin_Login
                     Module1.LoginType = "ADMIN"
                     Me.Hide()
                     Admin_Dashboard.Show()
+                    Admin_Dashboard.DASHBOARD_BTN.PerformClick()
+                    Dim command As New OleDbCommand("SELECT COUNT(CRF) FROM CUST_COMPLAINTS WHERE R_STATUS=@STATUS", conn)
+                    command.Parameters.AddWithValue("@RSTATUS", "UNREAD")
+                    Dim val As Integer = 0
+                    val = command.ExecuteScalar
+                    If val > 0 Then
+                        Admin_Dashboard.NOTIFICATION_ICON.Visible = True
+                        Admin_Dashboard.NOTIFICATION_ICON.Text = val
+                    Else
+                        Admin_Dashboard.NOTIFICATION_ICON.Visible = False
+                    End If
                 Else
                     MessageBox1.Show("", "Invalid Username Or Password")
                     USERNAME_TEXTBOX.Clear()
