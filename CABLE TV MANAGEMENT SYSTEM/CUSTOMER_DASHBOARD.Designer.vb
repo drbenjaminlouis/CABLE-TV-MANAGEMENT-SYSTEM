@@ -23,8 +23,8 @@ Partial Class CUSTOMER_DASHBOARD
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(CUSTOMER_DASHBOARD))
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -46,14 +46,17 @@ Partial Class CUSTOMER_DASHBOARD
         Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        COMPLAINT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         Label4 = New Label()
         BROADBAND_CONNECTION_REPORT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
         TV_CONNECTION_REPORT_BTN = New Guna.UI2.WinForms.Guna2GradientButton()
@@ -92,6 +95,7 @@ Partial Class CUSTOMER_DASHBOARD
         Guna2Panel2.AutoSize = True
         Guna2Panel2.AutoSizeMode = AutoSizeMode.GrowAndShrink
         Guna2Panel2.BackColor = Color.Transparent
+        Guna2Panel2.Controls.Add(COMPLAINT_BTN)
         Guna2Panel2.Controls.Add(Label4)
         Guna2Panel2.Controls.Add(BROADBAND_CONNECTION_REPORT_BTN)
         Guna2Panel2.Controls.Add(TV_CONNECTION_REPORT_BTN)
@@ -112,20 +116,52 @@ Partial Class CUSTOMER_DASHBOARD
         Guna2Panel2.Controls.Add(Guna2PictureBox2)
         Guna2Panel2.Controls.Add(Label1)
         Guna2Panel2.Controls.Add(App_Name)
-        Guna2Panel2.CustomizableEdges = CustomizableEdges21
+        Guna2Panel2.CustomizableEdges = CustomizableEdges23
         Guna2Panel2.Dock = DockStyle.Left
         Guna2Panel2.Location = New Point(0, 0)
         Guna2Panel2.Name = "Guna2Panel2"
-        Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        Guna2Panel2.Size = New Size(322, 1063)
+        Guna2Panel2.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Guna2Panel2.Size = New Size(323, 1063)
         Guna2Panel2.TabIndex = 2
+        ' 
+        ' COMPLAINT_BTN
+        ' 
+        COMPLAINT_BTN.Animated = True
+        COMPLAINT_BTN.BorderRadius = 10
+        COMPLAINT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
+        COMPLAINT_BTN.Cursor = Cursors.Hand
+        COMPLAINT_BTN.CustomizableEdges = CustomizableEdges1
+        COMPLAINT_BTN.DisabledState.BorderColor = Color.DarkGray
+        COMPLAINT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
+        COMPLAINT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        COMPLAINT_BTN.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        COMPLAINT_BTN.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        COMPLAINT_BTN.FillColor = Color.Black
+        COMPLAINT_BTN.FillColor2 = Color.Black
+        COMPLAINT_BTN.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        COMPLAINT_BTN.ForeColor = Color.White
+        COMPLAINT_BTN.HoverState.FillColor = Color.Green
+        COMPLAINT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
+        COMPLAINT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
+        COMPLAINT_BTN.HoverState.ForeColor = Color.White
+        COMPLAINT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image"), Image)
+        COMPLAINT_BTN.Image = CType(resources.GetObject("COMPLAINT_BTN.Image"), Image)
+        COMPLAINT_BTN.ImageAlign = HorizontalAlignment.Left
+        COMPLAINT_BTN.Location = New Point(3, 278)
+        COMPLAINT_BTN.Margin = New Padding(0)
+        COMPLAINT_BTN.Name = "COMPLAINT_BTN"
+        COMPLAINT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        COMPLAINT_BTN.Size = New Size(315, 45)
+        COMPLAINT_BTN.TabIndex = 39
+        COMPLAINT_BTN.Text = "FILE COMPLAINT"
+        COMPLAINT_BTN.TextAlign = HorizontalAlignment.Left
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label4.ForeColor = Color.Silver
-        Label4.Location = New Point(4, 475)
+        Label4.Location = New Point(7, 521)
         Label4.Name = "Label4"
         Label4.Size = New Size(99, 25)
         Label4.TabIndex = 38
@@ -136,7 +172,7 @@ Partial Class CUSTOMER_DASHBOARD
         BROADBAND_CONNECTION_REPORT_BTN.BorderRadius = 10
         BROADBAND_CONNECTION_REPORT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         BROADBAND_CONNECTION_REPORT_BTN.Cursor = Cursors.Hand
-        BROADBAND_CONNECTION_REPORT_BTN.CustomizableEdges = CustomizableEdges1
+        BROADBAND_CONNECTION_REPORT_BTN.CustomizableEdges = CustomizableEdges3
         BROADBAND_CONNECTION_REPORT_BTN.DisabledState.BorderColor = Color.DarkGray
         BROADBAND_CONNECTION_REPORT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         BROADBAND_CONNECTION_REPORT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -150,13 +186,13 @@ Partial Class CUSTOMER_DASHBOARD
         BROADBAND_CONNECTION_REPORT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
         BROADBAND_CONNECTION_REPORT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
         BROADBAND_CONNECTION_REPORT_BTN.HoverState.ForeColor = Color.White
-        BROADBAND_CONNECTION_REPORT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image"), Image)
+        BROADBAND_CONNECTION_REPORT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image1"), Image)
         BROADBAND_CONNECTION_REPORT_BTN.Image = CType(resources.GetObject("BROADBAND_CONNECTION_REPORT_BTN.Image"), Image)
         BROADBAND_CONNECTION_REPORT_BTN.ImageAlign = HorizontalAlignment.Left
-        BROADBAND_CONNECTION_REPORT_BTN.Location = New Point(3, 555)
+        BROADBAND_CONNECTION_REPORT_BTN.Location = New Point(6, 601)
         BROADBAND_CONNECTION_REPORT_BTN.Margin = New Padding(0)
         BROADBAND_CONNECTION_REPORT_BTN.Name = "BROADBAND_CONNECTION_REPORT_BTN"
-        BROADBAND_CONNECTION_REPORT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        BROADBAND_CONNECTION_REPORT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         BROADBAND_CONNECTION_REPORT_BTN.Size = New Size(316, 45)
         BROADBAND_CONNECTION_REPORT_BTN.TabIndex = 37
         BROADBAND_CONNECTION_REPORT_BTN.Text = "BROADBAND CONNECTION"
@@ -168,7 +204,7 @@ Partial Class CUSTOMER_DASHBOARD
         TV_CONNECTION_REPORT_BTN.BorderRadius = 10
         TV_CONNECTION_REPORT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         TV_CONNECTION_REPORT_BTN.Cursor = Cursors.Hand
-        TV_CONNECTION_REPORT_BTN.CustomizableEdges = CustomizableEdges3
+        TV_CONNECTION_REPORT_BTN.CustomizableEdges = CustomizableEdges5
         TV_CONNECTION_REPORT_BTN.DisabledState.BorderColor = Color.DarkGray
         TV_CONNECTION_REPORT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         TV_CONNECTION_REPORT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -182,13 +218,13 @@ Partial Class CUSTOMER_DASHBOARD
         TV_CONNECTION_REPORT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
         TV_CONNECTION_REPORT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
         TV_CONNECTION_REPORT_BTN.HoverState.ForeColor = Color.White
-        TV_CONNECTION_REPORT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image1"), Image)
+        TV_CONNECTION_REPORT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image2"), Image)
         TV_CONNECTION_REPORT_BTN.Image = CType(resources.GetObject("TV_CONNECTION_REPORT_BTN.Image"), Image)
         TV_CONNECTION_REPORT_BTN.ImageAlign = HorizontalAlignment.Left
-        TV_CONNECTION_REPORT_BTN.Location = New Point(4, 510)
+        TV_CONNECTION_REPORT_BTN.Location = New Point(7, 556)
         TV_CONNECTION_REPORT_BTN.Margin = New Padding(0)
         TV_CONNECTION_REPORT_BTN.Name = "TV_CONNECTION_REPORT_BTN"
-        TV_CONNECTION_REPORT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges4
+        TV_CONNECTION_REPORT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         TV_CONNECTION_REPORT_BTN.Size = New Size(316, 45)
         TV_CONNECTION_REPORT_BTN.TabIndex = 36
         TV_CONNECTION_REPORT_BTN.Text = "TV CONNECTION"
@@ -200,7 +236,7 @@ Partial Class CUSTOMER_DASHBOARD
         COLLECT_PAYMENT_CUST_BTN.BorderRadius = 10
         COLLECT_PAYMENT_CUST_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         COLLECT_PAYMENT_CUST_BTN.Cursor = Cursors.Hand
-        COLLECT_PAYMENT_CUST_BTN.CustomizableEdges = CustomizableEdges5
+        COLLECT_PAYMENT_CUST_BTN.CustomizableEdges = CustomizableEdges7
         COLLECT_PAYMENT_CUST_BTN.DisabledState.BorderColor = Color.DarkGray
         COLLECT_PAYMENT_CUST_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         COLLECT_PAYMENT_CUST_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -220,7 +256,7 @@ Partial Class CUSTOMER_DASHBOARD
         COLLECT_PAYMENT_CUST_BTN.Location = New Point(4, 233)
         COLLECT_PAYMENT_CUST_BTN.Margin = New Padding(0)
         COLLECT_PAYMENT_CUST_BTN.Name = "COLLECT_PAYMENT_CUST_BTN"
-        COLLECT_PAYMENT_CUST_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges6
+        COLLECT_PAYMENT_CUST_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges8
         COLLECT_PAYMENT_CUST_BTN.Size = New Size(316, 45)
         COLLECT_PAYMENT_CUST_BTN.TabIndex = 35
         COLLECT_PAYMENT_CUST_BTN.Text = "MAKE PAYMENT"
@@ -232,7 +268,7 @@ Partial Class CUSTOMER_DASHBOARD
         CUST_EDIT_BTN.BorderRadius = 10
         CUST_EDIT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         CUST_EDIT_BTN.Cursor = Cursors.Hand
-        CUST_EDIT_BTN.CustomizableEdges = CustomizableEdges7
+        CUST_EDIT_BTN.CustomizableEdges = CustomizableEdges9
         CUST_EDIT_BTN.DisabledState.BorderColor = Color.DarkGray
         CUST_EDIT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         CUST_EDIT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -249,10 +285,10 @@ Partial Class CUSTOMER_DASHBOARD
         CUST_EDIT_BTN.HoverState.Image = My.Resources.Resources.icons8_edit_property_40__2_2
         CUST_EDIT_BTN.Image = My.Resources.Resources.icons8_edit_property_40__2_1
         CUST_EDIT_BTN.ImageAlign = HorizontalAlignment.Left
-        CUST_EDIT_BTN.Location = New Point(3, 374)
+        CUST_EDIT_BTN.Location = New Point(6, 420)
         CUST_EDIT_BTN.Margin = New Padding(0)
         CUST_EDIT_BTN.Name = "CUST_EDIT_BTN"
-        CUST_EDIT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        CUST_EDIT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges10
         CUST_EDIT_BTN.Size = New Size(316, 45)
         CUST_EDIT_BTN.TabIndex = 28
         CUST_EDIT_BTN.Text = "EDIT DETAILS"
@@ -264,7 +300,7 @@ Partial Class CUSTOMER_DASHBOARD
         CHANGE_PASS_BTN.BorderRadius = 10
         CHANGE_PASS_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         CHANGE_PASS_BTN.Cursor = Cursors.Hand
-        CHANGE_PASS_BTN.CustomizableEdges = CustomizableEdges9
+        CHANGE_PASS_BTN.CustomizableEdges = CustomizableEdges11
         CHANGE_PASS_BTN.DisabledState.BorderColor = Color.DarkGray
         CHANGE_PASS_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         CHANGE_PASS_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -284,7 +320,7 @@ Partial Class CUSTOMER_DASHBOARD
         CHANGE_PASS_BTN.Location = New Point(3, 188)
         CHANGE_PASS_BTN.Margin = New Padding(0)
         CHANGE_PASS_BTN.Name = "CHANGE_PASS_BTN"
-        CHANGE_PASS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        CHANGE_PASS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         CHANGE_PASS_BTN.Size = New Size(316, 45)
         CHANGE_PASS_BTN.TabIndex = 33
         CHANGE_PASS_BTN.Text = "CHANGE PASSWORD"
@@ -341,7 +377,7 @@ Partial Class CUSTOMER_DASHBOARD
         LOGOUT_BTN.BorderRadius = 10
         LOGOUT_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         LOGOUT_BTN.Cursor = Cursors.Hand
-        LOGOUT_BTN.CustomizableEdges = CustomizableEdges11
+        LOGOUT_BTN.CustomizableEdges = CustomizableEdges13
         LOGOUT_BTN.DisabledState.BorderColor = Color.DarkGray
         LOGOUT_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         LOGOUT_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -355,13 +391,13 @@ Partial Class CUSTOMER_DASHBOARD
         LOGOUT_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(230), CByte(5), CByte(5))
         LOGOUT_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
         LOGOUT_BTN.HoverState.ForeColor = Color.White
-        LOGOUT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image2"), Image)
+        LOGOUT_BTN.HoverState.Image = CType(resources.GetObject("resource.Image3"), Image)
         LOGOUT_BTN.Image = CType(resources.GetObject("LOGOUT_BTN.Image"), Image)
         LOGOUT_BTN.ImageAlign = HorizontalAlignment.Left
         LOGOUT_BTN.Location = New Point(1, 897)
         LOGOUT_BTN.Margin = New Padding(0)
         LOGOUT_BTN.Name = "LOGOUT_BTN"
-        LOGOUT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        LOGOUT_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges14
         LOGOUT_BTN.Size = New Size(316, 45)
         LOGOUT_BTN.TabIndex = 29
         LOGOUT_BTN.Text = "LOGOUT"
@@ -389,7 +425,7 @@ Partial Class CUSTOMER_DASHBOARD
         PAYMENT_DETAILS_BTN.BorderRadius = 10
         PAYMENT_DETAILS_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         PAYMENT_DETAILS_BTN.Cursor = Cursors.Hand
-        PAYMENT_DETAILS_BTN.CustomizableEdges = CustomizableEdges13
+        PAYMENT_DETAILS_BTN.CustomizableEdges = CustomizableEdges15
         PAYMENT_DETAILS_BTN.DisabledState.BorderColor = Color.DarkGray
         PAYMENT_DETAILS_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         PAYMENT_DETAILS_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -403,13 +439,13 @@ Partial Class CUSTOMER_DASHBOARD
         PAYMENT_DETAILS_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
         PAYMENT_DETAILS_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
         PAYMENT_DETAILS_BTN.HoverState.ForeColor = Color.White
-        PAYMENT_DETAILS_BTN.HoverState.Image = CType(resources.GetObject("resource.Image3"), Image)
+        PAYMENT_DETAILS_BTN.HoverState.Image = CType(resources.GetObject("resource.Image4"), Image)
         PAYMENT_DETAILS_BTN.Image = CType(resources.GetObject("PAYMENT_DETAILS_BTN.Image"), Image)
         PAYMENT_DETAILS_BTN.ImageAlign = HorizontalAlignment.Left
-        PAYMENT_DETAILS_BTN.Location = New Point(4, 419)
+        PAYMENT_DETAILS_BTN.Location = New Point(7, 465)
         PAYMENT_DETAILS_BTN.Margin = New Padding(0)
         PAYMENT_DETAILS_BTN.Name = "PAYMENT_DETAILS_BTN"
-        PAYMENT_DETAILS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        PAYMENT_DETAILS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         PAYMENT_DETAILS_BTN.Size = New Size(316, 45)
         PAYMENT_DETAILS_BTN.TabIndex = 22
         PAYMENT_DETAILS_BTN.Text = "PAYMENT DETAILS"
@@ -421,7 +457,7 @@ Partial Class CUSTOMER_DASHBOARD
         CUST_DETAILS_BTN.BorderRadius = 10
         CUST_DETAILS_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         CUST_DETAILS_BTN.Cursor = Cursors.Hand
-        CUST_DETAILS_BTN.CustomizableEdges = CustomizableEdges15
+        CUST_DETAILS_BTN.CustomizableEdges = CustomizableEdges17
         CUST_DETAILS_BTN.DisabledState.BorderColor = Color.DarkGray
         CUST_DETAILS_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         CUST_DETAILS_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -435,13 +471,13 @@ Partial Class CUSTOMER_DASHBOARD
         CUST_DETAILS_BTN.HoverState.FillColor2 = Color.FromArgb(CByte(7), CByte(25), CByte(4))
         CUST_DETAILS_BTN.HoverState.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point)
         CUST_DETAILS_BTN.HoverState.ForeColor = Color.White
-        CUST_DETAILS_BTN.HoverState.Image = CType(resources.GetObject("resource.Image4"), Image)
+        CUST_DETAILS_BTN.HoverState.Image = CType(resources.GetObject("resource.Image5"), Image)
         CUST_DETAILS_BTN.Image = CType(resources.GetObject("CUST_DETAILS_BTN.Image"), Image)
         CUST_DETAILS_BTN.ImageAlign = HorizontalAlignment.Left
-        CUST_DETAILS_BTN.Location = New Point(1, 329)
+        CUST_DETAILS_BTN.Location = New Point(4, 375)
         CUST_DETAILS_BTN.Margin = New Padding(0)
         CUST_DETAILS_BTN.Name = "CUST_DETAILS_BTN"
-        CUST_DETAILS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        CUST_DETAILS_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         CUST_DETAILS_BTN.Size = New Size(316, 45)
         CUST_DETAILS_BTN.TabIndex = 21
         CUST_DETAILS_BTN.Text = "VIEW  DETAILS"
@@ -452,7 +488,7 @@ Partial Class CUSTOMER_DASHBOARD
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.ForeColor = Color.Silver
-        Label5.Location = New Point(0, 287)
+        Label5.Location = New Point(3, 333)
         Label5.Name = "Label5"
         Label5.Size = New Size(86, 25)
         Label5.TabIndex = 18
@@ -464,7 +500,7 @@ Partial Class CUSTOMER_DASHBOARD
         DASHBOARD_BTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton
         DASHBOARD_BTN.Checked = True
         DASHBOARD_BTN.Cursor = Cursors.Hand
-        DASHBOARD_BTN.CustomizableEdges = CustomizableEdges17
+        DASHBOARD_BTN.CustomizableEdges = CustomizableEdges19
         DASHBOARD_BTN.DisabledState.BorderColor = Color.DarkGray
         DASHBOARD_BTN.DisabledState.CustomBorderColor = Color.DarkGray
         DASHBOARD_BTN.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -484,7 +520,7 @@ Partial Class CUSTOMER_DASHBOARD
         DASHBOARD_BTN.Location = New Point(3, 143)
         DASHBOARD_BTN.Margin = New Padding(0)
         DASHBOARD_BTN.Name = "DASHBOARD_BTN"
-        DASHBOARD_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        DASHBOARD_BTN.ShadowDecoration.CustomizableEdges = CustomizableEdges20
         DASHBOARD_BTN.Size = New Size(316, 45)
         DASHBOARD_BTN.TabIndex = 13
         DASHBOARD_BTN.Text = "DASHBOARD"
@@ -495,13 +531,13 @@ Partial Class CUSTOMER_DASHBOARD
         Guna2PictureBox2.AutoRoundedCorners = True
         Guna2PictureBox2.BackgroundImageLayout = ImageLayout.Stretch
         Guna2PictureBox2.BorderRadius = 46
-        Guna2PictureBox2.CustomizableEdges = CustomizableEdges19
+        Guna2PictureBox2.CustomizableEdges = CustomizableEdges21
         Guna2PictureBox2.FillColor = Color.Transparent
         Guna2PictureBox2.Image = My.Resources.Resources.a9176696b8740c402d84b55374ea0107_w200
         Guna2PictureBox2.ImageRotate = 0F
         Guna2PictureBox2.Location = New Point(4, 0)
         Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Guna2PictureBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges22
         Guna2PictureBox2.Size = New Size(98, 94)
         Guna2PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         Guna2PictureBox2.TabIndex = 4
@@ -536,13 +572,13 @@ Partial Class CUSTOMER_DASHBOARD
         Guna2Panel1.BorderColor = Color.White
         Guna2Panel1.Controls.Add(Guna2ControlBox2)
         Guna2Panel1.Controls.Add(CLOSE_CONTROL)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges27
+        Guna2Panel1.CustomizableEdges = CustomizableEdges29
         Guna2Panel1.Dock = DockStyle.Top
         Guna2Panel1.FillColor = Color.Black
-        Guna2Panel1.Location = New Point(322, 0)
+        Guna2Panel1.Location = New Point(323, 0)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges28
-        Guna2Panel1.Size = New Size(1378, 51)
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        Guna2Panel1.Size = New Size(1377, 51)
         Guna2Panel1.TabIndex = 3
         ' 
         ' Guna2ControlBox2
@@ -551,15 +587,15 @@ Partial Class CUSTOMER_DASHBOARD
         Guna2ControlBox2.BackColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         Guna2ControlBox2.BorderThickness = 1
         Guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
-        Guna2ControlBox2.CustomizableEdges = CustomizableEdges23
+        Guna2ControlBox2.CustomizableEdges = CustomizableEdges25
         Guna2ControlBox2.Dock = DockStyle.Right
         Guna2ControlBox2.FillColor = Color.Black
         Guna2ControlBox2.HoverState.FillColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         Guna2ControlBox2.IconColor = Color.White
-        Guna2ControlBox2.Location = New Point(1248, 0)
+        Guna2ControlBox2.Location = New Point(1247, 0)
         Guna2ControlBox2.Margin = New Padding(0)
         Guna2ControlBox2.Name = "Guna2ControlBox2"
-        Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges26
         Guna2ControlBox2.Size = New Size(65, 51)
         Guna2ControlBox2.TabIndex = 3
         ' 
@@ -570,15 +606,15 @@ Partial Class CUSTOMER_DASHBOARD
         CLOSE_CONTROL.BorderColor = Color.Transparent
         CLOSE_CONTROL.BorderThickness = 1
         CLOSE_CONTROL.CustomClick = True
-        CLOSE_CONTROL.CustomizableEdges = CustomizableEdges25
+        CLOSE_CONTROL.CustomizableEdges = CustomizableEdges27
         CLOSE_CONTROL.Dock = DockStyle.Right
         CLOSE_CONTROL.FillColor = Color.Transparent
         CLOSE_CONTROL.HoverState.FillColor = Color.Red
         CLOSE_CONTROL.IconColor = Color.White
-        CLOSE_CONTROL.Location = New Point(1313, 0)
+        CLOSE_CONTROL.Location = New Point(1312, 0)
         CLOSE_CONTROL.Margin = New Padding(0)
         CLOSE_CONTROL.Name = "CLOSE_CONTROL"
-        CLOSE_CONTROL.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        CLOSE_CONTROL.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         CLOSE_CONTROL.Size = New Size(65, 51)
         CLOSE_CONTROL.TabIndex = 2
         ' 
@@ -588,16 +624,16 @@ Partial Class CUSTOMER_DASHBOARD
         PanelDesktop.BackColor = Color.Black
         PanelDesktop.Controls.Add(Progress)
         PanelDesktop.Dock = DockStyle.Fill
-        PanelDesktop.Location = New Point(322, 51)
+        PanelDesktop.Location = New Point(323, 51)
         PanelDesktop.Name = "PanelDesktop"
-        PanelDesktop.Size = New Size(1378, 1012)
+        PanelDesktop.Size = New Size(1377, 1012)
         PanelDesktop.TabIndex = 4
         ' 
         ' Progress
         ' 
         Progress.Location = New Point(581, 514)
         Progress.Name = "Progress"
-        Progress.ShadowDecoration.CustomizableEdges = CustomizableEdges29
+        Progress.ShadowDecoration.CustomizableEdges = CustomizableEdges31
         Progress.Size = New Size(90, 90)
         Progress.TabIndex = 4
         ' 
@@ -661,4 +697,5 @@ Partial Class CUSTOMER_DASHBOARD
     Friend WithEvents Progress As Guna.UI2.WinForms.Guna2ProgressIndicator
     Friend WithEvents MessageBox1 As Guna.UI2.WinForms.Guna2MessageDialog
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents COMPLAINT_BTN As Guna.UI2.WinForms.Guna2GradientButton
 End Class
