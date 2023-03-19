@@ -139,9 +139,6 @@
   <data name="openwork-1-d-unscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openwork-1-d-unscreen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PENDING_ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PENDING_ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8-add-file-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-add-file-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -246,9 +243,6 @@
   </data>
   <data name="icons8-wi-fi-off-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-wi-fi-off-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SEARCH_ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEARCH_ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-dashboard-layout-40 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-dashboard-layout-40 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -763,7 +757,7 @@
   <data name="toppng.com-and-blank-effect-transparent-600x458" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toppng.com-and-blank-effect-transparent-600x458.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CASH_ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CASH_ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SEARCH_ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SEARCH_ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

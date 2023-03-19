@@ -617,16 +617,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property CASH_ICON() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("CASH_ICON", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property complaintsicon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("complaintsicon", resourceCulture)
@@ -2030,16 +2020,6 @@ Namespace My.Resources
         Friend ReadOnly Property openwork_1_d_unscreen1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("openwork-1-d-unscreen1", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property PENDING_ICON() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("PENDING_ICON", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -247,7 +247,3 @@ Actual value was 0.
 Actual value was 0.
 [2023-03-05 14:33:24] An Error Occured While Fetching Data: No value given for one or more required parameters.
 [2023-03-05 20:33:43] An Error Occured While Fetching CRF or Email: No data exists for the row/column.
-[2023-03-17 18:09:43] An Error Occured While Registering Complaint: The changes you requested to the table were not successful because they would create duplicate values in the index, primary key, or relationship. Change the data in the field or fields that contain duplicate data, remove the index, or redefine the index to permit duplicate entries and try again.
-[2023-03-17 18:09:47] An Error Occured While Registering Complaint: The changes you requested to the table were not successful because they would create duplicate values in the index, primary key, or relationship. Change the data in the field or fields that contain duplicate data, remove the index, or redefine the index to permit duplicate entries and try again.
-[2023-03-18 13:06:21] An Error Occured While Registering Complaint: Number of query values and destination fields are not the same.
-[2023-03-18 13:09:36] An Error While Fetching Complaints Data: The table 'CUST_COMPLAINTS' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
