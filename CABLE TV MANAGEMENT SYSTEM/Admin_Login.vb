@@ -25,6 +25,28 @@ Public Class Admin_Login
                     Module1.LoginType = "ADMIN"
                     Me.Hide()
                     Admin_Dashboard.Show()
+                    Admin_Dashboard.DASHBOARD_BTN.PerformClick()
+                    Dim connection As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
+                    Try
+                        connection.Open()
+                        Dim complaint_selector As New OleDbCommand("SELECT COUNT(C_ID) FROM CUST_COMPLAINTS WHERE R_STATUS=@R_STATUS", connection)
+                        complaint_selector.Parameters.AddWithValue("@R_STATUS", "UNREAD")
+                        Dim c_val As Integer = complaint_selector.ExecuteScalar
+
+                        If c_val <= 0 Then
+                            Admin_Dashboard.NOTIFICATION_ICON.Visible = False
+                        Else
+                            Admin_Dashboard.NOTIFICATION_ICON.Visible = True
+                            Admin_Dashboard.NOTIFICATION_ICON.Text = c_val
+                        End If
+                        Payment_Sync.Suspender()
+                    Catch ex As Exception
+                        ErrorAlert.Play()
+                        LogError("An Error While Fetching Complaints Data: " & ex.Message)
+                        MessageBox1.Show("An Error Occured While Fetching Complaints Data. Check Log For More Details.", "ALERT")
+                    Finally
+                        connection.Close()
+                    End Try
                 Else
                     MessageBox1.Show("", "Invalid Username Or Password")
                     USERNAME_TEXTBOX.Clear()

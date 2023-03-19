@@ -6,6 +6,10 @@ Public Class Loading
         If MyProgress.Value = 100 Then
             Guna2ProgressIndicator1.Start()
             Payment_Sync.Payment_Sync()
+            ACTIVATOR_TV()
+            Suspender()
+            ACTIVATOR_BROADBAND()
+            Suspender_Broadband()
             Me.Hide()
             Dim log_selector As New Admin_Login
             log_selector.Show()
