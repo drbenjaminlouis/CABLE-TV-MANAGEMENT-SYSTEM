@@ -8,7 +8,7 @@ Public Class BROADBAND_CONNECTION_REPORT
     Dim currentMonth As String = DateTime.Now.ToString("MMMM").ToUpper
     Dim status_text As String = "PAID"
     Dim yearList As New List(Of Integer)
-    Private Function GetCableTVData() As DataTable
+    Private Function GetBroadbandData() As DataTable
         Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
         connection.Open()
         Dim MONTH_NAME = MONTH_COMBOBOX.SelectedItem
@@ -53,7 +53,7 @@ Public Class BROADBAND_CONNECTION_REPORT
                             "FROM ((BROADBAND_PAYMENT_DETAILS " &
                             "LEFT JOIN BROADBAND_CONNECTION_DETAILS ON BROADBAND_PAYMENT_DETAILS.CRF = BROADBAND_CONNECTION_DETAILS.CRF)" &
                             "LEFT JOIN CUSTOMER_DETAILS ON BROADBAND_PAYMENT_DETAILS.CRF = CUSTOMER_DETAILS.CRF)" &
-                            "WHERE BROADBAND_PAYMENT_DETAILS.PAYMENT_YEAR = @YEAR AND BROADBAND_PAYMENT_DETAILS.[" & MONTH_NAME & "]=@STATUS;"
+                            "WHERE BROADBAND_PAYMENT_DETAILS.PAYMENT_YEAR = @YEAR AND BROADBAND_PAYMENT_DETAILS.[" & MONTH_NAME & "]=@STATUS ORDER BY CUSTOMER_DETAILS.CRF ASC;"
         Dim adapter As New OleDbDataAdapter(query, connection)
         adapter.SelectCommand.Parameters.AddWithValue("@YEAR", YEAR_COMBOBOX.SelectedItem)
         adapter.SelectCommand.Parameters.AddWithValue("@STATUS", SORT_COMBOBOX.SelectedItem)
@@ -170,10 +170,10 @@ Public Class BROADBAND_CONNECTION_REPORT
         SORT_COMBOBOX.SelectedItem = "PAID"
 
 
-        If GetCableTVData.Rows.Count = 0 Then
+        If GetBroadbandData.Rows.Count = 0 Then
 
         Else
-            CUST_DATA_GRID.DataSource = GetCableTVData()
+            CUST_DATA_GRID.DataSource = GetBroadbandData()
             FILETYPE_COMBOBOX.Items.Clear()
             FILETYPE_COMBOBOX.Items.Add("PDF")
             FILETYPE_COMBOBOX.Items.Add("EXCEL")
@@ -238,11 +238,11 @@ Public Class BROADBAND_CONNECTION_REPORT
         ElseIf SORT_COMBOBOX.SelectedItem = "" Then
             MessageBox.Show("Please Select Sort Type.", "ALERT")
         Else
-            If GetCableTVData.Rows.Count = 0 Then
+            If GetBroadbandData.Rows.Count = 0 Then
                 CUST_DATA_GRID.DataSource = Nothing
                 MessageBox.Show("No Data Found.", "ALERT")
             Else
-                CUST_DATA_GRID.DataSource = GetCableTVData()
+                CUST_DATA_GRID.DataSource = GetBroadbandData()
                 CUST_DATA_GRID.Columns(0).Width = 100
                 CUST_DATA_GRID.Columns(0).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
                 CUST_DATA_GRID.Columns(0).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
