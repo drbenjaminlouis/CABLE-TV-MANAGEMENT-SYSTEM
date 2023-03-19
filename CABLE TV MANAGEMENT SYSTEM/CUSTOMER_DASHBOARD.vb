@@ -37,6 +37,7 @@ Public Class CUSTOMER_DASHBOARD
         AddHandler CUST_EDIT_BTN.Click, AddressOf CUST_EDIT_BTN_Click
         AddHandler TV_CONNECTION_REPORT_BTN.Click, AddressOf TV_CONNECTION_REPORT_BTN_Click
         AddHandler BROADBAND_CONNECTION_REPORT_BTN.Click, AddressOf BROADBAND_CONNECTION_REPORT_BTN_Click
+        AddHandler COMPLAINT_BTN.Click, AddressOf COMPLAINT_BTN_Click
         AddHandler CLOSE_CONTROL.Click, AddressOf CLOSE_CONTROL_Click
     End Sub
     Private Sub DASHBOARD_BTN_Click(sender As Object, e As EventArgs)
@@ -79,5 +80,9 @@ Public Class CUSTOMER_DASHBOARD
         If result = DialogResult.Yes Then
             Application.Exit()
         End If
+    End Sub
+
+    Private Sub COMPLAINT_BTN_Click(sender As Object, e As EventArgs)
+        OpenChildForm(New Complaints_user)
     End Sub
 End Class
