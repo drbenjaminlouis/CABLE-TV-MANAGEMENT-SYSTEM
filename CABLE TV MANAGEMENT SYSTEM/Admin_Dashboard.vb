@@ -1,8 +1,11 @@
-﻿Public Class Admin_Dashboard
+﻿Imports System.Data.OleDb
+Public Class Admin_Dashboard
     Public Sub New()
         ' This call is required by the designer.
         InitializeComponent()
+
         AddHandler MyBase.Load, AddressOf Admin_Dashboard_Load_1
+
         ' Add any initialization after the InitializeComponent() call.
     End Sub
     Public flag As Integer
@@ -68,9 +71,8 @@
         OpenChildForm(New BROADBAND_CONNECTION_REPORT)
     End Sub
     Private Sub Admin_Dashboard_Load_1(sender As Object, e As EventArgs)
-        App_Name.Text = app_name_text
         OpenChildForm(New Admin_Dashboard_Panel)
-        Payment_Sync.Payment_Sync()
+        App_Name.Text = app_name_text
         AddHandler DASHBOARD_BTN.Click, AddressOf DASHBOARD_BTN_Click_1
         AddHandler CHANGE_PASS_BTN.Click, AddressOf CHANGE_PASS_BTN_Click_1
         AddHandler COLLECT_PAYMENT_BTN.Click, AddressOf COLLECT_PAYMENT_BTN_Click_1
@@ -84,6 +86,7 @@
         AddHandler REMINDER_BTN.Click, AddressOf REMINDER_BTN_Click_1
         AddHandler CLOSE_CONTROL.Click, AddressOf CLOSE_CONTROL_Click_1
         AddHandler LOGOUT_BTN.Click, AddressOf LOGOUT_BTN_Click
+        AddHandler COMPLAINTS_BTN.Click, AddressOf COMPLAINTS_BTN_Click
     End Sub
     Private Sub CLOSE_CONTROL_Click_1(sender As Object, e As EventArgs)
         Dim result = MessageBox1.Show("Are You Sure You Want To Quit?", "ALERT")
@@ -98,5 +101,10 @@
             Admin_Login.Show()
             Me.Hide()
         End If
+    End Sub
+
+    Private Sub COMPLAINTS_BTN_Click(sender As Object, e As EventArgs)
+        OpenChildForm(New COMPLAINT_VIEW)
+        NOTIFICATION_ICON.Visible = False
     End Sub
 End Class
