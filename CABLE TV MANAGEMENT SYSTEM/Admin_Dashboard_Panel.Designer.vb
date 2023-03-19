@@ -27,7 +27,6 @@ Partial Class Admin_Dashboard_Panel
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Admin_Dashboard_Panel))
         Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -156,14 +155,14 @@ Partial Class Admin_Dashboard_Panel
         Complaints.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
         Complaints.HoverState.FillColor2 = Color.SaddleBrown
         Complaints.HoverState.ForeColor = Color.White
-        Complaints.Image = CType(resources.GetObject("Complaints.Image"), Image)
+        Complaints.Image = My.Resources.Resources.CASH_ICON
         Complaints.ImageSize = New Size(50, 50)
         Complaints.Location = New Point(1029, 410)
         Complaints.Name = "Complaints"
         Complaints.ShadowDecoration.CustomizableEdges = CustomizableEdges4
         Complaints.Size = New Size(330, 153)
         Complaints.TabIndex = 35
-        Complaints.Text = "COMPLAINTS"' 
+        Complaints.Text = "BROADBAND RECEIVED PAYMENTS"' 
         ' FeedBacks
         ' 
         FeedBacks.Anchor = AnchorStyles.Bottom
@@ -179,22 +178,22 @@ Partial Class Admin_Dashboard_Panel
         FeedBacks.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         FeedBacks.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         FeedBacks.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        FeedBacks.FillColor = SystemColors.ScrollBar
+        FeedBacks.FillColor = SystemColors.AppWorkspace
         FeedBacks.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
         FeedBacks.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         FeedBacks.ForeColor = Color.White
         FeedBacks.GradientMode = Drawing2D.LinearGradientMode.Vertical
         FeedBacks.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        FeedBacks.HoverState.FillColor2 = SystemColors.ScrollBar
+        FeedBacks.HoverState.FillColor2 = SystemColors.AppWorkspace
         FeedBacks.HoverState.ForeColor = Color.White
-        FeedBacks.Image = CType(resources.GetObject("FeedBacks.Image"), Image)
+        FeedBacks.Image = My.Resources.Resources.PENDING_ICON
         FeedBacks.ImageSize = New Size(50, 50)
         FeedBacks.Location = New Point(693, 410)
         FeedBacks.Name = "FeedBacks"
         FeedBacks.ShadowDecoration.CustomizableEdges = CustomizableEdges6
         FeedBacks.Size = New Size(330, 153)
         FeedBacks.TabIndex = 34
-        FeedBacks.Text = "FEEDBACKS"' 
+        FeedBacks.Text = "BROADBAND PENDING PAYMENTS"' 
         ' BroadBand_Suspended
         ' 
         BroadBand_Suspended.Anchor = AnchorStyles.Bottom
@@ -334,13 +333,13 @@ Partial Class Admin_Dashboard_Panel
         Pending_Payments.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Pending_Payments.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Pending_Payments.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Pending_Payments.FillColor = Color.LightPink
+        Pending_Payments.FillColor = Color.DarkMagenta
         Pending_Payments.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
         Pending_Payments.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Pending_Payments.ForeColor = Color.White
         Pending_Payments.GradientMode = Drawing2D.LinearGradientMode.Vertical
         Pending_Payments.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        Pending_Payments.HoverState.FillColor2 = Color.LightPink
+        Pending_Payments.HoverState.FillColor2 = Color.DarkMagenta
         Pending_Payments.HoverState.ForeColor = Color.White
         Pending_Payments.Image = My.Resources.Resources.icons8_hourglass_50
         Pending_Payments.ImageSize = New Size(50, 50)
@@ -349,7 +348,7 @@ Partial Class Admin_Dashboard_Panel
         Pending_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges16
         Pending_Payments.Size = New Size(330, 153)
         Pending_Payments.TabIndex = 28
-        Pending_Payments.Text = "PENDING PAYMENTS"' 
+        Pending_Payments.Text = "TV PENDING PAYMENTS"' 
         ' Received_Payments
         ' 
         Received_Payments.Anchor = AnchorStyles.None
@@ -365,13 +364,13 @@ Partial Class Admin_Dashboard_Panel
         Received_Payments.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Received_Payments.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Received_Payments.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Received_Payments.FillColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        Received_Payments.FillColor = Color.DarkCyan
         Received_Payments.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
         Received_Payments.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Received_Payments.ForeColor = Color.White
         Received_Payments.GradientMode = Drawing2D.LinearGradientMode.Vertical
         Received_Payments.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        Received_Payments.HoverState.FillColor2 = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        Received_Payments.HoverState.FillColor2 = Color.DarkCyan
         Received_Payments.HoverState.ForeColor = Color.White
         Received_Payments.Image = My.Resources.Resources.icons8_get_cash_50
         Received_Payments.ImageSize = New Size(50, 50)
@@ -380,7 +379,7 @@ Partial Class Admin_Dashboard_Panel
         Received_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges18
         Received_Payments.Size = New Size(330, 153)
         Received_Payments.TabIndex = 29
-        Received_Payments.Text = "RECEIVED PAYMENTS"' 
+        Received_Payments.Text = "TV RECEIVED PAYMENTS"' 
         ' Suspended_Customers
         ' 
         Suspended_Customers.Anchor = AnchorStyles.Top

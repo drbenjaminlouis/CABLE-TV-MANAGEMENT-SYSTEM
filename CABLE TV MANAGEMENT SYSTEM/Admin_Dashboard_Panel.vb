@@ -47,7 +47,7 @@ Public Class Admin_Dashboard_Panel
         Suspended_Customers.Image = My.Resources.icons8_high_importance_50
         Suspended_Customers.ImageAlign = HorizontalAlignment.Center
         Suspended_Customers.Font = New Font("Segoe UI", 12, FontStyle.Bold)
-        Suspended_Customers.Text = "SUUSPENDED CUSTOMERS"
+        Suspended_Customers.Text = "SUSPENDED CUSTOMERS"
     End Sub
     Private Sub Guna2GradientTileButton3_MouseHover(sender As Object, e As EventArgs) Handles Suspended_Customers.MouseHover
         Suspended_Customers.Image = Nothing
@@ -105,7 +105,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         Pending_Payments.Font = myFont
-        Pending_Payments.Text = "₹98000"
+        Pending_Payments.Text = "₹" & PENDING_VS_RECEIVED.TV_PENDING_AMT
     End Sub
     Private Sub Guna2GradientTileButton7_MouseLeave(sender As Object, e As EventArgs) Handles Pending_Payments.MouseLeave
         Pending_Payments.Image = My.Resources.icons8_hourglass_50
@@ -119,7 +119,7 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         Received_Payments.Font = myFont
-        Received_Payments.Text = "₹250000"
+        Received_Payments.Text = "₹" & PENDING_VS_RECEIVED.TV_RECEIVED_AMT
     End Sub
     Private Sub Guna2GradientTileButton8_MouseLeave(sender As Object, e As EventArgs) Handles Received_Payments.MouseLeave
 
@@ -134,13 +134,13 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         Complaints.Font = myFont
-        Complaints.Text = "121"
+        Complaints.Text = "₹" & PENDING_VS_RECEIVED.BROADBAND_RECEIVED_AMT
     End Sub
     Private Sub Guna2GradientTileButton9_MouseLeave(sender As Object, e As EventArgs) Handles Complaints.MouseLeave
-        Complaints.Image = My.Resources.complaintsicon
+        Complaints.Image = My.Resources.CASH_ICON
         Complaints.ImageAlign = HorizontalAlignment.Center
         Complaints.Font = New Font("Segoe UI", 12, FontStyle.Bold)
-        Complaints.Text = "COMPLAINTS"
+        Complaints.Text = "BROADBAND RECEIVED PAYMENTS"
     End Sub
     Private Sub Guna2GradientTileButton10_MouseHover(sender As Object, e As EventArgs) Handles FeedBacks.MouseHover
         FeedBacks.Image = Nothing
@@ -148,13 +148,13 @@ Public Class Admin_Dashboard_Panel
         Dim myFont As System.Drawing.Font
         myFont = New System.Drawing.Font("Arial", 20, FontStyle.Bold Or FontStyle.Bold)
         FeedBacks.Font = myFont
-        FeedBacks.Text = "10"
+        FeedBacks.Text = "₹" & PENDING_VS_RECEIVED.BROADBAND_PENDING_AMT
     End Sub
     Private Sub Guna2GradientTileButton10_MouseLeave(sender As Object, e As EventArgs) Handles FeedBacks.MouseLeave
-        FeedBacks.Image = My.Resources.icons8_feedback_50
+        FeedBacks.Image = My.Resources.PENDING_ICON
         FeedBacks.ImageAlign = HorizontalAlignment.Center
         FeedBacks.Font = New Font("Segoe UI", 12, FontStyle.Bold)
-        FeedBacks.Text = "FEEDBACKS"
+        FeedBacks.Text = "BROADBAND PENDING PAYMENTS"
     End Sub
     Private Sub Guna2GradientTileButton11_MouseHover(sender As Object, e As EventArgs) Handles BroadBand_Suspended.MouseHover
         BroadBand_Suspended.Image = Nothing
@@ -186,6 +186,14 @@ Public Class Admin_Dashboard_Panel
     End Sub
 
     Private Sub Admin_Dashboard_Panel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Admin_Dashboard.Progress.Start()
+        ''Payment_Sync.Payment_Sync()
+        ''Payment_Sync.Suspender()
+        ''ACTIVATOR_BROADBAND()
+        ''Suspender_Broadband()
+        ''ACTIVATOR_TV()
+        'Admin_Dashboard.Progress.Stop()
+
         Try
 
             Using connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
@@ -193,11 +201,11 @@ Public Class Admin_Dashboard_Panel
                 Dim sql_command1 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE TV_CONNECTION_STATUS = 'ACTIVE'"
                 Dim sql_command2 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE TV_CONNECTION_STATUS = 'INACTIVE'"
                 Dim sql_command3 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE TV_CONNECTION_STATUS = 'SUSPENDED'"
-                Dim sql_command4 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE EXPIRY_DATE = @EXPIRY_DATE"
+                Dim sql_command4 = "SELECT COUNT(*) FROM TV_CONNECTION_DETAILS WHERE EXPIRY_DATE = @EXPIRY_DATE AND REGISTRATION_DATE < @REG_DATE"
                 Dim sql_command5 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE STATUS = 'ACTIVE'"
                 Dim sql_command6 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE STATUS = 'INACTIVE'"
-                Dim sql_command7 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE STATUS = 'SUSPENDED'"
-                Dim sql_command8 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE EXPIRY_DATE = @EXPIRY_DATE"
+                Dim sql_command7 As New OleDbCommand("SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE STATUS = @STATUS", connection)
+                Dim sql_command8 = "SELECT COUNT(*) FROM BROADBAND_CONNECTION_DETAILS WHERE EXPIRY_DATE = @EXPIRY_DATE AND REGISTRATION_DATE < @REG_DATE"
 
                 Dim command1 As New OleDbCommand(sql_command1, connection)
                 Dim command2 As New OleDbCommand(sql_command2, connection)
@@ -205,17 +213,20 @@ Public Class Admin_Dashboard_Panel
                 Dim command4 As New OleDbCommand(sql_command4, connection)
                 Dim command5 As New OleDbCommand(sql_command5, connection)
                 Dim command6 As New OleDbCommand(sql_command6, connection)
-                Dim command7 As New OleDbCommand(sql_command7, connection)
+                'Dim command7 As New OleDbCommand(sql_command7, connection)
                 Dim command8 As New OleDbCommand(sql_command8, connection)
                 active_tv_count = command1.ExecuteScalar()
                 inactive_tv_count = command2.ExecuteScalar()
                 suspended_tv_count = command3.ExecuteScalar()
                 command4.Parameters.AddWithValue("@EXPIRY_DATE", currentDate)
+                command4.Parameters.AddWithValue("@REG_DATE", Date.Today.ToString("dd-MM-yyyy"))
                 tv_renewal_count = command4.ExecuteScalar()
                 active_broadband_count = command5.ExecuteScalar()
                 inactive_broadband_count = command6.ExecuteScalar()
-                suspended_broadband_count = command7.ExecuteScalar()
+                sql_command7.Parameters.AddWithValue("@STATUS", "SUSPENDED")
+                suspended_broadband_count = sql_command7.ExecuteScalar()
                 command8.Parameters.AddWithValue("@EXPIRY_DATE", currentDate)
+                command8.Parameters.AddWithValue("@REG_DATE", Date.Today.ToString("dd-MM-yyyy"))
                 broadband_renewal_count = command8.ExecuteScalar()
                 connection.Close()
             End Using
