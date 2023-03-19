@@ -1,7 +1,4 @@
 ﻿Imports System.Data.OleDb
-Imports System.Diagnostics.Eventing.Reader
-Imports iTextSharp.text.pdf.PRTokeniser
-
 Public Class Change_Password
     Private randomValue As Integer = 0
     Private WithEvents tmrRandom As New Timer()
@@ -159,7 +156,6 @@ Public Class Change_Password
     End Sub
     Private Sub tmrRandom_Tick(sender As Object, e As EventArgs) Handles tmrRandom.Tick
         ' Generate a new random value every 5 minutes
-
         randomValue = rnd.Next(100000, 999999)
     End Sub
     Private Sub Change_Password_Load(sender As Object, e As EventArgs) Handles MyBase.Load
