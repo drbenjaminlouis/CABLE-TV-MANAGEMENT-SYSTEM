@@ -247,3 +247,7 @@ Actual value was 0.
 Actual value was 0.
 [2023-03-05 14:33:24] An Error Occured While Fetching Data: No value given for one or more required parameters.
 [2023-03-05 20:33:43] An Error Occured While Fetching CRF or Email: No data exists for the row/column.
+[2023-03-20 00:45:51] An Error Occoured During Payment: Access to the path 'C:\Program Files (x86)\Default Company Name\CTVMS SETUP\Invoices\' is denied.
+[2023-03-20 00:50:43] An Error Occoured During Payment: Access to the path 'C:\Program Files (x86)\Default Company Name\CTVMS SETUP\Invoices\' is denied.
+[2023-03-20 00:58:42] An Error Occoured During Payment: Access to the path 'C:\Program Files (x86)\Default Company Name\CTVMS SETUP\INVOICES\' is denied.
+[2023-03-30 14:24:43] An Error Occoured During Payment: Access to the path 'C:\Program Files (x86)\Default Company Name\CTVMS APP\Invoices\' is denied.

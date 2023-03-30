@@ -656,6 +656,7 @@ Partial Class CUSTOMER_DASHBOARD
         Controls.Add(Guna2Panel1)
         Controls.Add(Guna2Panel2)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "CUSTOMER_DASHBOARD"
         StartPosition = FormStartPosition.CenterScreen
         Text = "CUSTOMER_DASHBOARD"

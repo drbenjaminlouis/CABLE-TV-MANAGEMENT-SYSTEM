@@ -4,7 +4,7 @@ Public Class USER_LOGIN
     Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
     Dim dr As OleDbDataReader
     Private Sub USER_LOGIN_LOAD(sender As Object, e As EventArgs) Handles MyBase.Load
-        Module1.LoginType = "CUSTOMER"
+        LogType_Detector.LoginType = "CUSTOMER"
         TV_Year_Updater()
         BroadBand_Year_Updater()
     End Sub
@@ -32,8 +32,8 @@ Public Class USER_LOGIN
                 cmd.Parameters.AddWithValue("@PASSWORD", textbox2.Text)
                 dr = cmd.ExecuteReader
                 If dr.HasRows = True Then
-                    Module1.UserName = textbox1.Text
-                    Module1.LoginType = "CUSTOMER"
+                    LogType_Detector.UserName = textbox1.Text
+                    LogType_Detector.LoginType = "CUSTOMER"
                     Me.Hide()
                     Dim cust_dash As New CUSTOMER_DASHBOARD
                     cust_dash.Show()
@@ -53,8 +53,8 @@ Public Class USER_LOGIN
         End If
     End Sub
 
-    Private Sub Guna2ToggleSwitch1_CheckedChanged(sender As Object, e As EventArgs) Handles Guna2ToggleSwitch1.CheckedChanged
-        If Guna2ToggleSwitch1.Checked Then textbox2.PasswordChar = Convert.ToChar(0) Else textbox2.PasswordChar = Convert.ToChar("*")
-        textbox2.UseSystemPasswordChar = Not Guna2ToggleSwitch1.Checked
+    Private Sub Show_Password_CheckedChanged(sender As Object, e As EventArgs) Handles Show_Password.CheckedChanged
+        If Show_Password.Checked Then textbox2.PasswordChar = Convert.ToChar(0) Else textbox2.PasswordChar = Convert.ToChar("*")
+        textbox2.UseSystemPasswordChar = Not Show_Password.Checked
     End Sub
 End Class

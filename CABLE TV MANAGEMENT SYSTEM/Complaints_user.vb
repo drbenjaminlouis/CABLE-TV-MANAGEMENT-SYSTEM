@@ -1,10 +1,8 @@
 ﻿Imports System.Data.OleDb
 Public Class Complaints_user
     Public Sub New()
-        ' This call is required by the designer.
         InitializeComponent()
         AddHandler MyBase.Load, AddressOf Complaints_user_Load
-        ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private Sub Complaints_user_Load(sender As Object, e As EventArgs)
 
@@ -15,7 +13,7 @@ Public Class Complaints_user
         Try
             connection.Open()
             Dim crfpicker As New OleDbCommand("SELECT CRF FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@USERNAME", connection)
-            Dim username As String = Module1.UserName
+            Dim username As String = LogType_Detector.UserName
             crfpicker.Parameters.AddWithValue("@USERNAME", username)
             Dim crfreader As OleDbDataReader = crfpicker.ExecuteReader
             If crfreader.HasRows Then

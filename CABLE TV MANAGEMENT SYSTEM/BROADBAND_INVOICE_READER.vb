@@ -1,8 +1,6 @@
 ﻿Imports System.Data.OleDb
 Imports System.Globalization
 Imports System.IO
-Imports Guna.UI2.AnimatorNS
-
 Public Class BROADBAND_INVOICE_READER
     Dim flag As Boolean
     Dim FILE_PATH As String
@@ -11,10 +9,8 @@ Public Class BROADBAND_INVOICE_READER
     ReadOnly currentMonth As String = DateTime.Now.ToString("MMMM").ToUpper
     ReadOnly yearList As New List(Of Integer)
     Public Sub New()
-        ' This call is required by the designer.
         InitializeComponent()
         AddHandler MyBase.Load, AddressOf BROADBAND_INVOICE_READER_Load
-        ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private Sub BROADBAND_INVOICE_READER_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         PDF_VIEWER.Source = New Uri("file:///" & FileNotFound)
@@ -22,7 +18,7 @@ Public Class BROADBAND_INVOICE_READER
             Dim connection As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
             connection.Open()
             Dim crfpicker As New OleDbCommand("SELECT CRF FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@USERNAME", connection)
-            Dim username As String = Module1.UserName
+            Dim username As String = LogType_Detector.UserName
             crfpicker.Parameters.AddWithValue("@USERNAME", username)
             Dim crfreader As OleDbDataReader = crfpicker.ExecuteReader
             If crfreader.HasRows = True Then

@@ -802,6 +802,7 @@ Partial Class Admin_Dashboard
         Controls.Add(Label3)
         Controls.Add(Guna2Panel2)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Admin_Dashboard"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Admin_Dashboard"

@@ -5,10 +5,8 @@ Imports Guna.UI2.WinForms
 
 Public Class Customer_Details
     Public Sub New()
-        ' This call is required by the designer.
         InitializeComponent()
         AddHandler MyBase.Load, AddressOf Customer_Details_Load
-        ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private Sub Customer_Details_Load(sender As Object, e As EventArgs)
         DOB_PICKER.MinDate = DateTime.Today.AddYears(-80)
@@ -24,7 +22,7 @@ Public Class Customer_Details
             Try
                 connection.Open()
                 Dim crfpicker As New OleDbCommand("SELECT CRF FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@USERNAME", connection)
-                Dim username As String = Module1.UserName
+                Dim username As String = LogType_Detector.UserName
                 crfpicker.Parameters.AddWithValue("@USERNAME", username)
                 Dim crfreader As OleDbDataReader = crfpicker.ExecuteReader
                 If crfreader.HasRows Then

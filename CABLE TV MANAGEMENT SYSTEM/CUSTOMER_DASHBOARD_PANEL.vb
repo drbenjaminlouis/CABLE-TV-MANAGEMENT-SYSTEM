@@ -12,7 +12,7 @@ Public Class CUSTOMER_DASHBOARD_PANEL
     Dim broadband_status_ As String
     Dim broadband_pending As Integer
     Private Sub CUSTOMER_DASHBOARD_PANEL_LOAD(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim user_name = Module1.UserName
+        Dim user_name = LogType_Detector.UserName
         tv_plan = ""
         tv_expiry = ""
         tv_status = ""

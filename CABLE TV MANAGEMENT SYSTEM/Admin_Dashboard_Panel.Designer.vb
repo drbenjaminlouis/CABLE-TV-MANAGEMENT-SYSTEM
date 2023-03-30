@@ -22,43 +22,43 @@ Partial Class Admin_Dashboard_Panel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges51 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         BroadBand_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Label7 = New Label()
-        Complaints = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        FeedBacks = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        BroadBand_Received = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        BroadBand_Pending = New Guna.UI2.WinForms.Guna2GradientTileButton()
         BroadBand_Suspended = New Guna.UI2.WinForms.Guna2GradientTileButton()
         BroadBand_Inactive = New Guna.UI2.WinForms.Guna2GradientTileButton()
         BroadBand_Renewals = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Cable_TV_Renewals = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Pending_Payments = New Guna.UI2.WinForms.Guna2GradientTileButton()
-        Received_Payments = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        TV_Pending_Payments = New Guna.UI2.WinForms.Guna2GradientTileButton()
+        TV_Received_Payments = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Suspended_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Inactive_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Active_Customers = New Guna.UI2.WinForms.Guna2GradientTileButton()
@@ -72,22 +72,22 @@ Partial Class Admin_Dashboard_Panel
         Guna2Panel1.BackColor = Color.Black
         Guna2Panel1.Controls.Add(BroadBand_Customers)
         Guna2Panel1.Controls.Add(Label7)
-        Guna2Panel1.Controls.Add(Complaints)
-        Guna2Panel1.Controls.Add(FeedBacks)
+        Guna2Panel1.Controls.Add(BroadBand_Received)
+        Guna2Panel1.Controls.Add(BroadBand_Pending)
         Guna2Panel1.Controls.Add(BroadBand_Suspended)
         Guna2Panel1.Controls.Add(BroadBand_Inactive)
         Guna2Panel1.Controls.Add(BroadBand_Renewals)
         Guna2Panel1.Controls.Add(Cable_TV_Renewals)
-        Guna2Panel1.Controls.Add(Pending_Payments)
-        Guna2Panel1.Controls.Add(Received_Payments)
+        Guna2Panel1.Controls.Add(TV_Pending_Payments)
+        Guna2Panel1.Controls.Add(TV_Received_Payments)
         Guna2Panel1.Controls.Add(Suspended_Customers)
         Guna2Panel1.Controls.Add(Inactive_Customers)
         Guna2Panel1.Controls.Add(Active_Customers)
-        Guna2Panel1.CustomizableEdges = CustomizableEdges25
+        Guna2Panel1.CustomizableEdges = CustomizableEdges51
         Guna2Panel1.FillColor = Color.Black
         Guna2Panel1.Location = New Point(0, 0)
         Guna2Panel1.Name = "Guna2Panel1"
-        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        Guna2Panel1.ShadowDecoration.CustomizableEdges = CustomizableEdges52
         Guna2Panel1.Size = New Size(1377, 671)
         Guna2Panel1.TabIndex = 0
         ' 
@@ -100,7 +100,7 @@ Partial Class Admin_Dashboard_Panel
         BroadBand_Customers.BorderRadius = 10
         BroadBand_Customers.BorderStyle = Drawing2D.DashStyle.Dash
         BroadBand_Customers.Cursor = Cursors.Hand
-        BroadBand_Customers.CustomizableEdges = CustomizableEdges1
+        BroadBand_Customers.CustomizableEdges = CustomizableEdges27
         BroadBand_Customers.DisabledState.BorderColor = Color.DarkGray
         BroadBand_Customers.DisabledState.CustomBorderColor = Color.DarkGray
         BroadBand_Customers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -118,7 +118,7 @@ Partial Class Admin_Dashboard_Panel
         BroadBand_Customers.ImageSize = New Size(50, 50)
         BroadBand_Customers.Location = New Point(21, 251)
         BroadBand_Customers.Name = "BroadBand_Customers"
-        BroadBand_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges2
+        BroadBand_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         BroadBand_Customers.Size = New Size(330, 153)
         BroadBand_Customers.TabIndex = 27
         BroadBand_Customers.Text = "BROADBAND CUSTOMERS"' 
@@ -132,68 +132,68 @@ Partial Class Admin_Dashboard_Panel
         Label7.Size = New Size(292, 65)
         Label7.TabIndex = 36
         Label7.Text = "WELCOME !"' 
-        ' Complaints
+        ' BroadBand_Received
         ' 
-        Complaints.Anchor = AnchorStyles.Bottom
-        Complaints.Animated = True
-        Complaints.AnimatedGIF = True
-        Complaints.BorderColor = Color.White
-        Complaints.BorderRadius = 10
-        Complaints.BorderStyle = Drawing2D.DashStyle.Dash
-        Complaints.Cursor = Cursors.Hand
-        Complaints.CustomizableEdges = CustomizableEdges3
-        Complaints.DisabledState.BorderColor = Color.DarkGray
-        Complaints.DisabledState.CustomBorderColor = Color.DarkGray
-        Complaints.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Complaints.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Complaints.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Complaints.FillColor = Color.SaddleBrown
-        Complaints.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        Complaints.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Complaints.ForeColor = Color.White
-        Complaints.GradientMode = Drawing2D.LinearGradientMode.Vertical
-        Complaints.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        Complaints.HoverState.FillColor2 = Color.SaddleBrown
-        Complaints.HoverState.ForeColor = Color.White
-        Complaints.Image = My.Resources.Resources.CASH_ICON1
-        Complaints.ImageSize = New Size(50, 50)
-        Complaints.Location = New Point(1029, 410)
-        Complaints.Name = "Complaints"
-        Complaints.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Complaints.Size = New Size(330, 153)
-        Complaints.TabIndex = 35
-        Complaints.Text = "BROADBAND RECEIVED PAYMENTS" ' 
-        ' FeedBacks
+        BroadBand_Received.Anchor = AnchorStyles.Bottom
+        BroadBand_Received.Animated = True
+        BroadBand_Received.AnimatedGIF = True
+        BroadBand_Received.BorderColor = Color.White
+        BroadBand_Received.BorderRadius = 10
+        BroadBand_Received.BorderStyle = Drawing2D.DashStyle.Dash
+        BroadBand_Received.Cursor = Cursors.Hand
+        BroadBand_Received.CustomizableEdges = CustomizableEdges29
+        BroadBand_Received.DisabledState.BorderColor = Color.DarkGray
+        BroadBand_Received.DisabledState.CustomBorderColor = Color.DarkGray
+        BroadBand_Received.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Received.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Received.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BroadBand_Received.FillColor = Color.SaddleBrown
+        BroadBand_Received.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Received.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        BroadBand_Received.ForeColor = Color.White
+        BroadBand_Received.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        BroadBand_Received.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Received.HoverState.FillColor2 = Color.SaddleBrown
+        BroadBand_Received.HoverState.ForeColor = Color.White
+        BroadBand_Received.Image = My.Resources.Resources.CASH_ICON1
+        BroadBand_Received.ImageSize = New Size(50, 50)
+        BroadBand_Received.Location = New Point(1029, 410)
+        BroadBand_Received.Name = "BroadBand_Received"
+        BroadBand_Received.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        BroadBand_Received.Size = New Size(330, 153)
+        BroadBand_Received.TabIndex = 35
+        BroadBand_Received.Text = "BROADBAND RECEIVED PAYMENTS"' 
+        ' BroadBand_Pending
         ' 
-        FeedBacks.Anchor = AnchorStyles.Bottom
-        FeedBacks.Animated = True
-        FeedBacks.AnimatedGIF = True
-        FeedBacks.BorderColor = Color.White
-        FeedBacks.BorderRadius = 10
-        FeedBacks.BorderStyle = Drawing2D.DashStyle.Dash
-        FeedBacks.Cursor = Cursors.Hand
-        FeedBacks.CustomizableEdges = CustomizableEdges5
-        FeedBacks.DisabledState.BorderColor = Color.DarkGray
-        FeedBacks.DisabledState.CustomBorderColor = Color.DarkGray
-        FeedBacks.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        FeedBacks.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        FeedBacks.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        FeedBacks.FillColor = SystemColors.AppWorkspace
-        FeedBacks.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        FeedBacks.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point)
-        FeedBacks.ForeColor = Color.White
-        FeedBacks.GradientMode = Drawing2D.LinearGradientMode.Vertical
-        FeedBacks.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        FeedBacks.HoverState.FillColor2 = SystemColors.AppWorkspace
-        FeedBacks.HoverState.ForeColor = Color.White
-        FeedBacks.Image = My.Resources.Resources.PENDING_ICON
-        FeedBacks.ImageSize = New Size(50, 50)
-        FeedBacks.Location = New Point(693, 410)
-        FeedBacks.Name = "FeedBacks"
-        FeedBacks.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        FeedBacks.Size = New Size(330, 153)
-        FeedBacks.TabIndex = 34
-        FeedBacks.Text = "BROADBAND PENDING PAYMENTS"' 
+        BroadBand_Pending.Anchor = AnchorStyles.Bottom
+        BroadBand_Pending.Animated = True
+        BroadBand_Pending.AnimatedGIF = True
+        BroadBand_Pending.BorderColor = Color.White
+        BroadBand_Pending.BorderRadius = 10
+        BroadBand_Pending.BorderStyle = Drawing2D.DashStyle.Dash
+        BroadBand_Pending.Cursor = Cursors.Hand
+        BroadBand_Pending.CustomizableEdges = CustomizableEdges31
+        BroadBand_Pending.DisabledState.BorderColor = Color.DarkGray
+        BroadBand_Pending.DisabledState.CustomBorderColor = Color.DarkGray
+        BroadBand_Pending.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Pending.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        BroadBand_Pending.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        BroadBand_Pending.FillColor = SystemColors.AppWorkspace
+        BroadBand_Pending.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Pending.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        BroadBand_Pending.ForeColor = Color.White
+        BroadBand_Pending.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        BroadBand_Pending.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        BroadBand_Pending.HoverState.FillColor2 = SystemColors.AppWorkspace
+        BroadBand_Pending.HoverState.ForeColor = Color.White
+        BroadBand_Pending.Image = My.Resources.Resources.PENDING_ICON
+        BroadBand_Pending.ImageSize = New Size(50, 50)
+        BroadBand_Pending.Location = New Point(693, 410)
+        BroadBand_Pending.Name = "BroadBand_Pending"
+        BroadBand_Pending.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        BroadBand_Pending.Size = New Size(330, 153)
+        BroadBand_Pending.TabIndex = 34
+        BroadBand_Pending.Text = "BROADBAND PENDING PAYMENTS"' 
         ' BroadBand_Suspended
         ' 
         BroadBand_Suspended.Anchor = AnchorStyles.Bottom
@@ -203,7 +203,7 @@ Partial Class Admin_Dashboard_Panel
         BroadBand_Suspended.BorderRadius = 10
         BroadBand_Suspended.BorderStyle = Drawing2D.DashStyle.Dash
         BroadBand_Suspended.Cursor = Cursors.Hand
-        BroadBand_Suspended.CustomizableEdges = CustomizableEdges7
+        BroadBand_Suspended.CustomizableEdges = CustomizableEdges33
         BroadBand_Suspended.DisabledState.BorderColor = Color.DarkGray
         BroadBand_Suspended.DisabledState.CustomBorderColor = Color.DarkGray
         BroadBand_Suspended.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -221,7 +221,7 @@ Partial Class Admin_Dashboard_Panel
         BroadBand_Suspended.ImageSize = New Size(50, 50)
         BroadBand_Suspended.Location = New Point(693, 251)
         BroadBand_Suspended.Name = "BroadBand_Suspended"
-        BroadBand_Suspended.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        BroadBand_Suspended.ShadowDecoration.CustomizableEdges = CustomizableEdges34
         BroadBand_Suspended.Size = New Size(330, 153)
         BroadBand_Suspended.TabIndex = 32
         BroadBand_Suspended.Text = "BROADBAND SUSPENDED"' 
@@ -234,7 +234,7 @@ Partial Class Admin_Dashboard_Panel
         BroadBand_Inactive.BorderRadius = 10
         BroadBand_Inactive.BorderStyle = Drawing2D.DashStyle.Dash
         BroadBand_Inactive.Cursor = Cursors.Hand
-        BroadBand_Inactive.CustomizableEdges = CustomizableEdges9
+        BroadBand_Inactive.CustomizableEdges = CustomizableEdges35
         BroadBand_Inactive.DisabledState.BorderColor = Color.DarkGray
         BroadBand_Inactive.DisabledState.CustomBorderColor = Color.DarkGray
         BroadBand_Inactive.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -252,7 +252,7 @@ Partial Class Admin_Dashboard_Panel
         BroadBand_Inactive.ImageSize = New Size(50, 50)
         BroadBand_Inactive.Location = New Point(357, 251)
         BroadBand_Inactive.Name = "BroadBand_Inactive"
-        BroadBand_Inactive.ShadowDecoration.CustomizableEdges = CustomizableEdges10
+        BroadBand_Inactive.ShadowDecoration.CustomizableEdges = CustomizableEdges36
         BroadBand_Inactive.Size = New Size(330, 153)
         BroadBand_Inactive.TabIndex = 33
         BroadBand_Inactive.Text = "BROADBAND INACTIVE"' 
@@ -265,7 +265,7 @@ Partial Class Admin_Dashboard_Panel
         BroadBand_Renewals.BorderRadius = 10
         BroadBand_Renewals.BorderStyle = Drawing2D.DashStyle.Dash
         BroadBand_Renewals.Cursor = Cursors.Hand
-        BroadBand_Renewals.CustomizableEdges = CustomizableEdges11
+        BroadBand_Renewals.CustomizableEdges = CustomizableEdges37
         BroadBand_Renewals.DisabledState.BorderColor = Color.DarkGray
         BroadBand_Renewals.DisabledState.CustomBorderColor = Color.DarkGray
         BroadBand_Renewals.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -283,7 +283,7 @@ Partial Class Admin_Dashboard_Panel
         BroadBand_Renewals.ImageSize = New Size(50, 50)
         BroadBand_Renewals.Location = New Point(1029, 251)
         BroadBand_Renewals.Name = "BroadBand_Renewals"
-        BroadBand_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges12
+        BroadBand_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges38
         BroadBand_Renewals.Size = New Size(330, 153)
         BroadBand_Renewals.TabIndex = 31
         BroadBand_Renewals.Text = "BROADBAND RENEWALS"' 
@@ -296,7 +296,7 @@ Partial Class Admin_Dashboard_Panel
         Cable_TV_Renewals.BorderRadius = 10
         Cable_TV_Renewals.BorderStyle = Drawing2D.DashStyle.Dash
         Cable_TV_Renewals.Cursor = Cursors.Hand
-        Cable_TV_Renewals.CustomizableEdges = CustomizableEdges13
+        Cable_TV_Renewals.CustomizableEdges = CustomizableEdges39
         Cable_TV_Renewals.DisabledState.BorderColor = Color.DarkGray
         Cable_TV_Renewals.DisabledState.CustomBorderColor = Color.DarkGray
         Cable_TV_Renewals.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -314,72 +314,72 @@ Partial Class Admin_Dashboard_Panel
         Cable_TV_Renewals.ImageSize = New Size(50, 50)
         Cable_TV_Renewals.Location = New Point(1029, 92)
         Cable_TV_Renewals.Name = "Cable_TV_Renewals"
-        Cable_TV_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges14
+        Cable_TV_Renewals.ShadowDecoration.CustomizableEdges = CustomizableEdges40
         Cable_TV_Renewals.Size = New Size(330, 153)
         Cable_TV_Renewals.TabIndex = 30
         Cable_TV_Renewals.Text = "CABLE RENEWALS"' 
-        ' Pending_Payments
+        ' TV_Pending_Payments
         ' 
-        Pending_Payments.Anchor = AnchorStyles.None
-        Pending_Payments.Animated = True
-        Pending_Payments.AnimatedGIF = True
-        Pending_Payments.BorderColor = Color.White
-        Pending_Payments.BorderRadius = 10
-        Pending_Payments.BorderStyle = Drawing2D.DashStyle.Dash
-        Pending_Payments.Cursor = Cursors.Hand
-        Pending_Payments.CustomizableEdges = CustomizableEdges15
-        Pending_Payments.DisabledState.BorderColor = Color.DarkGray
-        Pending_Payments.DisabledState.CustomBorderColor = Color.DarkGray
-        Pending_Payments.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Pending_Payments.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Pending_Payments.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Pending_Payments.FillColor = Color.DarkMagenta
-        Pending_Payments.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        Pending_Payments.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Pending_Payments.ForeColor = Color.White
-        Pending_Payments.GradientMode = Drawing2D.LinearGradientMode.Vertical
-        Pending_Payments.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        Pending_Payments.HoverState.FillColor2 = Color.DarkMagenta
-        Pending_Payments.HoverState.ForeColor = Color.White
-        Pending_Payments.Image = My.Resources.Resources.icons8_hourglass_50
-        Pending_Payments.ImageSize = New Size(50, 50)
-        Pending_Payments.Location = New Point(21, 410)
-        Pending_Payments.Name = "Pending_Payments"
-        Pending_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        Pending_Payments.Size = New Size(330, 153)
-        Pending_Payments.TabIndex = 28
-        Pending_Payments.Text = "TV PENDING PAYMENTS"' 
-        ' Received_Payments
+        TV_Pending_Payments.Anchor = AnchorStyles.None
+        TV_Pending_Payments.Animated = True
+        TV_Pending_Payments.AnimatedGIF = True
+        TV_Pending_Payments.BorderColor = Color.White
+        TV_Pending_Payments.BorderRadius = 10
+        TV_Pending_Payments.BorderStyle = Drawing2D.DashStyle.Dash
+        TV_Pending_Payments.Cursor = Cursors.Hand
+        TV_Pending_Payments.CustomizableEdges = CustomizableEdges41
+        TV_Pending_Payments.DisabledState.BorderColor = Color.DarkGray
+        TV_Pending_Payments.DisabledState.CustomBorderColor = Color.DarkGray
+        TV_Pending_Payments.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        TV_Pending_Payments.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        TV_Pending_Payments.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        TV_Pending_Payments.FillColor = Color.DarkMagenta
+        TV_Pending_Payments.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        TV_Pending_Payments.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TV_Pending_Payments.ForeColor = Color.White
+        TV_Pending_Payments.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        TV_Pending_Payments.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        TV_Pending_Payments.HoverState.FillColor2 = Color.DarkMagenta
+        TV_Pending_Payments.HoverState.ForeColor = Color.White
+        TV_Pending_Payments.Image = My.Resources.Resources.icons8_hourglass_50
+        TV_Pending_Payments.ImageSize = New Size(50, 50)
+        TV_Pending_Payments.Location = New Point(21, 410)
+        TV_Pending_Payments.Name = "TV_Pending_Payments"
+        TV_Pending_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        TV_Pending_Payments.Size = New Size(330, 153)
+        TV_Pending_Payments.TabIndex = 28
+        TV_Pending_Payments.Text = "TV PENDING PAYMENTS"' 
+        ' TV_Received_Payments
         ' 
-        Received_Payments.Anchor = AnchorStyles.None
-        Received_Payments.Animated = True
-        Received_Payments.AnimatedGIF = True
-        Received_Payments.BorderColor = Color.White
-        Received_Payments.BorderRadius = 10
-        Received_Payments.BorderStyle = Drawing2D.DashStyle.Dash
-        Received_Payments.Cursor = Cursors.Hand
-        Received_Payments.CustomizableEdges = CustomizableEdges17
-        Received_Payments.DisabledState.BorderColor = Color.DarkGray
-        Received_Payments.DisabledState.CustomBorderColor = Color.DarkGray
-        Received_Payments.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Received_Payments.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        Received_Payments.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        Received_Payments.FillColor = Color.DarkCyan
-        Received_Payments.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        Received_Payments.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Received_Payments.ForeColor = Color.White
-        Received_Payments.GradientMode = Drawing2D.LinearGradientMode.Vertical
-        Received_Payments.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
-        Received_Payments.HoverState.FillColor2 = Color.DarkCyan
-        Received_Payments.HoverState.ForeColor = Color.White
-        Received_Payments.Image = My.Resources.Resources.icons8_get_cash_50
-        Received_Payments.ImageSize = New Size(50, 50)
-        Received_Payments.Location = New Point(357, 410)
-        Received_Payments.Name = "Received_Payments"
-        Received_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        Received_Payments.Size = New Size(330, 153)
-        Received_Payments.TabIndex = 29
-        Received_Payments.Text = "TV RECEIVED PAYMENTS"' 
+        TV_Received_Payments.Anchor = AnchorStyles.None
+        TV_Received_Payments.Animated = True
+        TV_Received_Payments.AnimatedGIF = True
+        TV_Received_Payments.BorderColor = Color.White
+        TV_Received_Payments.BorderRadius = 10
+        TV_Received_Payments.BorderStyle = Drawing2D.DashStyle.Dash
+        TV_Received_Payments.Cursor = Cursors.Hand
+        TV_Received_Payments.CustomizableEdges = CustomizableEdges43
+        TV_Received_Payments.DisabledState.BorderColor = Color.DarkGray
+        TV_Received_Payments.DisabledState.CustomBorderColor = Color.DarkGray
+        TV_Received_Payments.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        TV_Received_Payments.DisabledState.FillColor2 = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        TV_Received_Payments.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        TV_Received_Payments.FillColor = Color.DarkCyan
+        TV_Received_Payments.FillColor2 = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        TV_Received_Payments.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        TV_Received_Payments.ForeColor = Color.White
+        TV_Received_Payments.GradientMode = Drawing2D.LinearGradientMode.Vertical
+        TV_Received_Payments.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(25), CByte(25))
+        TV_Received_Payments.HoverState.FillColor2 = Color.DarkCyan
+        TV_Received_Payments.HoverState.ForeColor = Color.White
+        TV_Received_Payments.Image = My.Resources.Resources.icons8_get_cash_50
+        TV_Received_Payments.ImageSize = New Size(50, 50)
+        TV_Received_Payments.Location = New Point(357, 410)
+        TV_Received_Payments.Name = "TV_Received_Payments"
+        TV_Received_Payments.ShadowDecoration.CustomizableEdges = CustomizableEdges44
+        TV_Received_Payments.Size = New Size(330, 153)
+        TV_Received_Payments.TabIndex = 29
+        TV_Received_Payments.Text = "TV RECEIVED PAYMENTS"' 
         ' Suspended_Customers
         ' 
         Suspended_Customers.Anchor = AnchorStyles.Top
@@ -389,7 +389,7 @@ Partial Class Admin_Dashboard_Panel
         Suspended_Customers.BorderRadius = 10
         Suspended_Customers.BorderStyle = Drawing2D.DashStyle.Dash
         Suspended_Customers.Cursor = Cursors.Hand
-        Suspended_Customers.CustomizableEdges = CustomizableEdges19
+        Suspended_Customers.CustomizableEdges = CustomizableEdges45
         Suspended_Customers.DisabledState.BorderColor = Color.DarkGray
         Suspended_Customers.DisabledState.CustomBorderColor = Color.DarkGray
         Suspended_Customers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -407,7 +407,7 @@ Partial Class Admin_Dashboard_Panel
         Suspended_Customers.ImageSize = New Size(50, 50)
         Suspended_Customers.Location = New Point(693, 92)
         Suspended_Customers.Name = "Suspended_Customers"
-        Suspended_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Suspended_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges46
         Suspended_Customers.Size = New Size(330, 153)
         Suspended_Customers.TabIndex = 26
         Suspended_Customers.Text = "SUSPENDED CUSTOMERS"' 
@@ -420,7 +420,7 @@ Partial Class Admin_Dashboard_Panel
         Inactive_Customers.BorderRadius = 10
         Inactive_Customers.BorderStyle = Drawing2D.DashStyle.Dash
         Inactive_Customers.Cursor = Cursors.Hand
-        Inactive_Customers.CustomizableEdges = CustomizableEdges21
+        Inactive_Customers.CustomizableEdges = CustomizableEdges47
         Inactive_Customers.DisabledState.BorderColor = Color.DarkGray
         Inactive_Customers.DisabledState.CustomBorderColor = Color.DarkGray
         Inactive_Customers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -438,7 +438,7 @@ Partial Class Admin_Dashboard_Panel
         Inactive_Customers.ImageSize = New Size(50, 50)
         Inactive_Customers.Location = New Point(357, 92)
         Inactive_Customers.Name = "Inactive_Customers"
-        Inactive_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Inactive_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges48
         Inactive_Customers.Size = New Size(330, 153)
         Inactive_Customers.TabIndex = 24
         Inactive_Customers.Text = "INACTIVE CUSTOMERS"' 
@@ -451,7 +451,7 @@ Partial Class Admin_Dashboard_Panel
         Active_Customers.BorderRadius = 10
         Active_Customers.BorderStyle = Drawing2D.DashStyle.Dash
         Active_Customers.Cursor = Cursors.Hand
-        Active_Customers.CustomizableEdges = CustomizableEdges23
+        Active_Customers.CustomizableEdges = CustomizableEdges49
         Active_Customers.DisabledState.BorderColor = Color.DarkGray
         Active_Customers.DisabledState.CustomBorderColor = Color.DarkGray
         Active_Customers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
@@ -469,7 +469,7 @@ Partial Class Admin_Dashboard_Panel
         Active_Customers.ImageSize = New Size(50, 50)
         Active_Customers.Location = New Point(21, 92)
         Active_Customers.Name = "Active_Customers"
-        Active_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges24
+        Active_Customers.ShadowDecoration.CustomizableEdges = CustomizableEdges50
         Active_Customers.Size = New Size(330, 153)
         Active_Customers.TabIndex = 25
         Active_Customers.Text = "TOTAL CUSTOMERS"' 
@@ -493,14 +493,14 @@ Partial Class Admin_Dashboard_Panel
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents BroadBand_Customers As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents Label7 As Label
-    Friend WithEvents Complaints As Guna.UI2.WinForms.Guna2GradientTileButton
-    Friend WithEvents FeedBacks As Guna.UI2.WinForms.Guna2GradientTileButton
+    Friend WithEvents BroadBand_Received As Guna.UI2.WinForms.Guna2GradientTileButton
+    Friend WithEvents BroadBand_Pending As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents BroadBand_Suspended As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents BroadBand_Inactive As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents BroadBand_Renewals As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents Cable_TV_Renewals As Guna.UI2.WinForms.Guna2GradientTileButton
-    Friend WithEvents Pending_Payments As Guna.UI2.WinForms.Guna2GradientTileButton
-    Friend WithEvents Received_Payments As Guna.UI2.WinForms.Guna2GradientTileButton
+    Friend WithEvents TV_Pending_Payments As Guna.UI2.WinForms.Guna2GradientTileButton
+    Friend WithEvents TV_Received_Payments As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents Suspended_Customers As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents Inactive_Customers As Guna.UI2.WinForms.Guna2GradientTileButton
     Friend WithEvents Active_Customers As Guna.UI2.WinForms.Guna2GradientTileButton

@@ -4,13 +4,14 @@ Public Class Change_Password
     Private WithEvents tmrRandom As New Timer()
     Dim rnd As New Random()
     Private Sub CHANGE_PASSWORD_BTN_Click(sender As Object, e As EventArgs) Handles CHANGE_PASSWORD_BTN.Click
+        'While Admin Login
         If LoginType = "ADMIN" Then
             If NEW_PASSWORD_TEXTBOX.Text <> CONFIRM_PASSWORD_TEXTBOX.Text Then
                 ErrorAlert.Play()
                 MessageBox.Show("New password and confirm password do not match.", "ALERT")
                 NEW_PASSWORD_TEXTBOX.Clear()
                 CONFIRM_PASSWORD_TEXTBOX.Clear()
-            ElseIf USERNAME_TEXTBOX.Text <> Module1.UserName Then
+            ElseIf USERNAME_TEXTBOX.Text <> LogType_Detector.UserName Then
                 ErrorAlert.Play()
                 MessageBox.Show("Please Enter Your Username", "ALERT")
                 USERNAME_TEXTBOX.Clear()
@@ -23,61 +24,48 @@ Public Class Change_Password
                 NEW_PASSWORD_TEXTBOX.Clear()
                 CONFIRM_PASSWORD_TEXTBOX.Clear()
             Else
-                ' Define the connection string
-                Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath
-                ' Define the SQL query for checking the username and old password
+                Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                 Dim sqlCheck As String = "SELECT * FROM [ADMIN_LOGIN_DETAILS] WHERE [USERNAME] = @UserName AND [PASSWORD] = @Password"
-                ' Define the SQL query for updating the password
                 Dim sqlUpdate As String = "UPDATE [ADMIN_LOGIN_DETAILS] SET [PASSWORD] = @NewPassword WHERE [USERNAME] = @UserName"
-                ' Create a connection to the database
-                Using conn As New OleDbConnection(connString)
-                    Try
-                        ' Open the connection
-                        conn.Open()
-                        ' Create a command to run the check query
-                        Using cmdCheck As New OleDbCommand(sqlCheck, conn)
-                            ' Add parameters to the command
-                            cmdCheck.Parameters.AddWithValue("@UserName", USERNAME_TEXTBOX.Text)
-                            cmdCheck.Parameters.AddWithValue("@Password", CURRENT_PASSWORD_TEXTBOX.Text)
-                            ' Execute the check query and retrieve the result
-                            Dim reader As OleDbDataReader = cmdCheck.ExecuteReader()
-                            If reader.HasRows Then
-                                ' User name and old password match, proceed with update
-                                reader.Close()
-                                ' Create a command to run the update query
-                                Using cmdUpdate As New OleDbCommand(sqlUpdate, conn)
-                                    ' Add parameters to the command
-                                    cmdUpdate.Parameters.AddWithValue("@NewPassword", NEW_PASSWORD_TEXTBOX.Text)
-                                    cmdUpdate.Parameters.AddWithValue("@UserName", USERNAME_TEXTBOX.Text)
-                                    ' Execute the update query
-                                    cmdUpdate.ExecuteNonQuery()
-                                    MessageBox.Show("Password updated successfully.", "ALERT")
-                                    USERNAME_TEXTBOX.Clear()
-                                    CURRENT_PASSWORD_TEXTBOX.Clear()
-                                    NEW_PASSWORD_TEXTBOX.Clear()
-                                    CONFIRM_PASSWORD_TEXTBOX.Clear()
-                                End Using
-                            Else
-                                ' User name or old password doesn't match, show error message
-                                reader.Close()
-                                MessageBox.Show("User name or old password is incorrect.", "ALERT")
-                            End If
-                        End Using
-                        conn.Close()
-                    Catch ex As Exception
-                        ErrorAlert.Play()
-                        LogError("An Error Occured While Changing Password.Check Log For More Details.")
-                    End Try
-                End Using
+                Try
+                    conn.Open()
+                    Using cmdCheck As New OleDbCommand(sqlCheck, conn)
+                        cmdCheck.Parameters.AddWithValue("@UserName", USERNAME_TEXTBOX.Text)
+                        cmdCheck.Parameters.AddWithValue("@Password", CURRENT_PASSWORD_TEXTBOX.Text)
+                        Dim reader As OleDbDataReader = cmdCheck.ExecuteReader()
+                        If reader.HasRows = True Then
+                            reader.Close()
+                            Using cmdUpdate As New OleDbCommand(sqlUpdate, conn)
+                                cmdUpdate.Parameters.AddWithValue("@NewPassword", NEW_PASSWORD_TEXTBOX.Text)
+                                cmdUpdate.Parameters.AddWithValue("@UserName", USERNAME_TEXTBOX.Text)
+                                cmdUpdate.ExecuteNonQuery()
+                                MessageBox.Show("Password updated successfully.", "ALERT")
+                                USERNAME_TEXTBOX.Clear()
+                                CURRENT_PASSWORD_TEXTBOX.Clear()
+                                NEW_PASSWORD_TEXTBOX.Clear()
+                                CONFIRM_PASSWORD_TEXTBOX.Clear()
+                            End Using
+                        Else
+                            reader.Close()
+                            MessageBox.Show("User name or old password is incorrect.", "ALERT")
+                        End If
+                    End Using
+                Catch ex As Exception
+                    ErrorAlert.Play()
+                    LogError("An Error Occured While Changing Password.Check Log For More Details.")
+                Finally
+                    conn.Close()
+                End Try
             End If
         End If
+        'While Customer Login
         If LoginType = "CUSTOMER" Then
             If NEW_PASSWORD_TEXTBOX.Text <> CONFIRM_PASSWORD_TEXTBOX.Text Then
                 ErrorAlert.Play()
                 MessageBox.Show("New password and confirm password do not match.", "ALERT")
                 NEW_PASSWORD_TEXTBOX.Clear()
                 CONFIRM_PASSWORD_TEXTBOX.Clear()
-            ElseIf USERNAME_TEXTBOX.Text <> Module1.UserName Then
+            ElseIf USERNAME_TEXTBOX.Text <> LogType_Detector.UserName Then
                 ErrorAlert.Play()
                 MessageBox.Show("Please Enter Your Username", "ALERT")
                 USERNAME_TEXTBOX.Clear()
@@ -96,57 +84,45 @@ Public Class Change_Password
                 ErrorAlert.Play()
                 MessageBox.Show("Invalid OTP", "ALERT")
             Else
-                ' Define the connection string
-                Dim connString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath
-                ' Define the SQL query for checking the username and old password
+                Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
                 Dim sqlCheck As String = "SELECT * FROM [CUSTOMER_LOGIN_DETAILS] WHERE [CUST_USERNAME] = @UserName AND [CUST_PASSWORD] = @Password"
-                ' Define the SQL query for updating the password
                 Dim sqlUpdate As String = "UPDATE [CUSTOMER_LOGIN_DETAILS] SET [CUST_PASSWORD] = @NewPassword WHERE [CUST_USERNAME] = @UserName"
-                ' Create a connection to the database
-                Using conn As New OleDbConnection(connString)
-                    Try
-                        ' Open the connection
-                        conn.Open()
-                        ' Create a command to run the check query
-                        Using cmdCheck As New OleDbCommand(sqlCheck, conn)
-                            ' Add parameters to the command
-                            cmdCheck.Parameters.AddWithValue("@UserName", USERNAME_TEXTBOX.Text)
-                            cmdCheck.Parameters.AddWithValue("@Password", CURRENT_PASSWORD_TEXTBOX.Text)
-                            ' Execute the check query and retrieve the result
-                            Dim reader As OleDbDataReader = cmdCheck.ExecuteReader()
-                            If reader.HasRows Then
-                                ' User name and old password match, proceed with update
-                                reader.Close()
-                                ' Create a command to run the update query
-                                Using cmdUpdate As New OleDbCommand(sqlUpdate, conn)
-                                    ' Add parameters to the command
-                                    cmdUpdate.Parameters.AddWithValue("@NewPassword", NEW_PASSWORD_TEXTBOX.Text)
-                                    cmdUpdate.Parameters.AddWithValue("@UserName", USERNAME_TEXTBOX.Text)
-                                    ' Execute the update query
-                                    cmdUpdate.ExecuteNonQuery()
-                                    MessageBox.Show("Password updated successfully.", "ALERT")
-                                    randomValue = rnd.Next(100000, 999999)
-                                    USERNAME_TEXTBOX.Clear()
-                                    CURRENT_PASSWORD_TEXTBOX.Clear()
-                                    NEW_PASSWORD_TEXTBOX.Clear()
-                                    CONFIRM_PASSWORD_TEXTBOX.Clear()
-                                    OTP_TEXTBOX.Clear()
-                                End Using
-                            Else
-                                ' User name or old password doesn't match, show error message
-                                reader.Close()
-                                MessageBox.Show("User name or old password is incorrect.", "ALERT")
-                            End If
-                        End Using
-                        conn.Close()
-                    Catch ex As Exception
-                        ErrorAlert.Play()
-                        LogError("An Error Occured While Changing Password.Check Log For More Details.")
-                    End Try
-                End Using
+                Try
+                    conn.Open()
+                    Using cmdCheck As New OleDbCommand(sqlCheck, conn)
+                        cmdCheck.Parameters.AddWithValue("@UserName", USERNAME_TEXTBOX.Text)
+                        cmdCheck.Parameters.AddWithValue("@Password", CURRENT_PASSWORD_TEXTBOX.Text)
+                        Dim reader As OleDbDataReader = cmdCheck.ExecuteReader()
+                        If reader.HasRows Then
+                            reader.Close()
+                            Using cmdUpdate As New OleDbCommand(sqlUpdate, conn)
+                                cmdUpdate.Parameters.AddWithValue("@NewPassword", NEW_PASSWORD_TEXTBOX.Text)
+                                cmdUpdate.Parameters.AddWithValue("@UserName", USERNAME_TEXTBOX.Text)
+                                cmdUpdate.ExecuteNonQuery()
+                                MessageBox.Show("Password updated successfully.", "ALERT")
+                                randomValue = rnd.Next(100000, 999999)
+                                USERNAME_TEXTBOX.Clear()
+                                CURRENT_PASSWORD_TEXTBOX.Clear()
+                                NEW_PASSWORD_TEXTBOX.Clear()
+                                CONFIRM_PASSWORD_TEXTBOX.Clear()
+                                OTP_TEXTBOX.Clear()
+                            End Using
+                        Else
+                            reader.Close()
+                            MessageBox.Show("User name or old password is incorrect.", "ALERT")
+                        End If
+                    End Using
+                Catch ex As Exception
+                    ErrorAlert.Play()
+                    LogError("An Error Occured While Changing Password.Check Log For More Details.")
+                Finally
+                    conn.Close()
+                End Try
             End If
         End If
     End Sub
+
+    'For Clearing All
     Private Sub CLEAR_BTN_Click(sender As Object, e As EventArgs) Handles CLEAR_BTN.Click
         USERNAME_TEXTBOX.Clear()
         CURRENT_PASSWORD_TEXTBOX.Clear()
@@ -154,8 +130,9 @@ Public Class Change_Password
         CONFIRM_PASSWORD_TEXTBOX.Clear()
         OTP_TEXTBOX.Clear()
     End Sub
+
+    'For Generating a new random value every 5 minutes.
     Private Sub tmrRandom_Tick(sender As Object, e As EventArgs) Handles tmrRandom.Tick
-        ' Generate a new random value every 5 minutes
         randomValue = rnd.Next(100000, 999999)
     End Sub
     Private Sub Change_Password_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -172,10 +149,12 @@ Public Class Change_Password
             OTP_TEXTBOX.Visible = True
             OTP_BTN.Visible = True
         End If
-        ' Initialize the timer with a 5-minute interval
-        tmrRandom.Interval = 300000 ' 5 minutes in milliseconds
+        'Initialization of timer with a 5-minute interval
+        tmrRandom.Interval = 300000
         tmrRandom.Start()
     End Sub
+
+    'For Sending OTP
     Private Sub OTP_BTN_Click(sender As Object, e As EventArgs) Handles OTP_BTN.Click
         randomValue = rnd.Next(100000, 999999)
         Dim rand_value = randomValue
@@ -187,7 +166,7 @@ Public Class Change_Password
             Try
                 connection.Open()
                 Dim crfpicker As New OleDbCommand("SELECT CRF FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@USERNAME", connection)
-                Dim username As String = Module1.UserName
+                Dim username As String = LogType_Detector.UserName
                 crfpicker.Parameters.AddWithValue("@USERNAME", username)
                 Dim crfreader As OleDbDataReader = crfpicker.ExecuteReader
                 If crfreader.HasRows = True Then
@@ -202,6 +181,15 @@ Public Class Change_Password
                     While emailreader.Read
                         customer_name = emailreader.GetString(0)
                         cust_email = emailreader.GetString(1)
+                        If Not cust_email = "" And Not customer_name = "" Then
+                            Try
+                                OTP_Sender(cust_email, rand_value, customer_name)
+                            Catch ex As Exception
+                                ErrorAlert.Play()
+                                LogError("Error Sending CRF : " & ex.Message)
+                                MessageBox.Show("Error Sending OTP. Contact Admin.", "ALERT")
+                            End Try
+                        End If
                     End While
                 End If
             Catch ex As Exception
@@ -209,16 +197,9 @@ Public Class Change_Password
                 LogError("An Error Occured While Fetching CRF or Email: " & ex.Message)
                 MessageBox.Show("An Error Occured: Please Contact Administrator", "ALERT")
                 CHANGE_PASSWORD_BTN.Enabled = False
+            Finally
+                connection.Close()
             End Try
-            If Not cust_email = "" And Not customer_name = "" Then
-                Try
-                    OTP_Sender(cust_email, rand_value, customer_name)
-                Catch ex As Exception
-                    ErrorAlert.Play()
-                    LogError("Error Sending CRF : " & ex.Message)
-                    MessageBox.Show("Error Sending OTP. Contact Admin.", "ALERT")
-                End Try
-            End If
         End If
     End Sub
 End Class

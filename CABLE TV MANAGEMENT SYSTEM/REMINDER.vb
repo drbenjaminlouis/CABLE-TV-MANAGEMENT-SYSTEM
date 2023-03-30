@@ -9,7 +9,7 @@ Public Class REMINDER
         End If
     End Sub
     Private Sub REMINDER_LOAD(SENDER As Object, e As EventArgs) Handles MyBase.Load
-        Payment_Sync.Payment_Sync()
+        StatusSync.InactiveUpdater()
         Dim currentYear As Integer = DateTime.Now.Year
         PAYMENT_YEAR.Items.Add(currentYear)
         PAYMENT_YEAR.Items.Add(currentYear - 1)

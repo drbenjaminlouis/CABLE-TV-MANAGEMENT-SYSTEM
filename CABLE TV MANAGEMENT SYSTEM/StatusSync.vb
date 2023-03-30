@@ -1,13 +1,11 @@
 ﻿Imports System.Data.OleDb
-Imports System.Globalization
-Imports System.Transactions
 Imports Guna.UI2.WinForms
-
-Module Payment_Sync
-    Public Function Payment_Sync()
+Module StatusSync
+    'Function For Updating Connection Status To INACTIVE And Payment Status To NOT PAID 
+    Public Function InactiveUpdater()
         Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-        con.Open()
         Try
+            con.Open()
             Dim currentYear As Integer = DateTime.Now.Year
             Dim currentMonth As String = DateTime.Now.ToString("MMMM")
             Dim currentdate As Date = DateAndTime.Now.Date
@@ -23,20 +21,22 @@ Module Payment_Sync
             cmd2.ExecuteNonQuery()
             cmd3.ExecuteNonQuery()
             cmd4.ExecuteNonQuery()
-            con.Close()
-            Return 0
         Catch ex As Exception
             LogError("An Error Occured While Payment Sync: " & ex.Message)
             Dim messagebox As New Guna2MessageDialog
             messagebox.Style = MessageDialogStyle.Dark
             messagebox.Show("An Error Occured While Payment Sync: Please Check Log For More Details.", "ALERT")
+        Finally
+            con.Close()
         End Try
         Return 0
     End Function
-    Public Function Suspender()
+
+    'Function For Updating TV Connection Status To Suspended
+    Public Function SuspenderTV()
         Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-        con.Open()
         Try
+            con.Open()
             Dim cmd As New OleDbCommand("UPDATE TV_CONNECTION_DETAILS SET TV_CONNECTION_STATUS=@STATUS WHERE EXPIRY_DATE < @EXDATE", con)
             cmd.Parameters.AddWithValue("@STATUS", "SUSPENDED")
             Dim exdate As Date = Date.Today.AddDays(-60)
@@ -44,13 +44,17 @@ Module Payment_Sync
             cmd.ExecuteNonQuery()
         Catch ex As Exception
             MessageBox.Show(ex.Message)
+        Finally
+            con.Close()
         End Try
         Return 0
     End Function
-    Public Function ACTIVATOR_TV()
+
+    'Function For Uodating TV Connection Status To ACTIVE.
+    Public Function ActivatorTV()
         Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-        con.Open()
         Try
+            con.Open()
             Dim cmd As New OleDbCommand("UPDATE TV_CONNECTION_DETAILS SET TV_CONNECTION_STATUS=@STATUS WHERE EXPIRY_DATE > @EXDATE AND REGISTRATION_DATE < @REG_DATE", con)
             cmd.Parameters.AddWithValue("@STATUS", "ACTIVE")
             Dim exdate As Date = Date.Today.ToString("dd-MM-yyyy")
@@ -59,13 +63,17 @@ Module Payment_Sync
             cmd.ExecuteNonQuery()
         Catch ex As Exception
             MessageBox.Show(ex.Message)
+        Finally
+            con.Close()
         End Try
         Return 0
     End Function
-    Public Function Suspender_Broadband()
+
+    'Function For Updating BroadBand Connection Status To Suspended
+    Public Function SuspenderBroadband()
         Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-        con.Open()
         Try
+            con.Open()
             Dim cmd As New OleDbCommand("UPDATE BROADBAND_CONNECTION_DETAILS SET STATUS=@STATUS WHERE EXPIRY_DATE < @EXDATE", con)
             cmd.Parameters.AddWithValue("@STATUS", "SUSPENDED")
             Dim exdate As Date = Date.Today.AddDays(-60)
@@ -73,13 +81,17 @@ Module Payment_Sync
             cmd.ExecuteNonQuery()
         Catch ex As Exception
             MessageBox.Show(ex.Message)
+        Finally
+            con.Close()
         End Try
         Return 0
     End Function
-    Public Function ACTIVATOR_BROADBAND()
+
+    'Function For Uodating BroadBand Connection Status To ACTIVE.
+    Public Function ActivatorBroadband()
         Dim con As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
-        con.Open()
         Try
+            con.Open()
             Dim cmd As New OleDbCommand("UPDATE BROADBAND_CONNECTION_DETAILS SET STATUS=@STATUS WHERE EXPIRY_DATE > @EXDATE AND REGISTRATION_DATE < @REG_DATE", con)
             cmd.Parameters.AddWithValue("@STATUS", "ACTIVE")
             Dim exdate As Date = Date.Today.ToString("dd-MM-yyyy")
@@ -88,6 +100,8 @@ Module Payment_Sync
             cmd.ExecuteNonQuery()
         Catch ex As Exception
             MessageBox.Show(ex.Message)
+        Finally
+            con.Close()
         End Try
         Return 0
     End Function

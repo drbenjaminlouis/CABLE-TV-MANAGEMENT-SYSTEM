@@ -4,7 +4,7 @@ Public Class Admin_Login
     Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
     Dim dr As OleDbDataReader
     Private Sub Admin_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Module1.LoginType = "ADMIN"
+        LogType_Detector.LoginType = "ADMIN"
         Year_Updater.TV_Year_Updater()
         Year_Updater.BroadBand_Year_Updater()
     End Sub
@@ -21,8 +21,8 @@ Public Class Admin_Login
                 cmd.Parameters.AddWithValue("@PASSWORD", PASSWORD_TEXTBOX.Text)
                 dr = cmd.ExecuteReader
                 If dr.HasRows = True Then
-                    Module1.UserName = USERNAME_TEXTBOX.Text
-                    Module1.LoginType = "ADMIN"
+                    LogType_Detector.UserName = USERNAME_TEXTBOX.Text
+                    LogType_Detector.LoginType = "ADMIN"
                     Me.Hide()
                     Admin_Dashboard.Show()
                     Admin_Dashboard.DASHBOARD_BTN.PerformClick()

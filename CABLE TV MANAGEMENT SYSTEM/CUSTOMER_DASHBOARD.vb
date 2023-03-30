@@ -2,10 +2,8 @@
 
 Public Class CUSTOMER_DASHBOARD
     Public Sub New()
-        ' This call is required by the designer.
         InitializeComponent()
         AddHandler MyBase.Load, AddressOf CUSTOMER_DASHBOARD_LOAD
-        ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private CurrentChildFrom As Form
     'For Inter-Changing Panels'

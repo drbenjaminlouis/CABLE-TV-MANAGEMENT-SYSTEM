@@ -7,7 +7,7 @@ Public Class Payment_Details
     Dim crfno As Integer
     Dim yearList As New List(Of Integer)
     Private Sub Payment_Details_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Payment_Sync.Payment_Sync()
+        StatusSync.InactiveUpdater()
         '.Items.Clear()
         ' YEAR_COMBOBOX.Items.Clear()
         If LoginType = "ADMIN" Then

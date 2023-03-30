@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Loading
+Partial Class AppLoading
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -25,7 +25,7 @@ Partial Class Loading
         components = New ComponentModel.Container()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Loading))
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(AppLoading))
         Label1 = New Label()
         Label2 = New Label()
         Timer1 = New Timer(components)
@@ -93,7 +93,7 @@ Partial Class Loading
         MyProgress.Value = 75
         MyProgress.Visible = False
         ' 
-        ' Loading
+        ' AppLoading
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -109,7 +109,7 @@ Partial Class Loading
         MaximizeBox = False
         MaximumSize = New Size(800, 450)
         MinimumSize = New Size(800, 450)
-        Name = "Loading"
+        Name = "AppLoading"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
         ResumeLayout(False)

@@ -1,7 +1,4 @@
-﻿Imports System.Configuration
-Imports System.IO
-
-Module Config
+﻿Module Config
     Public dbFilePath As String = "C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\App_Data\CABLE_TV_DB.accdb"
     Public invoicepath As String = ("Invoices\")
     Public img_path As String = ("C:\Users\abyjo\source\repos\CABLE-TV-MANAGEMENT-SYSTEM\CABLE TV MANAGEMENT SYSTEM\Assets\mail_bg.jpg")

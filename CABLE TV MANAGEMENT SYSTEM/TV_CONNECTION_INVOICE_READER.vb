@@ -1,20 +1,6 @@
 ﻿Imports System.Data.OleDb
 Imports System.Globalization
-Imports System.Windows
 Imports System.IO
-Imports iTextSharp.text.pdf.parser
-Imports Microsoft.Web.WebView2.Core
-Imports Microsoft.Web.WebView2.WinForms
-Imports System.Drawing.Printing
-Imports PdfSharp.Drawing
-Imports System.Drawing.Imaging
-Imports PdfSharp.Pdf
-Imports PdfSharp.Pdf.IO
-Imports iTextSharp.text.pdf
-Imports PdfPage = PdfSharp.Pdf.PdfPage
-Imports System.Diagnostics.Eventing
-Imports Microsoft.Office.Interop.Excel
-
 Public Class TV_CONNECTION_INVOICE_READER
     Dim flag As Boolean = False
     Dim FILE_PATH As String
@@ -23,10 +9,8 @@ Public Class TV_CONNECTION_INVOICE_READER
     ReadOnly currentMonth As String = DateTime.Now.ToString("MMMM").ToUpper
     ReadOnly yearList As New List(Of Integer)
     Public Sub New()
-        ' This call is required by the designer.
         InitializeComponent()
         AddHandler MyBase.Load, AddressOf TV_CONNECTION_INVOICE_READER_Load
-        ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private Sub TV_CONNECTION_INVOICE_READER_Load(sender As Object, e As EventArgs)
         PDF_VIEWER.Source = New Uri("file:///" & FileNotFound)
@@ -34,7 +18,7 @@ Public Class TV_CONNECTION_INVOICE_READER
             Dim connection As New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbFilePath)
             connection.Open()
             Dim crfpicker As New OleDbCommand("SELECT CRF FROM CUSTOMER_LOGIN_DETAILS WHERE CUST_USERNAME=@USERNAME", connection)
-            Dim username As String = Module1.UserName
+            Dim username As String = LogType_Detector.UserName
             crfpicker.Parameters.AddWithValue("@USERNAME", username)
             Dim crfreader As OleDbDataReader = crfpicker.ExecuteReader
             If crfreader.HasRows = True Then
@@ -69,8 +53,6 @@ Public Class TV_CONNECTION_INVOICE_READER
                     Next
                     MONTH_COMBOBOX.SelectedItem = currentMonth
                 End If
-
-
             End If
             connection.Close()
         End If
@@ -78,7 +60,6 @@ Public Class TV_CONNECTION_INVOICE_READER
         AddHandler CUST_DATA_GRID.SelectionChanged, AddressOf CUST_DATA_GRID_SelectionChanged
         AddHandler DOWNLOAD_BTN.Click, AddressOf DOWNLOAD_BTN_Click
         ' AddHandler pd.PrintPage, AddressOf pd_PrintPage
-
     End Sub
     Private Sub CUST_DATA_GRID_SelectionChanged(sender As Object, e As EventArgs)
         If flag = True Then
