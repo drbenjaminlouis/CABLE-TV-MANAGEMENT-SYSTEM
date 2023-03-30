@@ -23,8 +23,8 @@ Partial Class add_customer
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim CustomizableEdges64 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges65 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges70 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges71 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -36,44 +36,40 @@ Partial Class add_customer
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges68 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges69 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -88,8 +84,18 @@ Partial Class add_customer
         Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges61 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges64 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges65 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges66 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges67 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim Animation1 As Guna.UI2.AnimatorNS.Animation = New Guna.UI2.AnimatorNS.Animation()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(add_customer))
+        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         MessageBox2 = New Guna.UI2.WinForms.Guna2MessageDialog()
         Guna2CustomGradientPanel1 = New Guna.UI2.WinForms.Guna2CustomGradientPanel()
         ADD_CUSTOMER_PROGRESS = New Guna.UI2.WinForms.Guna2ProgressIndicator()
@@ -101,6 +107,7 @@ Partial Class add_customer
         ADD_CUST_RESETBTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
         ADD_CUST_CREATEBTN = New Guna.UI2.WinForms.Guna2GradientTileButton()
         Guna2GroupBox7 = New Guna.UI2.WinForms.Guna2GroupBox()
+        CUST_USERNAME_STATUS = New Guna.UI2.WinForms.Guna2PictureBox()
         CUST_PASSWORD_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
         CUST_PASSWORD_LABEL = New Label()
         CUST_USERNAME_TEXTBOX = New Guna.UI2.WinForms.Guna2TextBox()
@@ -151,12 +158,17 @@ Partial Class add_customer
         CUST_NAME_LABEL = New Label()
         Timer1 = New Timer(components)
         Guna2Transition1 = New Guna.UI2.WinForms.Guna2Transition()
+        CUST_B_USERNAME_STATUS = New Guna.UI2.WinForms.Guna2PictureBox()
+        CHIP_ID_STATUS = New Guna.UI2.WinForms.Guna2PictureBox()
         Guna2CustomGradientPanel1.SuspendLayout()
         Guna2GroupBox1.SuspendLayout()
         Guna2GroupBox7.SuspendLayout()
+        CType(CUST_USERNAME_STATUS, ComponentModel.ISupportInitialize).BeginInit()
         Guna2GroupBox6.SuspendLayout()
         Guna2GroupBox5.SuspendLayout()
         Guna2GroupBox4.SuspendLayout()
+        CType(CUST_B_USERNAME_STATUS, ComponentModel.ISupportInitialize).BeginInit()
+        CType(CHIP_ID_STATUS, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' MessageBox2
@@ -181,7 +193,7 @@ Partial Class add_customer
         Guna2CustomGradientPanel1.Controls.Add(CRF_LABEL)
         Guna2CustomGradientPanel1.Controls.Add(CUST_CRF_TEXTBOX)
         Guna2CustomGradientPanel1.Controls.Add(Guna2GroupBox4)
-        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges64
+        Guna2CustomGradientPanel1.CustomizableEdges = CustomizableEdges70
         Guna2Transition1.SetDecoration(Guna2CustomGradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2CustomGradientPanel1.Dock = DockStyle.Fill
         Guna2CustomGradientPanel1.FillColor = Color.Black
@@ -190,7 +202,7 @@ Partial Class add_customer
         Guna2CustomGradientPanel1.FillColor4 = Color.Black
         Guna2CustomGradientPanel1.Location = New Point(0, 0)
         Guna2CustomGradientPanel1.Name = "Guna2CustomGradientPanel1"
-        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges65
+        Guna2CustomGradientPanel1.ShadowDecoration.CustomizableEdges = CustomizableEdges71
         Guna2CustomGradientPanel1.Size = New Size(1378, 1100)
         Guna2CustomGradientPanel1.TabIndex = 0
         ' 
@@ -363,22 +375,36 @@ Partial Class add_customer
         Guna2GroupBox7.BackColor = Color.Black
         Guna2GroupBox7.BorderColor = Color.Green
         Guna2GroupBox7.BorderRadius = 3
+        Guna2GroupBox7.Controls.Add(CUST_USERNAME_STATUS)
         Guna2GroupBox7.Controls.Add(CUST_PASSWORD_TEXTBOX)
         Guna2GroupBox7.Controls.Add(CUST_PASSWORD_LABEL)
         Guna2GroupBox7.Controls.Add(CUST_USERNAME_TEXTBOX)
         Guna2GroupBox7.Controls.Add(CUST_USERNAME_LABEL)
         Guna2GroupBox7.CustomBorderColor = Color.Empty
-        Guna2GroupBox7.CustomizableEdges = CustomizableEdges16
+        Guna2GroupBox7.CustomizableEdges = CustomizableEdges18
         Guna2Transition1.SetDecoration(Guna2GroupBox7, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2GroupBox7.FillColor = Color.Transparent
         Guna2GroupBox7.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2GroupBox7.ForeColor = Color.SpringGreen
         Guna2GroupBox7.Location = New Point(18, 667)
         Guna2GroupBox7.Name = "Guna2GroupBox7"
-        Guna2GroupBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges17
+        Guna2GroupBox7.ShadowDecoration.CustomizableEdges = CustomizableEdges19
         Guna2GroupBox7.Size = New Size(657, 133)
         Guna2GroupBox7.TabIndex = 47
         Guna2GroupBox7.Text = "Login Details"' 
+        ' CUST_USERNAME_STATUS
+        ' 
+        CUST_USERNAME_STATUS.CustomizableEdges = CustomizableEdges12
+        Guna2Transition1.SetDecoration(CUST_USERNAME_STATUS, Guna.UI2.AnimatorNS.DecorationType.None)
+        CUST_USERNAME_STATUS.FillColor = Color.Black
+        CUST_USERNAME_STATUS.ImageRotate = 0F
+        CUST_USERNAME_STATUS.Location = New Point(599, 43)
+        CUST_USERNAME_STATUS.Name = "CUST_USERNAME_STATUS"
+        CUST_USERNAME_STATUS.ShadowDecoration.CustomizableEdges = CustomizableEdges13
+        CUST_USERNAME_STATUS.Size = New Size(23, 23)
+        CUST_USERNAME_STATUS.TabIndex = 1
+        CUST_USERNAME_STATUS.TabStop = False
+        ' 
         ' CUST_PASSWORD_TEXTBOX
         ' 
         CUST_PASSWORD_TEXTBOX.Anchor = AnchorStyles.None
@@ -387,7 +413,7 @@ Partial Class add_customer
         CUST_PASSWORD_TEXTBOX.BorderRadius = 3
         CUST_PASSWORD_TEXTBOX.BorderThickness = 0
         CUST_PASSWORD_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges12
+        CUST_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges14
         Guna2Transition1.SetDecoration(CUST_PASSWORD_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_PASSWORD_TEXTBOX.DefaultText = ""
         CUST_PASSWORD_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -405,7 +431,7 @@ Partial Class add_customer
         CUST_PASSWORD_TEXTBOX.PasswordChar = ChrW(0)
         CUST_PASSWORD_TEXTBOX.PlaceholderText = ""
         CUST_PASSWORD_TEXTBOX.SelectedText = ""
-        CUST_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges13
+        CUST_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges15
         CUST_PASSWORD_TEXTBOX.Size = New Size(389, 36)
         CUST_PASSWORD_TEXTBOX.TabIndex = 10
         ' 
@@ -430,7 +456,7 @@ Partial Class add_customer
         CUST_USERNAME_TEXTBOX.BorderRadius = 3
         CUST_USERNAME_TEXTBOX.BorderThickness = 0
         CUST_USERNAME_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges14
+        CUST_USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges16
         Guna2Transition1.SetDecoration(CUST_USERNAME_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_USERNAME_TEXTBOX.DefaultText = ""
         CUST_USERNAME_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -448,7 +474,7 @@ Partial Class add_customer
         CUST_USERNAME_TEXTBOX.PasswordChar = ChrW(0)
         CUST_USERNAME_TEXTBOX.PlaceholderText = ""
         CUST_USERNAME_TEXTBOX.SelectedText = ""
-        CUST_USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges15
+        CUST_USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges17
         CUST_USERNAME_TEXTBOX.Size = New Size(389, 36)
         CUST_USERNAME_TEXTBOX.TabIndex = 8
         ' 
@@ -483,6 +509,7 @@ Partial Class add_customer
         Guna2GroupBox6.BackColor = Color.Black
         Guna2GroupBox6.BorderColor = Color.Green
         Guna2GroupBox6.BorderRadius = 3
+        Guna2GroupBox6.Controls.Add(CUST_B_USERNAME_STATUS)
         Guna2GroupBox6.Controls.Add(BROADBAND_REG_DATE)
         Guna2GroupBox6.Controls.Add(BB_REG_DATE_LABEL)
         Guna2GroupBox6.Controls.Add(CUST_BROADBAND_LABEL)
@@ -494,14 +521,14 @@ Partial Class add_customer
         Guna2GroupBox6.Controls.Add(CUST_BROADBAND_PASSWORD_LABEL)
         Guna2GroupBox6.Controls.Add(CUST_BROADBAND_PASSWORD_TEXTBOX)
         Guna2GroupBox6.CustomBorderColor = Color.Empty
-        Guna2GroupBox6.CustomizableEdges = CustomizableEdges28
+        Guna2GroupBox6.CustomizableEdges = CustomizableEdges32
         Guna2Transition1.SetDecoration(Guna2GroupBox6, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2GroupBox6.FillColor = Color.Transparent
         Guna2GroupBox6.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2GroupBox6.ForeColor = Color.SpringGreen
         Guna2GroupBox6.Location = New Point(708, 419)
         Guna2GroupBox6.Name = "Guna2GroupBox6"
-        Guna2GroupBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges29
+        Guna2GroupBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges33
         Guna2GroupBox6.Size = New Size(644, 338)
         Guna2GroupBox6.TabIndex = 45
         Guna2GroupBox6.Text = "Broadband Details"' 
@@ -510,7 +537,7 @@ Partial Class add_customer
         BROADBAND_REG_DATE.Anchor = AnchorStyles.Left
         BROADBAND_REG_DATE.Animated = True
         BROADBAND_REG_DATE.Checked = True
-        BROADBAND_REG_DATE.CustomizableEdges = CustomizableEdges18
+        BROADBAND_REG_DATE.CustomizableEdges = CustomizableEdges22
         Guna2Transition1.SetDecoration(BROADBAND_REG_DATE, Guna.UI2.AnimatorNS.DecorationType.None)
         BROADBAND_REG_DATE.Enabled = False
         BROADBAND_REG_DATE.FillColor = Color.FromArgb(CByte(25), CByte(25), CByte(25))
@@ -521,7 +548,7 @@ Partial Class add_customer
         BROADBAND_REG_DATE.MaxDate = New DateTime(2023, 2, 18, 0, 0, 0, 0)
         BROADBAND_REG_DATE.MinDate = New DateTime(1900, 1, 1, 0, 0, 0, 0)
         BROADBAND_REG_DATE.Name = "BROADBAND_REG_DATE"
-        BROADBAND_REG_DATE.ShadowDecoration.CustomizableEdges = CustomizableEdges19
+        BROADBAND_REG_DATE.ShadowDecoration.CustomizableEdges = CustomizableEdges23
         BROADBAND_REG_DATE.Size = New Size(389, 36)
         BROADBAND_REG_DATE.TabIndex = 31
         BROADBAND_REG_DATE.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase
@@ -572,7 +599,7 @@ Partial Class add_customer
         CUST_BROADBAND_PLAN_COMBOBOX.BackColor = Color.Transparent
         CUST_BROADBAND_PLAN_COMBOBOX.BorderThickness = 0
         CUST_BROADBAND_PLAN_COMBOBOX.Cursor = Cursors.Hand
-        CUST_BROADBAND_PLAN_COMBOBOX.CustomizableEdges = CustomizableEdges20
+        CUST_BROADBAND_PLAN_COMBOBOX.CustomizableEdges = CustomizableEdges24
         Guna2Transition1.SetDecoration(CUST_BROADBAND_PLAN_COMBOBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_BROADBAND_PLAN_COMBOBOX.DrawMode = DrawMode.OwnerDrawFixed
         CUST_BROADBAND_PLAN_COMBOBOX.DropDownStyle = ComboBoxStyle.DropDownList
@@ -585,7 +612,7 @@ Partial Class add_customer
         CUST_BROADBAND_PLAN_COMBOBOX.Items.AddRange(New Object() {"FUP 50M 400G"})
         CUST_BROADBAND_PLAN_COMBOBOX.Location = New Point(213, 98)
         CUST_BROADBAND_PLAN_COMBOBOX.Name = "CUST_BROADBAND_PLAN_COMBOBOX"
-        CUST_BROADBAND_PLAN_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges21
+        CUST_BROADBAND_PLAN_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges25
         CUST_BROADBAND_PLAN_COMBOBOX.Size = New Size(389, 36)
         CUST_BROADBAND_PLAN_COMBOBOX.TabIndex = 23
         ' 
@@ -610,7 +637,7 @@ Partial Class add_customer
         CUST_BROADBAND_USERNAME_TEXTBOX.BorderRadius = 3
         CUST_BROADBAND_USERNAME_TEXTBOX.BorderThickness = 0
         CUST_BROADBAND_USERNAME_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_BROADBAND_USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges22
+        CUST_BROADBAND_USERNAME_TEXTBOX.CustomizableEdges = CustomizableEdges26
         Guna2Transition1.SetDecoration(CUST_BROADBAND_USERNAME_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_BROADBAND_USERNAME_TEXTBOX.DefaultText = ""
         CUST_BROADBAND_USERNAME_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -627,7 +654,7 @@ Partial Class add_customer
         CUST_BROADBAND_USERNAME_TEXTBOX.PasswordChar = ChrW(0)
         CUST_BROADBAND_USERNAME_TEXTBOX.PlaceholderText = ""
         CUST_BROADBAND_USERNAME_TEXTBOX.SelectedText = ""
-        CUST_BROADBAND_USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges23
+        CUST_BROADBAND_USERNAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges27
         CUST_BROADBAND_USERNAME_TEXTBOX.Size = New Size(389, 36)
         CUST_BROADBAND_USERNAME_TEXTBOX.TabIndex = 18
         ' 
@@ -637,7 +664,7 @@ Partial Class add_customer
         CUST_BROADBAND_COMBOBOX.BackColor = Color.Transparent
         CUST_BROADBAND_COMBOBOX.BorderThickness = 0
         CUST_BROADBAND_COMBOBOX.Cursor = Cursors.Hand
-        CUST_BROADBAND_COMBOBOX.CustomizableEdges = CustomizableEdges24
+        CUST_BROADBAND_COMBOBOX.CustomizableEdges = CustomizableEdges28
         Guna2Transition1.SetDecoration(CUST_BROADBAND_COMBOBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_BROADBAND_COMBOBOX.DrawMode = DrawMode.OwnerDrawFixed
         CUST_BROADBAND_COMBOBOX.DropDownStyle = ComboBoxStyle.DropDownList
@@ -650,7 +677,7 @@ Partial Class add_customer
         CUST_BROADBAND_COMBOBOX.Items.AddRange(New Object() {"YES", "NO"})
         CUST_BROADBAND_COMBOBOX.Location = New Point(213, 52)
         CUST_BROADBAND_COMBOBOX.Name = "CUST_BROADBAND_COMBOBOX"
-        CUST_BROADBAND_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges25
+        CUST_BROADBAND_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges29
         CUST_BROADBAND_COMBOBOX.Size = New Size(389, 36)
         CUST_BROADBAND_COMBOBOX.TabIndex = 22
         ' 
@@ -675,7 +702,7 @@ Partial Class add_customer
         CUST_BROADBAND_PASSWORD_TEXTBOX.BorderRadius = 3
         CUST_BROADBAND_PASSWORD_TEXTBOX.BorderThickness = 0
         CUST_BROADBAND_PASSWORD_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_BROADBAND_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges26
+        CUST_BROADBAND_PASSWORD_TEXTBOX.CustomizableEdges = CustomizableEdges30
         Guna2Transition1.SetDecoration(CUST_BROADBAND_PASSWORD_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_BROADBAND_PASSWORD_TEXTBOX.DefaultText = ""
         CUST_BROADBAND_PASSWORD_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -692,7 +719,7 @@ Partial Class add_customer
         CUST_BROADBAND_PASSWORD_TEXTBOX.PasswordChar = ChrW(0)
         CUST_BROADBAND_PASSWORD_TEXTBOX.PlaceholderText = ""
         CUST_BROADBAND_PASSWORD_TEXTBOX.SelectedText = ""
-        CUST_BROADBAND_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges27
+        CUST_BROADBAND_PASSWORD_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges31
         CUST_BROADBAND_PASSWORD_TEXTBOX.Size = New Size(389, 36)
         CUST_BROADBAND_PASSWORD_TEXTBOX.TabIndex = 20
         ' 
@@ -702,6 +729,7 @@ Partial Class add_customer
         Guna2GroupBox5.BackColor = Color.Black
         Guna2GroupBox5.BorderColor = Color.Green
         Guna2GroupBox5.BorderRadius = 3
+        Guna2GroupBox5.Controls.Add(CHIP_ID_STATUS)
         Guna2GroupBox5.Controls.Add(TV_Reg_Picker)
         Guna2GroupBox5.Controls.Add(TV_Reg_Label)
         Guna2GroupBox5.Controls.Add(CUST_CABLE_PLAN_COMBOBOX)
@@ -711,14 +739,14 @@ Partial Class add_customer
         Guna2GroupBox5.Controls.Add(CUST_CABLE_PLAN_LABEL)
         Guna2GroupBox5.Controls.Add(CUST_TV_CONNECTION_LABEL)
         Guna2GroupBox5.CustomBorderColor = Color.Empty
-        Guna2GroupBox5.CustomizableEdges = CustomizableEdges38
+        Guna2GroupBox5.CustomizableEdges = CustomizableEdges44
         Guna2Transition1.SetDecoration(Guna2GroupBox5, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2GroupBox5.FillColor = Color.Transparent
         Guna2GroupBox5.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2GroupBox5.ForeColor = Color.SpringGreen
         Guna2GroupBox5.Location = New Point(708, 147)
         Guna2GroupBox5.Name = "Guna2GroupBox5"
-        Guna2GroupBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges39
+        Guna2GroupBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges45
         Guna2GroupBox5.Size = New Size(644, 266)
         Guna2GroupBox5.TabIndex = 46
         Guna2GroupBox5.Text = "TV Connection Details"' 
@@ -727,7 +755,7 @@ Partial Class add_customer
         TV_Reg_Picker.Anchor = AnchorStyles.Left
         TV_Reg_Picker.Animated = True
         TV_Reg_Picker.Checked = True
-        TV_Reg_Picker.CustomizableEdges = CustomizableEdges30
+        TV_Reg_Picker.CustomizableEdges = CustomizableEdges36
         Guna2Transition1.SetDecoration(TV_Reg_Picker, Guna.UI2.AnimatorNS.DecorationType.None)
         TV_Reg_Picker.Enabled = False
         TV_Reg_Picker.FillColor = Color.FromArgb(CByte(25), CByte(25), CByte(25))
@@ -738,7 +766,7 @@ Partial Class add_customer
         TV_Reg_Picker.MaxDate = New DateTime(2023, 2, 2, 0, 0, 0, 0)
         TV_Reg_Picker.MinDate = New DateTime(1900, 1, 1, 0, 0, 0, 0)
         TV_Reg_Picker.Name = "TV_Reg_Picker"
-        TV_Reg_Picker.ShadowDecoration.CustomizableEdges = CustomizableEdges31
+        TV_Reg_Picker.ShadowDecoration.CustomizableEdges = CustomizableEdges37
         TV_Reg_Picker.Size = New Size(389, 36)
         TV_Reg_Picker.TabIndex = 35
         TV_Reg_Picker.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase
@@ -763,7 +791,7 @@ Partial Class add_customer
         CUST_CABLE_PLAN_COMBOBOX.BackColor = Color.Transparent
         CUST_CABLE_PLAN_COMBOBOX.BorderThickness = 0
         CUST_CABLE_PLAN_COMBOBOX.Cursor = Cursors.Hand
-        CUST_CABLE_PLAN_COMBOBOX.CustomizableEdges = CustomizableEdges32
+        CUST_CABLE_PLAN_COMBOBOX.CustomizableEdges = CustomizableEdges38
         Guna2Transition1.SetDecoration(CUST_CABLE_PLAN_COMBOBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_CABLE_PLAN_COMBOBOX.DrawMode = DrawMode.OwnerDrawFixed
         CUST_CABLE_PLAN_COMBOBOX.DropDownStyle = ComboBoxStyle.DropDownList
@@ -776,7 +804,7 @@ Partial Class add_customer
         CUST_CABLE_PLAN_COMBOBOX.Items.AddRange(New Object() {"CLASSIC PRIME"})
         CUST_CABLE_PLAN_COMBOBOX.Location = New Point(213, 85)
         CUST_CABLE_PLAN_COMBOBOX.Name = "CUST_CABLE_PLAN_COMBOBOX"
-        CUST_CABLE_PLAN_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges33
+        CUST_CABLE_PLAN_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges39
         CUST_CABLE_PLAN_COMBOBOX.Size = New Size(389, 36)
         CUST_CABLE_PLAN_COMBOBOX.TabIndex = 30
         ' 
@@ -786,7 +814,7 @@ Partial Class add_customer
         CUST_TV_CONNECTION_COMBOBOX.BackColor = Color.Transparent
         CUST_TV_CONNECTION_COMBOBOX.BorderThickness = 0
         CUST_TV_CONNECTION_COMBOBOX.Cursor = Cursors.Hand
-        CUST_TV_CONNECTION_COMBOBOX.CustomizableEdges = CustomizableEdges34
+        CUST_TV_CONNECTION_COMBOBOX.CustomizableEdges = CustomizableEdges40
         Guna2Transition1.SetDecoration(CUST_TV_CONNECTION_COMBOBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_TV_CONNECTION_COMBOBOX.DrawMode = DrawMode.OwnerDrawFixed
         CUST_TV_CONNECTION_COMBOBOX.DropDownStyle = ComboBoxStyle.DropDownList
@@ -799,7 +827,7 @@ Partial Class add_customer
         CUST_TV_CONNECTION_COMBOBOX.Items.AddRange(New Object() {"YES", "NO"})
         CUST_TV_CONNECTION_COMBOBOX.Location = New Point(213, 40)
         CUST_TV_CONNECTION_COMBOBOX.Name = "CUST_TV_CONNECTION_COMBOBOX"
-        CUST_TV_CONNECTION_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges35
+        CUST_TV_CONNECTION_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges41
         CUST_TV_CONNECTION_COMBOBOX.Size = New Size(389, 36)
         CUST_TV_CONNECTION_COMBOBOX.TabIndex = 29
         ' 
@@ -811,7 +839,7 @@ Partial Class add_customer
         CUST_CHIP_ID_TEXTBOX.BorderRadius = 3
         CUST_CHIP_ID_TEXTBOX.BorderThickness = 0
         CUST_CHIP_ID_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_CHIP_ID_TEXTBOX.CustomizableEdges = CustomizableEdges36
+        CUST_CHIP_ID_TEXTBOX.CustomizableEdges = CustomizableEdges42
         Guna2Transition1.SetDecoration(CUST_CHIP_ID_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_CHIP_ID_TEXTBOX.DefaultText = ""
         CUST_CHIP_ID_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -828,7 +856,7 @@ Partial Class add_customer
         CUST_CHIP_ID_TEXTBOX.PasswordChar = ChrW(0)
         CUST_CHIP_ID_TEXTBOX.PlaceholderText = ""
         CUST_CHIP_ID_TEXTBOX.SelectedText = ""
-        CUST_CHIP_ID_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges37
+        CUST_CHIP_ID_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges43
         CUST_CHIP_ID_TEXTBOX.Size = New Size(389, 36)
         CUST_CHIP_ID_TEXTBOX.TabIndex = 28
         ' 
@@ -893,7 +921,7 @@ Partial Class add_customer
         CUST_CRF_TEXTBOX.BorderRadius = 3
         CUST_CRF_TEXTBOX.BorderThickness = 0
         CUST_CRF_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_CRF_TEXTBOX.CustomizableEdges = CustomizableEdges40
+        CUST_CRF_TEXTBOX.CustomizableEdges = CustomizableEdges46
         Guna2Transition1.SetDecoration(CUST_CRF_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_CRF_TEXTBOX.DefaultText = ""
         CUST_CRF_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -911,7 +939,7 @@ Partial Class add_customer
         CUST_CRF_TEXTBOX.PlaceholderText = ""
         CUST_CRF_TEXTBOX.ReadOnly = True
         CUST_CRF_TEXTBOX.SelectedText = ""
-        CUST_CRF_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges41
+        CUST_CRF_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges47
         CUST_CRF_TEXTBOX.Size = New Size(389, 36)
         CUST_CRF_TEXTBOX.TabIndex = 43
         ' 
@@ -941,14 +969,14 @@ Partial Class add_customer
         Guna2GroupBox4.Controls.Add(CUST_NAME_TEXTBOX)
         Guna2GroupBox4.Controls.Add(CUST_NAME_LABEL)
         Guna2GroupBox4.CustomBorderColor = Color.Empty
-        Guna2GroupBox4.CustomizableEdges = CustomizableEdges62
+        Guna2GroupBox4.CustomizableEdges = CustomizableEdges68
         Guna2Transition1.SetDecoration(Guna2GroupBox4, Guna.UI2.AnimatorNS.DecorationType.None)
         Guna2GroupBox4.FillColor = Color.Transparent
         Guna2GroupBox4.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Guna2GroupBox4.ForeColor = Color.SpringGreen
         Guna2GroupBox4.Location = New Point(18, 147)
         Guna2GroupBox4.Name = "Guna2GroupBox4"
-        Guna2GroupBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges63
+        Guna2GroupBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges69
         Guna2GroupBox4.Size = New Size(657, 514)
         Guna2GroupBox4.TabIndex = 44
         Guna2GroupBox4.Text = "Contact Details"' 
@@ -960,7 +988,7 @@ Partial Class add_customer
         CUST_HOUSENAME_TEXTBOX.BorderRadius = 3
         CUST_HOUSENAME_TEXTBOX.BorderThickness = 0
         CUST_HOUSENAME_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_HOUSENAME_TEXTBOX.CustomizableEdges = CustomizableEdges42
+        CUST_HOUSENAME_TEXTBOX.CustomizableEdges = CustomizableEdges48
         Guna2Transition1.SetDecoration(CUST_HOUSENAME_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_HOUSENAME_TEXTBOX.DefaultText = ""
         CUST_HOUSENAME_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -977,7 +1005,7 @@ Partial Class add_customer
         CUST_HOUSENAME_TEXTBOX.PasswordChar = ChrW(0)
         CUST_HOUSENAME_TEXTBOX.PlaceholderText = ""
         CUST_HOUSENAME_TEXTBOX.SelectedText = ""
-        CUST_HOUSENAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges43
+        CUST_HOUSENAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges49
         CUST_HOUSENAME_TEXTBOX.Size = New Size(389, 36)
         CUST_HOUSENAME_TEXTBOX.TabIndex = 33
         ' 
@@ -988,7 +1016,7 @@ Partial Class add_customer
         CUST_COUNTRY_COMBOBOX.BorderColor = Color.Transparent
         CUST_COUNTRY_COMBOBOX.BorderThickness = 0
         CUST_COUNTRY_COMBOBOX.Cursor = Cursors.Hand
-        CUST_COUNTRY_COMBOBOX.CustomizableEdges = CustomizableEdges44
+        CUST_COUNTRY_COMBOBOX.CustomizableEdges = CustomizableEdges50
         Guna2Transition1.SetDecoration(CUST_COUNTRY_COMBOBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_COUNTRY_COMBOBOX.DrawMode = DrawMode.OwnerDrawFixed
         CUST_COUNTRY_COMBOBOX.DropDownStyle = ComboBoxStyle.DropDownList
@@ -1002,7 +1030,7 @@ Partial Class add_customer
         CUST_COUNTRY_COMBOBOX.ItemHeight = 30
         CUST_COUNTRY_COMBOBOX.Location = New Point(204, 310)
         CUST_COUNTRY_COMBOBOX.Name = "CUST_COUNTRY_COMBOBOX"
-        CUST_COUNTRY_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges45
+        CUST_COUNTRY_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges51
         CUST_COUNTRY_COMBOBOX.Size = New Size(389, 36)
         CUST_COUNTRY_COMBOBOX.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         CUST_COUNTRY_COMBOBOX.TabIndex = 49
@@ -1013,7 +1041,7 @@ Partial Class add_customer
         DOB_PICKER.Anchor = AnchorStyles.Left
         DOB_PICKER.Animated = True
         DOB_PICKER.Checked = True
-        DOB_PICKER.CustomizableEdges = CustomizableEdges46
+        DOB_PICKER.CustomizableEdges = CustomizableEdges52
         Guna2Transition1.SetDecoration(DOB_PICKER, Guna.UI2.AnimatorNS.DecorationType.BottomMirror)
         DOB_PICKER.FillColor = Color.FromArgb(CByte(25), CByte(25), CByte(25))
         DOB_PICKER.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
@@ -1024,7 +1052,7 @@ Partial Class add_customer
         DOB_PICKER.MinDate = New DateTime(1900, 1, 1, 0, 0, 0, 0)
         DOB_PICKER.MinimumSize = New Size(389, 36)
         DOB_PICKER.Name = "DOB_PICKER"
-        DOB_PICKER.ShadowDecoration.CustomizableEdges = CustomizableEdges47
+        DOB_PICKER.ShadowDecoration.CustomizableEdges = CustomizableEdges53
         DOB_PICKER.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         DOB_PICKER.Size = New Size(389, 36)
         DOB_PICKER.TabIndex = 48
@@ -1052,7 +1080,7 @@ Partial Class add_customer
         CUST_EMAIL_TEXTBOX.BorderRadius = 3
         CUST_EMAIL_TEXTBOX.BorderThickness = 0
         CUST_EMAIL_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_EMAIL_TEXTBOX.CustomizableEdges = CustomizableEdges48
+        CUST_EMAIL_TEXTBOX.CustomizableEdges = CustomizableEdges54
         Guna2Transition1.SetDecoration(CUST_EMAIL_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_EMAIL_TEXTBOX.DefaultText = ""
         CUST_EMAIL_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -1069,7 +1097,7 @@ Partial Class add_customer
         CUST_EMAIL_TEXTBOX.PasswordChar = ChrW(0)
         CUST_EMAIL_TEXTBOX.PlaceholderText = ""
         CUST_EMAIL_TEXTBOX.SelectedText = ""
-        CUST_EMAIL_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges49
+        CUST_EMAIL_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges55
         CUST_EMAIL_TEXTBOX.Size = New Size(389, 36)
         CUST_EMAIL_TEXTBOX.TabIndex = 46
         ' 
@@ -1094,7 +1122,7 @@ Partial Class add_customer
         CUST_MOBILE_TEXTBOX.BorderRadius = 3
         CUST_MOBILE_TEXTBOX.BorderThickness = 0
         CUST_MOBILE_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_MOBILE_TEXTBOX.CustomizableEdges = CustomizableEdges50
+        CUST_MOBILE_TEXTBOX.CustomizableEdges = CustomizableEdges56
         Guna2Transition1.SetDecoration(CUST_MOBILE_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_MOBILE_TEXTBOX.DefaultText = ""
         CUST_MOBILE_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -1112,7 +1140,7 @@ Partial Class add_customer
         CUST_MOBILE_TEXTBOX.PasswordChar = ChrW(0)
         CUST_MOBILE_TEXTBOX.PlaceholderText = ""
         CUST_MOBILE_TEXTBOX.SelectedText = ""
-        CUST_MOBILE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges51
+        CUST_MOBILE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges57
         CUST_MOBILE_TEXTBOX.Size = New Size(389, 36)
         CUST_MOBILE_TEXTBOX.TabIndex = 44
         ' 
@@ -1137,7 +1165,7 @@ Partial Class add_customer
         CUST_PINCODE_TEXTBOX.BorderRadius = 3
         CUST_PINCODE_TEXTBOX.BorderThickness = 0
         CUST_PINCODE_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_PINCODE_TEXTBOX.CustomizableEdges = CustomizableEdges52
+        CUST_PINCODE_TEXTBOX.CustomizableEdges = CustomizableEdges58
         Guna2Transition1.SetDecoration(CUST_PINCODE_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_PINCODE_TEXTBOX.DefaultText = ""
         CUST_PINCODE_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -1154,7 +1182,7 @@ Partial Class add_customer
         CUST_PINCODE_TEXTBOX.PasswordChar = ChrW(0)
         CUST_PINCODE_TEXTBOX.PlaceholderText = ""
         CUST_PINCODE_TEXTBOX.SelectedText = ""
-        CUST_PINCODE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges53
+        CUST_PINCODE_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges59
         CUST_PINCODE_TEXTBOX.Size = New Size(389, 36)
         CUST_PINCODE_TEXTBOX.TabIndex = 42
         ' 
@@ -1178,7 +1206,7 @@ Partial Class add_customer
         CUST_STATE_COMBOBOX.BorderColor = Color.Transparent
         CUST_STATE_COMBOBOX.BorderThickness = 0
         CUST_STATE_COMBOBOX.Cursor = Cursors.Hand
-        CUST_STATE_COMBOBOX.CustomizableEdges = CustomizableEdges54
+        CUST_STATE_COMBOBOX.CustomizableEdges = CustomizableEdges60
         Guna2Transition1.SetDecoration(CUST_STATE_COMBOBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_STATE_COMBOBOX.DrawMode = DrawMode.OwnerDrawFixed
         CUST_STATE_COMBOBOX.DropDownStyle = ComboBoxStyle.DropDownList
@@ -1192,7 +1220,7 @@ Partial Class add_customer
         CUST_STATE_COMBOBOX.ItemHeight = 30
         CUST_STATE_COMBOBOX.Location = New Point(204, 265)
         CUST_STATE_COMBOBOX.Name = "CUST_STATE_COMBOBOX"
-        CUST_STATE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges55
+        CUST_STATE_COMBOBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges61
         CUST_STATE_COMBOBOX.Size = New Size(389, 36)
         CUST_STATE_COMBOBOX.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material
         CUST_STATE_COMBOBOX.TabIndex = 40
@@ -1245,7 +1273,7 @@ Partial Class add_customer
         CUST_DISTRICT_TEXTBOX.BorderRadius = 3
         CUST_DISTRICT_TEXTBOX.BorderThickness = 0
         CUST_DISTRICT_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_DISTRICT_TEXTBOX.CustomizableEdges = CustomizableEdges56
+        CUST_DISTRICT_TEXTBOX.CustomizableEdges = CustomizableEdges62
         Guna2Transition1.SetDecoration(CUST_DISTRICT_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_DISTRICT_TEXTBOX.DefaultText = ""
         CUST_DISTRICT_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -1262,7 +1290,7 @@ Partial Class add_customer
         CUST_DISTRICT_TEXTBOX.PasswordChar = ChrW(0)
         CUST_DISTRICT_TEXTBOX.PlaceholderText = ""
         CUST_DISTRICT_TEXTBOX.SelectedText = ""
-        CUST_DISTRICT_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges57
+        CUST_DISTRICT_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges63
         CUST_DISTRICT_TEXTBOX.Size = New Size(389, 36)
         CUST_DISTRICT_TEXTBOX.TabIndex = 37
         ' 
@@ -1274,7 +1302,7 @@ Partial Class add_customer
         CUST_AREA_TEXTBOX.BorderRadius = 3
         CUST_AREA_TEXTBOX.BorderThickness = 0
         CUST_AREA_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_AREA_TEXTBOX.CustomizableEdges = CustomizableEdges58
+        CUST_AREA_TEXTBOX.CustomizableEdges = CustomizableEdges64
         Guna2Transition1.SetDecoration(CUST_AREA_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_AREA_TEXTBOX.DefaultText = ""
         CUST_AREA_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -1291,7 +1319,7 @@ Partial Class add_customer
         CUST_AREA_TEXTBOX.PasswordChar = ChrW(0)
         CUST_AREA_TEXTBOX.PlaceholderText = ""
         CUST_AREA_TEXTBOX.SelectedText = ""
-        CUST_AREA_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges59
+        CUST_AREA_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges65
         CUST_AREA_TEXTBOX.Size = New Size(389, 36)
         CUST_AREA_TEXTBOX.TabIndex = 35
         ' 
@@ -1329,7 +1357,7 @@ Partial Class add_customer
         CUST_NAME_TEXTBOX.BorderRadius = 3
         CUST_NAME_TEXTBOX.BorderThickness = 0
         CUST_NAME_TEXTBOX.Cursor = Cursors.IBeam
-        CUST_NAME_TEXTBOX.CustomizableEdges = CustomizableEdges60
+        CUST_NAME_TEXTBOX.CustomizableEdges = CustomizableEdges66
         Guna2Transition1.SetDecoration(CUST_NAME_TEXTBOX, Guna.UI2.AnimatorNS.DecorationType.None)
         CUST_NAME_TEXTBOX.DefaultText = ""
         CUST_NAME_TEXTBOX.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
@@ -1346,7 +1374,7 @@ Partial Class add_customer
         CUST_NAME_TEXTBOX.PasswordChar = ChrW(0)
         CUST_NAME_TEXTBOX.PlaceholderText = ""
         CUST_NAME_TEXTBOX.SelectedText = ""
-        CUST_NAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges61
+        CUST_NAME_TEXTBOX.ShadowDecoration.CustomizableEdges = CustomizableEdges67
         CUST_NAME_TEXTBOX.Size = New Size(389, 36)
         CUST_NAME_TEXTBOX.TabIndex = 31
         ' 
@@ -1384,6 +1412,32 @@ Partial Class add_customer
         Animation1.TransparencyCoeff = 0F
         Guna2Transition1.DefaultAnimation = Animation1
         ' 
+        ' CUST_B_USERNAME_STATUS
+        ' 
+        CUST_B_USERNAME_STATUS.CustomizableEdges = CustomizableEdges20
+        Guna2Transition1.SetDecoration(CUST_B_USERNAME_STATUS, Guna.UI2.AnimatorNS.DecorationType.None)
+        CUST_B_USERNAME_STATUS.FillColor = Color.Black
+        CUST_B_USERNAME_STATUS.ImageRotate = 0F
+        CUST_B_USERNAME_STATUS.Location = New Point(608, 150)
+        CUST_B_USERNAME_STATUS.Name = "CUST_B_USERNAME_STATUS"
+        CUST_B_USERNAME_STATUS.ShadowDecoration.CustomizableEdges = CustomizableEdges21
+        CUST_B_USERNAME_STATUS.Size = New Size(23, 23)
+        CUST_B_USERNAME_STATUS.TabIndex = 11
+        CUST_B_USERNAME_STATUS.TabStop = False
+        ' 
+        ' CHIP_ID_STATUS
+        ' 
+        CHIP_ID_STATUS.CustomizableEdges = CustomizableEdges34
+        Guna2Transition1.SetDecoration(CHIP_ID_STATUS, Guna.UI2.AnimatorNS.DecorationType.None)
+        CHIP_ID_STATUS.FillColor = Color.Black
+        CHIP_ID_STATUS.ImageRotate = 0F
+        CHIP_ID_STATUS.Location = New Point(608, 135)
+        CHIP_ID_STATUS.Name = "CHIP_ID_STATUS"
+        CHIP_ID_STATUS.ShadowDecoration.CustomizableEdges = CustomizableEdges35
+        CHIP_ID_STATUS.Size = New Size(23, 23)
+        CHIP_ID_STATUS.TabIndex = 32
+        CHIP_ID_STATUS.TabStop = False
+        ' 
         ' add_customer
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -1402,12 +1456,15 @@ Partial Class add_customer
         Guna2GroupBox1.PerformLayout()
         Guna2GroupBox7.ResumeLayout(False)
         Guna2GroupBox7.PerformLayout()
+        CType(CUST_USERNAME_STATUS, ComponentModel.ISupportInitialize).EndInit()
         Guna2GroupBox6.ResumeLayout(False)
         Guna2GroupBox6.PerformLayout()
         Guna2GroupBox5.ResumeLayout(False)
         Guna2GroupBox5.PerformLayout()
         Guna2GroupBox4.ResumeLayout(False)
         Guna2GroupBox4.PerformLayout()
+        CType(CUST_B_USERNAME_STATUS, ComponentModel.ISupportInitialize).EndInit()
+        CType(CHIP_ID_STATUS, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
     Friend WithEvents MessageBox2 As Guna.UI2.WinForms.Guna2MessageDialog
@@ -1471,4 +1528,7 @@ Partial Class add_customer
     Friend WithEvents Guna2Transition1 As Guna.UI2.WinForms.Guna2Transition
     Friend WithEvents TV_Reg_Picker As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents TV_Reg_Label As Label
+    Friend WithEvents CUST_USERNAME_STATUS As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents CUST_B_USERNAME_STATUS As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents CHIP_ID_STATUS As Guna.UI2.WinForms.Guna2PictureBox
 End Class
