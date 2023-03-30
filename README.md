@@ -127,6 +127,8 @@ This module consists of different email functions used for sending mail in diffe
 
 Download the configuration file from [HERE](https://drive.google.com/file/d/1Jbl90TwL13qUE8m9IiV7zdePvdAIBgD4/view?usp=share_link)  and add the correct path details of all required files. You can open it in any text editor and edit the file path accordingly. After making changes save the file inside the project folder. Don't change the file name.
 
+You can download the ms access database file from [HERE](https://drive.google.com/file/d/1fOcdSM6v0lvyPCpxwNL1YxHggQD8ZDjQ/view?usp=sharing). Download the file and save it inside the app_data folder inside the project folder. Don't forget to add the database path to Config.vb File.
+
 ## FORM DESIGNS
 
 ### ADMIN LOGIN:
