@@ -13,7 +13,7 @@ Module Invoice_Sender
             Dim smtp_server As New SmtpClient
             Dim e_mail As New MailMessage
             smtp_server.UseDefaultCredentials = False
-            smtp_server.Credentials = New Net.NetworkCredential("MARYMATHACABLETV@gmail.com", "sowsmadxuflomofg")
+            smtp_server.Credentials = New Net.NetworkCredential(smtpID, smtpPass)
             smtp_server.Port = 587
             smtp_server.EnableSsl = True
             smtp_server.Host = "smtp.gmail.com"
