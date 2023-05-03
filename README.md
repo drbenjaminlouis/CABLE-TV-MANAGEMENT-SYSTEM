@@ -129,6 +129,8 @@ Download the configuration file from [HERE](https://drive.google.com/file/d/1Jbl
 
 You can download the ms access database file from [HERE](https://drive.google.com/file/d/1fOcdSM6v0lvyPCpxwNL1YxHggQD8ZDjQ/view?usp=sharing). Download the file and save it inside the app_data folder inside the project folder. Don't forget to add the database path to Config.vb File.
 
+For the proper functioning of Auto Email add your own smtp userid and password in the fields smtpID and smtpPASS on config.vb file.
+
 ## FORM DESIGNS
 
 ### ADMIN LOGIN:
