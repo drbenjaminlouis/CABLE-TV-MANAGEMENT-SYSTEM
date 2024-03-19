@@ -123,6 +123,12 @@ This module consists of different email functions used for sending mail in diffe
 |BACK-END  | MS ACCESS 2016 |
 |OPERATING SYSTEM| WINDOWS 11|
 
+## Contact Information
+For inquiries or assistance with this project, please contact:
+
+- Email: abyjose377@gmail.com
+- LinkedIn: https://www.linkedin.com/in/abyjose/
+
 ## HOW TO CONFIGURE ?
 
 Download the configuration file from [HERE](https://drive.google.com/file/d/1gpJTteHDgk-d2rXOw9ME2_xBn2aFPRdK/view?usp=sharing)  and add the correct path details of all required files. You can open it in any text editor and edit the file path accordingly. After making changes save the file inside the project folder. Don't change the file name.
